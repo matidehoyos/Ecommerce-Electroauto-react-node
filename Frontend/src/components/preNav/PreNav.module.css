@@ -44,7 +44,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     background-color: yellow;
-    padding: 5px 0px;
+    padding: 4px 0px;
     margin: 0;
     overflow-x: hidden;
     z-index: 0;
@@ -52,13 +52,13 @@
 
 .container p {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 800;
     padding: 0;
     margin: 0;
     color: #333;
     position: relative;
     white-space: nowrap;
-    animation: desplazamiento 15s ease-in-out infinite;
+    animation: desplazamiento 20s ease-in-out infinite;
 }
 
 @keyframes desplazamiento {

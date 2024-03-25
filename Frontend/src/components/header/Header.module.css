@@ -152,16 +152,16 @@
 
   .container {
     width: auto;
-    height: calc(100vh - 70px);
+    height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background-image: url('https://jspolarizados.com.ar/wp-content/uploads/2023/06/cree-led-para-auto.jpg');
     background-color: #000;
-    background-size: cover;
+    background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -181,7 +181,7 @@
     width: auto;
     height: auto;
     padding: 0;
-    padding-top: 300px;
+    padding-top: 220px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -208,20 +208,20 @@
 .texto h1 {
     width: auto;
     height: auto;
-    font-size: 36px;
-    font-weight: 500;
-    letter-spacing: 1.2px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
     text-align: center;
     margin: 0;
-    margin-bottom: 5px;
-    color: yellow;
+    margin-bottom: 10px;
+    color: gold;
 }
 
 .texto h5 {
     width: auto;
     height: auto;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
     letter-spacing: .5px;
     text-align: center;
     margin: 0;
@@ -232,18 +232,18 @@
     width: auto;
     height: auto;
     margin: 0px auto;
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
 .envios h6 {
     width: auto;
     height: auto;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
     margin: 0px auto;
     padding: 4px 10px;
-    background-color: yellow;
+    background-color: gold;
     color: rgb(0, 0, 0);
     border-radius: 4px;
 }

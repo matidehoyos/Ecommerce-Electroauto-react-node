@@ -119,24 +119,29 @@
   
   .firstRow {
     width: auto;
-    height: 50px;
+    height: auto;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px;
+    margin: 0;
     background-color: #0c1c6b;
   }
   
   .logo {
     width: auto;
     height: auto;
+    padding: 0;
+    margin: 0;
   }
   
   .logo img {
-    width: 60px;
+    width: 90px;
     height: auto;
     animation: desplazamiento 3s ease-in-out 1;
+    padding: 0;
+    margin: 0;
   }
   
   @keyframes desplazamiento {
@@ -155,7 +160,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    background-color: #0c1c6b;
+    background-color: #2f2f2f;
     position: absolute;
     top: 78px;
     left: -800;
@@ -192,8 +197,8 @@
   .menu ul li a {
     text-decoration: none;
     color: yellow;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     letter-spacing: .3px;
     text-align: left;
     padding: 0;
@@ -220,7 +225,7 @@
     align-items: center;
     padding: 0px;
     padding-left: 10px;
-    background-color: #222;
+    background-color: #111;
   }
   
 .secondRow::-webkit-scrollbar {
@@ -242,14 +247,14 @@
   
   .hamburgContainer { 
     width: auto;
-    height: 50px;
+    height: auto;
     display: flex;
     align-items: center;
     padding: 0;
   }
   
   .hamburgContainer button {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     color: gold;
     background-color: transparent;
