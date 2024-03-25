@@ -32,7 +32,7 @@ useEffect(() => {
         <h2>Reseñas de nuestros clientes</h2>
       </div>
         <div className={style.cardContainer}>
-                { mensajes.length ?
+                { mensajes?.length ?
                    mensajes?.map((review, index) => (
                   <ReviewCard key={index} review={review} />
                   ))
