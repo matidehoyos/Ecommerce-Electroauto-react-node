@@ -182,18 +182,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url('ELECT.png');
+        background-image: url('./ELECT.png');
         background-size: contain;
         background-position: 0px 100px;
         background-repeat: no-repeat;
-        background-color: white;
+        background-color: rgba(255, 217, 0, 0.647);
         gap: 0px;
         overflow-x: scroll;
     }
     
     
     .mercadoLibre { 
-        width: 75%;
+        width: 84%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -207,7 +207,7 @@
         transition: transform 1.6s ease-out;
         overflow-x: hidden;
         border: none;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, .6);
+        box-shadow: 0px 0px 30px rgba(256, 256, 256, .6);
         border-radius: 4px;
     }
     
@@ -229,7 +229,7 @@
         height: 140px;
         margin: 0;
         padding: 0;
-        content: url("lm.png");
+        content: url("./lm.png");
         object-fit: scale-down;
       }
     
@@ -241,6 +241,7 @@
         flex-direction: column;
         align-items: start;
         justify-content: center;
+        padding: 20px;
     }
     
     .mercadoTexto h3 {
@@ -296,6 +297,7 @@
             width: 100%;
             height: auto;
             padding: 60px 0px;
+            padding-left: 30px;
             margin: 0px;
             display: flex;
             flex-wrap: nowrap;
@@ -303,7 +305,7 @@
             justify-content: start;
             align-items: center;
             border-radius: 0px;
-            background-color: #111;  
+            background-color: white;  
             transform: translateY(150%);
             transition: transform 1.3s ease-out;
             overflow-y: inherit;
@@ -320,12 +322,12 @@
         .carrusel .box {
             width: 280px;
             height: auto;
-            background-color: #111;
+            background-color: rgb(176, 153, 21);
             border-radius: 4px;
             border: 1px solid gold;
             margin: 0px 15px;
             padding: 0;
-            box-shadow: 0px 0px 20px gold;
+            box-shadow: 0px 0px 20px rgba(0,0,0,.6);
               }
     
         .box h4 {
@@ -335,7 +337,7 @@
             padding: 7px 0px;
             margin: 0;
             text-align: center;
-            color: gold;
+            color: #fff;
         }
     
         .boxImg {

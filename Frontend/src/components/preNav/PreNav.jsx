@@ -7,7 +7,11 @@ const PreNav = () => {
 
   return (
     <div className={style.container}>
-      <p>Ventas por mayor y menor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Envios a todo el pais&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todos los medios de pago&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tienda 100% protegida&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Garantia de confianza</p>
+      <h6>VENTAS POR MAYOR Y MENOR</h6>
+      <h6>ENVIOS A TODO EL PAÍS</h6>
+      <h6>TODOS LOS MEDIOS DE PAGO</h6>
+      <h6>TIENDA 100% PROTEGIDA</h6>
+      <h6>GARANTIA DE CONFIANZA</h6>
     </div>
   );
 };

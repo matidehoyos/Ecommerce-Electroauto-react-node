@@ -87,7 +87,7 @@
         justify-content: center;
         align-items: center;
         padding: 0px 0px;
-        background-color: #111;
+        background-color: rgb(155, 137, 32);
         border-top: 1px solid yellow;
         border-bottom: 1px solid yellow;
     }
@@ -108,13 +108,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 60px 10px;
+        padding: 20px 20px;
         margin: 0;
         margin-bottom: 60px;
-        background-color: #111;
+        background-color: #fff;
         border-radius: 4px;
-        border: 2px solid gold;
-        box-shadow: 0px 0px 20px gold;
+        border: none;
     }
     
     .text:hover {
@@ -132,27 +131,28 @@
     }
     
     .text h4 {
-        font-size: 24px;
-        font-weight: 600;
-        color: gold;
+        font-size: 18px;
+        font-weight: 700;
+        color: #222;
         text-align: center;
         margin: 0;
         padding: 0;
     }
     
     .text h5 {
-        font-size: 20px;
-        font-weight: 400;
-        color: gold;
+        font-size: 15px;
+        font-weight: 600;
+        color: #222;
         text-align: center;
         margin: 0;
-        padding: 30px 0px;
+        padding: 10px 0px;
+        font-style: italic;
     }
     
     .text p {
-        font-size: 50px;
+        font-size: 34px;
         text-align: center;
-        color: gold;
+        color: #222;
         margin: 0;
         padding: 0;
     }
