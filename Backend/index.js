@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const routes = require('./src/routes/index');
 const cors = require('cors');
 require('./db.js');
-
+const PORT = 3000;
 
 const server = express();
 server.use(express.json());
@@ -25,8 +25,8 @@ server.use((req, res, next) => {
 
 server.use("/",routes);
 
-server.listen(3000, () => {
-  console.log(`Server on port 3000` );
+server.listen(PORT, () => {
+  console.log(`Server on port ${PORT}` );
 })
 server.use((err, req, res, next) => { 
   const status = err.status || 500;
