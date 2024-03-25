@@ -14,8 +14,8 @@ import axios from "axios";
 import CarritoContext from './components/carritoContext/CarritoContext';
 import { useState } from 'react';
 
-// axios.defaults.baseURL = 'https://n-gamma-five.vercel.app'
- axios.defaults.baseURL = 'http://localhost:3000'
+ axios.defaults.baseURL = 'electrocar-production.up.railway.app'
+// axios.defaults.baseURL = 'http://localhost:3000'
 
 function App() {
   const [carrito, setCarrito] = useState(JSON.parse(localStorage.getItem('carrito')) || []);
