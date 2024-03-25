@@ -225,7 +225,7 @@
     align-items: center;
     padding: 0px;
     padding-left: 10px;
-    background-color: #111;
+    background-color: #fff;
   }
   
 .secondRow::-webkit-scrollbar {
@@ -237,7 +237,7 @@
     height: auto;
     font-size: 15px;
     font-weight: 400;
-    color: #fff;
+    color: #222;
     background-color: transparent;
     margin: 0px 15px;
     padding: 10px 0px;
