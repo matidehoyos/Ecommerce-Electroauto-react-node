@@ -45,7 +45,7 @@ const NavBar = () => {
       <div className={style.firstRow}>
            <div className={style.logo}>
               <Link to="/">
-                  <img src="./logo.png" alt="Logo" />
+                  <img src="./loguito.png" alt="Logo" />
               </Link>
             </div>
           

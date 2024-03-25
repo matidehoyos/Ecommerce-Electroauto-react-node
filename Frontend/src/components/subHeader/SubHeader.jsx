@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom'
 import style from './SubHeader.module.css'
-import { FaCheckSquare } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 
 const SubHeader = () => {
   const [showCarrusel, setShowCarrusel] = useState(false);
@@ -44,8 +44,8 @@ const SubHeader = () => {
             <div className={style.mercadoTexto}>
                 <h3>MERCADO LIBRE <br/> LIDER PLATINIUM</h3>
                 <h6>COMPRA CON CONFIANZA</h6>
-                <p><FaCheckSquare className={style.ico}/>MAS DE 10 MIL VENTAS</p>
-                <p><FaCheckSquare className={style.ico}/>MAS DE 10 AÑOS DE EXPERIENCIA</p>
+                <p><FaCheck className={style.ico}/>MAS DE 10 MIL VENTAS</p>
+                <p><FaCheck className={style.ico}/>MAS DE 10 AÑOS DE EXPERIENCIA</p>
             </div>
         </div>
         <div ref={carruselRef} className={`${style.carrusel} ${showCarrusel ? style.animate : ''}`}>

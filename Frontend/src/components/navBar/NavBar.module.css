@@ -126,7 +126,7 @@
     align-items: center;
     padding: 0px 10px;
     margin: 0;
-    background-color: #0c1c6b;
+    background-color: rgba(0,0,0,.8);
   }
   
   .logo {
@@ -225,7 +225,7 @@
     align-items: center;
     padding: 0px;
     padding-left: 10px;
-    background-color: #fff;
+    background-color: rgba(0,0,0,.8);
   }
   
 .secondRow::-webkit-scrollbar {
@@ -236,8 +236,8 @@
     width: auto;
     height: auto;
     font-size: 15px;
-    font-weight: 400;
-    color: #222;
+    font-weight: 600;
+    color: #fff;
     background-color: transparent;
     margin: 0px 15px;
     padding: 10px 0px;

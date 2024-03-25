@@ -43,7 +43,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    background-color: gold;
+    background-color: rgba(0,0,0,.7);
     padding: 4px 0px;
     margin: 0;
     overflow-x: hidden;
@@ -52,10 +52,10 @@
 
 .container p {
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 500;
     padding: 0;
     margin: 0;
-    color: #333;
+    color: rgba(256,256,256,.7);
     position: relative;
     white-space: nowrap;
     animation: desplazamiento 20s ease-in-out infinite;

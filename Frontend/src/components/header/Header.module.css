@@ -151,8 +151,8 @@
 @media only screen and (max-width: 680px) {
 
   .container {
-    width: auto;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     display: flex;
@@ -162,7 +162,7 @@
     background-image: url('https://jspolarizados.com.ar/wp-content/uploads/2023/06/cree-led-para-auto.jpg');
     background-color: #000;
     background-size: contain;
-    background-position: top;
+    background-position: top right;
     background-repeat: no-repeat;
     overflow-x: hidden;
     animation: backd 1.5s ease-in-out 1;
@@ -181,7 +181,8 @@
     width: auto;
     height: auto;
     padding: 0;
-    padding-top: 220px;
+    padding-top: 180px;
+    padding-bottom: 30px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -208,7 +209,7 @@
 .texto h1 {
     width: auto;
     height: auto;
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 700;
     letter-spacing: .6px;
     text-align: center;
@@ -220,12 +221,12 @@
 .texto h5 {
     width: auto;
     height: auto;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 300;
     letter-spacing: .5px;
     text-align: center;
     margin: 0;
-    color: rgb(240, 240, 240);
+    color: #fff;
 }
 
 .envios {
@@ -243,9 +244,9 @@
     text-align: center;
     margin: 0px auto;
     padding: 4px 10px;
-    background-color: gold;
-    color: rgb(0, 0, 0);
-    border-radius: 4px;
+    background-color: rgba(256,256,256,.3);
+    color: #000;
+    border-radius: 2px;
 }
 
 .kartButton {
