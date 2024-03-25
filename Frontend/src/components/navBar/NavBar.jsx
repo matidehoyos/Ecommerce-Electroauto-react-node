@@ -6,6 +6,7 @@ import SearchBar from "../searchBar/SearchBar";
 import { FiMenu } from 'react-icons/fi';
 import  UserAccountMobile from '../userAccountMobile/UserAccountMobile';
 import { useSelector } from 'react-redux';
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 
 const NavBar = () => {
@@ -72,7 +73,7 @@ const NavBar = () => {
              {data?.name ? <UserAccountMobile /> : null}
             </div>   
             <div className={style.hamburgContainer}>
-              <button className={style.menuButton} onClick={handleShowMenu}><FiMenu /></button>
+              <button className={style.menuButton} onClick={handleShowMenu}> <GiHamburgerMenu /></button>
             </div>
       </div>
 

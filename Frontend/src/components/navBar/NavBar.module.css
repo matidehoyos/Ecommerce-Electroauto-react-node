@@ -131,14 +131,14 @@
   
   .logo {
     width: auto;
-    height: auto;
+    height: 70px;
     padding: 0;
     margin: 0;
   }
   
   .logo img {
-    width: 90px;
-    height: auto;
+    width: 100%;
+    height: 70px;
     animation: desplazamiento 3s ease-in-out 1;
     padding: 0;
     margin: 0;
@@ -160,9 +160,9 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    background-color: #2f2f2f;
+    background-color: rgba(0,0,0,.9);
     position: absolute;
-    top: 78px;
+    top: 90px;
     left: -800;
     transition: 1.8s all;
     z-index: 2000;
@@ -225,7 +225,7 @@
     align-items: center;
     padding: 0px;
     padding-left: 10px;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(255, 217, 0, 0.456);
   }
   
 .secondRow::-webkit-scrollbar {
@@ -261,5 +261,9 @@
     padding: 0;
   }
 
+  .menuButton {
+    margin-right: 20px;
+    font-size: 30px;
+  }
 }
 
