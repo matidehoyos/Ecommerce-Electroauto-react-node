@@ -1,13 +1,14 @@
+require('dotenv').config();
 const server = require("./server.js");
 const router = require("./src/routes/index.js")
 require('./db.js');
-const PORT = 3000;
+const port = process.env.PORT || 3000; 
 
 
 server.use(router)
 
-server.listen(PORT, () => {
-  console.log(`Server on port ${PORT}` );
+server.listen(port, () => {
+  console.log(`Server on port ${port}` );
 })
 server.use((err, req, res, next) => { 
   const status = err.status || 500;
