@@ -1,0 +1,278 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.confirmation {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #0c1c6b;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+}
+
+.status {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    margin-top: 180px;
+}
+
+.status h3 {
+    width: auto;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.iconStatus {
+    font-size: 32px;
+    margin-right: 5px;
+    position: relative;
+    top: 8px;
+}
+
+.containerBox {
+    width: auto;
+    padding: 20px;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.containerTitle {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.containerTitle h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.info {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.info p {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    }
+
+.info span {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.info h6 {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.containerButton {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-top: 30px;
+}
+
+.containerButton button {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #0c1c6b;
+    color: #fff;
+    border-radius: 6px;
+}
+
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    
+    .confirmation {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0c1c6b;
+    }
+    
+    .logo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    .logo img {
+        width: 24%;
+        height: auto;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    
+    .status {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding-right: 0px;
+        margin-top: 10px;
+    }
+    
+    .status h3 {
+        width: auto;
+        font-size: 26px;
+        font-weight: 400;
+        color: #fff;
+    }
+    
+    .iconStatus {
+        font-size: 32px;
+        margin-right: 5px;
+        position: relative;
+        top: 8px;
+    }
+    
+    .containerBox {
+        width: auto;
+        padding: 20px;
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    
+    .containerTitle {
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .containerTitle h4 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #111;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .info {
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .info p {
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        font-weight: 600;
+        color: #222;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+        }
+    
+    .info span {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        font-weight: 400;
+        color: #333;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .info h6 {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        font-weight: 400;
+        color: #333;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .containerButton {
+        width: auto;
+        height: auto;
+        display: flex;
+        margin-top: 30px;
+    }
+    
+    .containerButton button {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #0c1c6b;
+        color: #fff;
+        border-radius: 6px;
+    }
+    
+}

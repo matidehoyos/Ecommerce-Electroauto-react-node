@@ -1,0 +1,134 @@
+.infoContainer {
+    background-color: #0c1c6b;;
+    width: 20%;
+    height: calc(100vh - 52px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 31px;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.5s;
+    z-index: 3000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-right: 2px solid yellow;
+}
+
+
+.infoContainer .imgAndNameContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: .05px solid rgba(255, 255, 0, 0.225);
+}
+
+.imgAndNameContainer img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.imgAndNameContainer h2 {
+    color: aliceblue;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.imgAndNameContainer p {
+    color: #ffffffa8;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0px;
+    padding-bottom: 20px;
+}
+
+.infoContainer .planAndMembershipContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 50px;
+}
+
+.planAndMembershipContainer p {
+    color: rgb(116, 116, 116);
+    font-size: 18px;
+}
+
+.role {
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+.data {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.data span {
+    color: yellow;
+    font-weight: 500;
+}
+
+.infoContainer .buttonsContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+.buttonsContainer button {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .7px;
+    color: yellow;
+    border: none;
+    padding: 0;
+    margin-top: 0px;
+}
+
+.botonPanel {
+    margin: 0;
+    background-color: transparent;
+}
+
+.botonPanel:hover {
+    color: #fff;
+}
+
+.logout {
+    background-color: transparent;
+    margin: 0;
+    margin-top: 20px !important;
+}
+
+.logout:hover {
+   color: #fff;
+}
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+    .infoContainer {
+        display: none;
+    }
+}

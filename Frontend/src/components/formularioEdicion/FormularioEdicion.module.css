@@ -1,0 +1,179 @@
+.container {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+}
+
+form {
+    width: 500px;
+    height: auto;
+    background-color: whitesmoke;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.row label {
+    width: 90px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.row input {
+    width: 405px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    margin-left: 5px;
+    padding: 0px 10px;
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.row input[type="file"] {
+    background-color: #fff;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+.row textarea {
+    width: 405px;
+    height: 80px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.submit {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.submit button {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    background: #222;
+    color: #fff;
+    width: auto;
+    height: auto;
+    padding: 6px 14px;
+}
+
+.submit button:hover {
+    background-color: #111;
+}
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    form {
+        width: 80%;
+        height: auto;
+        background-color: whitesmoke;
+        margin: 0px auto;
+        padding: 20px;
+    }
+    
+    .row {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .row label {
+        width: 90px;
+        height: auto;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .row input {
+        width: 405px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #222;
+        margin-left: 5px;
+        padding: 0px 10px;
+        background-color: white;
+        border: 1px solid #333;
+        border-radius: 4px;
+    }
+    
+    .row input[type="file"] {
+        background-color: #fff;
+        padding-top: 10px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    
+    .row textarea {
+        width: 405px;
+        height: 80px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #222;
+        margin-left: 5px;
+        padding: 5px 10px;
+        background-color: white;
+        border: 1px solid #333;
+        border-radius: 4px;
+    }
+    
+    .submit {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    
+    .submit button {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+        background: #222;
+        color: #fff;
+        width: auto;
+        height: auto;
+        padding: 6px 14px;
+    }
+    
+    .submit button:hover {
+        background-color: #111;
+    }
+
+
+}

@@ -1,0 +1,272 @@
+.container {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.boxContainer {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo {
+    width: 100%;
+}
+
+.titulo h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+}
+
+.tablaMensajes {
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    padding: 0;
+    background-color: #333;
+}
+
+.tablaMensajes table {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.tablaMensajes th h6 {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 0px;
+    margin: 0;
+}
+
+.tablaMensajes tbody {
+    background-color: #fff;
+}
+
+.tablaMensajes tbody tr td {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tablaMensajes td p {
+    width: auto;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+
+.tablaMensajes td h5 {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+
+.tablaMensajes td img {
+    width: 30px;
+    height: auto;
+    border-radius: 10%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+}
+
+.botonLeido {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    color: rgb(0, 175, 0);
+    background-color: transparent;
+}
+
+.botonEliminar {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    color: red;
+    background-color: transparent;
+}
+
+
+.noMsj {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 150px;
+    text-align: center;
+    color: #222;
+}
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+    .container {
+        width: 100%;
+        min-height: calc(100vh - 50px);
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    
+    .boxContainer {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .titulo {
+        width: 100%;
+    }
+    
+    .titulo h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #222;
+        text-align: center;
+    }
+    
+    .tablaMensajes {
+        width: 90%;
+        height: auto;
+        margin: 0px auto;
+        padding: 0;
+        background-color: #333;
+    }
+    
+    .tablaMensajes table {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+    }
+    
+    .tablaMensajes th h6 {
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .tablaMensajes tbody {
+        background-color: #fff;
+    }
+    
+    .tablaMensajes tbody tr td {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .tablaMensajes td p {
+        width: auto;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: #000;
+        background-color: #fff;
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .tablaMensajes td h5 {
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        color: #000;
+        background-color: #fff;
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .tablaMensajes td img {
+        width: 20px;
+        height: auto;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+    
+    .botonLeido {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0;
+        color: rgb(0, 175, 0);
+        background-color: transparent;
+    }
+    
+    .botonEliminar {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0;
+        color: red;
+        background-color: transparent;
+    }
+    
+    .vermas {
+        background-color: transparent;
+        color: blue;
+        text-align: center;
+    }
+    
+    .noMsj {
+        width: 100%;
+        height: auto;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 150px;
+        text-align: center;
+        color: #222;
+    }
+
+}

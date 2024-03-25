@@ -1,0 +1,344 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240,240,240);
+}
+
+.subcontainer {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.titulo h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+.mediosContacto {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.form form {
+    width: auto;
+    height: auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: #595959;
+}
+
+.row { 
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.row label {
+    width: 60px;
+    text-align: right;
+    padding-right: 10px;
+    color: aliceblue;
+}
+
+.row input {
+   width: 300px;
+   height: 30px;
+   background-color: aliceblue;
+   border: none;
+   border-radius: 6px;
+   padding: 0px 5px;
+   color: #222;
+}
+
+.row input::placeholder {
+    font-size: 12px;
+}
+
+.row textarea {
+    width: 300px;
+    height: 70px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    color: #222;
+}
+
+.row textarea::placeholder {
+    font-size: 12px;
+}
+
+.botonContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.botonContainer button {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 7px 14px;
+    border-radius: 4px;
+    background: #222;
+}
+
+.botonContainer button:hover {
+    border: none;
+    background: #111;
+}
+
+.wts {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 20px;
+}
+
+.wtsTexto {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.wts h4 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.wts a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.wts a:hover {
+    color: #111;
+}
+
+.icon {
+    font-size: 26px;
+    color: green;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(240,240,240);
+    }
+    
+    .subcontainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titulo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    
+    .titulo h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #333;
+    }
+    
+    .mediosContacto {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form form {
+        width: 86%;
+        height: auto;
+        padding: 30px 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 4px;
+        background-color: #595959;
+    }
+    
+    .row { 
+        width: auto;
+        height: auto;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .row label {
+        width: 60px;
+        text-align: right;
+        padding-right: 12px;
+        color: #fff;
+    }
+    
+    .row input {
+       width: 220px;
+       height: 30px;
+       background-color: #fff;
+       border: none;
+       border-radius: 4px;
+       padding: 0px 5px;
+       color: #222;
+    }
+    
+    .row input::placeholder {
+        font-size: 12px;
+    }
+    
+    .row textarea {
+        width: 220px;
+        height: 70px;
+        background-color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 5px;
+        color: #222;
+    }
+    
+    .row textarea::placeholder {
+        font-size: 12px;
+    }
+    
+    .botonContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+    }
+    
+    .botonContainer button {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        padding: 7px 14px;
+        border-radius: 4px;
+        background: #222;
+    }
+    
+    .botonContainer button:hover {
+        border: none;
+        background: #111;
+    }
+    
+    .wts {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-top: 50px;
+    }
+    
+    .wtsTexto {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+    
+    .wts h4 {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    .wts a {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .wts a:hover {
+        color: #111;
+    }
+    
+    .icon {
+        font-size: 20px;
+        color: green;
+        margin-right: 1px;
+        position: relative;
+        top: 3px;
+    }
+
+}

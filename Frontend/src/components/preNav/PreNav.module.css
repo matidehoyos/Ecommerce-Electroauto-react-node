@@ -1,0 +1,72 @@
+.container { 
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: yellow;
+    padding: 5px 40px;
+    margin: 0;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.container p {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    position: relative;
+    white-space: nowrap;
+    animation: desplazamiento 3.5s ease-out 1;
+}
+
+@keyframes desplazamiento {
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(0vh);
+    }
+  }
+
+
+
+/* Estilos para dispositivos móviles ------------------------------- */
+
+@media only screen and (max-width: 680px) {
+
+  .container { 
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: yellow;
+    padding: 5px 0px;
+    margin: 0;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.container p {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    position: relative;
+    white-space: nowrap;
+    animation: desplazamiento 15s ease-in-out infinite;
+}
+
+@keyframes desplazamiento {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}

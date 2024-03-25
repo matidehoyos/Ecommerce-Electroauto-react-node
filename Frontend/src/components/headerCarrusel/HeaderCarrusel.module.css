@@ -1,0 +1,72 @@
+.containerCarrusel {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+}
+
+.carouselStyles {
+    width: 90%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.caja {
+    width: auto;
+    padding: 0px;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.caja img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.carruImg { 
+    width: 100%;
+   object-fit: contain;
+   border-radius: 20px;
+   filter: saturate(100%);
+}
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+    .carouselcontainer {
+        padding: 40px 20px;
+    }
+    
+    .containerTitle {
+        padding: 0;
+    }
+    
+    .containerTitle h2 {
+        font-size: 26px; 
+        font-weight: 600;
+        letter-spacing: -.5px;
+        color: #494949;
+    }
+    
+    .containerCarrusel {
+        margin: 40px 0;
+    }
+    
+    .carouselStyles {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .buttonContainer {
+        margin-top: 70px;
+    }
+}
+

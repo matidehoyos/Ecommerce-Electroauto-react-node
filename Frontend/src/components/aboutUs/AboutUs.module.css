@@ -1,0 +1,120 @@
+.container {
+    width: auto;
+    height: auto;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c1c6b;
+    transform: translateX(-150%);
+    transition: transform 1.8s ease-out;
+      }
+      
+.container.animate {
+        transform: translateX(0);
+      }
+
+.texto {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 15px;
+}
+
+.texto h5 {
+    font-size: 32px;
+    font-weight: 600;
+    color: yellow;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.texto p {
+    font-size: 20px;
+    font-weight: 400;
+    color: gold;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.mapa {
+    width: 60%;
+    height: auto;
+    padding-left: 15px;
+}
+
+.mapita {
+    display: none;
+}
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+    
+    .container {
+        width: auto;
+        height: auto;
+        padding: 60px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0c1c6b;
+        transform: translateX(-150%);
+        transition: transform 1.8s ease-out;
+          }
+          
+    .container.animate {
+            transform: translateX(0);
+          }
+    
+    .texto {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+    }
+    
+    .texto h5 {
+        font-size: 26px;
+        font-weight: 600;
+        color: yellow;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .texto p {
+        font-size: 18px;
+        font-weight: 400;
+        color: gold;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    .mapa {
+        width: auto;
+        height: auto;
+        padding-left: 0px;
+        margin: 0px auto;
+        margin-top: 30px;
+    }
+
+    .map {
+        display: none;
+    }
+    
+    .mapita {
+        display: block;
+    }
+}

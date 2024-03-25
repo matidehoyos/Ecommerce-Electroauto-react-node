@@ -1,0 +1,277 @@
+.container {
+    width: auto;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-image: url('https://jspolarizados.com.ar/wp-content/uploads/2023/06/cree-led-para-auto.jpg');
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    animation: backd 1.5s ease-in-out 1;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes backd {
+    0% {
+      background-image: none;
+    }
+    100% {
+      background-image: url("https://jspolarizados.com.ar/wp-content/uploads/2023/06/cree-led-para-auto.jpg");
+    }
+  }
+
+.texto {
+    width: max-content;
+    height: auto;
+    padding: 0;
+    margin: auto 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; position: relative;
+    white-space: nowrap;
+    animation: desplazamiento 2.2s ease-in-out 1;
+}
+
+@keyframes desplazamiento {
+    0% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(0vw);
+    }
+  }
+
+.texto h1 {
+    width: auto;
+    height: auto;
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+    color: yellow;
+}
+
+.texto h5 {
+    width: auto;
+    height: auto;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    color: rgb(240, 240, 240);
+}
+
+.envios {
+    width: 400px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.envios h6 {
+    width: auto;
+    height: auto;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px auto;
+    padding: 0;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+.carritoModal { 
+  width: 80%;
+  height: calc(100vh - 120px);
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(256,256,256,.9);
+  border-radius: 15px;
+  outline: 2px solid #333;
+  z-index: 3000;
+}
+
+.cerrarContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: end;
+}
+
+.cerrarModal {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 2px 8px;
+  background-color: #222;
+  color: red;
+}
+
+.cerrarModal {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 2px 8px;
+  background-color: #000;
+  color: red;
+}
+
+.kartButton {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+
+.kartIcon {
+  width: auto;
+  height: auto;
+  font-size: 32px;
+  font-weight: 100;
+  color: yellow;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  background-color: rgba(0, 0, 0, .8);
+  padding: 14px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 4000;
+}
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+  .container {
+    width: auto;
+    height: calc(100vh - 70px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://jspolarizados.com.ar/wp-content/uploads/2023/06/cree-led-para-auto.jpg');
+    background-color: #000;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    animation: backd 1.5s ease-in-out 1;
+}
+
+@keyframes backd {
+    0% {
+      background-image: none;
+    }
+    100% {
+      background-image: url("https://jspolarizados.com.ar/wp-content/uploads/2023/06/cree-led-para-auto.jpg");
+    }
+  }
+
+.texto {
+    width: auto;
+    height: auto;
+    padding: 0;
+    padding-top: 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    white-space: nowrap;
+    animation: desplazamiento 2.2s ease-in-out 1;
+}
+
+.carritoModal {
+  background-color: red;
+}
+
+@keyframes desplazamiento {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+.texto h1 {
+    width: auto;
+    height: auto;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+    color: yellow;
+}
+
+.texto h5 {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-align: center;
+    margin: 0;
+    color: rgb(240, 240, 240);
+}
+
+.envios {
+    width: auto;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.envios h6 {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px auto;
+    padding: 4px 10px;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.kartButton {
+  background-color: transparent;
+}
+
+.kartIcon {
+  font-size: 28px;
+  font-weight: 800;
+  color: yellow;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  background-color: transparent;
+  padding: 14px;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  z-index: 4000;
+}
+
+.cerrarModal {
+  font-size: 24px;
+  font-weight: 800;
+  text-align: right;
+  padding-right: 10px;
+  color: #000;
+  background-color: transparent;
+}
+}

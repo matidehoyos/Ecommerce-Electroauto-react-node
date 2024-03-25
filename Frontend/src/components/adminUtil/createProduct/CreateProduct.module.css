@@ -1,0 +1,257 @@
+.container {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.subcontainer {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container h3 {
+    width: 100%;
+    font-size: 26px;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+}
+
+.container form { 
+    width: 600px;
+    height: auto;
+    border: 1px solid #444;
+    margin: 0px auto;
+    padding: 30px 0px;
+    padding-right: 20px;
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row label { 
+    width: 22%;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.row input {
+    width: 78%;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #333;
+    padding: 0px 5px;
+}
+
+.row input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+}
+
+.row input[type="file"] {
+    background-color: #fff;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+.row select {
+    width: 76%;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #333;
+    padding: 0px 5px;
+}
+
+.row textarea { 
+    width: 76%;
+    height: 50px;
+    font-size: 16px;   
+    font-weight: 500;
+    color: #333;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.row textarea::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+}
+
+.submit {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.formButton {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    background: #222;
+    color: #fff;
+    width: auto;
+    height: auto;
+    padding: 6px 14px;
+}
+
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+    
+    .subcontainer {
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .container h3 {
+        width: 100%;
+        font-size: 24px;
+        font-weight: 700;
+        color: #222;
+        text-align: center;
+    }
+    
+    .container form { 
+        width: 84%;
+        height: auto;
+        border: 1px solid #444;
+        border-radius: 4px;
+        margin: 0px auto;
+        padding: 30px 8px;
+        padding-right: 8px;
+        background-color: rgba(240, 240, 240, 1);
+    }
+    
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .row label { 
+        width: 28%;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: right;
+        padding-right: 7px;
+        color: #333;
+    }
+    
+    .row input {
+        width: 69%;
+        height: 30px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 4px;
+        border: 1px solid #333;
+        background-color: #fff;
+        color: #333;
+        padding: 0px 5px;
+    }
+    
+    .row input::placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        color: #333;
+    }
+    
+    .row input[type="file"] {
+        background-color: #fff;
+        padding-top: 10px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    
+    .row select {
+        width: 76%;
+        height: 30px;
+        border-radius: 4px;
+        border: 1px solid #333;
+        background-color: #fff;
+        color: #333;
+        padding: 0px 5px;
+    }
+    
+    .row textarea { 
+        width: 70%;
+        height: 50px;
+        font-size: 16px;   
+        font-weight: 500;
+        color: #333;
+        border-radius: 4px;
+        border: 1px solid #333;
+        background-color: #fff;
+        padding: 5px;
+    }
+    
+    .row textarea::placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        color: #333;
+    }
+    
+    .submit {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 28px;
+    }
+    
+    .formButton {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+        background: #222;
+        color: #fff;
+        width: auto;
+        height: auto;
+        padding: 6px 14px;
+        border-radius: 4px;
+    }
+    
+
+}

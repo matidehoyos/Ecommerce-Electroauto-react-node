@@ -1,0 +1,260 @@
+.container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.firstRow {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  background-color: #0c1c6b;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  animation: desplazamiento 3s ease-in-out 1;
+}
+
+@keyframes desplazamiento {
+    0% {
+      transform: translateX(-300px);
+    }
+    100% {
+      transform: translateX(0vw);
+    }
+}
+
+.menu {
+  width:  86%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+
+.menu ul li a:hover {
+  color: #fff;
+}
+
+.secondRow {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  background-color: #222;
+}
+
+.secondRow button {
+  color: #fff;
+  background-color: transparent;
+  margin: 0px 30px;
+}
+
+.secondRow button:hover {
+  color: yellow;
+}
+
+.cantidad {
+  font-size: 12px;
+  font-weight: 900;
+  background-color: yellow;
+  color: #0c1c6b;
+  padding: 1px 5px;
+  margin-left: 4px;
+  border-radius: 50%;
+}
+
+.hamburgContainer { 
+  display: none;
+}
+
+
+/* Estilos para dispositivos móviles ------------------------------- */
+
+@media only screen and (max-width: 680px) {
+
+  .container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .firstRow {
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #0c1c6b;
+  }
+  
+  .logo {
+    width: auto;
+    height: auto;
+  }
+  
+  .logo img {
+    width: 60px;
+    height: auto;
+    animation: desplazamiento 3s ease-in-out 1;
+  }
+  
+  @keyframes desplazamiento {
+      0% {
+        transform: translateX(-300px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+  }
+  
+  .menu {
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    background-color: #0c1c6b;
+    position: absolute;
+    top: 78px;
+    left: -800;
+    transition: 1.8s all;
+    z-index: 2000;
+    overflow-x: hidden;
+    border-top: 1px solid gold;
+  }
+
+  .menu nav {
+    width: 100vw;
+  }
+  
+  .menu ul {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px 0;
+    padding: 0px 15px;
+  }
+  
+  .menu ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cantidad {
+    font-size: 12px;
+    font-weight: 900;
+    background-color: gold;
+    color: #0c1c6b;
+    padding: 1px 5px;
+    margin-left: 4px;
+    border-radius: 50%;
+  }
+  
+  .secondRow {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: start;
+    align-items: center;
+    padding: 0px;
+    padding-left: 10px;
+    background-color: #222;
+  }
+  
+.secondRow::-webkit-scrollbar {
+  display: none;
+}
+
+  .secondRow button {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: transparent;
+    margin: 0px 15px;
+    padding: 10px 0px;
+    letter-spacing: .8px;
+  }
+  
+  
+  .hamburgContainer { 
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .hamburgContainer button {
+    font-size: 24px;
+    font-weight: 600;
+    color: gold;
+    background-color: transparent;
+    padding: 0;
+  }
+
+}
+

@@ -1,0 +1,255 @@
+.container {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.boxContainer {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo {
+    width: 100%;
+}
+
+.titulo h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+}
+
+.tablaVentas {
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    padding: 0;
+    background-color: #333;
+}
+
+.tablaVentas table {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.tablaVentas th h6 {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    margin: 0;
+}
+
+.tablaVentas tbody {
+    background-color: #fff;
+}
+
+.tablaVentas tbody tr td {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tablaVentas td p {
+    width: auto;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+
+.prod {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px 8px;
+    color: #000;
+}
+
+.botonEditar {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    color: blue;
+    background-color: transparent;
+    text-align: center;
+}
+
+.camionIcon {
+    font-size: 24px;
+    color: #333;
+}
+
+.noVentas {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 150px;
+    text-align: center;
+    color: #222;
+}
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+
+    .container {
+        width: 100%;
+        min-height: calc(100vh - 50px);
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    
+    .boxContainer {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .titulo {
+        width: 100%;
+    }
+    
+    .titulo h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #222;
+        text-align: center;
+    }
+    
+    
+    .tablaVentas {
+        width: 90%;
+        height: auto;
+        margin: 0px auto;
+        padding: 0;
+        background-color: #333;
+    }
+    
+    .tablaVentas table {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+    }
+    
+    .tablaVentas th h6 {
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .tablaVentas tbody {
+        background-color: #fff;
+    }
+    
+    .tablaVentas tbody tr td {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .tablaVentas td p {
+        width: auto;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: #000;
+        background-color: #fff;
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .tablaVentas td h5 {
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        color: #000;
+        background-color: #fff;
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .tablaVentas td img {
+        width: 20px;
+        height: auto;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+    
+    .botonEditar {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .camionIcon {
+            font-size: 20px;
+            color: #333;
+            text-align: center;
+            position: relative;
+            top: 3px;        }
+
+    .botonEliminar {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0;
+        color: red;
+        background-color: transparent;
+    }
+    
+    .vermas {
+        background-color: transparent;
+        color: blue;
+        text-align: center;
+    }
+    
+    .noVentas {
+        width: 100%;
+        height: auto;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 150px;
+        text-align: center;
+        color: #222;
+    }
+
+
+}

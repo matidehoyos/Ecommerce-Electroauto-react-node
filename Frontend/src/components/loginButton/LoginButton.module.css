@@ -1,0 +1,92 @@
+.containerNameAndButton {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.buttonLogin {
+    font-size: 16px;
+    font-weight: 600;
+    color: yellow;
+    background-color: transparent;
+}
+
+.buttonLogin:hover {
+    color: #fff;
+}
+
+.containerNameAndButton button {
+    border: none;
+    outline: none;
+    color: yellow;
+    background-color: transparent;
+}
+
+.containerNameAndButton button:hover {
+   color: #fff;
+}
+
+.containerNameAndButton p {
+    font-size: 16px;
+    display: inline;
+    margin: 0;
+    padding: 0;
+
+}
+
+.containerNameAndButton img {
+    width: 30px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.containerNameAndButton p {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+
+
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+    .containerNameAndButton {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .buttonLogin {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .8px;
+        color: yellow;
+        background-color: transparent;
+        padding: 0;
+        padding-left: 15px;
+        margin: 0;
+        margin-top: 20px;
+    }
+    
+    .buttonLogin:hover {
+        color: #fff;
+    }
+    
+    .containerNameAndButton {
+       display: none;
+    }
+
+
+}

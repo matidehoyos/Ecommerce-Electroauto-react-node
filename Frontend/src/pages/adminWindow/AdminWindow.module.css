@@ -1,0 +1,173 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: start;
+    background-color: #cacaca;
+}
+
+.subContainer {
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+    padding: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.estadisticas {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.cardContainer {
+    width: 120px;
+    height: auto;
+    padding: 0px;
+    margin: 0;
+    margin-right: 10px;
+    background-color: #111;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer:hover {
+    background-color: #343434;
+}
+
+.cardContainer h3 {
+    width: 90%;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0;
+    color: bisque;
+    text-align: center; 
+    border-bottom: .3px solid bisque;
+}
+
+.cardContainer p {
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    font-weight: 600;
+    color: bisque;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.caja {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        background-color: #cacaca;
+    }
+    
+    .subContainer {
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+        padding: 0px;
+        padding-top: 0px;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    
+    .estadisticas {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+    }
+    
+    .cardContainer {
+        width: auto;
+        height: auto;
+        padding: 0px;
+        margin: 0;
+        margin-right: 5px;
+        background-color: #111;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cardContainer:hover {
+        background-color: #343434;
+    }
+    
+    .cardContainer h3 {
+        width: auto;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 5px 8px;
+        margin: 0;
+        color: bisque;
+        text-align: center; 
+        border-bottom: .3px solid bisque;
+    }
+    
+    .cardContainer p {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        font-weight: 600;
+        color: bisque;
+        text-align: center;
+        padding: 8px 0px;
+        margin: 0;
+    }
+    
+    .caja {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+
+
+}

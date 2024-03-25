@@ -1,0 +1,123 @@
+.container {
+    width: auto;
+    height: auto;
+    background-color: rgb(240,240,240);
+}
+
+.cardsContainer {
+        width: 86%;
+        min-height: 520px;
+        padding: 60px 0px;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+    }
+
+.notFoundBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productoNotFound {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+}
+
+.verTienda {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 14px;
+    background-color: #222;
+    color: #fff;
+    margin: 0px auto;
+}
+
+.icon {
+    font-size: 16px;
+    margin-right: 6px;
+    position: relative;
+    top: 2px;
+}
+
+.verTienda:hover {
+    background-color: #000;
+}
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
+    .container {
+        width: auto;
+        height: auto;
+        background-color: rgb(240,240,240);
+    }
+    
+    .cardsContainer {
+            width: 100%;
+            min-height: 100vh;
+            padding: 30px 0px;
+            margin: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: stretch;
+            background-color: rgb(240, 240, 240); 
+            gap: 30px 0px;
+        }
+       
+    .notFoundBox {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .productoNotFound {
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #222;
+        text-align: center;
+    }
+    
+    .verTienda {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 4px 8px;
+        background-color: #222;
+        color: #fff;
+        margin: 0px auto;
+    }
+    
+    .icon {
+        font-size: 14px;
+        margin-right: 6px;
+        position: relative;
+        top: 2px;
+    }
+    
+    .verTienda:hover {
+        background-color: #000;
+    }
+
+}
