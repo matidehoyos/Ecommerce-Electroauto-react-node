@@ -159,11 +159,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-image: url('https://jspolarizados.com.ar/wp-content/uploads/2023/06/cree-led-para-auto.jpg');
-    background-color: #000;
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
+    background-color: yellow;
     overflow-x: hidden;
     animation: backd 1.5s ease-in-out 1;
 }
@@ -178,10 +174,10 @@
   }
 
 .texto {
-    width: auto;
+    width: 100%;
     height: auto;
     padding: 0;
-    padding-top: 220px;
+    padding-top: 320px;
     padding-bottom: 120px;
     margin: 0;
     display: flex;
@@ -191,6 +187,7 @@
     position: relative;
     white-space: nowrap;
     animation: desplazamiento 2.2s ease-in-out 1;
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .carritoModal {
@@ -215,7 +212,7 @@
     text-align: center;
     margin: 0;
     margin-bottom: 8px;
-    color: gold;
+    color: yellow;
 }
 
 .texto h5 {

@@ -5,6 +5,21 @@
 }
 
 body {
-  color: #0c1c6b;
-  background-color: #0c1c6b;
+  color: rgb(27,27,27);
+  background-color: rgb(27,27,27)
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  border: none;
+  outline: none;
 }

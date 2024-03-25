@@ -40,11 +40,11 @@
   .container { 
     width: auto;
     height: 18px;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgba(255, 217, 0, 0.668);
-    padding: 5px 0px;
+    background-color: #0c1c6b;
+    padding: 2px 0px;
     margin: 0;
     overflow-x: hidden;
     overflow-y: hidden;

@@ -41,7 +41,7 @@ const NavBar = () => {
   }
 
   return (
-    <div className={style.NavBarContainer}>
+    <div className={style.container}>
 
       <div className={style.firstRow}>
            <div className={style.logo}>

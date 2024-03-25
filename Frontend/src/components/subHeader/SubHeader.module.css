@@ -186,7 +186,7 @@
         background-size: contain;
         background-position: 0px 100px;
         background-repeat: no-repeat;
-        background-color: rgba(255, 217, 0, 0.647);
+        background-color: #fff;
         gap: 0px;
         overflow-x: scroll;
     }
@@ -200,14 +200,14 @@
         justify-content: center;
         align-items: center;
         padding: 0px;
-        padding-bottom:20px;
-        margin: 60px 0px;
+        padding-bottom: 20px;
+        margin: 80px 0px;
         background-color: white;
         transform: translateX(200%);
         transition: transform 1.6s ease-out;
         overflow-x: hidden;
         border: none;
-        box-shadow: 0px 0px 30px rgba(256, 256, 256, .6);
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);
         border-radius: 4px;
     }
     
@@ -290,7 +290,7 @@
         margin-right: 5px;
         position: relative;
         top: 3px;
-        color: rgba(255, 217, 0, 0.76);
+        color: #fff;
     }
         
         .carrusel {
@@ -305,7 +305,7 @@
             justify-content: start;
             align-items: center;
             border-radius: 0px;
-            background-color: white;  
+            background-color: rgb(166, 145, 26);  
             transform: translateY(150%);
             transition: transform 1.3s ease-out;
             overflow-y: inherit;
@@ -322,7 +322,7 @@
         .carrusel .box {
             width: 280px;
             height: auto;
-            background-color: rgb(176, 153, 21);
+            background-color: #fff;
             border-radius: 4px;
             border: 1px solid gold;
             margin: 0px 15px;
@@ -337,7 +337,7 @@
             padding: 7px 0px;
             margin: 0;
             text-align: center;
-            color: #fff;
+            color: #333;
         }
     
         .boxImg {
