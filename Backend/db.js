@@ -1,11 +1,11 @@
-require('dotenv').config();
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
+require("dotenv").config();
 const { DATABASE_URL } = process.env;
 
 const sequelize = new Sequelize(
-   "postgresql://postgres:EQrvjNteygMkNDXFtmqOApICfeYGUcvp@monorail.proxy.rlwy.net:37297/railway", {
+   DATABASE_URL, {
       dialect: 'postgres', 
       protocol: 'postgres',
       dialectOptions: {
