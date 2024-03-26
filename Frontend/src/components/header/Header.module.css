@@ -50,6 +50,10 @@
     }
   }
 
+  .texto span {
+    display: none;
+  }
+
 .texto h1 {
     width: auto;
     height: auto;
@@ -161,9 +165,10 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
-    background-color: rgb(255, 255, 133);
-    background-image: url('../../../public/bgcar.jpeg');
+    align-items: start;
+    background-color: #fff;
+    background-image: url('../../../public/jd.png');
+    background-position: center;
     background-size: cover;
     overflow-x: hidden;
     animation: backd 1.5s ease-in-out 1;
@@ -171,30 +176,30 @@
 
 @keyframes backd {
     0% {
-      background-image: url('../../../public/bgcar.jpeg');
+      background-image: url('../../../public/jd.png');
     }
     100% {
-      background-image: url('../../../public/bgcar.jpeg');
+      background-image: url('../../../public/jd.png');
     }
   }
 
 .texto {
-    width: 100%;
+    width: auto;
     height: auto;
-    padding:  0px;
+    padding: 20px 15px;
     margin: 0;
-    padding-bottom: 190px;
-    padding-top: 160px;
+    margin-top: 110px;
+    margin-bottom: 320px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+    justify-content: start;
+    align-items: start; 
     position: relative;
     white-space: nowrap;
     animation: desplazamiento 2.2s ease-in-out 1;
-    background-color:rgba(0, 0, 0, .6);
-    backdrop-filter: blur(5px);
-    border-radius: 4px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0);
+
 }
 
 .carritoModal {
@@ -210,48 +215,56 @@
     }
   }
 
+.texto span {
+  display: block;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .texto h1 {
     width: auto;
     height: auto;
-    font-size: 36px;
-    font-weight: 400;
-    text-shadow: 1px 1px 1px #000;
+    font-size: 30px;
+    font-weight: 500;
     letter-spacing: .2px;
-    text-align: center;
+    text-align: left;
     margin: 0;
-    margin-bottom: 2px;
-    color: yellow; 
+    margin-bottom: 8px;
+    color:  #0c1c6b;
 }
+
+
 
 .texto h5 {
     width: auto;
     height: auto;
-    font-size: 20px;
-    font-weight: 400;
-    text-shadow: .6px .6px .6pc #000;
+    font-size: 18px;
+    font-weight: 600;
     letter-spacing: .3px;
-    text-align: center;
+    text-align: left;
     margin: 0;
-    color: #fff;
+    color: rgba(0, 0, 0, .7);
 }
 
 .envios {
     width: auto;
     height: auto;
-    margin: 0px auto;
+    margin: 0px;
     margin-top: 10px;
+    padding: 0;
 }
 
 .envios h6 {
     width: auto;
     height: auto;
     font-size: 14px;
-    font-weight: 300;
-    text-align: center;
+    font-weight: 500;
+    text-align: left;
     margin: 0px auto;
     margin-bottom: 2px;
-    padding: 0px 10px;
-    color: rgba(256,256,256,.8);
+    padding: 0px;
+    color: rgba(90,90,90,1);
     border-radius: 2px;
     background: none;
 }
@@ -264,17 +277,21 @@
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
-  margin-top: 25px;
+  justify-content: left;
+  margin-top: 20px;
 }
 
 .visita button {
   width: auto;
   height: auto;
   font-size: 14px;
-  padding: 8px 16px;
-  background-color: rgba(256, 256, 256, .06);
-  border: 1px solid #fff;
+  font-weight: 500;
+  padding: 3px 6px;
+  background-color: rgba(0, 0, 0, .06);
+  border: 1px solid rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, .5);
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
 }
 
 .kartButton {

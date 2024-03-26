@@ -8,6 +8,7 @@ const Header = () => {
     return (
       <div className={style.container}>
         <div className={style.texto}>
+          <span>Somos</span>
             <h1>ELECTROAUTO</h1>
             <h5>ACCESORIOS PARA TU VEHICULO</h5>
             <div className={style.envios}>

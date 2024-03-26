@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom'
 import style from './SubHeader.module.css'
 import { FaCheck } from "react-icons/fa";
+import Populares from '../populares/Populares';
 
 const SubHeader = () => {
   const [showCarrusel, setShowCarrusel] = useState(false);
@@ -49,39 +50,45 @@ const SubHeader = () => {
                 <p><FaCheck className={style.ico}/>MAS DE 10 AÑOS DE EXPERIENCIA</p>
             </div>
         </div>
+        <div className={style.populares}>
+            <Populares />
+        </div>
         <div ref={carruselRef} className={`${style.carrusel} ${showCarrusel ? style.animate : ''}`}>
-            <div className={style.box}>
-          <Link to="/iluminacion">
-                <h4>Iluminacion</h4>
-                <div className={style.boxImg}>
-                    <img src="iluminacion2.jpeg" alt="imagen luz led" />
+            <div className={style.carrusaCajasContainer}>
+                <div className={style.box}>
+              <Link to="/iluminacion">
+                    <h4>Iluminacion</h4>
+                    <div className={style.boxImg}>
+                        <img src="iluminacion2.jpeg" alt="imagen luz led" />
+                    </div>
+              </Link>
                 </div>
-          </Link>
-            </div>
-            <div className={style.box}>
-          <Link to="/audio">
-                <h4>Audio</h4>
-                <div className={style.boxImg}>
-                    <img src="parlante1.jpeg" alt="parlante audio" />
+                <div className={style.box}>
+              <Link to="/audio">
+                    <h4>Audio</h4>
+                    <div className={style.boxImg}>
+                        <img src="parlante1.jpeg" alt="parlante audio" />
+                    </div>
+              </Link>
                 </div>
-          </Link>
-            </div>
-            <div className={style.box}>
-          <Link to="/accesorios">
-                <h4>Accesorios</h4>
-                <div className={style.boxImg}>
-                    <img src="creeled1.jpeg" alt="imagen toxicshine" />
+                <div className={style.box}>
+              <Link to="/accesorios">
+                    <h4>Accesorios</h4>
+                    <div className={style.boxImg}>
+                        <img src="creeled1.jpeg" alt="imagen toxicshine" />
+                    </div>
+              </Link>
                 </div>
-          </Link>
-            </div>
-            <div className={style.box}>
-          <Link to="/seguridad">
-              <h4>Seguridad</h4>
-              <div className={style.boxImg}>
-                  <img src="seguridad1.jpeg" alt="imagen cierre centralizado" />
+                <div className={style.box}>
+              <Link to="/seguridad">
+                  <h4>Seguridad</h4>
+                  <div className={style.boxImg}>
+                      <img src="seguridad1.jpeg" alt="imagen cierre centralizado" />
+                  </div>
+              </Link> 
               </div>
-          </Link> 
-          </div>
+
+            </div>
         </div>
     </div>
   );

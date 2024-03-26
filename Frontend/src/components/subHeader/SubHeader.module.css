@@ -173,7 +173,9 @@
         border-radius: 6px;
     }
 
-
+.populares {
+    display: none;
+}
 
     /* Estilos para mobile ----------------------------------------------------------*/
 
@@ -206,7 +208,7 @@
         align-items: center;
         padding: 30px 0px;
         margin: 0px 0px;
-        background-color: rgb(255, 255, 143);
+        background-color: #d2d9ff;
         transform: translateX(-120%);
         transition: transform 1.6s ease-out;
         overflow-x: hidden;
@@ -305,25 +307,44 @@
         color: #0c1c6b;
     }
         
+    .populares {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding-bottom: 60px;
+    }
+
+
         .carrusel {
             width: 100%;
             height: auto;
-            padding: 60px 0px;
+            padding: 0;
             padding-left: 10px;
             margin: 0px;
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: scroll;
-            justify-content: start;
-            align-items: center;
             border-radius: 0px;
             background-color: #fff;  
             transform: translateX(150%);
             transition: transform 1.3s ease-out;
             overflow-y: inherit;
         }
+
+        .carrusaCajasContainer {
+            width: 100%;
+            height: auto; 
+            padding: 80px 0px;
+            padding-bottom: 40px;
+            margin: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            justify-content: start;
+            align-items: center;
+        }
           
-        .carrusel::-webkit-scrollbar {
+        .carrusaCajasContainer::-webkit-scrollbar {
             display: none;
           }
 
@@ -332,14 +353,14 @@
           }
     
         .carrusel .box {
-            width: 280px;
+            width: 220px;
             height: auto;
-            background-color: hsl(60, 100%, 64%);
+            background-color: #222;
             border-radius: 4px;
-            border: 1px solid #fff;
+            border: 1px solid #222;
             margin: 0px 15px;
             padding: 0;
-            box-shadow: 0px 0px 20px rgba(0,0,0,.6);
+            box-shadow: 0px 0px 40px rgba(0,0,0,.6);
               }
     
         .box h4 {
@@ -349,23 +370,23 @@
             padding: 7px 0px;
             margin: 0;
             text-align: center;
-            color: #222;
+            color: rgba(240,240,240,1);
         }
     
         .boxImg {
-            width: 270px;
-            height: auto;
-            padding: 5px;
+            width: 220px;
+            height: 190px;
+            padding: 0px;
             display: flex;
             justify-content: center;
             border-radius: 4px;
-            border: 1px solid #fff;
         }
     
         .boxImg img {
-            width: 270px;
-            height: auto;
+            width: 220px;
+            height: 190px;
             border-radius: 4px;
+            object-fit: cover;
         }
     
 }

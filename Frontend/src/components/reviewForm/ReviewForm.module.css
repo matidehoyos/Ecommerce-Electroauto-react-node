@@ -97,12 +97,12 @@ textarea {
     }
     
     .form {
-        width: auto;
+        width: 90%;
         height: auto;
         padding: 20px;
         margin: 0px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
-        background-color: #0c1c6b;
+        background-color: #7990ff;
         border-radius: 4px;
     }
     
