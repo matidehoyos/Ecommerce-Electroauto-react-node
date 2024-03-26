@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import { FaShoppingCart, FaTrashAlt } from 'react-icons/fa';
 import CarritoContext from '../../components/carritoContext/CarritoContext';
 import style from './BotonFlotanteCart.module.css'
-import { Wallet, initMercadoPago } from '@mercadopago/sdk-react';
+//import { Wallet, initMercadoPago } from '@mercadopago/sdk-react';
 
 const credMp = 'TEST-f3c67e82-99f3-485b-9002-d216c9a4f7db'
 
@@ -18,9 +18,9 @@ const BotonFlotanteCart = () => {
         setUser(userLocalStorage);
     }, []);
 
-    useEffect(() => {
+    {/*useEffect(() => {
         initMercadoPago(credMp, { locale: 'es-AR' });
-      }, []);
+      }, []); */ }
     
     const createPreference = async () => {
         try {
@@ -122,11 +122,11 @@ const BotonFlotanteCart = () => {
                             { preferenceId && ( 
                         <button className={style.CarroButton} onClick={handleBuy}><span className={style.cantidad}>{carrito?.length}</span></button>
                             )}
-                            { preferenceId && ( 
+                            {/* preferenceId && ( 
                                <div className={style.wallet}>
-                                 <Wallet initialization={{preferenceId: preferenceId}}  />
+                                 <Wallet initialization={{preferenceId: preferenceId}}  />}
                                 </div> 
-                             )} 
+                            ) */} 
                           <button className={user.name ? style.botonProcesar : style.disabledProcesar} disabled={!user.name} >Procesar compra</button>
                     </div>
             </Modal>
