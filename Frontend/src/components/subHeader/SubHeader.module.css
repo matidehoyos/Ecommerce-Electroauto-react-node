@@ -195,26 +195,31 @@
         background-repeat: no-repeat;
         background-color: #fff;
         gap: 0px;
-        overflow-x: scroll;
+        overflow-x: hidden;
     }
     
     
     .mercadoLibre { 
-        width: 100%;
+        width: 76%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 30px 0px;
-        margin: 0px 0px;
-        background-color: rgb(255, 255, 75);
+        padding: 20px 0px;
+        margin: 60px 0px;
+        background-color: yellow;
         transform: translateX(-120%);
         transition: transform 1.6s ease-out;
         overflow-x: hidden;
         border: none;
         box-shadow: none;
-        border-radius: none;
+        border-radius: 4px;
+        border: 1px solid #0c1c6b;
+    }
+
+    .mercadoLibre::-webkit-scrollbar {
+        display: none;
     }
     
     .mercadoLibre.animateRight {
@@ -260,8 +265,8 @@
     
     .mercadoTexto h3 {
         width: 100%;
-        font-size: 24px;
-        font-weight: 500;
+        font-size: 22px;
+        font-weight: 700;
         line-height: 30px;
         letter-spacing: .5px;
         font-style: italic;
@@ -329,7 +334,7 @@
             padding: 0px 10px;
             margin: 0px;
             border-radius: 0px;
-            background-color: #ebebeb;  
+            background-color: #747474;  
             transform: translateX(150%);
             transition: transform 1.3s ease-out;
             overflow-y: inherit;
@@ -395,11 +400,12 @@
             margin: 0;
             text-align: center;
             color: rgba(0,0,0,.8);
+            border-bottom: 1px solid #333;
         }
     
         .boxImg {
-            width: 220px;
-            height: 190px;
+            width: 180px;
+            height: 180px;
             padding: 0px;
             display: flex;
             justify-content: center;
@@ -407,8 +413,8 @@
         }
     
         .boxImg img {
-            width: 220px;
-            height: 190px;
+            width: 180px;
+            height: 180px;
             border-radius: 4px;
             object-fit: cover;
         }

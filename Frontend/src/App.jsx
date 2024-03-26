@@ -4,7 +4,7 @@ import Home from './pages/home/Home'
 import AdminWindow from './pages/adminWindow/AdminWindow'
 import Usuarios from './components/adminUtil/usuarios/Usuarios'
 import Tienda from './pages/tienda/Tienda'
-import Carrito from './pages/carrito/Carrito'
+import Carrito from './components/carrito/Carrito'
 import ContactUs from './pages/contactUs/ContactUs'
 import Productos from './components/productos/Productos'
 import ProductoDetail from './components/productoDetail/ProductoDetail'
@@ -14,8 +14,8 @@ import axios from "axios";
 import CarritoContext from './components/carritoContext/CarritoContext';
 import { useState } from 'react';
 
- axios.defaults.baseURL = 'https://electrocar-production.up.railway.app'
- // axios.defaults.baseURL = 'http://localhost:3000'
+ // axios.defaults.baseURL = 'https://electrocar-production.up.railway.app'
+ axios.defaults.baseURL = 'http://localhost:3000'
 
 function App() {
   const [carrito, setCarrito] = useState(JSON.parse(localStorage.getItem('carrito')) || []);

@@ -161,14 +161,13 @@
     height: calc(100vh);
     margin: 0;
     padding: 0;
-    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     background-color: #fff;
     background-image: url('../../../public/bgposta1.jpg');
-    background-position: top;
+    background-position: right;
     background-size: cover;
     overflow-x: hidden;
     animation: backd 1.5s ease-in-out 1;
@@ -188,8 +187,7 @@
     height: auto;
     padding: 20px 15px;
     margin: 0;
-    margin-top: 110px;
-    margin-bottom: 320px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -198,8 +196,7 @@
     white-space: nowrap;
     animation: desplazamiento 2.2s ease-in-out 1;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, .6);
-    backdrop-filter: blur(10px);
+    background-color: transparent;
 
 }
 
@@ -221,7 +218,7 @@
   font-style: italic;
   font-weight: 400;
   font-size: 14px;
-  color: rgba(256,256,256,.6);
+  color: rgba(256,256,256,.8);
 }
 
 .texto h1 {
@@ -246,7 +243,7 @@
     letter-spacing: .3px;
     text-align: left;
     margin: 0;
-    color: rgba(256, 256, 256, .9);
+    color: rgba(256, 256, 256, 1);
 }
 
 .envios {
@@ -266,7 +263,7 @@
     margin: 0px auto;
     margin-bottom: 2px;
     padding: 0px;
-    color: rgba(256,256,256,.6);
+    color: rgba(256,256,256,.8);
     border-radius: 2px;
     background: none;
 }

@@ -19,7 +19,7 @@
     margin-top: 20px;
     -webkit-transition: 0.3s;
     transition: 0.5s;
-    border-top: .5px solid #ffffff1e;
+    border-top: .5px solid #333;
 }
 
 .imgAndNameContainer {
@@ -51,9 +51,9 @@
 }
 
 .imgAndName h2 {
-    color: #fff;
+    color: #222;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 16px;
     margin-left: 5px;
 }
@@ -85,7 +85,7 @@
     font-size: 20px;
     text-align: left;
     background-color: transparent;
-    color: gold;
+    color: #111;
     border: none;
     padding: 0;
     margin: 0;
