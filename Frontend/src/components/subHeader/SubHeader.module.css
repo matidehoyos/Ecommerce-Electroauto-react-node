@@ -233,7 +233,7 @@
         height: 120px;
         margin: 0;
         padding: 0;
-        content: url("./lm.png");
+        content: url("lm.png");
         object-fit: scale-down;
       }
     

@@ -147,7 +147,7 @@
   .logo img {
     width: 90%;
     height: auto;
-    content: url("./logoMobile.png");
+    content: url("logoMobile.png");
     animation: desplazamiento 3s ease-in-out 1;
     padding: 0;
     margin: 0;

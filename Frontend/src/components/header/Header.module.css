@@ -163,7 +163,7 @@
     justify-content: start;
     align-items: center;
     background-color: rgb(255, 255, 133);
-    background-image: url('./bgcar.jpeg');
+    background-image: url('bgcar.jpeg');
     background-size: cover;
     overflow-x: hidden;
     animation: backd 1.5s ease-in-out 1;
@@ -171,10 +171,10 @@
 
 @keyframes backd {
     0% {
-      background-image: url('./bgcar.jpeg');
+      background-image: url('bgcar.jpeg');
     }
     100% {
-      background-image: url('./bgcar.jpeg');
+      background-image: url('bgcar.jpeg');
     }
   }
 
