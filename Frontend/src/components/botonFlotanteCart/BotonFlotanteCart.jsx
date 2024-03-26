@@ -58,6 +58,7 @@ const BotonFlotanteCart = () => {
     return (
         <div className={style.modalCarrito}>
             <button className={style.kartButton} onClick={openModal}><FaShoppingCart /></button>
+            <div style={{display:'none'}}>
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
@@ -122,14 +123,17 @@ const BotonFlotanteCart = () => {
                             { preferenceId && ( 
                         <button className={style.CarroButton} onClick={handleBuy}><span className={style.cantidad}>{carrito?.length}</span></button>
                             )}
-                            {/* preferenceId && ( 
+                            { /* preferenceId && ( 
                                <div className={style.wallet}>
                                  <Wallet initialization={{preferenceId: preferenceId}}  />}
                                 </div> 
-                            ) */} 
+                             ) */
+                             } 
                           <button className={user.name ? style.botonProcesar : style.disabledProcesar} disabled={!user.name} >Procesar compra</button>
                     </div>
-            </Modal>
+            </Modal> 
+            </div>
+                            
         </div>
     );
 };
