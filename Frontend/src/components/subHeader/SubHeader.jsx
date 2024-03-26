@@ -38,22 +38,11 @@ const SubHeader = () => {
 
   return (
     <div className={style.container}>
-        <div ref={mercadoLibreRef} className={`${style.mercadoLibre} ${showMercadoLibre ? style.animateRight : ''}`}>
-            <div className={style.imgML}>
-                <img src="ml.png" alt="mercadolibre" />
-            </div>
-            <div className={style.mercadoTexto}>
-                <span>SOMOS</span>
-                <h3>MERCADO LIBRE <br/> LIDER PLATINIUM</h3>
-                <h6>COMPRA CON CONFIANZA</h6>
-                <p><FaCheck className={style.ico}/>MAS DE 10 MIL VENTAS</p>
-                <p><FaCheck className={style.ico}/>MAS DE 10 AÑOS DE EXPERIENCIA</p>
-            </div>
-        </div>
         <div className={style.populares}>
             <Populares />
         </div>
         <div ref={carruselRef} className={`${style.carrusel} ${showCarrusel ? style.animate : ''}`}>
+            <h4>Categorias</h4>
             <div className={style.carrusaCajasContainer}>
                 <div className={style.box}>
               <Link to="/iluminacion">
@@ -87,7 +76,18 @@ const SubHeader = () => {
                   </div>
               </Link> 
               </div>
-
+            </div>
+        </div>
+        <div ref={mercadoLibreRef} className={`${style.mercadoLibre} ${showMercadoLibre ? style.animateRight : ''}`}>
+            <div className={style.imgML}>
+                <img src="ml.png" alt="mercadolibre" />
+            </div>
+            <div className={style.mercadoTexto}>
+                <span>SOMOS</span>
+                <h3>MERCADO LIBRE <br/> LIDER PLATINIUM</h3>
+                <h6>COMPRA CON CONFIANZA</h6>
+                <p><FaCheck className={style.ico}/>MAS DE 10 MIL VENTAS</p>
+                <p><FaCheck className={style.ico}/>MAS DE 10 AÑOS DE EXPERIENCIA</p>
             </div>
         </div>
     </div>

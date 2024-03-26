@@ -115,7 +115,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.6);
     position: fixed;
     z-index: 4000;
     box-shadow: none;
@@ -164,15 +164,15 @@
   }
   
   .menu {
-    width: 96vw;
+    width: 100vw;
     height: calc(100vh - 160px);
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    background-color: #121212;
+    background-color: #0f0f0f;
     position: absolute;
-    top: 60px;
+    top: 58px;
     left: -800;
     transition: 1.8s all;
     z-index: 2000;

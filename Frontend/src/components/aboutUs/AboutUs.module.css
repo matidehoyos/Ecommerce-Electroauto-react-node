@@ -65,7 +65,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #637dff;
+        background-color: #333;
         transform: translateY(15%);
         transition: transform .6s ease-out;
         overflow-x: hidden;
