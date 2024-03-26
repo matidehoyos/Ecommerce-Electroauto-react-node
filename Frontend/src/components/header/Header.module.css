@@ -145,6 +145,8 @@
   z-index: 4000;
 }
 
+.mayor { display: none;}
+.visita {display: none;}
 
 /* Estilos para mobile ----------------------------------------------------------*/
 
@@ -155,36 +157,34 @@
     height: auto;
     margin: 0;
     padding: 0;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-color: #fff;
-    background-image: URL("BKM.png");
-    background-position: right bottom;
-    background-size: 80%;
-    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 133);
+    background-image: url('./bgcar.jpeg');
+    background-size: cover;
     overflow-x: hidden;
     animation: backd 1.5s ease-in-out 1;
 }
 
 @keyframes backd {
     0% {
-      background-image: none;
+      background-image: url('./bgcar.jpeg');
     }
     100% {
-      background-image: url("https://jspolarizados.com.ar/wp-content/uploads/2023/06/cree-led-para-auto.jpg");
+      background-image: url('./bgcar.jpeg');
     }
   }
 
 .texto {
     width: 100%;
     height: auto;
-    padding: 0;
-    padding-top: 160px;
-    padding-bottom: 190px;
+    padding:  0px;
     margin: 0;
+    padding-bottom: 190px;
+    padding-top: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,7 +192,9 @@
     position: relative;
     white-space: nowrap;
     animation: desplazamiento 2.2s ease-in-out 1;
-    background-color: transparent;
+    background-color:rgba(0, 0, 0, .6);
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
 }
 
 .carritoModal {
@@ -211,44 +213,68 @@
 .texto h1 {
     width: auto;
     height: auto;
-    font-size: 34px;
-    font-weight: 700;
-    letter-spacing: .6px;
+    font-size: 36px;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: .2px;
     text-align: center;
     margin: 0;
     margin-bottom: 2px;
-    color: #0c1c6b; 
+    color: yellow; 
 }
 
 .texto h5 {
     width: auto;
     height: auto;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: .5px;
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: .6px .6px .6pc #000;
+    letter-spacing: .3px;
     text-align: center;
     margin: 0;
-    color: #111;
+    color: #fff;
 }
 
 .envios {
     width: auto;
     height: auto;
     margin: 0px auto;
-    margin-top: 6px;
+    margin-top: 10px;
 }
 
 .envios h6 {
     width: auto;
     height: auto;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 300;
     text-align: center;
     margin: 0px auto;
-    padding: 4px 10px;
-    background-color: gold;
-    color: #000;
+    margin-bottom: 2px;
+    padding: 0px 10px;
+    color: rgba(256,256,256,.8);
     border-radius: 2px;
+    background: none;
+}
+
+.mayor {
+  display: block;
+}
+
+.visita {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.visita button {
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  padding: 8px 16px;
+  background-color: rgba(256, 256, 256, .06);
+  border: 1px solid #fff;
 }
 
 .kartButton {

@@ -60,6 +60,10 @@
     justify-content: start;
 }
 
+.mercadoTexto span {
+    display: none;
+}
+
 .mercadoTexto h3 {
     width: 100%;
     font-size: 38px;
@@ -170,6 +174,7 @@
     }
 
 
+
     /* Estilos para mobile ----------------------------------------------------------*/
 
 @media only screen and (max-width: 680px) {
@@ -180,35 +185,34 @@
         padding: 0px;
         margin: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         background-image: url('./ELECT.png');
         background-size: contain;
         background-position: 0px 100px;
         background-repeat: no-repeat;
-        background-color: #0c1c6b;
+        background-color: #fff;
         gap: 0px;
         overflow-x: scroll;
     }
     
     
     .mercadoLibre { 
-        width: 84%;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px;
-        padding-bottom: 20px;
-        margin: 80px 0px;
-        background-color: white;
-        transform: translateX(200%);
+        padding: 30px 0px;
+        margin: 0px 0px;
+        background-color: rgb(255, 255, 143);
+        transform: translateX(-120%);
         transition: transform 1.6s ease-out;
         overflow-x: hidden;
         border: none;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);
-        border-radius: 4px;
+        box-shadow: none;
+        border-radius: none;
     }
     
     .mercadoLibre.animateRight {
@@ -226,7 +230,7 @@
     
     .imgML img {
         width: 240px;
-        height: 140px;
+        height: 120px;
         margin: 0;
         padding: 0;
         content: url("./lm.png");
@@ -241,7 +245,15 @@
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        padding: 20px;
+        padding: 0px 20px;
+    }
+
+    .mercadoTexto span {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: italic;
+        color: #0c1c6b;
     }
     
     .mercadoTexto h3 {
@@ -277,27 +289,27 @@
         font-weight: 600;
         letter-spacing: .7px;
         text-align: center;
-        padding: 0;
+        padding: 0px;
         margin: 0;
         margin-bottom: 4px;
         color: #0c1c6b;
         font-style: italic;
-        background-color: gold;
+        background-color: rgba(240,240,240,.2);
     }
     
     .ico {
         font-size: 12px;
         margin-right: 5px;
         position: relative;
-        top: 3px;
-        color: #fff;
+        top: 0px;
+        color: #0c1c6b;
     }
         
         .carrusel {
             width: 100%;
             height: auto;
             padding: 60px 0px;
-            padding-left: 30px;
+            padding-left: 10px;
             margin: 0px;
             display: flex;
             flex-wrap: nowrap;
@@ -305,8 +317,8 @@
             justify-content: start;
             align-items: center;
             border-radius: 0px;
-            background-color: rgb(166, 145, 26);  
-            transform: translateY(150%);
+            background-color: #fff;  
+            transform: translateX(150%);
             transition: transform 1.3s ease-out;
             overflow-y: inherit;
         }
@@ -316,15 +328,15 @@
           }
 
         .carrusel.animate {
-            transform: translateY(0);
+            transform: translateX(0);
           }
     
         .carrusel .box {
             width: 280px;
             height: auto;
-            background-color: #fff;
+            background-color: hsl(60, 100%, 64%);
             border-radius: 4px;
-            border: 1px solid gold;
+            border: 1px solid #fff;
             margin: 0px 15px;
             padding: 0;
             box-shadow: 0px 0px 20px rgba(0,0,0,.6);
@@ -337,7 +349,7 @@
             padding: 7px 0px;
             margin: 0;
             text-align: center;
-            color: #333;
+            color: #222;
         }
     
         .boxImg {
@@ -347,6 +359,7 @@
             display: flex;
             justify-content: center;
             border-radius: 4px;
+            border: 1px solid #fff;
         }
     
         .boxImg img {

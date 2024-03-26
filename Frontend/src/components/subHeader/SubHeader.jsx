@@ -42,6 +42,7 @@ const SubHeader = () => {
                 <img src="ml.png" alt="mercadolibre" />
             </div>
             <div className={style.mercadoTexto}>
+                <span>SOMOS</span>
                 <h3>MERCADO LIBRE <br/> LIDER PLATINIUM</h3>
                 <h6>COMPRA CON CONFIANZA</h6>
                 <p><FaCheck className={style.ico}/>MAS DE 10 MIL VENTAS</p>
