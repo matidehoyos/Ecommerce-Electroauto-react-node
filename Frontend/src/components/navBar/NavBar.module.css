@@ -115,7 +115,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background-color: transparent;
+    background-color: #0c1c6b;
     position: absolute;
     z-index: 4000;
   }
@@ -171,7 +171,7 @@
     justify-content: start;
     background-color: rgba(0,0,0,.9);
     position: absolute;
-    top: 76px;
+    top: 57px;
     left: -800;
     transition: 1.8s all;
     z-index: 2000;
