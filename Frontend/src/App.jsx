@@ -23,7 +23,7 @@ function App() {
   return (
     <div>
         <CarritoContext.Provider value={{ carrito, setCarrito }} >
-            <BotonFlotanteCart /> 
+         {/*}   <BotonFlotanteCart /> */ }
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/tienda" element={<Tienda />}></Route>
