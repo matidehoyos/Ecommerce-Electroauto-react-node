@@ -39,7 +39,6 @@ const SubHeader = () => {
 
   return (
     <div className={style.container}>
-      <Carrito />
         <div className={style.populares}>
             <Populares />
         </div>
