@@ -2,12 +2,12 @@ import React, { useContext, useEffect, useState } from 'react';
 import style from './Carrito.module.css'
 import CarritoContext from '../carritoContext/CarritoContext';
 import { Link } from 'react-router-dom';
-import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
+//import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
 import axios from 'axios';
 import { FaTrashAlt } from 'react-icons/fa';
 
 
-const credMp = 'TEST-f3c67e82-99f3-485b-9002-d216c9a4f7db'
+//const credMp = 'TEST-f3c67e82-99f3-485b-9002-d216c9a4f7db'
 
 
 
@@ -24,11 +24,12 @@ const Carrito = () => {
         const userLocalStorage = JSON.parse(localStorage.getItem('user')) || [];
         setUser(userLocalStorage);
     }, []);
-
+{/*}
     useEffect(() => {
         initMercadoPago(credMp, { locale: 'es-AR' });
       }, []);
-    
+    */}
+
     const createPreference = async () => {
         try {
             const response = await axios.post('/createPreferenceId', {email: user.email})
@@ -36,7 +37,7 @@ const Carrito = () => {
             return id;
         } catch (error) {
             console.error(error);
-        }
+        } 
 
     
     const eliminarDelCarrito = (idProducto) => {
@@ -97,11 +98,11 @@ console.log('carrito', carrito)
                             { preferenceId && ( 
                         <button className={style.CarroButton} onClick={handleBuy}><span className={style.cantidad}>{carrito?.length}</span></button>
                             )}
-                            { preferenceId && ( 
+                            { /*preferenceId && ( 
                                <div className={style.wallet}>
                                  <Wallet initialization={{preferenceId: preferenceId}}  />
                                 </div> 
-                             )} 
+                            )} */}
                           <button className={user.name ? style.botonProcesar : style.disabledProcesar} disabled={!user.name} >Procesar compra</button>
                     </div>
                     
