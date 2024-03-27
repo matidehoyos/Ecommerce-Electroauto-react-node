@@ -10,9 +10,11 @@ const InfoEnvios = () => {
           <HeaderCarrusel />
         </div>
         <div className={style.text}>
+            <p><FaTruck /></p>
+            <div>
             <h4>ENVIO GRATIS A TODO EL PAÍS</h4>
             <h5>CON TU COMPRA MAYOR A $40.000</h5>
-            <p><FaTruck /></p>
+            </div>
         </div>
     </div>
   );

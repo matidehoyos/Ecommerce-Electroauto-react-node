@@ -27,8 +27,12 @@ const Tienda = () => {
         <div className={style.container}>
             <PreNav />
             <NavBar />
+            
+             <div className={style.search}>
+                     <SearchBar />
+            </div>
             <div className={style.cardsContainer}>
-                <SearchBar />
+            
                 {
                 productos ?
                 productos.map((producto, index) => (
