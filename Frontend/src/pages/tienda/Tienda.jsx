@@ -6,6 +6,7 @@ import productosProvider from '../../utils/provider/productosProvider';
 import { loadProductos } from '../../redux/actions';
 import { useEffect, useState } from 'react';
 import PreNav from '../../components/preNav/PreNav';
+import SearchBar from '../../components/searchBar/SearchBar';
 
 
 const Tienda = () => {
@@ -27,6 +28,7 @@ const Tienda = () => {
             <PreNav />
             <NavBar />
             <div className={style.cardsContainer}>
+                <SearchBar />
                 {
                 productos ?
                 productos.map((producto, index) => (

@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -153,3 +153,181 @@
 }
 
 
+
+/* Estilos para dispositivos móviles ------------------------------- */
+
+@media only screen and (max-width: 680px) {
+
+  .container {
+    width: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .caja {
+    width: auto;
+    height: calc(100vh - 250px);
+    padding: 0 20px;
+    margin: 0;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border-radius: 0px;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: 0px 0px 0px transparent;
+    gap: 0px;
+  }
+  
+  .caja:hover { 
+    box-shadow: 0px 0px 60px transparent;
+  }
+  
+  .imagen {
+    width: 86%;
+    height: 30%;
+    padding: 0px;
+    margin: 0;
+    display: flex;  
+    align-items: none;
+    border-radius: none;
+    border: 0;
+  }
+  
+  .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  
+  .texto {
+    width: auto;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 10px;
+    margin: 0;
+    position: relative;
+  }
+  
+  .texto h6 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0; 
+  }
+  
+  .texto h2 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .corto {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0px;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+  
+  .texto p {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0px;
+  }
+  
+  .botonAgregar {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    bottom: 50px;
+  }
+  
+  .botonKart {
+    width: auto;
+    height: auto;   
+    font-size: 12px;   
+    font-weight: 600;
+    line-height: 14px;
+    padding: 6px 12px;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.1);
+    border-radius: 4px; 
+    color: #fff;
+    background-color: rgba(181, 0, 0, 0.867);
+    margin: 0;
+    margin-top: 10px;
+    text-shadow: 0px 0px 0px transparent;
+  }
+  
+  .icon {
+    font-size: 12px;
+    margin-right: 3px;
+    position: relative;
+    top: 1px;
+  }
+  
+  .botonKart:hover {
+    background-color: rgba(255, 0, 0, 0.714);
+    color: white;
+    
+  }
+  
+  .unidades {
+    width: auto;
+    height: auto;
+    margin: 0px;
+    margin-bottom: 15px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .unidades label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .unidades select {
+    width: auto;
+    height: auto;
+    color: #222;
+    text-align: center;
+    margin: 0px;
+    margin-left: 5px;
+    padding: 0px 6px;
+    border-radius: 2px;
+    border: 1px solid #333;
+    background-color: transparent;
+  }
+
+}

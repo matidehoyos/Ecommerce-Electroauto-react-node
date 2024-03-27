@@ -177,7 +177,7 @@
 
     .container {
         background-color: #fff;
-        width: 175px;
+        width: calc(50vw  - 30px);
         height: auto;
         margin: 0px 10px;
         padding: 0px;
@@ -215,12 +215,13 @@
         width: auto;
         height: auto;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 700;
         text-align: left;
         color: #333;
         padding: 0px;
         padding-left: 5px;
         margin: 0;
+        margin-top: 5px;
     }
     
     
@@ -244,22 +245,22 @@
         width: auto;
         height: auto;
         font-size: 12px;
-        font-weight: 600;
-        color: green;
+        font-weight: 300;
+        color: #000;
         margin: 0px;
         text-align: left;
         padding: 10px 5px;
     }
     
     .stock span {
-        font-weight: 700;
+        font-weight: 400;
     }
     
     .precio {
         width: auto;
         height: auto;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 500;
         color: #333;
         text-align: left;
         padding: 0;
@@ -269,7 +270,7 @@
     
     .precioNumero {
         color: #000;
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 400;
         letter-spacing: -1px;
     }
@@ -283,7 +284,7 @@
         padding: 0px 5px;
         margin: 0px;
         position: absolute;
-        bottom: 8px;
+        bottom: 10px;
     }
     
     .botonKart {
@@ -292,13 +293,13 @@
         font-size: 10px;   
         font-weight: 600;
         line-height: 14px;
-        padding: 4px 8px;
-        text-align: center;
+        padding: 0px 0px;
+        margin-top: 12px;
+        text-align: left;
         color: rgba(255, 0, 0, 0.867);
-        border: 1px solid rgba(255, 0, 0, 0.867);
+        border: none;
         background-color: transparent;
-        box-shadow: 0px 0px 20px rgba(0,0,0,.0);
-        border-radius: 4px;
+        box-shadow: none;
     }
     
     .icon {
@@ -309,11 +310,10 @@
     }
     
     .botonKart:hover {
-        color: #fff;
-        background-color: rgba(255, 0, 0, 0.714);
-        box-shadow: 0px 0px 20px rgba(0,0,0,.4);
+        color: red;
+        background-color: transparent;
+        box-shadow: none;
         border: none;
-    
     }
     
     .unidades {

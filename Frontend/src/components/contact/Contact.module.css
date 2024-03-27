@@ -186,20 +186,23 @@
         height: auto;
         display: flex;
         flex-direction: column;
+        padding-top: 60px;
     }
     
     .titulo {
         width: 100%;
         height: auto;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         margin-top: 5px;
     }
     
     .titulo h3 {
-        font-size: 24px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 600;
         color: #333;
+        text-align: left;
+        padding-left: 15%;
     }
     
     .mediosContacto {
@@ -223,15 +226,15 @@
     }
     
     .form form {
-        width: 86%;
+        width: 84%;
         height: auto;
-        padding: 30px 20px;
+        padding: 30px 10px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         border-radius: 4px;
-        background-color: #595959;
+        background-color: #888888;
     }
     
     .row { 
@@ -242,14 +245,14 @@
     }
     
     .row label {
-        width: 60px;
+        width: 28%;
         text-align: right;
         padding-right: 12px;
         color: #fff;
     }
     
     .row input {
-       width: 220px;
+       width: 72%;
        height: 30px;
        background-color: #fff;
        border: none;
@@ -263,7 +266,7 @@
     }
     
     .row textarea {
-        width: 220px;
+        width: 72%;
         height: 70px;
         background-color: #fff;
         border: none;
@@ -293,11 +296,13 @@
         padding: 7px 14px;
         border-radius: 4px;
         background: #222;
+        color: #fff;
     }
     
     .botonContainer button:hover {
         border: none;
         background: #111;
+        color: #fff;
     }
     
     .wts {

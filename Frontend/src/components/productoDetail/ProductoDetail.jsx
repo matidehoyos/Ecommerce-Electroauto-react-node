@@ -4,7 +4,6 @@ import style from "./ProductoDetail.module.css";
 import { useNavigate } from "react-router-dom";
 import productosProvider from "../../utils/provider/productosProvider";
 import NavBar from "../navBar/NavBar";
-import PreNav from "../preNav/PreNav";
 import { FaShoppingCart } from "react-icons/fa";
 
 
@@ -60,30 +59,31 @@ export default function ProductoDetail() {
 
   return (
     <div className={style.container}>
-      <PreNav /> 
       <NavBar />
-      <div className={style.caja}>
-        <div className={style.imagen}>
-          <img src={product?.imagen} alt={product?.name} />
-        </div>
-        <div className={style.texto}>
-          <h6>{product?.categoria}</h6>
-          <h2>{nombre}</h2>
-          <p>{product?.detalle}</p>
-          <p>{product?.informacion}</p>
-          <div className={style.botonAgregar}>
-            <div className={style.unidades}>
-              <label>Cantidad:</label>
-              <select onChange={handleChange}>
-            {[...Array(20).keys()].map((value, index) => 
-          <option key={index} value={value + 1}>
-            {value + 1} {value === 0 ? 'unidad' : 'unidades'}
-          </option>
-        )}
-            </select> 
-            </div>
-              <button className={style.botonKart} onClick={agregarAlCarrito}><FaShoppingCart className={style.icon}/>AGREGAR AL CARRITO</button>  
-          </div>  
+      <div className={style.cajaContainer}>
+        <div className={style.caja}>
+          <div className={style.imagen}>
+            <img src={product?.imagen} alt={product?.name} />
+          </div>
+          <div className={style.texto}>
+            <h6>{product?.categoria}</h6>
+            <h2>{nombre}</h2>
+            <p className={style.corto}>{product?.detalle}</p>
+            <p>{product?.informacion}</p>
+            <div className={style.botonAgregar}>
+              <div className={style.unidades}>
+                <label>Cantidad:</label>
+                <select onChange={handleChange}>
+              {[...Array(20).keys()].map((value, index) => 
+            <option key={index} value={value + 1}>
+              {value + 1} {value === 0 ? 'unidad' : 'unidades'}
+            </option>
+          )}
+              </select> 
+              </div>
+                <button className={style.botonKart} onClick={agregarAlCarrito}><FaShoppingCart className={style.icon}/>AGREGAR AL CARRITO</button>  
+            </div>  
+          </div>
         </div>
       </div>
     </div>

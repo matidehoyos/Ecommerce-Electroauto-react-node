@@ -24,20 +24,21 @@
 
     .container {
         width: auto;
-        height: auto;
-        background-color: rgb(240,240,240);
+        min-height: 100vh;
+        background-color: rgb(256,256,256);
     }
     
     .cardsContainer {
-            width: 100%;
+            width: auto;
             height: auto;
-            padding: 30px 0px;
+            padding: 10px;
+            padding-top: 70px;
             margin: 0px;
             display: flex;
             flex-wrap: wrap;
             justify-content: start;
             align-items: stretch;
-            background-color: rgb(240, 240, 240);
+            background-color: #fff;
             gap: 30px 0px;
         }
 }
