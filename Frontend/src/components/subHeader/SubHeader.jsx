@@ -49,7 +49,7 @@ const SubHeader = () => {
               <Link to="/iluminacion">
                     <h4>Iluminacion</h4>
                     <div className={style.boxImg}>
-                        <img src="ilu.png" alt="imagen luz led" />
+                        <img src="le.jpeg" alt="imagen luz led" />
                     </div>
               </Link>
                 </div>
@@ -57,7 +57,7 @@ const SubHeader = () => {
               <Link to="/audio">
                     <h4>Audio</h4>
                     <div className={style.boxImg}>
-                        <img src="sound.png" alt="parlante audio" />
+                        <img src="au.jpeg" alt="parlante audio" />
                     </div>
               </Link>
                 </div>
@@ -65,7 +65,7 @@ const SubHeader = () => {
               <Link to="/accesorios">
                     <h4>Accesorios</h4>
                     <div className={style.boxImg}>
-                        <img src="acce.png" alt="imagen toxicshine" />
+                        <img src="ac.jpeg" alt="imagen toxicshine" />
                     </div>
               </Link>
                 </div>
@@ -73,7 +73,7 @@ const SubHeader = () => {
               <Link to="/seguridad">
                   <h4>Seguridad</h4>
                   <div className={style.boxImg}>
-                      <img src="segu.png" alt="imagen cierre centralizado" />
+                      <img src="mat.jpeg" alt="imagen cierre centralizado" />
                   </div>
               </Link> 
               </div>

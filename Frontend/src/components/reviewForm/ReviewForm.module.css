@@ -102,7 +102,7 @@ textarea {
         padding: 20px;
         margin: 0px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
-        background-color: #6b6969;
+        background-color: rgba(0, 0, 0, .7);
         border-radius: 4px;
     }
     
@@ -164,8 +164,8 @@ textarea {
         border: none;
         width: auto;
         height: auto;
-        background-color: #333;
-        color: #fff;
+        background-color: #fff;
+        color: #333;
         border-radius: 4px;
         font-size: 14px;
         font-weight: 600;

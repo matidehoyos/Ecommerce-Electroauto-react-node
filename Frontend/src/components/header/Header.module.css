@@ -166,7 +166,7 @@
     justify-content: start;
     align-items: start;
     background-color: #fff;
-    background-image: url('../../../public/bgposta1.jpg');
+    background-image: url('../../../public/bgposta2.jpeg');
     background-position: right;
     background-size: cover;
     overflow-x: hidden;
@@ -175,10 +175,10 @@
 
 @keyframes backd {
     0% {
-      background-image: url('../../../public/bgposta1.jpg');
+      background-image: url('../../../public/bgposta2.jpeg');
     }
     100% {
-      background-image: url('../../../public/bgposta1.jpg');
+      background-image: url('../../../public/bgposta2.jpeg');
     }
   }
 
