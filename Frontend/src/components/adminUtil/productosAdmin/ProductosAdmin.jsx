@@ -88,7 +88,7 @@ const ProductosAdmin = () => {
                                     <tr key={index}>
                                         <td><h5>{producto.name}</h5></td>
                                         <td><p><img className={style.imgProd} src={producto.imagen} alt={producto.name}/></p></td>
-                                        <td><h5><button className={style.vermas} onClick={() => openModal(producto)}>Ver info</button></h5></td>
+                                        <td><h6><button className={style.vermas} onClick={() => openModal(producto)}>Ver info</button></h6></td>
                                     </tr>
                                 )) }
                             </tbody>

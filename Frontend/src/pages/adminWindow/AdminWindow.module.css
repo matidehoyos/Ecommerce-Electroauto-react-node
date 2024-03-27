@@ -85,7 +85,7 @@
 @media only screen and (max-width: 680px) {
     .container {
         width: 100%;
-        min-height: auto;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -94,11 +94,11 @@
     }
     
     .subContainer {
-        width: auto;
+        width: 100%;
         height: auto;
         margin-left: 0;
         padding: 0px;
-        padding-top: 0px;
+        padding-top: 20px;
         padding-left: 0px;
         display: flex;
         flex-direction: column;
@@ -107,10 +107,10 @@
     }
     
     .estadisticas {
-        width: 100vw;
+        width: 100%;
         height: auto;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
@@ -121,39 +121,42 @@
     .cardContainer {
         width: auto;
         height: auto;
-        padding: 0px;
-        margin: 0 5px;
-        background-color: #222;
+        padding: 8px 12px;
+        margin: 3px 0px;
+        background-color: #111;
         border-radius: 6px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
+        border: 0.3px solid rgba(0, 0, 0, #000);
     }
     
     .cardContainer:hover {
-        background-color: #343434;
+        background-color: #000;
     }
     
     .cardContainer h3 {
-        width: auto;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 5px 8px;
+        width: 220px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: .5px;
+        padding: 0px 0px;
         margin: 0;
         color: bisque;
-        text-align: center; 
-        border-bottom: .3px solid bisque;
+        text-align: left; 
+        border-bottom: none;
     }
     
     .cardContainer p {
-        width: 100%;
+        width: 50px;
         height: auto;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
         color: bisque;
-        text-align: center;
-        padding: 8px 0px;
+        text-align: right;
+        padding: 0px 0px;
         margin: 0;
     }
     
