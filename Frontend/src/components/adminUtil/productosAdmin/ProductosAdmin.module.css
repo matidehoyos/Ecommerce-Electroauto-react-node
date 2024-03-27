@@ -138,6 +138,7 @@
         display: flex;
         align-items: start;
         justify-content: center;
+        background-color: #fff;
     }
     
     .boxContainer {
@@ -147,6 +148,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-color: #fff;
     }
     
     .titulo {

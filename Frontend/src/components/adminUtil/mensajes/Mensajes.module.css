@@ -140,6 +140,7 @@
         display: flex;
         align-items: start;
         justify-content: center;
+        background-color: #fff;
     }
     
     .boxContainer {
@@ -238,7 +239,7 @@
         height: auto;
         font-size: 14px;
         font-weight: 700;
-        padding: 0;
+        padding: 0 10px;
         color: rgb(0, 175, 0);
         background-color: transparent;
     }
@@ -248,15 +249,16 @@
         height: auto;
         font-size: 14px;
         font-weight: 700;
-        padding: 0;
+        padding: 0 10px;
         color: red;
         background-color: transparent;
     }
     
     .vermas {
         background-color: transparent;
-        color: blue;
+        color: #006a80;
         text-align: center;
+        padding: 0;
     }
     
     .noMsj {

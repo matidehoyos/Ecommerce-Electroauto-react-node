@@ -128,7 +128,7 @@
     padding: 0px;
     border-right: none;
     position: inherit;
-    background: #0c1c6b;
+    background: rgba(27, 27, 27, 1);
     overflow-x: hidden;
   }
   
@@ -140,11 +140,11 @@
     align-items: center;
     padding: 0px;
     padding-left: 15px;
-    background-color: #0c1c6b;
+    background-color: rgba(27, 27, 27, 1);
   }
 
   .logo:hover {
-    background-color: #0c1c6b;
+    background-color: rgba(27, 27, 27, 1);
   }
 
   .logo:hover h3 {
