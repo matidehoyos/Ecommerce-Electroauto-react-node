@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import style from './AboutUs.module.css'
 import { MdLocationOn } from 'react-icons/md';
-import { FaTruck } from 'react-icons/fa';
+import { FaTruck, FaCheck } from 'react-icons/fa';
 import { FaCcMastercard } from 'react-icons/fa';
 import { FaLock } from 'react-icons/fa';
 
@@ -29,7 +29,19 @@ const AboutUs = () => {
   }, [show]);
 
   return (
-    <div ref={containerRef} className={`${style.container} ${show ? style.animate : ''}`}>  
+    <div ref={containerRef} className={`${style.container} ${show ? style.animate : ''}`}> 
+          <div className={style.mercadoLibre}>
+            <div className={style.imgML}>
+                <img src="ml.png" alt="mercadolibre" />
+            </div>
+            <div className={style.mercadoTexto}>
+                <span>SOMOS</span>
+                <h3>MERCADO LIBRE <br/> LIDER PLATINIUM</h3>
+                <h6>COMPRA CON CONFIANZA</h6>
+                <p><FaCheck className={style.ico}/>MAS DE 10 MIL VENTAS</p>
+                <p><FaCheck className={style.ico}/>MAS DE 10 AÑOS DE EXPERIENCIA</p>
+            </div>
+        </div>
         <div className={style.texto}>
             <h5>Estamos en Mar Del Plata</h5>
             <p><MdLocationOn /> Magallanes 4394</p>
