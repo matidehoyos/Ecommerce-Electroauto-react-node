@@ -177,9 +177,9 @@
 
     .container {
         background-color: #fff;
-        width: calc(50vw  - 30px);
-        height: auto;
-        margin: 0px 10px;
+        width: calc(50vw  - 18px);
+        min-height: 290px;
+        margin: 0px 4px;
         padding: 0px;
         border-radius: 4px;
         display: flex;
@@ -197,14 +197,14 @@
     
     .imgContainer  {
         width: auto;
-        height: 175px;
+        height: 125px;
         margin: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .3);
     }
     
     .imgContainer img {
         width: 100%;
-        height: 175px;
+        height: 125px;
         object-fit: cover;
         object-position: center;
         border-top-left-radius: 4px;
@@ -249,7 +249,7 @@
         color: #000;
         margin: 0px;
         text-align: left;
-        padding: 10px 5px;
+        padding: 0px 5px;
     }
     
     .stock span {
@@ -269,7 +269,7 @@
     }
     
     .precioNumero {
-        color: #000;
+        color: rgb(0, 149, 0);
         font-size: 18px;
         font-weight: 400;
         letter-spacing: -1px;
@@ -294,7 +294,7 @@
         font-weight: 600;
         line-height: 14px;
         padding: 0px 0px;
-        margin-top: 12px;
+        margin-top: 8px;
         text-align: left;
         color: rgba(255, 0, 0, 0.867);
         border: none;

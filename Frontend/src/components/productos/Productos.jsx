@@ -6,6 +6,7 @@ import PreNav from "../preNav/PreNav";
 import ProductoTiendaCard from "../productoTiendaCard/ProductoTiendaCard";
 import NavBar from "../navBar/NavBar";
 import { FaShoppingBasket, FaStore } from 'react-icons/fa';
+import SearchBar from "../searchBar/SearchBar";
 
 
 export default function Productos() {
@@ -38,11 +39,14 @@ export default function Productos() {
         <div className={style.container}>
             <PreNav />
             <NavBar />
+            <div className={style.search}>
+                <SearchBar />
+            </div>
             <div className={style.cardsContainer}>
                 { 
                 productos.length ?
                 productos.map((producto, index) => (
-                    <div key={index}>
+                    <div key={index} className={style.card}>
                         <ProductoTiendaCard producto={producto}/>
                     </div> ))       
                     :

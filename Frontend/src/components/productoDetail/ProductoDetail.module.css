@@ -5,6 +5,14 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+  background-color: #fff;
+}
+
+.cajaContainer {
+  width: 60vw;
+  height: auto;
+  padding-top: 90px;
+  margin: 0px auto;
 }
 
 .caja {
@@ -46,7 +54,7 @@
 
 .texto {
   width: 540px;
-  height: 100%;
+  height: 340px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -90,7 +98,7 @@
   padding: 0px;
   margin: 0px;
   position: absolute;
-  bottom: 50px;
+  bottom: 10px;
 }
 
 .botonKart {
@@ -160,20 +168,28 @@
 
   .container {
     width: auto;
-    min-height: auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: start;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: rgb(255, 255, 176);
+  }
+
+  .cajaContainer {
+    width: 100vw;
+    height: auto;
+    padding-top: 80px;
   }
 
   .caja {
     width: auto;
-    height: calc(100vh - 250px);
+    height: auto;
     padding: 0 20px;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -266,7 +282,7 @@
     padding: 0px;
     margin: 0px;
     position: absolute;
-    bottom: 50px;
+    bottom: -100px;
   }
   
   .botonKart {

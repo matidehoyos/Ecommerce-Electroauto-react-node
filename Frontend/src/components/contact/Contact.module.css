@@ -178,7 +178,7 @@
         margin: 0;
         display: flex;
         flex-direction: column;
-        background-color: rgb(240,240,240);
+        background-color: #fff;
     }
     
     .subcontainer {
@@ -187,6 +187,7 @@
         display: flex;
         flex-direction: column;
         padding-top: 60px;
+        background-color: #fff;
     }
     
     .titulo {
@@ -202,7 +203,7 @@
         font-weight: 600;
         color: #333;
         text-align: left;
-        padding-left: 15%;
+        padding-left: 11%;
     }
     
     .mediosContacto {
@@ -214,6 +215,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: #fff;
     }
     
     .form {
@@ -223,12 +225,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: #fff;
     }
     
     .form form {
-        width: 84%;
+        width: 94%;
         height: auto;
-        padding: 30px 10px;
+        padding: 20px 10px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -295,7 +298,7 @@
         line-height: 16px;
         padding: 7px 14px;
         border-radius: 4px;
-        background: #222;
+        background: #4a66ff;
         color: #fff;
     }
     

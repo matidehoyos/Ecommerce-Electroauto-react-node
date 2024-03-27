@@ -320,9 +320,10 @@
         overflow-x: hidden;
         justify-content: start;
         align-items: start;
-        margin: 40px 0px;
-        padding: 0px;
+        margin: 0px 0px;
+        padding: 40px 0px;
         padding-bottom: 30px;
+        background-color: rgb(255, 255, 157);
     }
 
 .populares h4 {
@@ -359,7 +360,7 @@
             border-radius: 0px;
             background-color: rgb(41, 41, 41);  
             transform: translateX(150%);
-            transition: transform 1.3s ease-out;
+            transition: transform .4s ease-out;
             overflow-y: inherit;
             overflow-x: hidden;
             display: flex;  
