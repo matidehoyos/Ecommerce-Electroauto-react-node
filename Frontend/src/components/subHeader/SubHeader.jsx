@@ -39,7 +39,10 @@ const SubHeader = () => {
   return (
     <div className={style.container} ref={carruselRef} >
         <div className={`${style.populares} ${showCarrusel ? style.animate : ''}`}>
+            <h4>Más vendidos</h4>
+            <div className={style.cateContainer}>
             <Populares />
+            </div>
         </div>
         <div className={`${style.carrusel} ${showCarrusel ? style.animate : ''}`}>
             <h4>Categorias</h4>

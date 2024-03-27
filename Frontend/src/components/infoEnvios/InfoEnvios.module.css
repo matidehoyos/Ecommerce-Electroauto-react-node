@@ -112,27 +112,26 @@
         padding: 20px;
         margin: 0;
         margin-bottom: 0px;
-        background-color: transparent;
+        background-color: #fff;
         border-radius: 4px;
         border: none;
     }
     
     .text:hover {
-        background-color: gold;
-        cursor: pointer;
+        background-color:inherit;
     }
     .text:hover h4 {
-        color: #111;
+        color: inherit;
     }
     .text:hover h5 {
-        color: #111;
+        color: inherit;
     }
     .text:hover p {
-        color: #111;
+        color: inherit;
     }
     
     .text h4 {
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 700;
         color: #333;
         text-align: center;
@@ -141,8 +140,8 @@
     }
     
     .text h5 {
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 16px;
+        font-weight: 400;
         color: #333;
         text-align: center;
         margin: 0;
@@ -152,7 +151,7 @@
     }
     
     .text p {
-        font-size: 42px;
+        font-size: 52px;
         text-align: center;
         color: #222;
         margin: 0;

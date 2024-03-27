@@ -23,10 +23,9 @@ const Populares = () => {
   return (
     <div className={style.container}>
         {loading ? (
-            <div>Cargando...</div>
+            <div>Más vendidos</div>
         ) : productos && productos.length ? (
             <div className={style.caja}>
-                <h4>Más vendidos</h4>
                 <div className={style.cajaCards}>
                     {productos.map((producto,i) => (
                         <PopularesCard producto={producto} key={i} />
