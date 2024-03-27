@@ -4,7 +4,16 @@
 }
 
 .cajaCards {
-    padding: 0px 40px;
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: start;
+   flex-wrap: nowrap;
+   overflow-x: scroll;
+}
+
+.cajaCards::-webkit-scrollbar {
+    display: none;
 }
 
 .caja  {

@@ -160,7 +160,7 @@
 
   .container {
     width: auto;
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -173,7 +173,7 @@
     height: calc(100vh - 250px);
     padding: 0 20px;
     margin: 0;
-    margin-top: 140px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -204,14 +204,14 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
   }
   
   .texto {
     width: auto;
-    height: 380px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -222,36 +222,36 @@
   }
   
   .texto h6 {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
     margin: 0;
     margin-bottom: 10px;
     padding: 0; 
   }
   
   .texto h2 {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
     letter-spacing: .4px;
     padding: 0;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .corto {
     width: 100%;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
     font-style: italic;
     margin: 0px;
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
   
   .texto p {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     font-style: italic;
     margin: 0px;
@@ -281,7 +281,7 @@
     box-shadow: 0px 0px 20px rgba(0,0,0,.1);
     border-radius: 4px; 
     color: #fff;
-    background-color: rgba(181, 0, 0, 0.867);
+    background-color: rgba(235, 8, 8, 0.867);
     margin: 0;
     margin-top: 10px;
     text-shadow: 0px 0px 0px transparent;
