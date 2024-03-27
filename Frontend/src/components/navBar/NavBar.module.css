@@ -149,7 +149,7 @@
     width: 90%;
     height: auto;
     content: url("../../../public/logoMobile.png");
-    animation: desplazamiento 3s ease-in-out 1;
+    animation: desplazamiento .4s ease-in-out 1;
     padding: 0;
     margin: 0;
   }
@@ -174,7 +174,7 @@
     position: absolute;
     top: 58px;
     left: -800;
-    transition: 1.8s all;
+    transition: .6s all;
     z-index: 2000;
     overflow-x: hidden;
     border-top: 1px solid #111;

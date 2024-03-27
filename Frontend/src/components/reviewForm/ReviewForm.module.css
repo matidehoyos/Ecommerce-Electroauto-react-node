@@ -89,7 +89,7 @@ textarea {
 @media only screen and (max-width: 680px) {
     
     .container {
-        width: 86%;
+        width: 90%;
         height: auto;
         padding: 0;
         margin: 0;
@@ -102,7 +102,7 @@ textarea {
         padding: 20px;
         margin: 0px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
-        background-color: rgba(0, 0, 0, .7);
+        background-color: rgba(256, 256, 256, .9);
         border-radius: 4px;
     }
     
@@ -118,7 +118,7 @@ textarea {
         display: block;
         font-size: 16px;
         font-weight: 600;
-        color: #fff;
+        color: rgba(0,0,0,.8);
         text-align: left;
         margin-bottom: 15px;
     }
@@ -126,12 +126,16 @@ textarea {
     textarea { 
         width: auto;
         height: 40px;
-        border: 1px solid white;
+        border: 1px solid rgba(0,0,0,.4);
         font-size: 18px;
         font-weight: 500;
         padding: 5px;
-        background-color: #fff;
+        background-color: rgba(0,0,0,.08);
         color: #222;
+    }
+
+    textarea::placeholder {
+        color: #333;
     }
     
     .starts {
@@ -140,7 +144,7 @@ textarea {
     
     .starts span{
         font-size: 20px;
-        color: #fff;
+        color: rgba(0,0,0,1);
     }
     
     .estrellas {
@@ -164,8 +168,8 @@ textarea {
         border: none;
         width: auto;
         height: auto;
-        background-color: #fff;
-        color: #333;
+        background-color: rgb(107, 107, 255);
+        color: #fff;
         border-radius: 4px;
         font-size: 14px;
         font-weight: 600;

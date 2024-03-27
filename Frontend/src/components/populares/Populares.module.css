@@ -3,6 +3,10 @@
     height: auto;
 }
 
+.cajaCards {
+    padding: 0px 40px;
+}
+
 .caja  {
     width: 100%;
     height: auto; 

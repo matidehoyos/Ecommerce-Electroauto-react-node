@@ -30,7 +30,7 @@
 .texto h5 {
     font-size: 32px;
     font-weight: 600;
-    color: white;
+    color: rgba(0,0,0,.8);
     padding: 0;
     margin: 0;
     margin-bottom: 30px;
@@ -69,7 +69,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #0c1c6b;
+        background-color: #fff;
         transform: translateY(15%);
         transition: transform .6s ease-out;
         overflow-x: hidden;
@@ -88,14 +88,14 @@
             align-items: center;
             padding: 20px 0px;
             padding-bottom: 40px;
-            margin: 0px;
-            margin-bottom: 40px;
-            background-color: rgb(255, 255, 121);
+            margin: 60px 0px;
+            background-color: rgb(255, 255, 198);
             overflow-x: hidden;
             border: none;
             box-shadow: none;
             border-radius: 4px;
             border: 1px solid #fff;
+            box-shadow: 0px 0px 40px rgba(0,0,0,.3);
         }
     
         .mercadoLibre::-webkit-scrollbar {
@@ -196,12 +196,13 @@
         justify-content: center;
         align-items: center;
         padding-right: 0px;
+        background-color: #fff;
     }
     
     .texto h5 {
         font-size: 22px;
         font-weight: 600;
-        color: white;
+        color: rgba(0,0,0,.8);
         padding: 0;
         margin: 0;
         margin-bottom: 20px;
@@ -210,7 +211,7 @@
     .texto p {
         font-size: 17px;
         font-weight: 400;
-        color: white;
+        color: rgba(0,0,0,.8);
         padding: 0;
         margin: 0;
         margin-bottom: 10px;

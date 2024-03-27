@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import style from './SubHeader.module.css'
 import { FaCheck } from "react-icons/fa";
 import Populares from '../populares/Populares';
-import Carrito from '../carrito/Carrito';
 
 const SubHeader = () => {
   const [showCarrusel, setShowCarrusel] = useState(false);
@@ -38,11 +37,11 @@ const SubHeader = () => {
   }, [showCarrusel, showMercadoLibre, animatedCarrusel, animatedMercadoLibre]); 
 
   return (
-    <div className={style.container}>
-        <div className={style.populares}>
+    <div className={style.container} ref={carruselRef} >
+        <div className={`${style.populares} ${showCarrusel ? style.animate : ''}`}>
             <Populares />
         </div>
-        <div ref={carruselRef} className={`${style.carrusel} ${showCarrusel ? style.animate : ''}`}>
+        <div className={`${style.carrusel} ${showCarrusel ? style.animate : ''}`}>
             <h4>Categorias</h4>
             <div className={style.carrusaCajasContainer}>
                 <div className={style.box}>

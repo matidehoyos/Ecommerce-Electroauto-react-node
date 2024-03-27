@@ -165,17 +165,17 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    background-color: #fff;
+    background-color: #000;
     background-image: url('../../../public/bgposta2.jpeg');
     background-position: bottom;
     background-size: cover;
     overflow-x: hidden;
-    animation: backd 1.5s ease-in-out 1;
+    animation: backd 0.5s ease-out 1;
 }
 
 @keyframes backd {
     0% {
-      background-image: url('../../../public/bgposta2.jpeg');
+      background-image: url('');
     }
     100% {
       background-image: url('../../../public/bgposta2.jpeg');
@@ -194,7 +194,7 @@
     align-items: start; 
     position: relative;
     white-space: nowrap;
-    animation: desplazamiento 2.2s ease-in-out 1;
+    animation: desplazamiento .4s ease-in-out 1;
     border-radius: 60px;
     background-color: transparent;
 
