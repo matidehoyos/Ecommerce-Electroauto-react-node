@@ -166,8 +166,8 @@
     justify-content: start;
     align-items: start;
     background-color: #000;
-    background-image: url('../../../public/bgposta2.jpeg');
-    background-position: bottom;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBwcDdH2uqA0iGurH_AWM2bZDlF43X1rbq8gLKXdyv_HdbccB11jhtnqOxLoA-U0jWCw&usqp=CAU');
+    background-position: top;
     background-size: cover;
     overflow-x: hidden;
     animation: backd 0.5s ease-out 1;

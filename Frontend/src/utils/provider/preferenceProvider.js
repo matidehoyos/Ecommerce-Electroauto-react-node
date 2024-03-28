@@ -3,7 +3,7 @@ import axios from "axios"
 const preferenceProvider = {
     async createPreference(obj) {
         try {
-            const response = await axios.post(`/createpreferenceid`, obj)
+            const response = await axios.post(`/createPreference`,obj)
             console.log(response)
             const {id} = response.data
             return id

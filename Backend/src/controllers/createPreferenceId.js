@@ -8,9 +8,10 @@ const client = new MercadoPagoConfig("TEST-1187084560697921-031218-7d2dd2f5a2422
 const createPreferenceId = async(req, res) => {
   try {
     const { items, email } = req.body;
+
   
    const body = {
-      items : [items],
+      items : items,
       back_urls: {
         success: "http://localhost:5173/successpayment",
         failure: "http://localhost:5173/successpayment",
@@ -35,7 +36,8 @@ const createPreferenceId = async(req, res) => {
       console.error(error);
     }
   } catch (error) {
-    console.error(error);
+    console.error('Mensaje de Error:', error.message);
+    console.error('Traza de Pila:', error.stack);
     res.status(500).send(error);
   }
   }

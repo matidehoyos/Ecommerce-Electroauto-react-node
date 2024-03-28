@@ -35,7 +35,7 @@ router.post('/user', postUser);
 router.get('/productos/:id', getProductoById);
 router.delete('/productos/:productoId', deleteProducto);
 router.delete('/mensajes/:mensajeId', deleteMensaje);
-router.post("/createpreferenceid", createPreferenceId);
+router.post("/createPreference", createPreferenceId);
 router.post("/postPreference", postPreference);
 router.get('/users', getUsers);
 router.get('/users/:email', getUserByEmail);

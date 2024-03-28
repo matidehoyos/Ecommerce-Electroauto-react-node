@@ -79,6 +79,7 @@
         height: auto;
         margin: 20px 0px;
         padding: 0;
+        background-color: transparent;
     }
     
     .subContainer {
@@ -90,9 +91,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 0px;
+        border-radius: 6px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0,0);
-        background-color: rgba(256, 256, 256,1);
+        background-color: rgba(256, 256, 256,.8);
     }
     
     .cajaTitulo {

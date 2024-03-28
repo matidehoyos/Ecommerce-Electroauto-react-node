@@ -13,20 +13,22 @@ const BotonFlotanteCart = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [preferenceId, setPreferenceId] = useState('');
     const [user,setUser] = useState([]);
-    const credMp = 'TEST-f3c67e82-99f3-485b-9002-d216c9a4f7db'
     
+    initMercadoPago('TEST-f3c67e82-99f3-485b-9002-d216c9a4f7db', { locale: 'es-AR' });
+
      useEffect(() => {
         const userLocalStorage = JSON.parse(localStorage.getItem('user')) || [];
         setUser(userLocalStorage);
-      }, []);
-      
-      useEffect(() => {
-      initMercadoPago(credMp, { locale: 'es-AR' });
-      }, []);
+    }, []);
+    
     
     const createPreference = async () => {
         try {
-            const response = await preferenceProvider.createPreference({items: carrito, email: user.email})
+            const obj = {
+                items: carrito,
+                email: user.email
+            }
+            const response = await preferenceProvider.createPreference(obj)
             console.log(response)
             const { id } = response; 
             return id;
@@ -40,7 +42,7 @@ const BotonFlotanteCart = () => {
           setCarrito(nuevoCarrito);
       }
   
-  
+      
       const handleBuy = async () => {
           const id = await createPreference(); 
           console.log(id)
@@ -123,15 +125,16 @@ const BotonFlotanteCart = () => {
                     </tbody>
                 </table>
                 <div className={style.proceso}>                 
-                            { !user.email ?
-                            <p className={style.noLogged}>Debes iniciar sesion para prosesar la compra. El registro de datos es seguro, solo recibiremos tu nombre e email 
+                            { user.email ?
+                         <button onClick={handleBuy} className={user.name ? style.botonProcesar : style.disabledProcesar} disabled={!user.name} >Procesar compra</button>
+                          :  <p className={style.noLogged}>Debes iniciar sesion para prosesar la compra. El registro de datos es seguro, solo recibiremos tu nombre e email 
                                  para enviarte los datos de la compra y que hagamos el seguimiento. Nosotros no accedemos a contraseñas y demas informacion.</p>
-                            : <button onClick={handleBuy} className={user.name ? style.botonProcesar : style.disabledProcesar} disabled={!user.name} >Procesar compra</button>
                            }
         
                            { preferenceId && (
                                <div className={style.wallet}>
-                                 <Wallet initialization={{preferenceId: preferenceId}}  />
+                                 <Wallet initialization={{preferenceId: preferenceId}} 
+                                           customization={{ texts: { valueProp: 'smart_option' }, visual: {horizontalPadding:'0px', buttonHeight: '55px' } }}  />
                                 </div> 
                          ) } 
                     </div>

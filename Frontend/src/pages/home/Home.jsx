@@ -12,7 +12,6 @@ import Footer from '../../components/footer/Footer';
 import Review from '../../components/review/Review';
 import InfoEnvios from '../../components/infoEnvios/InfoEnvios';
 import BotonFlotanteCart from '../../components/botonFlotanteCart/BotonFlotanteCart';
-import Tienda from '../tienda/Tienda';
 
 
 const Home = () => {

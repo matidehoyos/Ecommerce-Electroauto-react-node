@@ -15,7 +15,7 @@ const createPreference = async (preference) => {
         const newPreference = await Preference.create(preference);
         return newPreference;
     } catch (error) {
-        console.error
+        console.error(error)
         throw new Error(error);
     }
 }
