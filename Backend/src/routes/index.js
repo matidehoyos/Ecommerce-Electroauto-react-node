@@ -29,14 +29,14 @@ const editarEnvio = require('../controllers/editarEnvio');
 
 const router = Router();
 
-router.post("/createPreferenceId", createPreferenceId);
-router.post("/postPreference", postPreference);
 router.post('/productos', postProducto);
 router.get('/productos', getProductos);
 router.post('/user', postUser);
 router.get('/productos/:id', getProductoById);
 router.delete('/productos/:productoId', deleteProducto);
 router.delete('/mensajes/:mensajeId', deleteMensaje);
+router.post("/createpreferenceid", createPreferenceId);
+router.post("/postPreference", postPreference);
 router.get('/users', getUsers);
 router.get('/users/:email', getUserByEmail);
 router.post('/carrito', postProductoCarrito);

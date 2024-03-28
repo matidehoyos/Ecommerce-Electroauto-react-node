@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+{/*import React, { useContext, useEffect, useState } from 'react';
 import style from './Carrito.module.css'
 import CarritoContext from '../carritoContext/CarritoContext';
 import { Link } from 'react-router-dom';
@@ -111,3 +111,4 @@ console.log('carrito', carrito)
 };
 }
 export default Carrito;
+*/}

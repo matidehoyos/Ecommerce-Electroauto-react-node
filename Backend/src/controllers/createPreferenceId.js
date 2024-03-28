@@ -1,10 +1,8 @@
 const { MercadoPagoConfig, Preference } = require('mercadopago');
 const { createPreference } = require('../services/preferenceService');
-require('dotenv').config();
-const { ACCESTOKEN } = process.env;
 
-const client = new MercadoPagoConfig({ ACCESTOKEN });
 
+const client = new MercadoPagoConfig("TEST-1187084560697921-031218-7d2dd2f5a242226389b04d63bbc09fb8-762669494");
 
 
 const createPreferenceId = async(req, res) => {
@@ -12,7 +10,7 @@ const createPreferenceId = async(req, res) => {
     const { items, email } = req.body;
   
    const body = {
-      items: items,
+      items : [items],
       back_urls: {
         success: "http://localhost:5173/successpayment",
         failure: "http://localhost:5173/successpayment",
@@ -25,21 +23,20 @@ const createPreferenceId = async(req, res) => {
 
     try {
       const result = await preference.create({body});
+      console.log(result)
       const obj = {
         email: email,
         preferenceId: result.id,
       }
 
       const newPreferenceBD = await createPreference(obj)
-      console.log('posteado bien', newPreferenceBD)
-      res.status(200).json({ id: result.id });
+      return res.status(200).json({ id: result.id });
     } catch (error) {
       console.error(error);
     }
-   
   } catch (error) {
     console.error(error);
-    res.status(500).send(error.message);
+    res.status(500).send(error);
   }
   }
   

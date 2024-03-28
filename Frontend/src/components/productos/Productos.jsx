@@ -35,6 +35,11 @@ export default function Productos() {
         navigate("/tienda");
     }
 
+    const handleFilter = (e) => {
+        e.preventDefault();
+        navigate(`/${e.target.value}`);
+      }
+
     return(
         <div className={style.container}>
             <PreNav />
@@ -42,6 +47,13 @@ export default function Productos() {
             <div className={style.search}>
                 <SearchBar />
             </div>
+        <div className={style.filters}>
+          <button onClick={handleFilter} value={"tienda"}>Todos</button>
+          <button onClick={handleFilter} value={"accesorios"}>Accesorios</button>
+          <button onClick={handleFilter} value={"iluminacion"}>Iluminacion</button>
+          <button onClick={handleFilter} value={"audio"}>Audio</button>
+          <button onClick={handleFilter} value={"seguridad"}>Seguridad</button>
+      </div>
             <div className={style.cardsContainer}>
                 { 
                 productos.length ?

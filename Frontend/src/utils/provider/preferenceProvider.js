@@ -1,13 +1,14 @@
 import axios from "axios"
 
 const preferenceProvider = {
-    async createPreference(carrito) {
+    async createPreference(obj) {
         try {
-            const response = await axios.post('/createpreference', carrito)
-            const { id } = response.data
+            const response = await axios.post(`/createpreferenceid`, obj)
+            console.log(response)
+            const {id} = response.data
             return id
         } catch (error) {
-            console.log(error.message)
+            console.error(error)
         }
     },
     async getPreferences() {

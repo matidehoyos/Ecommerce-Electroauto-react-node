@@ -64,13 +64,44 @@
     .container {
         width: auto;
         min-height: 100vh;
-        background-color: rgb(255, 255, 210);
+        background-color: rgb(255, 255, 245);
     }
 
     .search {
         padding-top: 80px;
     }
     
+    .filters {
+        width: auto;
+        height: auto;
+        padding: 8px 0px;
+        margin: 0;
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: start;
+        align-items: center;
+        background: rgba(0,0,0,.4);
+    
+      }
+      
+    .filters::-webkit-scrollbar {
+      display: none;
+    }
+    
+      .filters button {
+        width: auto;
+        height: auto;
+        font-size: 15px;
+        font-weight: 600;
+        color: #f1f1f1;
+        background-color: transparent;
+        margin: 0px 15px;
+        padding: 2px 0px;
+        letter-spacing: .8px;
+      }
+
     .cardsContainer {
             width: auto;
             min-height: auto;
@@ -80,7 +111,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            background-color: rgb(255, 255, 220); 
+            background-color: rgb(255, 255, 245); 
             gap: 15px 0px;
         }
 

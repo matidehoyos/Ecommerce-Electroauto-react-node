@@ -7,9 +7,11 @@ import { loadProductos } from '../../redux/actions';
 import { useEffect, useState } from 'react';
 import PreNav from '../../components/preNav/PreNav';
 import SearchBar from '../../components/searchBar/SearchBar';
+import { useNavigate } from 'react-router';
 
 
 const Tienda = () => {
+    const navigate = useNavigate()
     const dispatch = useDispatch();
     const [productos, setProductos] = useState([]);
 
@@ -23,6 +25,12 @@ const Tienda = () => {
         bringData();
     }, []); 
 
+    const handleFilter = (e) => {
+        e.preventDefault();
+        navigate(`/${e.target.value}`);
+      }
+    
+
     return(
         <div className={style.container}>
             <PreNav />
@@ -31,6 +39,13 @@ const Tienda = () => {
              <div className={style.search}>
                      <SearchBar />
             </div>
+        <div className={style.filters}>
+          <button onClick={handleFilter} value={"tienda"}>Todos</button>
+          <button onClick={handleFilter} value={"accesorios"}>Accesorios</button>
+          <button onClick={handleFilter} value={"iluminacion"}>Iluminacion</button>
+          <button onClick={handleFilter} value={"audio"}>Audio</button>
+          <button onClick={handleFilter} value={"seguridad"}>Seguridad</button>
+      </div>
             <div className={style.cardsContainer}>
             
                 {
