@@ -63,7 +63,7 @@ const ProductoTiendaCard = ({producto}) => {
 
         <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
           <button onClick={() => setModalIsOpen(false)}>X</button>
-          <img src={producto.imagen} alt={producto.name}/>
+          <img className={style.imgModal} src={producto.imagen} alt={producto.name}/>
           <h2>{producto.name}</h2>
           <p>{producto.detalle}</p>
           <p>{producto.informacion}</p>

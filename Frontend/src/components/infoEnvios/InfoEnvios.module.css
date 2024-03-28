@@ -114,8 +114,8 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 80px 0px;
-        padding-left: 50px;
+        padding: 130px 0px;
+        padding-left: 30px;
         margin: 0;
         margin-bottom: 0px;
         background-color: rgb(254, 254, 218);
@@ -137,7 +137,7 @@
     }
     
     .text h4 {
-        width: 64%;
+        width: 75%;
         font-size: 26px;
         font-weight: 900;
         line-height: 24px;
@@ -149,7 +149,7 @@
     }
     
     .text h5 {
-        width: 70%;
+        width: 80%;
         font-size: 24px;
         line-height: 22px;
         font-weight: 400;
@@ -162,11 +162,11 @@
     }
     
     .text p {
-        font-size: 60px;
+        font-size: 76px;
         text-align: center;
         color: #333;
         margin: 0px;
-        margin-right: 15px;
+        margin-right: 8px;
         padding: 0;
     }
     
