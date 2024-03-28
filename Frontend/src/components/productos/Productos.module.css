@@ -55,7 +55,9 @@
     background-color: #000;
 }
 
-
+.filters {
+    display: none;
+}
 
 /* Estilos para mobile ----------------------------------------------------------*/
 
