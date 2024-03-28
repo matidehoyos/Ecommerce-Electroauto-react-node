@@ -2,12 +2,12 @@ import React, { useContext, useEffect, useState } from 'react';
 import style from './Carrito.module.css'
 import CarritoContext from '../carritoContext/CarritoContext';
 import { Link } from 'react-router-dom';
-//import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
+import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
 import axios from 'axios';
 import { FaTrashAlt } from 'react-icons/fa';
 
 
-//const credMp = 'TEST-f3c67e82-99f3-485b-9002-d216c9a4f7db'
+const credMp = 'TEST-f3c67e82-99f3-485b-9002-d216c9a4f7db'
 
 
 
@@ -18,17 +18,15 @@ const Carrito = () => {
     const total = carrito.reduce((total, producto) => total + producto.unidades * producto.precio, 0);
 
 
-
-
     useEffect(() => {
         const userLocalStorage = JSON.parse(localStorage.getItem('user')) || [];
         setUser(userLocalStorage);
     }, []);
-{/*}
+
     useEffect(() => {
         initMercadoPago(credMp, { locale: 'es-AR' });
       }, []);
-    */}
+    
 
     const createPreference = async () => {
         try {
@@ -95,14 +93,12 @@ console.log('carrito', carrito)
                             <p className={style.noLogged}>Debes iniciar sesion para prosesar la compra. El registro de datos es seguro, solo recibiremos tu nombre e email 
                                  para enviarte los datos de la compra y que hagamos el seguimiento. Nosotros no accedemos a contraseñas y demas informacion.</p>
                             : null }
+                        <button className={style.CarroButton} onClick={handleBuy}><span className={style.cantidad}>Procesar compra</span></button>
                             { preferenceId && ( 
-                        <button className={style.CarroButton} onClick={handleBuy}><span className={style.cantidad}>{carrito?.length}</span></button>
-                            )}
-                            { /*preferenceId && ( 
                                <div className={style.wallet}>
                                  <Wallet initialization={{preferenceId: preferenceId}}  />
                                 </div> 
-                            )} */}
+                            )} 
                           <button className={user.name ? style.botonProcesar : style.disabledProcesar} disabled={!user.name} >Procesar compra</button>
                     </div>
                     

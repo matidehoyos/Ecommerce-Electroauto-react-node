@@ -15,7 +15,7 @@ import CarritoContext from './components/carritoContext/CarritoContext';
 import { useState } from 'react';
 
    axios.defaults.baseURL = 'https://electrocar-production.up.railway.app'
-  //axios.defaults.baseURL = 'http://localhost:3000'
+ // axios.defaults.baseURL = 'http://localhost:3000'
 
 function App() {
   const [carrito, setCarrito] = useState(JSON.parse(localStorage.getItem('carrito')) || []);
@@ -23,7 +23,7 @@ function App() {
   return (
     <div>
         <CarritoContext.Provider value={{ carrito, setCarrito }} >
-         {/*}   <BotonFlotanteCart /> */}
+           <BotonFlotanteCart /> 
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/tienda" element={<Tienda />}></Route>
