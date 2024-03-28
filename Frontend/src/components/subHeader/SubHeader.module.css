@@ -108,6 +108,29 @@
     top: 3px;
     color: #0c1c6b;
 }
+
+.populares {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: start;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0px;
+    background-color: rgb(255, 255, 205);
+}
+
+.populares h4 {
+padding: 0;
+margin: 0;
+padding-left: 20px;
+padding-top: 20px;
+font-size: 22px;
+}
+
     
     .carrusel {
         width: 100%;
@@ -115,7 +138,8 @@
         padding: 80px 200px;
         margin: 0px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: start;
         align-items: center;
         border-radius: 0px;
         background-color: #111;  
