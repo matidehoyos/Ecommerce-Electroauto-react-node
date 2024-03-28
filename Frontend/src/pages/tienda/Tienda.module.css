@@ -17,6 +17,14 @@
         gap: 60px 0px;
     }
 
+    .search {
+      display: none;
+    }
+
+    .filters {
+      display: none;
+    }
+
 
 /* Estilos para mobile ----------------------------------------------------------*/
 
