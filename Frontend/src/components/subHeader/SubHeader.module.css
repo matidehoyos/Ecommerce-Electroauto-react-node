@@ -343,9 +343,9 @@ font-size: 22px;
         justify-content: start;
         align-items: start;
         margin: 0;
-        padding: 0;
+        padding: 40px 0px;
         padding-bottom: 0px;
-        background-color: rgb(255, 255, 205);
+        background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
     }
 
 .populares h4 {
@@ -377,7 +377,7 @@ font-size: 22px;
         .carrusel {
             width: 100%;
             height: auto;
-            padding: 0px 10px;
+            padding: 40px 10px;
             margin: 0px;
             border-radius: 0px;
             background-color: rgb(338, 338, 338);  
@@ -394,6 +394,7 @@ font-size: 22px;
         .carrusel h4 {
             padding-left: 20px;
             font-size: 20px;
+            font-weight: 500;
             color: rgba(0,0,0,.6);
             padding-bottom: 0px;
             padding-top: 0px;

@@ -115,7 +115,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(to right bottom, #0454da,#0454da,#0ccdf0  );
+    background: rgba(0,0,0,.6);
     position: fixed;
     z-index: 4000;
     box-shadow: none;

@@ -165,9 +165,9 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    background-color: #000;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBwcDdH2uqA0iGurH_AWM2bZDlF43X1rbq8gLKXdyv_HdbccB11jhtnqOxLoA-U0jWCw&usqp=CAU');
-    background-position: top;
+    background-color: #fff;
+   background-image: url('../../../public/bgposta2.jpeg'); 
+    background-position: bottom;
     background-size: cover;
     overflow-x: hidden;
     animation: backd 0.5s ease-out 1;
@@ -175,7 +175,7 @@
 
 @keyframes backd {
     0% {
-      background-image: url('');
+      background-image: url('../../../public/bgposta2.jpeg');
     }
     100% {
       background-image: url('../../../public/bgposta2.jpeg');
@@ -224,13 +224,15 @@
 .texto h1 {
     width: auto;
     height: auto;
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 700;
     letter-spacing: .2px;
     text-align: left;
     margin: 0;
     margin-bottom: 6px;
-    color:  rgb(255, 255, 37);
+    background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+    background-clip: text;
+    color: transparent;
 }
 
 
@@ -238,12 +240,12 @@
 .texto h5 {
     width: auto;
     height: auto;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     letter-spacing: .3px;
     text-align: left;
     margin: 0;
-    color: rgba(256, 256, 256, .9);
+    color: rgba(255, 253, 208, 0.9);
 }
 
 .envios {
@@ -258,12 +260,12 @@
     width: auto;
     height: auto;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 300;
     text-align: left;
     margin: 0px auto;
     margin-bottom: 2px;
     padding: 0px;
-    color: rgba(256,256,256,.7);
+    color: rgba(256,256,256,1);
     border-radius: 2px;
     background: none;
 }
@@ -287,9 +289,9 @@
   font-weight: 600;
   line-height: 14px;
   padding: 7px 14px;
-  background-color: rgb(255, 255, 53);
-  border: 0.4px solid rgba(0, 0, 0, 1);
-  color: rgba(0, 0, 0, 1);
+  background-image: linear-gradient(to left , #ffffa4, #fff703  );
+  border: 0.4px solid rgba(256, 256, 256, 1);
+  color: rgba(0,0,0,.9);
   border-radius: 4px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, .6);
 }

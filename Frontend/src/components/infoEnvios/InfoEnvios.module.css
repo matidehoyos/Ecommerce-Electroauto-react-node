@@ -115,10 +115,10 @@
         justify-content: center;
         align-items: center;
         padding: 130px 0px;
-        padding-left: 30px;
+        padding-left: 38px;
         margin: 0;
         margin-bottom: 0px;
-        background-color: rgb(254, 254, 218);
+        background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
         border-radius: 0px;
         border: none;
     }
