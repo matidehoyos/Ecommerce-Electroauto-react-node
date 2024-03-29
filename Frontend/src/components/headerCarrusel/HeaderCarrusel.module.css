@@ -42,7 +42,7 @@
 @media only screen and (max-width: 680px) {
 
     .carouselcontainer {
-        padding: 40px 20px;
+        padding: 0px 20px;
     }
     
     .containerTitle {
@@ -59,8 +59,8 @@
     .containerCarrusel {
         width: 90%;
         margin: 0;
-        padding: 40px 0;
-        border-radius: 6px;
+        padding: 0px 0px;
+        border-radius: 4px;
     }
     
     .carouselStyles {
@@ -71,6 +71,17 @@
 
     .buttonContainer {
         margin-top: 70px;
+    }
+
+    .caja {
+        height: auto;
+     padding: 0;
+     margin: 0;
+    }
+
+    .carruImg {
+        padding: 0;
+        margin: 0;
     }
 }
 

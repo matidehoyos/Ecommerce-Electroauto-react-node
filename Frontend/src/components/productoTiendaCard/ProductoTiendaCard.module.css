@@ -378,18 +378,20 @@
     }
 
     .detalleM {
-        font-size: 16px;
+        font-size: 14px;
         margin: 0;
-        padding: 0
+        padding: 0;
+        font-style: italic;
     }
 
     .infoM {
-        width: 70%;
+        width: 84%;
         font-size: 16px;
         font-weight: 600;
         margin: 0;
         margin-top: 15px;
-        padding: 0
+        padding: 0;
+        font-style: italic;
     }
     
     .precioM {
@@ -408,11 +410,15 @@
 
     .unidadesM select {
         margin-left: 8px;
+        background-color: transparent;
+        color: #111;
+        border-radius: 4px;
+        font-size: 17px;
     }
     
 
     .addCartM {
-        background-color: rgb(255, 48, 48);
+        background-color: rgb(255, 88, 88);
         width: auto;
         height: auto;
         font-size: 14px;
