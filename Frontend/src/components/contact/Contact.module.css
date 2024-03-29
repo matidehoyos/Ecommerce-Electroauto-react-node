@@ -269,6 +269,7 @@
     
     .row input::placeholder {
         font-size: 12px;
+        color: #111;
     }
     
     .row textarea {
