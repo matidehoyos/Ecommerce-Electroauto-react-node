@@ -35,19 +35,22 @@
         width: auto;
         min-height: 100vh;
         background-color: rgb(255, 255, 245);
+        padding-bottom: 10px;
     }
     
     .cardsContainer {
             width: auto;
-            height: auto;
+            min-height: 600px;
             padding: 5px;
             padding-top: 25px;
+            padding-bottom: 60px;
             margin: 0px;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             align-items: stretch;
-            background-color: rgb(255, 255, 245);
+            background-image: none;
+            background-color: #fff;
             gap: 15px 0;
         }
 
@@ -66,7 +69,7 @@
             width: auto;
             height: auto;
             padding: 8px 0px;
-            margin: 0;
+            margin: 10px 0px;
             margin-top: 20px;
             display: flex;
             flex-wrap: nowrap;

@@ -177,9 +177,9 @@
 
     .container {
         background-color: #fff;
-        width: calc(50vw  - 18px);
+        width: calc(50vw  - 30px);
         min-height: 310px;
-        margin: 0px 4px;
+        margin: 0px 5px;
         padding: 0px;
         border-radius: 4px;
         display: flex;
