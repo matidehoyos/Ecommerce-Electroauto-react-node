@@ -63,7 +63,7 @@ const BotonFlotanteCart = () => {
 
     return (
         <div className={style.modalCarrito}>
-            <button className={style.kartButton} onClick={openModal}><FaShoppingCart /><span>{carrito.length}</span></button>
+            <button className={style.kartButton} style={{ display: modalIsOpen ? 'none' : 'block' }}  onClick={openModal}><FaShoppingCart /><span>{carrito.length}</span></button>
             <div>
             <Modal
     isOpen={modalIsOpen}
@@ -71,7 +71,7 @@ const BotonFlotanteCart = () => {
     contentLabel="Carrito Modal"
     style={{
       overlay: {
-          backgroundColor: 'rgba(256,256,256,.4)',
+        backgroundImage: 'linear-gradient(to right , #e7ef00, #fcffa9)',
           backdropFilter: 'blur(5px)'
       },
       content: {
@@ -90,14 +90,14 @@ const BotonFlotanteCart = () => {
           paddingBottom: '26px',
           position: 'relative',
           left: '0vw',
-          top: '75px',
+          top: '90px',
         }
       }}
 >
                  <div className={style.buttonContainer}> 
-                  <button  className={style.botonCierre} onClick={closeModal}>X</button>
+                  <button  className={style.botonCierre} onClick={closeModal}>x</button>
                 </div>
-                <h4>Tus productos seleccionados: </h4>
+                <h4 className={style.tituCart}>Tus productos seleccionados: </h4>
                 <table className={style.table}>
                     <thead>
                         <tr className={style.cabezal}>

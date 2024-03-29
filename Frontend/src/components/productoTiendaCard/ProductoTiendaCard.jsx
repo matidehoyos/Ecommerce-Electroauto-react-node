@@ -61,14 +61,53 @@ const ProductoTiendaCard = ({producto}) => {
             <button className={style.botonKart} onClick={agregarAlCarrito}><FaShoppingCart className={style.icon}/>AGREGAR AL CARRITO</button>  
         </div>  
 
-        <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-          <button onClick={() => setModalIsOpen(false)}>X</button>
+        <Modal 
+        isOpen={modalIsOpen} 
+        onRequestClose={() => setModalIsOpen(false)}
+        style={{
+          overlay: {
+            backgroundImage: 'linear-gradient(to right , #e7ef00, #fcffa9)',
+              backdropFilter: 'blur(5px)'
+          },
+          content: {
+              width: '86vw',
+              minHeight: 'auto', 
+              margin: '0 auto',
+              marginTop: '0',
+              border: 'none',
+              background: 'rgba(256,256,256,1',
+              boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
+              overflow: 'scroll',
+              WebkitOverflowScrolling: 'touch',
+              borderRadius: '6px',
+              outline: 'none',
+              padding: '20px',
+              paddingBottom: '26px',
+              position: 'relative',
+              left: '0vw',
+              top: '90px',
+            }
+          }}
+        >
+          <div className={style.cerrarModal}>
+          <button  onClick={() => setModalIsOpen(false)}>X</button>
+          </div>
           <img className={style.imgModal} src={producto.imagen} alt={producto.name}/>
-          <h2>{producto.name}</h2>
-          <p>{producto.detalle}</p>
-          <p>{producto.informacion}</p>
-          <p>${producto.precio}</p>
-          <button onClick={agregarAlCarrito}>Agregar al carrito</button>
+          <h2  className={style.nameM}>{producto.name}</h2>
+          <p  className={style.detalleM}>{producto.detalle}</p>
+          <p  className={style.infoM}>{producto.informacion}</p>
+          <p  className={style.precioM}>${producto.precio}</p>
+          <div className={style.unidadesM}>
+            <label>Cantidad:</label>
+            <select onChange={handleChange}>
+          {[...Array(20).keys()].map((value, index) => 
+        <option key={index} value={value + 1}>
+          {value + 1} {value === 0 ? 'unidad' : 'unidades'}
+        </option>
+      )}
+          </select> 
+          </div>
+          <button  className={style.addCartM}  onClick={agregarAlCarrito}>Agregar al carrito</button>
         </Modal>
       </div>
   );

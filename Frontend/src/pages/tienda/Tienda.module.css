@@ -1,7 +1,8 @@
 .container {
     width: auto;
     min-height: 100vh;
-    background-color: rgb(240,240,240);
+    background-image: linear-gradient(to right , #e7ef00, #fcffa9);
+    padding-bottom: 60px;
 }
 
 .cardsContainer {
@@ -13,7 +14,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-        background-color: rgb(240, 240, 240);
+        background-image: linear-gradient(to right , #e7ef00, #fcffa9);
         gap: 60px 0px;
     }
 

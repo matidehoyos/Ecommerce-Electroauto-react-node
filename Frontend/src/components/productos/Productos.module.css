@@ -66,7 +66,8 @@
     .container {
         width: auto;
         min-height: 100vh;
-        background-color: rgb(255, 255, 245);
+        padding-bottom: 60px;
+        background-image: linear-gradient(to right , #e7ef00, #fcffa9);
     }
 
     .search {
@@ -113,7 +114,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            background-color: rgb(255, 255, 245); 
+            background-image: linear-gradient(to right , #e7ef00, #fcffa9);
             gap: 15px 0px;
         }
 
@@ -156,6 +157,10 @@
     
     .verTienda:hover {
         background-color: #000;
+    }
+
+    .cerrarModal {
+        background-color: transparent;
     }
 
 }
