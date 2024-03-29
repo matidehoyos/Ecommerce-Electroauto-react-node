@@ -5,6 +5,7 @@ import CarritoContext from '../../components/carritoContext/CarritoContext';
 import style from './BotonFlotanteCart.module.css'
 import { Wallet, initMercadoPago } from '@mercadopago/sdk-react';
 import preferenceProvider from '../../utils/provider/preferenceProvider';
+import LoginButton from '../loginButton/LoginButton';
 
 
 const BotonFlotanteCart = () => {
@@ -127,7 +128,10 @@ const BotonFlotanteCart = () => {
                 <div className={style.proceso}>                 
                             { user.email ?
                          <button onClick={handleBuy} className={user.name ? style.botonProcesar : style.disabledProcesar} disabled={!user.name} >Procesar compra</button>
-                          :  <p className={style.noLogged}>Debes iniciar sesion para prosesar la compra.</p>
+                          :  <div className={style.noLoggedContainer}>
+                                <p className={style.noLogged}>Debes iniciar sesion para prosesar la compra.</p>
+                                <LoginButton />
+                             </div>
                            }
         
                            { preferenceId && (

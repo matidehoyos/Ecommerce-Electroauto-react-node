@@ -63,7 +63,7 @@ const postUserData = async () => {
     <div className={style.containerLogin}>
       {
         !currentUser?.name ? (
-        <button className={style.buttonLogin} onClick={handleLogin}>Iniciar sesion<br />Registrarse</button>
+        <button className={style.buttonLogin} onClick={handleLogin}>Iniciar sesion</button>
         )
         : 
         <>

@@ -188,14 +188,34 @@
       }
 
 
+      .noLoggedContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 0px 5px;
+      }
+
       .noLogged {
-        color: rgba(237, 26, 26, 0.8);
+        color: rgba(221, 12, 12, 0.8);
         width: 100%;
         font-size: 14px;
         font-weight: 600;
-        text-align: center;
+        text-align: left;
+        padding-left: 0;
         margin: 0;
         padding: 0;
+      }
+
+      .noLoggedContainer button {
+        color: #111;
+        font-size: 17px;
+        font-weight: 600;
+        font-style: italic;
+        padding-left: 0;
+        margin-top: 8px;
       }
 
 }
