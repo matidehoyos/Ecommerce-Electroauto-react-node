@@ -2,76 +2,79 @@
     width: auto;
     height: auto;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 80px 0px;
-    background-color: #111;
+    padding: 0px;
+    background-image: linear-gradient(to right , #e7ef00, #fcffa9  ); 
     border-top: 1px solid yellow;
     border-bottom: 1px solid yellow;
 }
 
 .carrusa {
-    width: 50%;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding: 40px 0px;
     margin: 0;
+    background: #111;
+
 }
 
 .text {
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 30px;
+    padding: 280px 0px;
     margin: 0;
-    background-color: #111;
-    border-radius: 6px;
-    border: 2px solid gold;
-}
-
-.text:hover {
-    background-color: gold;
-    cursor: pointer;
-}
-.text:hover h4 {
-    color: #111;
-}
-.text:hover h5 {
-    color: #111;
-}
-.text:hover p {
-    color: #111;
-}
-
-.text h4 {
-    font-size: 42px;
-    font-weight: 700;
-    color: gold;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.text h5 {
-    font-size: 32px;
-    font-weight: 600;
-    color: gold;
-    text-align: center;
-    margin: 0;
-    padding: 30px 0px;
+    background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+    border-radius: 0px;
+    border: 0px solid gold;
 }
 
 .text p {
-    font-size: 90px;
+    font-size: 160px;
     text-align: center;
-    color: gold;
+    color: rgba(0,0,0,1);
     margin: 0;
     padding: 0;
+    padding-right: 10px;
+    margin-right: 20px;
+    border-right: 2px solid #111;
 }
+
+.first {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.text h4 {
+    width: 100%;
+    font-size: 64px;
+    font-weight: 800;
+    color: #111;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    line-height: 64px;
+}
+
+.text h5 {
+    width: 100%;
+    font-size: 36px;
+    font-weight: 600;
+    color: #222;
+    text-align: left;
+    margin: 0;
+    padding: 0px;
+    line-height: 46px;
+    font-style: italic;
+}
+
 
 
 

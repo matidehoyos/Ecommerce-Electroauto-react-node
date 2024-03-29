@@ -3,7 +3,7 @@
     height: 600px;
     margin: 0;
     padding: 0;
-    padding-left: 80px;
+    padding-left: 140px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -36,7 +36,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; position: relative;
+    align-items: center; 
+    position: relative;
     white-space: nowrap;
     animation: desplazamiento 2.2s ease-in-out 1;
 }
@@ -51,28 +52,39 @@
   }
 
   .texto span {
-    display: none;
+    width: 100%;
+    font-style: italic;
+    text-align: left;
+    color: rgba(256,256,256,1);
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
   }
 
 .texto h1 {
     width: auto;
     height: auto;
-    font-size: 64px;
-    font-weight: 500;
+    font-size: 84px;
+    font-weight: 600;
+    letter-spacing: -5px;
     text-align: center;
+    padding: 0;
     margin: 0;
     margin-bottom: 5px;
-    color: yellow;
+    background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+    background-clip: text;
+    color: transparent;
 }
 
 .texto h5 {
     width: auto;
     height: auto;
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 400;
     text-align: center;
+    letter-spacing: .5px;
     margin: 0;
-    color: rgb(240, 240, 240);
+    color: rgba(256, 256, 256,1);
 }
 
 .envios {
@@ -84,12 +96,12 @@
 .envios h6 {
     width: auto;
     height: auto;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     text-align: center;
     margin: 0px auto;
     padding: 0;
-    background-color: yellow;
+    background-image: linear-gradient(to right , #e7ef00, #fcffa9);
     color: rgb(0, 0, 0);
 }
 

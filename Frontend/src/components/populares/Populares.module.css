@@ -1,7 +1,9 @@
 .container {
     width: 100%;
     height: auto;
+    padding: 40px 0px;
 }
+
 
 .cajaCards {
    width: 100%;
@@ -27,3 +29,40 @@
     align-items: start;
 }
 
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    
+    .cajaCards {
+       width: 100%;
+       height: auto;
+       display: flex;
+       justify-content: start;
+       flex-wrap: nowrap;
+       overflow-x: scroll;
+       padding: 20px 30px;
+       margin: 0px 0px;
+    }
+    
+    .cajaCards::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .caja  {
+        width: 100%;
+        height: auto; 
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+
+}

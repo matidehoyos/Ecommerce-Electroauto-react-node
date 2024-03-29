@@ -16,16 +16,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
-  background-color: #0c1c6b;
+  background-color: rgba(0,0,0,.6);
 }
 
 .logo {
   width: auto;
   height: auto;
+  margin-right: 200px;
 }
 
 .logo img {
-  width: 120px;
+  width: 150px;
   height: auto;
   animation: desplazamiento 3s ease-in-out 1;
 }

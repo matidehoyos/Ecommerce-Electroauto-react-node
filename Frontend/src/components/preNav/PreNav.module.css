@@ -1,35 +1,42 @@
 .container { 
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    background-color: yellow;
-    padding: 5px 40px;
-    margin: 0;
-    overflow-x: hidden;
-    z-index: 0;
+  width: auto;
+  height: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  z-index: 0;
 }
 
 .container h6 {
-    font-size: 14px;
-    font-weight: 700;
-    padding: 0;
-    margin: 0;
-    color: #333;
-    position: relative;
-    white-space: nowrap;
-    animation: desplazamiento 3.5s ease-out 1;
+width: 400px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 50px;
+  color: rgba(256,256,256,.7);
+  position: relative;
+  white-space: nowrap;
+  color: #1b1b1b;
+  animation: desplazamiento 30s ease-out infinite;
 }
 
+
+
 @keyframes desplazamiento {
-    0% {
-      transform: translateY(-100vh);
-    }
-    100% {
-      transform: translateY(0vh);
-    }
+  0% {
+    transform: translateX(100%);
   }
+  100% {
+    transform: translateX(-40%);
+  }
+}
 
 
 

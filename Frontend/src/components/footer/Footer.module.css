@@ -183,8 +183,8 @@
   border: none;
   width: 100%;
   height: auto;
-  background-color: gold;
-  color: #0c1c6b;
+  background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+  color: #111; 
   font-size: 16px;
   font-weight: 700;
   letter-spacing: .5px;

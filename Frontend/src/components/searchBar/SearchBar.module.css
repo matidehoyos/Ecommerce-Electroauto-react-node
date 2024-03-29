@@ -17,7 +17,7 @@
     padding-left: 10px;
     border: .5px solid rgba(246, 255, 0, 1);
     border-radius: 4px;
-    background: #fff;
+    background: rgba(256,256,256,.8);
     color: #333;
 }
 
@@ -36,11 +36,12 @@
     width: auto;
     height: auto;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 14px;
+    font-style: italic;
     padding: 0px 6px;
-    color: #fff;
-    background-color: #333;
+    color: #111;
+    background-color: #f9ff55;
     border-radius: 4px;
     border: none;
     box-shadow: none;
@@ -48,7 +49,7 @@
 }
 
 .button:hover {
-    background-color: #222;
+    background-color: #f7ff0f;
 }
 
 
