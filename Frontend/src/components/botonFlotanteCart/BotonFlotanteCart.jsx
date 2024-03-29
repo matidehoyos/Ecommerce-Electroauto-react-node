@@ -127,8 +127,7 @@ const BotonFlotanteCart = () => {
                 <div className={style.proceso}>                 
                             { user.email ?
                          <button onClick={handleBuy} className={user.name ? style.botonProcesar : style.disabledProcesar} disabled={!user.name} >Procesar compra</button>
-                          :  <p className={style.noLogged}>Debes iniciar sesion para prosesar la compra. El registro de datos es seguro, solo recibiremos tu nombre e email 
-                                 para enviarte los datos de la compra y que hagamos el seguimiento. Nosotros no accedemos a contraseñas y demas informacion.</p>
+                          :  <p className={style.noLogged}>Debes iniciar sesion para prosesar la compra.</p>
                            }
         
                            { preferenceId && (

@@ -12,7 +12,8 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 const NavBar = () => {
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 680);
-  const data = useSelector(state => state.userData);
+  let user = JSON.parse(localStorage.getItem('user'));
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -67,10 +68,15 @@ const NavBar = () => {
                   </li>
                 </ul>
               </nav>
-              <div className={style.login} >
+              {
+                !user?.name ?
+                <div className={style.login} >
                 <LoginButton />
-             </div>
-             {data?.name ? <UserAccountMobile /> : null}
+                </div>
+                : null
+              }
+              
+             {user?.name ? <UserAccountMobile /> : null}
             </div>   
             <div className={style.hamburgContainer}>
               <button className={style.menuButton} onClick={handleShowMenu}> <GiHamburgerMenu /></button>

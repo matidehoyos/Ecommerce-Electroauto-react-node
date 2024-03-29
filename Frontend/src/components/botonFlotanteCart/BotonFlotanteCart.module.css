@@ -189,9 +189,11 @@
 
 
       .noLogged {
-        color: rgba(0, 0, 0, 0.8);
-        width: 94%;
-        text-align: left;
+        color: rgba(237, 26, 26, 0.8);
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
         margin: 0;
         padding: 0;
       }

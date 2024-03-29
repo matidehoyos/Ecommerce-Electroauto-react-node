@@ -5,11 +5,12 @@ import { loadUserData } from "../../redux/actions";
 import { UserAccount } from '../userAccount/UserAccount'
 import style from './LoginButton.module.css'
 import axios from 'axios'
+import UserAccountMobile from "../userAccountMobile/UserAccountMobile";
 
 
 
 const LoginButton = () => {
-  const { loginWithRedirect, user, logout } = useAuth0();
+  const { loginWithRedirect, user } = useAuth0();
   const dispatch = useDispatch();
   const [menuIsActive, setMenuIsActive] = useState(true)
   const currentUser = JSON.parse(localStorage.getItem('user'));
@@ -64,7 +65,7 @@ const postUserData = async () => {
         !currentUser?.name ? (
         <button className={style.buttonLogin} onClick={handleLogin}>Iniciar sesion/ <br />Registrarse</button>
         )
-        : (
+        : 
         <>
          <UserAccount menuIsActive={menuIsActive} activeMenu={activeMenu} />
           <div className={style.containerButtonUser} >
@@ -75,7 +76,7 @@ const postUserData = async () => {
             </div>
           </div>
         </>
-      )}
+        }
     </div>
 
   );
