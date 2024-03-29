@@ -285,15 +285,15 @@
 .visita button {
   width: auto;
   height: auto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 14px;
-  padding: 7px 14px;
+  padding: 8px 16px;
   background-image: linear-gradient(to left , #ffffa4, #fff703  );
   border: 0.4px solid rgba(256, 256, 256, 1);
-  color: rgba(0,0,0,.9);
+  color: #080808;
   border-radius: 4px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, .6);
+  box-shadow: 0px 0px 20px rgba(256, 256, 256, .3);
 }
 
 .kartButton {

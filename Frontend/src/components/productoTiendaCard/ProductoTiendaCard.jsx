@@ -81,11 +81,11 @@ const ProductoTiendaCard = ({producto}) => {
               WebkitOverflowScrolling: 'touch',
               borderRadius: '6px',
               outline: 'none',
-              padding: '20px',
+              padding: ' 10px 20px',
               paddingBottom: '26px',
               position: 'relative',
               left: '0vw',
-              top: '90px',
+              top: '75px',
             }
           }}
         >
