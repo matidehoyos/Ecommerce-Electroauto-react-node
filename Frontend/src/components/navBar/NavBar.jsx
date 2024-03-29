@@ -13,6 +13,17 @@ const NavBar = () => {
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 680);
   let user = JSON.parse(localStorage.getItem('user'));
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 30);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   
 
   useEffect(() => {
@@ -42,7 +53,7 @@ const NavBar = () => {
   }
 
   return (
-    <div className={style.container}>
+    <div className={isScrolled ? style.scrolled : style.container}>
 
       <div className={style.firstRow}>
            <div className={style.logo}>

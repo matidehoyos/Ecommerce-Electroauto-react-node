@@ -116,10 +116,24 @@
     padding: 0;
     margin: 0;
     background: rgba(0,0,0,.6);
-    position: fixed;
+    position: absolute;
+    top: 24px;
     z-index: 4000;
     box-shadow: none;
-    opacity: 1;
+  }
+
+  .scrolled {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0;
+    z-index: 4000;
+    box-shadow: none;
   }
   
   
@@ -269,7 +283,7 @@
   .hamburgContainer button {
     font-size: 28px;
     font-weight: 600;
-    color: rgba(255, 217, 0, 0.634);
+    color: #e7ef00;
     background-color: transparent;
     padding: 0;
   }
