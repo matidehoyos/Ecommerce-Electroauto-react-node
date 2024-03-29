@@ -70,7 +70,7 @@ const ProductoTiendaCard = ({producto}) => {
               backdropFilter: 'blur(5px)'
           },
           content: {
-              width: '86vw',
+              width: '76vw',
               minHeight: 'auto', 
               margin: '0 auto',
               marginTop: '0',
