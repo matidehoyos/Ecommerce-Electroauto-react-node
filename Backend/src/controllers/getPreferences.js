@@ -1,7 +1,7 @@
 const { findAllPreferences} = require("../services/preferenceService")
 
 
-const getPreferences= async (req, res) => {
+const getPreferences = async (req, res) => {
     try {
         const preferences = await findAllPreferences()
         res.status(200).json(preferences)

@@ -17,6 +17,17 @@ const BotonFlotanteCart = () => {
     const [preferenceId, setPreferenceId] = useState('');
     const [user,setUser] = useState([]);
     const total = carrito.reduce((total, producto) => total + producto.unidades * producto.precio, 0);
+    const [estadoEnvio, setEstadoEnvio] = useState(null);
+    const [formDataEnvio, setFormDataEnvio] = useState({
+        localidad: '',
+        codigoPostal: '',
+        provincia: '',
+        calle: '',
+        numero: '',
+        piso: '',
+        departamento: '',
+        observaciones: ''
+      });
 
     
     initMercadoPago('TEST-f3c67e82-99f3-485b-9002-d216c9a4f7db', { locale: 'es-AR' });
@@ -73,40 +84,49 @@ const BotonFlotanteCart = () => {
         setModalIsOpen(false);
     };
 
+    const enviarFormEnvioData = async () => {
+        try {
+            await preferenceProvider.updateDatosEnvio({preferenceId, formDataEnvio});
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
 
     return (
         <div className={style.modalCarrito}>
             <button className={style.kartButton} style={{ display: modalIsOpen ? 'none' : 'block' }}  onClick={openModal}><FaShoppingCart /><span>{carrito.length}</span></button>
             <div>
             <Modal
-    isOpen={modalIsOpen}
-    onRequestClose={closeModal}
-    contentLabel="Carrito Modal"
-    style={{
-      overlay: {
-        backgroundImage: 'linear-gradient(to right , #e7ef00, #fcffa9)',
-          backdropFilter: 'blur(5px)'
-      },
-      content: {
-          width: '94vw',
-          height: '70%',
-          margin: '0 auto',
-          marginTop: '0',
-          border: 'none',
-          background: 'rgba(256,256,256,1',
-          boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
-          WebkitOverflowScrolling: 'touch',
-          borderRadius: '6px',
-          outline: 'none',
-          padding: '0px',
-          overflow: 'scroll',
-          paddingBottom: '30px',
-          position: 'relative',
-          left: '0vw',
-          top: '100px',
-        }
-      }}
->
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel="Carrito Modal"
+                style={{
+                overlay: {
+                    backgroundImage: 'linear-gradient(to right , #e7ef00, #fcffa9)',
+                    backdropFilter: 'blur(5px)'
+                },
+                content: {
+                    width: '94vw',
+                    height: '70%',
+                    margin: '0 auto',
+                    marginTop: '0',
+                    border: 'none',
+                    background: 'rgba(256,256,256,1',
+                    boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
+                    WebkitOverflowScrolling: 'touch',
+                    borderRadius: '6px',
+                    outline: 'none',
+                    padding: '0px',
+                    overflowX: 'hidden',
+                    overflowY: 'scroll',
+                    paddingBottom: '30px',
+                    position: 'relative',
+                    left: '0vw',
+                    top: '100px',
+                    }
+                }}
+             >
                  <div className={style.buttonContainer}> 
                   <button  className={style.botonCierre} onClick={closeModal}>x</button>
                 </div>
@@ -138,31 +158,31 @@ const BotonFlotanteCart = () => {
                     </tbody>
                 </table>
                 <div className={style.proceso}>                 
-                            { user.email ?
+                        { user.email ?
                          <button onClick={handleBuy} className={user.name ? style.botonProcesar : style.disabledProcesar} disabled={!user.name} >Procesar compra</button>
-                          :  <div className={style.noLoggedContainer}>
-                                <p className={style.noLogged}>Debes iniciar sesion para procesar la compra.</p>
-                                <LoginButton />
-                             </div>
-                           }
+                          : <div className={style.noLoggedContainer}>
+                             <p className={style.noLogged}>Debes iniciar sesion para procesar la compra.</p>
+                             <LoginButton />
+                            </div>
+                        }
         
-                           { preferenceId && (
-                            <div>
+                        { preferenceId && 
                                 <div className={style.formDataEnvio}>
-                                    <FormularioEnvio />
+                                    <FormularioEnvio formDataEnvio={formDataEnvio} setFormDataEnvio={setFormDataEnvio} estadoEnvio={estadoEnvio} enviarFormEnvioData={enviarFormEnvioData}  />
                                 </div>
-                                <div className={style.wallet}>
-                                 <Wallet initialization={{preferenceId: preferenceId}} 
-                                           customization={{ texts: { valueProp: 'smart_option' }, visual: {horizontalPadding:'0px', buttonHeight: '55px' } }}  />
-                                </div> 
-                            </div>     
-                         ) } 
+                        }
+                            
+                        { estadoEnvio === 'exito' ?
+                            <div className={style.wallet}>
+                                 <Wallet initialization={{preferenceId: preferenceId}} customization={{ texts: { valueProp: 'smart_option' }, visual: {horizontalPadding:'0px', buttonHeight: '55px' } }}  />
+                            </div> 
+                            : null
+                        }     
                 </div>
             </Modal> 
 
-            </div>
-                            
-        </div>
+        </div>                     
+    </div>
     );
 };
 

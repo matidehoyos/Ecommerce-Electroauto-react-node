@@ -23,8 +23,8 @@ const UserAccountMobile = () => {
     const preferences = await preferenceProvider.getPreferences();
     const user = await userProvider.getUserByEmail(currentUser.email);
     setUsuario(user);  
-    const preference = preferences.data.filter((preference) => {
-      return preference.preferenceId === user.compra.preferenceId;
+    const preference = preferences?.data?.filter((preference) => {
+    return preference.preferenceId === user.compra.preferenceId;
     })
     setPreference(preference[0]);
   }
@@ -59,7 +59,7 @@ const UserAccountMobile = () => {
        {
         !currentUser.email ?
         <LoginButton />
-        :  <button onClick={handleLogut}>Cerrar sesion</button>
+        :  <button className={style.cerrarS} onClick={handleLogut}>Cerrar sesion</button>
        }
       <div>
    

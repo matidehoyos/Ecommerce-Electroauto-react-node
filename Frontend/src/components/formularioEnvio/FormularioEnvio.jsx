@@ -1,17 +1,8 @@
 import React, { useState } from 'react';
 import style from './FormularioEnvio.module.css';
 
-const FormularioEnvio = () => {
-  const [formDataEnvio, setFormDataEnvio] = useState({
-    localidad: '',
-    codigoPostal: '',
-    provincia: '',
-    calle: '',
-    numero: '',
-    piso: '',
-    departamento: '',
-    observaciones: ''
-  });
+const FormularioEnvio = ({formDataEnvio, setFormDataEnvio, estadoEnvio, enviarFormEnvioData }) => {
+  
 
   const handleChange = (event) => {
     setFormDataEnvio({
@@ -21,8 +12,8 @@ const FormularioEnvio = () => {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(formDataEnvio);
+      event.preventDefault();
+      enviarFormEnvioData();
   };
 
   return (
@@ -39,6 +30,16 @@ const FormularioEnvio = () => {
             <textarea className={style.entero} type="text" name="observaciones" placeholder="Observaciones:" value={formDataEnvio.observaciones} onChange={handleChange} />
         <button type="submit">Enviar información</button>
         </form>
+        {
+          estadoEnvio === 'exito' ?
+          <p className={style.respForm}>Datos enviados con exito!</p>
+          : null
+        }
+        {
+          estadoEnvio === '' && estadoEnvio !== 'exito' ?
+          <p className={style.respForm}>Error al enviar, verifique los datos.</p>
+          : null
+        }
     </div>
   );
 };

@@ -155,7 +155,7 @@
     }
 
   .formDataEnvio {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -163,9 +163,12 @@
   }
 
   .wallet {
-    padding: 0px 10px;
+    width: auto;
+    padding: 0;
     margin: 0;
+    margin-right: 10px;
     margin-top: 10px;
+    overflow: hidden;
   }
     
     .cerrarModal {
@@ -206,33 +209,34 @@
 
 
       .noLoggedContainer {
-        width: 100%;
+        width: 94%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        padding: 0px 5px;
+        padding: 0px 10px;
       }
 
       .noLogged {
-        color: rgba(221, 12, 12, 0.8);
-        width: 100%;
+        color: rgb(192, 0, 0);
+        width: auto;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 500;
         text-align: left;
         padding-left: 0;
         margin: 0;
         padding: 0;
+        font-style: italic;
       }
 
       .noLoggedContainer button {
-        color: #111;
-        font-size: 17px;
-        font-weight: 600;
+        color: #222;
+        font-size: 16px;
+        font-weight: 500;
         font-style: italic;
         padding-left: 0;
-        margin-top: 8px;
+        margin-top: 6px;
       }
 
 }

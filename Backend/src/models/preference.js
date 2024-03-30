@@ -10,12 +10,15 @@ id: {
 },
 estado: {
     type: DataTypes.STRING,
-    defaultValue: "Producción"
 },
 email: {
     type: DataTypes.STRING,
     required: true
 },
+infoEnvio: {
+    type: DataTypes.JSON,
+    defaultValue: {}
+  },
 preferenceId: {
     type: DataTypes.STRING,
 },

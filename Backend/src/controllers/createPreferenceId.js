@@ -24,8 +24,11 @@ const createPreferenceId = async(req, res) => {
     try {
       const result = await preference.create({body});
       const obj = {
+        estado: "Producción",
         email: email,
+        infoEnvio: {},
         preferenceId: result.id,
+        infoMp: {},
       }
       const newPreferenceBD = await createPreference(obj)
       return res.status(200).json({ id: result.id });  

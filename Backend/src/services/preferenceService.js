@@ -1,9 +1,8 @@
 const { Preference } = require("../../db.js");
-
 const findAllPreferences = async () => {
     try {
         const preferences = await Preference.findAll();
-        return preferences
+        return preferences;
     } catch (error) {
         console.error(error)
         throw new Error(error);
@@ -79,12 +78,12 @@ const editarEstadoPreference = async (id) => {
 
     const updatePreferenceEnvio = async ({preferenceId, datosEnvio}) =>  {
         try{
-            console.log(preferenceId)
+        console.log(preferenceId)
         const pref = await Preference.findOne( { where: {preferenceId: preferenceId}});
         if (!pref) {
           throw new Error('Preference no encontrado');
         }
-        await pref.update({ envio: datosEnvio });
+        await pref.update({ infoEnvio: datosEnvio });
         return pref; 
         } catch(error) {
             console.error(error)

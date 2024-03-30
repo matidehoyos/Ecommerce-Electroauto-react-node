@@ -6,7 +6,6 @@ const editarEnvio = async (req, res) => {
     try {
         const { preferenceId, datosEnvio } = req.body
         const response = await updatePreferenceEnvio(preferenceId,datosEnvio)
-
         res.status(200).json(response)
 
     } catch (error) {

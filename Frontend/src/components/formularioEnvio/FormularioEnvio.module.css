@@ -69,3 +69,10 @@
     background-color: rgb(106, 106, 255);
     margin: 10px;
 }
+
+.respForm {
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0;
+    text-align: left;
+}

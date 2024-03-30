@@ -15,6 +15,7 @@ const preferenceProvider = {
             const allPreferences = await axios.get(`/preferences`)
             return allPreferences
         } catch (error) {
+            console.log(error)
             return error.message
         }
     },
@@ -42,7 +43,8 @@ const preferenceProvider = {
         } catch (error) {
             console.error(error);
         }
-    }, async updateDatosEnvio(obj) {
+    }, 
+    async updateDatosEnvio(obj) {
         try {
             const datos = await axios.put(`/putEnvio`, obj)
             return datos
