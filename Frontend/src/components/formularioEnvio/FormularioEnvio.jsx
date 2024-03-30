@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import style from './FormularioEnvio.module.css';
 
-const FormularioEnvio = ({formDataEnvio, setFormDataEnvio, estadoEnvio, enviarFormEnvioData }) => {
+const FormularioEnvio = ({formDataEnvio, setFormDataEnvio, estadoEnvio, setEstadoEnvio,  enviarFormEnvioData }) => {
   
 
   const handleChange = (event) => {
@@ -14,6 +14,7 @@ const FormularioEnvio = ({formDataEnvio, setFormDataEnvio, estadoEnvio, enviarFo
   const handleSubmit = (event) => {
       event.preventDefault();
       enviarFormEnvioData();
+      setEstadoEnvio('exito');
   };
 
   return (

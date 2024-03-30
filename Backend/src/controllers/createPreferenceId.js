@@ -12,9 +12,9 @@ const createPreferenceId = async(req, res) => {
    const body = {
       items: items,
       back_urls: {
-        success: "http://localhost:5173/successpayment",
-        failure: "http://localhost:5173/successpayment",
-        pending: "http://localhost:5173/successpayment",
+        success: "https://electroauto.vercel.app/successpayment",
+        failure: "https://electroauto.vercel.app/successpaymen",
+        pending: "https://electroauto.vercel.app/successpaymen",
       },
       auto_return: "approved",
     };

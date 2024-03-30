@@ -76,14 +76,13 @@ const editarEstadoPreference = async (id) => {
     }};
 
 
-    const updatePreferenceEnvio = async ({preferenceId, datosEnvio}) =>  {
+    const updatePreferenceEnvio = async ({preferenceId, formDataEnvio}) =>  {
         try{
-        console.log(preferenceId)
         const pref = await Preference.findOne( { where: {preferenceId: preferenceId}});
         if (!pref) {
           throw new Error('Preference no encontrado');
         }
-        await pref.update({ infoEnvio: datosEnvio });
+        await pref.update({ infoEnvio: formDataEnvio });
         return pref; 
         } catch(error) {
             console.error(error)

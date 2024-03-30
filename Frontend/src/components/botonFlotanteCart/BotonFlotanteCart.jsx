@@ -168,7 +168,7 @@ const BotonFlotanteCart = () => {
         
                         { preferenceId && 
                                 <div className={style.formDataEnvio}>
-                                    <FormularioEnvio formDataEnvio={formDataEnvio} setFormDataEnvio={setFormDataEnvio} estadoEnvio={estadoEnvio} enviarFormEnvioData={enviarFormEnvioData}  />
+                                    <FormularioEnvio formDataEnvio={formDataEnvio} setFormDataEnvio={setFormDataEnvio} estadoEnvio={estadoEnvio} setEstadoEnvio={setEstadoEnvio} enviarFormEnvioData={enviarFormEnvioData}  />
                                 </div>
                         }
                             
