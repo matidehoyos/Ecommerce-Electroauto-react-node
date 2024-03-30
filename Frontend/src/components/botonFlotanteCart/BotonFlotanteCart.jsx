@@ -88,7 +88,7 @@ const BotonFlotanteCart = () => {
       },
       content: {
           width: '94vw',
-          height: '100%',
+          height: '75%',
           margin: '0 auto',
           marginTop: '0',
           border: 'none',
