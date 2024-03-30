@@ -33,7 +33,6 @@ const Tienda = () => {
 
     return(
         <div className={style.container}>
-            <PreNav />
             <NavBar />
             
              <div className={style.search}>

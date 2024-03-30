@@ -46,7 +46,7 @@ width: 400px;
 
   .container { 
     width: auto;
-    height: 24px;
+    height: 20px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
@@ -60,7 +60,7 @@ width: 400px;
 
 .container h6 {
   width: 400px;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 700;
     text-align: center;
     padding: 0;

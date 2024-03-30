@@ -7,6 +7,7 @@ import { FiMenu } from 'react-icons/fi';
 import  UserAccountMobile from '../userAccountMobile/UserAccountMobile';
 import { useSelector } from 'react-redux';
 import { GiHamburgerMenu } from 'react-icons/gi'
+import PreNav from '../preNav/PreNav';
 
 
 const NavBar = () => {
@@ -54,7 +55,7 @@ const NavBar = () => {
 
   return (
     <div className={isScrolled ? style.scrolled : style.container}>
-
+          <PreNav />
       <div className={style.firstRow}>
            <div className={style.logo}>
               <Link to="/">

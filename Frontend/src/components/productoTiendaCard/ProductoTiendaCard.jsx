@@ -71,6 +71,7 @@ const ProductoTiendaCard = ({producto}) => {
           },
           content: {
               width: '76vw',
+              height: '70%',
               minHeight: 'auto', 
               margin: '0 auto',
               marginTop: '0',
@@ -85,7 +86,7 @@ const ProductoTiendaCard = ({producto}) => {
               paddingBottom: '26px',
               position: 'relative',
               left: '0vw',
-              top: '75px',
+              top: '100px',
             }
           }}
         >

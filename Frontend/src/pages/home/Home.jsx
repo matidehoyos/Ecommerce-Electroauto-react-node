@@ -31,7 +31,6 @@ const Home = () => {
     return(
         <div className={style.container}>
            <BotonFlotanteCart />
-           <PreNav />
            <NavBar />
            <Header />
            <SubHeader />

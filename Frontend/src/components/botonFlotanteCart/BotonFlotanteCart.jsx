@@ -7,6 +7,7 @@ import { Wallet, initMercadoPago } from '@mercadopago/sdk-react';
 import preferenceProvider from '../../utils/provider/preferenceProvider';
 import LoginButton from '../loginButton/LoginButton';
 import FormularioEnvio from '../formularioEnvio/FormularioEnvio';
+import PreNav from '../preNav/PreNav';
 
 
 const BotonFlotanteCart = () => {
