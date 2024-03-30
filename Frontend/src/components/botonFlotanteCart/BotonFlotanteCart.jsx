@@ -88,21 +88,21 @@ const BotonFlotanteCart = () => {
       },
       content: {
           width: '94vw',
-          minHeight: 'auto', 
+          height: '100%',
           margin: '0 auto',
           marginTop: '0',
           border: 'none',
           background: 'rgba(256,256,256,1',
           boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
-          overflowY: 'scroll',
           WebkitOverflowScrolling: 'touch',
           borderRadius: '6px',
           outline: 'none',
           padding: '0px',
+          overflow: 'scroll',
           paddingBottom: '30px',
           position: 'relative',
           left: '0vw',
-          top: '78px',
+          top: '82px',
         }
       }}
 >
