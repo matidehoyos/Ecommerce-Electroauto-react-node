@@ -134,9 +134,13 @@
     }
 
 .proceso {
+  width: auto;
   display: flex;
+  flex-direction: column;
+  align-items: end;
   justify-content: end;
-  margin-top: 24px;
+  margin-top: 22px;
+  padding-right: 0;
 }
 
     .botonProcesar {
@@ -145,11 +149,25 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 16px;
-      padding: 8px 12px;
+      padding: 8px 16px;
       color: #e0e0e0;
       background-color: rgb(68, 68, 68);
-      margin-right: 20px;
+      margin-right: 10px;
     }
+
+  .formDataEnvio {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .wallet {
+    padding: 0px 10px;
+    margin: 0;
+    margin-top: 30px;
+  }
     
     .cerrarModal {
         width: auto;

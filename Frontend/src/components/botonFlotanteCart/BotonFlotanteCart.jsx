@@ -6,6 +6,7 @@ import style from './BotonFlotanteCart.module.css'
 import { Wallet, initMercadoPago } from '@mercadopago/sdk-react';
 import preferenceProvider from '../../utils/provider/preferenceProvider';
 import LoginButton from '../loginButton/LoginButton';
+import FormularioEnvio from '../formularioEnvio/FormularioEnvio';
 
 
 const BotonFlotanteCart = () => {
@@ -14,6 +15,8 @@ const BotonFlotanteCart = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [preferenceId, setPreferenceId] = useState('');
     const [user,setUser] = useState([]);
+    const total = carrito.reduce((total, producto) => total + producto.unidades * producto.precio, 0);
+
     
     initMercadoPago('TEST-f3c67e82-99f3-485b-9002-d216c9a4f7db', { locale: 'es-AR' });
 
@@ -25,15 +28,21 @@ const BotonFlotanteCart = () => {
     
     const createPreference = async () => {
         try {
+            let items = carrito.map(producto => {
+                return {
+                    title: producto.name,
+                    quantity: Number(producto.unidades),
+                    unit_price: Number(producto.precio)
+                };
+            });
             const obj = {
-                items: carrito,
+                items:  items,
                 email: user.email
             }
-            const response = await preferenceProvider.createPreference(obj)
-            console.log(response)
-            const { id } = response; 
+            const id = await preferenceProvider.createPreference(obj);
             return id;
         } catch (error) {
+            console.log(error)
             console.error(error);
         }}
 
@@ -45,11 +54,14 @@ const BotonFlotanteCart = () => {
   
       
       const handleBuy = async () => {
+        try {
           const id = await createPreference(); 
-          console.log(id)
           if (id) {
             setPreferenceId(id);
-          }
+          } } catch (error) {
+            console.log(error)
+            console.error(error)
+        }
       }
 
     const openModal = () => {
@@ -60,7 +72,6 @@ const BotonFlotanteCart = () => {
         setModalIsOpen(false);
     };
 
-    const total = carrito.reduce((total, producto) => total + producto.unidades * producto.precio, 0);
 
     return (
         <div className={style.modalCarrito}>
@@ -83,15 +94,15 @@ const BotonFlotanteCart = () => {
           border: 'none',
           background: 'rgba(256,256,256,1',
           boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
-          overflow: 'scroll',
+          overflowY: 'scroll',
           WebkitOverflowScrolling: 'touch',
           borderRadius: '6px',
           outline: 'none',
           padding: '0px',
-          paddingBottom: '26px',
+          paddingBottom: '30px',
           position: 'relative',
           left: '0vw',
-          top: '90px',
+          top: '78px',
         }
       }}
 >
@@ -129,18 +140,23 @@ const BotonFlotanteCart = () => {
                             { user.email ?
                          <button onClick={handleBuy} className={user.name ? style.botonProcesar : style.disabledProcesar} disabled={!user.name} >Procesar compra</button>
                           :  <div className={style.noLoggedContainer}>
-                                <p className={style.noLogged}>Debes iniciar sesion para prosesar la compra.</p>
+                                <p className={style.noLogged}>Debes iniciar sesion para procesar la compra.</p>
                                 <LoginButton />
                              </div>
                            }
         
                            { preferenceId && (
-                               <div className={style.wallet}>
+                            <div>
+                                <div className={style.formDataEnvio}>
+                                    <FormularioEnvio />
+                                </div>
+                                <div className={style.wallet}>
                                  <Wallet initialization={{preferenceId: preferenceId}} 
                                            customization={{ texts: { valueProp: 'smart_option' }, visual: {horizontalPadding:'0px', buttonHeight: '55px' } }}  />
                                 </div> 
+                            </div>     
                          ) } 
-                    </div>
+                </div>
             </Modal> 
 
             </div>

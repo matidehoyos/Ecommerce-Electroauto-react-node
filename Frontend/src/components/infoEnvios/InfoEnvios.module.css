@@ -118,7 +118,7 @@
         justify-content: center;
         align-items: center;
         padding: 130px 0px;
-        padding-left: 38px;
+        padding-left: 18px;
         margin: 0;
         margin-bottom: 0px;
         background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
@@ -140,7 +140,7 @@
     }
     
     .text h4 {
-        width: 75%;
+        width: 100%;
         font-size: 26px;
         font-weight: 900;
         line-height: 24px;
@@ -152,7 +152,7 @@
     }
     
     .text h5 {
-        width: 80%;
+        width: 100%;
         font-size: 24px;
         line-height: 22px;
         font-weight: 400;
@@ -171,6 +171,7 @@
         margin: 0px;
         margin-right: 8px;
         padding: 0;
+        padding-right: 10px;
     }
     
     

@@ -17,12 +17,8 @@ email: {
     required: true
 },
 preferenceId: {
-    type: DataTypes.STRING
+    type: DataTypes.STRING,
 },
-envio: {
-    type: DataTypes.JSON,
-    defaultValue: {}
-  },
 infoMp: {
     type: DataTypes.JSON,
     defaultValue: {}
