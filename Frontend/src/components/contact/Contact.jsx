@@ -63,7 +63,7 @@ const Contact = () => {
           <div className={style.wts}>
             <div className={style.wtsTexto}>
               <h4>O envianos un WhatsApp</h4>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=542235448523" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className={style.icon} />+54 9 2235 448523
               </a>
             </div>
