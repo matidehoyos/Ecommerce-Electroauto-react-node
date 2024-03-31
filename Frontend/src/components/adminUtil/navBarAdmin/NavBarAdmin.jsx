@@ -36,7 +36,7 @@ const NavBarAdmin = () => {
       
         <div className={style.logo}>
           <Link to="/admin">
-            <h3>AdminPanel</h3> 
+            <h3>ELECTROAUTO</h3> 
            </Link>
         </div>
       

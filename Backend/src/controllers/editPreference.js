@@ -1,14 +1,14 @@
+const { editarEstadoPreference } = require("../services/preferenceService");
 
-
-const PostEnvio = async (req, res) => {
+const editPreference = async (req, res) => {
     try {
-        const {datos} = req.body;
+        const id = req.params.id;
         const envio = await editarEstadoPreference(id);
-        res.json(preference);
+        res.json(envio);
       } catch (error) {
         console.error('Error:', error);
+        console.log(error)
         res.status(500).json({ error: error.message });
       }
 }
-
-module.exports = PostEnvio
+module.exports = editPreference

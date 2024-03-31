@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 200px);
     display: flex;
     align-items: start;
     justify-content: start;
@@ -136,7 +136,7 @@
 
     .container {
         width: 100%;
-        min-height: calc(100vh - 50px);
+        min-height: calc(100vh - 150px);
         display: flex;
         align-items: start;
         justify-content: center;
@@ -264,11 +264,109 @@
     .noMsj {
         width: 100%;
         height: auto;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 700;
         margin-top: 150px;
         text-align: center;
         color: #222;
+        font-style: italic;
+    }
+
+    
+    .cierre {
+        width: 100%;
+        padding: 0;
+        text-align: right;
+        background: transparent; 
+        font-weight: 600; 
+        font-size: 24px;
+         color: red;
+    }
+    
+    .pModal {
+        font-size: 14px;
+        font-weight: 500;
+        font-style: italic;
+        color: #4b4b4b;
+    }
+    
+    .pModal span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #000;
+        padding-left: 6px;
+    }
+  
+    .emailRow {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .pEmail {
+        font-style: inherit;
+        margin: 0;
+    }
+
+    .iconE {
+        height: auto;
+        font-size: 24px;
+        color: rgb(47, 47, 47);
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: 6px;
+    }
+   
+    .pEmail span {
+        font-size: 16px;
+        font-weight: 500;
+        font-style: inherit;
+        font-style: italic;
+    }
+
+    .pMensaje {
+        padding-top: 20px;
+        font-style: inherit;
+        margin: 0;
+    }
+
+    .iconO {
+        height: auto;
+        font-size: 21px;
+        color: rgb(47, 47, 47);
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: 1.4px;
+    }
+
+    .iconU {
+        font-size: 20px;
+        color: #516eff;
+        position: relative;
+        top: 2px;  
+    }
+   
+    .pMensaje span {
+        font-size: 18px;
+        font-weight: 500;
+        font-style: inherit;
+        font-style: italic;
+    }
+
+    .pResponder {
+        margin-top: 30px;
+    }
+
+    .pResponder a {
+        font-size: 18px;
+        font-weight: 600;
+        font-style: italic;
+        color: #0034c5;
     }
 
 }

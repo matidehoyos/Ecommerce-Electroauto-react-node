@@ -99,17 +99,41 @@ const ProductosAdmin = () => {
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel="Info Modal"
+                style={{
+                    overlay: {
+                        background: 'rgba(256,256,256,.6',
+                        backdropFilter: 'blur(5px)'
+                    },
+                    content: {
+                        width: '90vw',
+                        height: '70%',
+                        margin: '0 auto',
+                        marginTop: '0',
+                        border: 'none',
+                        background: 'rgba(256,256,256,1',
+                        boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
+                        WebkitOverflowScrolling: 'touch',
+                        borderRadius: '6px',
+                        outline: 'none',
+                        padding: '10px',
+                        overflowX: 'hidden',
+                        overflowY: 'scroll',
+                        position: 'relative',
+                        left: '0vw',
+                        top: '100px',
+                        }
+                    }}
             >
-                <p>Id: <span style={{fontWeight:'600', color:'#000'}}>{prod?.id}</span></p>
-                <p>Nombre: <span style={{fontWeight:'600', color:'#000'}}>{prod?.name}</span></p>
-                <p>Detalle: <span style={{fontWeight:'600', color:'#000'}}>{prod?.detalle}</span></p>
-                <p>Info: <span style={{fontWeight:'600', color:'#000'}}>{prod?.informacion}</span></p>
-                <p>Categoria: <span style={{fontWeight:'600', color:'#000'}}>{prod?.categoria}</span></p>
-                <p>Stock: <span style={{fontWeight:'600', color:'#000'}}>{prod?.cantidad}</span></p>
-                <p>Precio: <span style={{fontWeight:'600', color:'#000'}}>{prod?.precio}</span></p>
-                <p><button className={style.botonEditar} onClick={() => editarProducto(prod)}>Editar producto</button></p>
-                <p><button className={style.botonEliminar} onClick={() => deleteProducto(prod.id)}>Eliminar producto</button></p>
-                <button style={{ padding:'0', background:'transparent', fontWeight:'800', color:'#000', marginTop:'30px'}} onClick={closeModal}>Cerrar</button>
+                <button className={style.cierre} onClick={closeModal}>x</button>
+                <p className={style.pModal}>Id: <span>{prod?.id}</span></p>
+                <p className={style.pModal}>Nombre: <span>{prod?.name}</span></p>
+                <p className={style.pModal}>Detalle: <span>{prod?.detalle}</span></p>
+                <p className={style.pModal}>Info: <span>{prod?.informacion}</span></p>
+                <p className={style.pModal}>Categoria: <span>{prod?.categoria}</span></p>
+                <p className={style.pModal}>Stock: <span>{prod?.cantidad}</span></p>
+                <p className={style.pModal}>Precio: <span>{prod?.precio}</span></p>
+                <button className={style.botonEditar} onClick={() => editarProducto(prod)}>Editar producto</button>
+                <button className={style.botonEliminar} onClick={() => deleteProducto(prod.id)}>Eliminar producto</button>
       </Modal>
     </div>
   );

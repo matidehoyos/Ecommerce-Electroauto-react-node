@@ -14,6 +14,7 @@ import productosProvider from '../../utils/provider/productosProvider'
 import mensajesProvider from '../../utils/provider/mensajesProvider'
 import preferenceProvider from '../../utils/provider/preferenceProvider'
 import Ventas from '../../components/adminUtil/ventas/Ventas'
+import ProductoDetail from '../../components/productoDetail/ProductoDetail'
 
 const AdminWindow = () => {
     const dispatch = useDispatch();
@@ -103,14 +104,17 @@ const AdminWindow = () => {
 
                         <div className={style.caja}>
                             <Routes>
+                                    <Route path="" element={<CreateProducto />} />
                                     <Route path="productosAdmin" element={<ProductosAdmin />} />
-                                    <Route path="createProduct" element={<CreateProducto />} />
                                     <Route path="users" element={<Usuarios />} />
                                     <Route path="mensajes" element={<Mensajes setMensaje={setMensajes}/>} />
                                     <Route path="ventas" element={<Ventas />} />
                             </Routes>
                         </div>
+                        <div className={style.image}>
+                            <img src="../../../public/logoPc.png" alt="logo" />
                         </div>
+                     </div>
                     </div>                
                    : 
                 <NotFound /> 

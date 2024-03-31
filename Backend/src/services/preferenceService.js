@@ -65,13 +65,15 @@ const findOrderByStatus = async (prop) => {
 
 const editarEstadoPreference = async (id) => {
     try{
-    const preference = await Preference.findByPk(id);
+    const idPreference = Number(id)
+    const preference = await Preference.findByPk(idPreference);
     if (!preference) {
       throw new Error('Preference no encontrado');
     }
     await preference.update({ estado: 'Enviado' });
     return preference; 
     } catch(error) {
+        console.error(error)
         console.error(error)
     }};
 

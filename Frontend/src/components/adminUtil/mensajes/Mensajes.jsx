@@ -1,9 +1,9 @@
 import style from "./Mensajes.module.css";
 import { useEffect, useState } from "react";
 import mensajesProvider from "../../../utils/provider/mensajesProvider";
-import { FaCheck, FaEdit, FaTrashAlt } from 'react-icons/fa';
+import { FaCheck, FaEdit, FaTrashAlt, FaUser } from 'react-icons/fa';
 import Modal from 'react-modal';
-
+import { IoIosMailOpen, IoIosMail } from 'react-icons/io';
 
 const Mensajes = ({setMensaje}) => {
     const [mensajes,setMensajes] = useState([]);
@@ -78,7 +78,7 @@ const Mensajes = ({setMensaje}) => {
                                 {mensajesFiltrados.map((mensaje, index) => (
                                     <tr key={index}>
                                         <td><p>{mensaje.name}</p></td>
-                                        <td><p><button className={style.vermas} onClick={() => openModal(mensaje)}>Leer mensaje</button></p></td>
+                                        <td><p><button className={style.vermas} onClick={() => openModal(mensaje)}>Leer</button></p></td>
                                         <td><p>{mensaje.leido}</p></td>
                                         <td><p><button className={style.botonLeido} onClick={() => marcarLeido(mensaje.id)}><FaCheck /></button></p></td>
                                         <td><p><button className={style.botonEliminar} onClick={() => eliminarMensaje(mensaje.id)}><FaTrashAlt /></button></p></td>
@@ -90,13 +90,36 @@ const Mensajes = ({setMensaje}) => {
                 <Modal
                     isOpen={modalIsOpen}
                     onRequestClose={closeModal}
-                    contentLabel="Mensaje Modal" >
-                    <h3>{currentMessage?.name}</h3>
-                    <h5>{currentMessage?.nombre}</h5>
-                    <p  style={{padding:'0', color:'#000', fontWeight:'500'}}>{currentMessage?.email}</p>
-                    <p  style={{padding:'0', color:'#000', fontSize:'18px', fontWeight:'600'}}>{currentMessage?.mensaje}</p>
-                    <p><a href={`mailto:${currentMessage?.email}`}  style={{ padding:'0', color:'blue'}}>Responder</a></p>
-                    <button onClick={closeModal} style={{ background:'transparent',padding:'0', color:'#000'}} >Cerrar</button>
+                    contentLabel="Mensaje Modal" 
+                    style={{
+                        overlay: {
+                            background: 'rgba(256,256,256,.6)',
+                            backdropFilter: 'blur(5px)'
+                        },
+                        content: {
+                            width: '90%',
+                            height: '70%',
+                            margin: '0 auto',
+                            border: 'none',
+                            background: 'rgba(256,256,256,1',
+                            boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
+                            WebkitOverflowScrolling: 'touch',
+                            borderRadius: '6px',
+                            outline: 'none',
+                            padding: '0px 10px',
+                            paddingBottom: '10px',
+                            overflowX: 'hidden',
+                            overflowY: 'scroll',
+                            position: 'relative',
+                            left: '0vw',
+                            top: '100px',
+                            }
+                        }}>
+                    <button onClick={closeModal} className={style.cierre} >x</button>
+                    <p className={style.pModal}><FaUser  className={style.iconU} /><span>{currentMessage?.name}</span></p>
+                    <div className={style.emailRow}><p className={style.pEmail}><IoIosMail className={style.iconE}/> <span>{currentMessage?.email}</span></p></div>
+                    <p className={style.pMensaje}><IoIosMailOpen className={style.iconO} /> <span>{currentMessage?.mensaje}</span></p>
+                    <p className={style.pResponder}><a href={`mailto:${currentMessage?.email}`} >Responder</a></p>
             </Modal>
         </div>}
     </div>

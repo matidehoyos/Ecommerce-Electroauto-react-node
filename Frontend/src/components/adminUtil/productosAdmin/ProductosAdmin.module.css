@@ -245,27 +245,6 @@
         border: none;
     }
     
-    .botonEditar {
-        width: auto;
-        height: auto;
-        font-size: 14px;
-        font-weight: 700;
-        margin: 0;
-        padding: 0;
-        color: blue;
-        background-color: transparent;
-    }
-    
-    .botonEliminar {
-        width: auto;
-        height: auto;
-        font-size: 14px;
-        font-weight: 700;
-        padding: 0;
-        margin: 0;
-        color: red;
-        background-color: transparent;
-    }
     
     .vermas {
         background-color: transparent;
@@ -278,10 +257,66 @@
     .noProductos {
         width: 100%;
         height: auto;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 700;
         margin-top: 150px;
         text-align: center;
         color: #222;
+        font-style: italic;
+    }
+
+    .cierre {
+        width: 100%;
+        padding: 0;
+        text-align: right;
+        background: transparent; 
+        font-weight: 600; 
+        font-size: 24px;
+         color: rgb(0, 50, 131);
+         ;
+    }
+    
+    .pModal {
+        font-size: 20px;
+        font-weight: 700;
+        font-style: italic;
+        color: rgb(0, 0, 0);
+    }
+    
+    .pModal span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #111;
+        padding-left: 6px;
+    }
+
+    .botonEditar {
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+        margin-top: 30px;
+        padding: 0;
+        color: blue;
+        background-color: transparent;
+        display: block;
+        font-style: italic;
+        letter-spacing: .7px;
+    }
+    
+    .botonEliminar {
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        color: red;
+        background-color: transparent;
+        display: block;
+        font-style: italic;
+        letter-spacing: .7px;
+        margin-top: 12px;
     }
 }

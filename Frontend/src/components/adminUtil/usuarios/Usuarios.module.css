@@ -205,10 +205,10 @@
         height: auto;
         font-size: 16px;
         font-weight: 500;
-        text-align: left;
+        text-align: center;
         color: #000;
         background-color: #fff;
-        padding: 5px;
+        padding: 5px 0px;
         margin: 0;
     }
     
@@ -224,40 +224,58 @@
         border: none;
     }
     
-    .botonLeido {
-        width: auto;
-        height: auto;
-        font-size: 14px;
-        font-weight: 700;
-        padding: 0;
-        color: rgb(0, 175, 0);
-        background-color: transparent;
-    }
-    
-    .botonEliminar {
-        width: auto;
-        height: auto;
-        font-size: 14px;
-        font-weight: 700;
-        padding: 0;
-        color: red;
-        background-color: transparent;
-    }
-    
     .vermas {
+        font-size: 16px;
+        font-weight: 700;
         background-color: transparent;
-        color: blue;
+        color: rgb(0, 54, 190);
         text-align: center;
+        font-style: italic;
+    }
+
+    .botonEditar {
+        font-size: 16px;
+        font-weight: 7000;
+        background-color: transparent;
+        color: rgb(0, 54, 190);
+        text-align: center;
+        font-style: italic;
     }
     
     .noUsers {
         width: 100%;
         height: auto;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 700;
         margin-top: 150px;
         text-align: center;
         color: #222;
+        font-style: italic;
+    }
+
+    .cierre {
+        width: 100%;
+        padding: 0;
+        text-align: right;
+        background: transparent; 
+        font-weight: 600; 
+        font-size: 24px;
+        color: rgb(0, 50, 131);
+         ;
+    }
+    
+    .pModal {
+        font-size: 20px;
+        font-weight: 700;
+        font-style: italic;
+        color: rgb(0, 0, 0);
+    }
+    
+    .pModal span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #111;
+        padding-left: 6px;
     }
 
 }

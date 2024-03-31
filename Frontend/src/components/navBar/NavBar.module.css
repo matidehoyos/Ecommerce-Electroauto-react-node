@@ -116,7 +116,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background: rgba(0,0,0,.6);
+    background-image: linear-gradient(to left , #310edf, #1e0e6e  );
     position: fixed;
     top: 0px;
     z-index: 4000;
@@ -130,7 +130,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background: rgba(0,0,0,.6);
+    background-image: linear-gradient(to right , #310edf, #1e0e6e  );
     position: fixed;
     top: 0;
     z-index: 4000;
@@ -212,6 +212,7 @@
   }
   
   .menu ul li {
+    width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -221,6 +222,7 @@
   }
   
   .menu ul li a {
+    width: 100%;
     text-decoration: none;
     color: #111;
     font-size: 20px;

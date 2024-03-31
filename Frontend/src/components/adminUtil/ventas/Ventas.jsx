@@ -14,7 +14,6 @@ const Ventas = () => {
     const [currentVenta, setCurrentVenta] = useState(null);
     const [infoEnvioModalIsOpen, setInfoEnvioModalIsOpen] = useState(false);
     const [currentInfoEnvio, setCurrentInfoEnvio] = useState(null);
-    console.log(preferences)
   
     const openInfoEnvioModal = (venta) => {
       setCurrentInfoEnvio(venta.infoEnvio);
@@ -67,8 +66,7 @@ const Ventas = () => {
                                 <tr>
                                     <th><h6>Estado</h6></th>
                                     <th><h6>Detalle</h6></th>
-                                    <th><h6>Comprador</h6></th>
-                                    <th><h6>Fecha</h6></th>
+                                    <th><h6>Envio</h6></th>
                                     <th><h6><FaEdit /></h6></th>
                                 </tr>
                             </thead>
@@ -79,7 +77,6 @@ const Ventas = () => {
                                         <td><p>{preference.estado}</p></td>
                                         <td><p><button className={style.vermas} onClick={() => openModal(preference)}>Ver</button></p></td>
                                         <td><p><button className={style.vermas} onClick={() => openInfoEnvioModal(preference)}>Ver</button></p></td>
-                                        <td><p>{preference.infoMp?.date_approved?.slice(0,10)}</p></td>
                                         <td><button className={style.botonEditar} onClick={() => editarEstado(preference.id)}><FaTruck className={style.camionIcon}/></button></td>
                                     </tr>
                                 )) : null } 
@@ -93,14 +90,13 @@ const Ventas = () => {
                 contentLabel="Info Modal"
                 style={{
                     overlay: {
-                        background: 'rgba(0,0,0,.6)',
+                        background: 'rgba(256,256,256,.6)',
                         backdropFilter: 'blur(5px)'
                     },
                     content: {
                         width: '90%',
                         height: '70%',
                         margin: '0 auto',
-                        marginTop: '0',
                         border: 'none',
                         background: 'rgba(256,256,256,1',
                         boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
@@ -110,43 +106,65 @@ const Ventas = () => {
                         padding: '0px 10px',
                         overflowX: 'hidden',
                         overflowY: 'scroll',
-                        paddingBottom: '30px',
                         position: 'relative',
                         left: '0vw',
                         top: '100px',
                         }
                     }}
             >
-                <button style={{ width:'97%', textAlign:'right', padding:'0', background:'transparent', fontWeight:'700',fontSize:'20px', color:'#111', marginTop:'10px'}} onClick={closeModal}>x</button>
-                <p>Fecha: <span style={{fontWeight:'600', color:'#000'}}>{currentVenta?.infoMp.date_approved.slice(0,9)}</span></p>
-                <p>Estado de pago: <span style={{fontWeight:'600', color:'#000'}}>{currentVenta?.infoMp.status}</span></p>
-                <p>Cliente: <span style={{fontWeight:'600', color:'#000'}}>{currentVenta?.email}</span></p>
-                <p>VentaId: <span style={{fontWeight:'600', color:'#000'}}>{currentVenta?.infoMp.payId}</span></p>
-                <p>Metodo: <span style={{fontWeight:'600', color:'#000'}}>{currentVenta?.infoMp.payment_method_id}</span></p>
-                <p>Tipo: <span style={{fontWeight:'600', color:'#000'}}>{currentVenta?.infoMp.payment_type_id}</span></p>
-                <p>Productos: {currentVenta?.infoMp?.productos.map((prod,i) => {
-                    return <span style={{fontWeight:'600', color:'#000'}}>{`${prod.quantity} ${prod.title}. `}</span>
+                <button className={style.cierre} onClick={closeModal}>x</button>
+                <p className={style.pModal}>Fecha: <span>{currentVenta?.infoMp.date_approved.slice(0,9)}</span></p>
+                <p className={style.pModal}>Estado de pago: <span>{currentVenta?.infoMp.status}</span></p>
+                <p className={style.pModal}>Cliente: <span>{currentVenta?.email}</span></p>
+                <p className={style.pModal}>VentaId: <span>{currentVenta?.infoMp.payId}</span></p>
+                <p className={style.pModal}>Metodo: <span>{currentVenta?.infoMp.payment_method_id}</span></p>
+                <p className={style.pModal}>Tipo: <span>{currentVenta?.infoMp.payment_type_id}</span></p>
+                <p className={style.pModal}>Productos: {currentVenta?.infoMp?.productos.map((prod,i) => {
+                    return <span>{`${prod.quantity} ${prod.title}. `}</span>
                 })} </p>
-                <p>Total: <span style={{fontWeight:'600', color:'#000'}}>${currentVenta?.infoMp.totalPaid}</span></p>
-                <p>Estado de entrega: <span style={{fontWeight:'600', color:'#000'}}>{currentVenta?.estado}</span></p>
+                <p className={style.pModal}>Total: <span>${currentVenta?.infoMp.totalPaid}</span></p>
+                <p className={style.pModal}>Estado de entrega: <span>{currentVenta?.estado}</span></p>
       </Modal>
 
       <Modal
         isOpen={infoEnvioModalIsOpen}
         onRequestClose={closeInfoEnvioModal}
         contentLabel="Info Envio Modal"
+        style={{
+          overlay: {
+              background: 'rgba(256,256,256,.6)',
+              backdropFilter: 'blur(5px)'
+          },
+          content: {
+              width: '90%',
+              height: '70%',
+              margin: '0 auto',
+              border: 'none',
+              background: 'rgba(256,256,256,1',
+              boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
+              WebkitOverflowScrolling: 'touch',
+              borderRadius: '6px',
+              outline: 'none',
+              padding: '0px 10px',
+              overflowX: 'hidden',
+              overflowY: 'scroll',
+              position: 'relative',
+              left: '0vw',
+              top: '100px',
+              }
+          }}
       >
         {currentInfoEnvio && (
           <div>
-            <button style={{ width:'97%', textAlign:'right', padding:'0', background:'transparent', fontWeight:'700',fontSize:'20px', color:'#111', marginTop:'10px'}} onClick={closeInfoEnvioModal}>x</button>
-            <p>Ciudad: {currentInfoEnvio.ciudad}</p>
-            <p>Provincia: {currentInfoEnvio.provincia}</p>
-            <p>Código Postal: {currentInfoEnvio.codigoPostal}</p>
-            <p>Calle: {currentInfoEnvio.calle}</p>
-            <p>Número: {currentInfoEnvio.numero}</p>
-            <p>Piso: {currentInfoEnvio.piso}</p>
-            <p>Departamento: {currentInfoEnvio.departamento}</p>
-            <p>Observaciones: {currentInfoEnvio.observaciones}</p>
+            <button className={style.cierre} onClick={closeInfoEnvioModal}>x</button>
+            <p className={style.pModal}>Provincia: <span>{currentInfoEnvio.provincia}</span></p>
+            <p className={style.pModal}>Ciudad: <span>{currentInfoEnvio.ciudad}</span></p>
+            <p className={style.pModal}>Código Postal: <span>{currentInfoEnvio.codigoPostal}</span></p>
+            <p className={style.pModal}>Calle: <span>{currentInfoEnvio.calle}</span></p>
+            <p className={style.pModal}>Número: <span>{currentInfoEnvio.numero}</span></p>
+            <p className={style.pModal}>Piso: <span>{currentInfoEnvio.piso}</span></p>
+            <p className={style.pModal}>Departamento: <span>{currentInfoEnvio.departamento}</span></p>
+            <p className={style.pModal}>Observaciones: <span>{currentInfoEnvio.observaciones}</span></p>
           </div>
         )}
       </Modal>

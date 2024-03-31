@@ -15,7 +15,6 @@ const editarProducto = require('../controllers/editarProducto');
 const getPaymentMP = require('../controllers/getPaymentMP');
 const createPreferenceId = require('../controllers/createPreferenceId');
 const postPreference = require('../controllers/postPreference');
-const getPreferenceByPreferenceId = require('../controllers/getPreferenceById');
 const getPreferenceById = require('../controllers/getPreferenceById');
 const getPreferences = require('../controllers/getPreferences');
 const deleteMensaje = require('../controllers/deleteMensaje');

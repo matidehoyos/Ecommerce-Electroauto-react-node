@@ -114,7 +114,7 @@
 
     .container {
         width: 100%;
-        min-height: calc(100vh - 50px);
+        min-height: calc(100vh - 300px);
         display: flex;
         align-items: start;
         justify-content: center;
@@ -222,21 +222,13 @@
 
     .camionIcon {
             font-size: 20px;
-            color: #333;
+            color: #111;
+            padding: 0px 10px;
             text-align: center;
             position: relative;
-            top: 3px;        }
+            top: 3px;       
+         }
 
-    .botonEliminar {
-        width: auto;
-        height: auto;
-        font-size: 14px;
-        font-weight: 700;
-        padding: 0;
-        color: red;
-        background-color: transparent;
-    }
-    
     .vermas {
         background-color: transparent;
         color: blue;
@@ -246,12 +238,36 @@
     .noVentas {
         width: 100%;
         height: auto;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 700;
         margin-top: 150px;
         text-align: center;
         color: #222;
+        font-style: italic;
     }
 
+    .cierre {
+        width: 100%;
+        padding: 0;
+        text-align: right;
+        background: transparent; 
+        font-weight: 600; 
+        font-size: 24px;
+         color: rgb(0, 50, 131);
+    }
+    
+    .pModal {
+        font-size: 20px;
+        font-weight: 700;
+        font-style: italic;
+        color: rgb(0, 0, 0);
+    }
+    
+    .pModal span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #111;
+        padding-left: 6px;
+    }
 
 }

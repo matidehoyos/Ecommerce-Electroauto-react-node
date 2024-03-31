@@ -128,7 +128,7 @@
     padding: 0px;
     border-right: none;
     position: inherit;
-    background: rgba(27, 27, 27, 1);
+    background-image: linear-gradient(to left , #310edf, #1e0e6e  );
     overflow-x: hidden;
   }
   
@@ -140,11 +140,11 @@
     align-items: center;
     padding: 0px;
     padding-left: 15px;
-    background-color: rgba(27, 27, 27, 1);
+    background-color: transparent;
   }
 
   .logo:hover {
-    background-color: rgba(27, 27, 27, 1);
+    background-color: transparent;
   }
 
   .logo:hover h3 {
@@ -155,14 +155,16 @@
     width: auto;
     height: auto;
     font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: .8px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+    background-clip: text;
+    color: transparent;
   }
   
   .menu {
     width: 100vw;
-    height: auto;
+    height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -171,9 +173,9 @@
     position: absolute;
     top: 51px;
     left: -800;
-    background-color: #111;
-    transition: 1.8s all;
-    border-top: 1px solid #fff;
+    background-image: linear-gradient(to left , #310edf, #1e0e6e  );
+    transition: .3s all;
+    border-top: 1px solid yellow;
 
   }
 
@@ -184,7 +186,7 @@
   }
   
   .menu ul {
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
@@ -192,17 +194,21 @@
   }
   
   .menu ul li {
+    width: 100%;
     list-style: none;
     margin-bottom: 10px;
   }
   
   .menu ul li a {
-    text-decoration: none;
-    color: #fff;
     width: 100%;
+    text-decoration: none;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: .2px;
     text-align: left;
+    background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+    background-clip: text;
+    color: transparent;
   }
   
   .menu ul li a:hover {
@@ -227,15 +233,17 @@
   .home button {
     width: auto;
     height: auto;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .2px;
     padding: 0;
-    color: rgba(250, 250, 250,.8);
+    color: rgba(256, 256, 256,1);
     background: transparent;
     border: none;
     border-radius: 0;
     cursor: pointer;
     text-align: left;
+    font-style: italic;
   }
   .home button:hover {
     color: #cacaca;
@@ -249,10 +257,11 @@
 }
 
 .hamburgContainer button {
-  background-color: transparent;
   font-size: 22px;
+  font-weight: 600;
   padding: 0;
   margin: 0;
-  color: #fff;
+  color:  #e7ef00;
+  background-color: transparent;
 }
 }
