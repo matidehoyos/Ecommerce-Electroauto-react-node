@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Modal from 'react-modal';
-import { FaShoppingCart, FaTrashAlt } from 'react-icons/fa';
+import {  FaTrashAlt } from 'react-icons/fa';
 import CarritoContext from '../../components/carritoContext/CarritoContext';
 import style from './BotonFlotanteCart.module.css'
 import { Wallet, initMercadoPago } from '@mercadopago/sdk-react';
 import preferenceProvider from '../../utils/provider/preferenceProvider';
 import LoginButton from '../loginButton/LoginButton';
-import FormularioEnvio from '../formularioEnvio/FormularioEnvio';
-import PreNav from '../preNav/PreNav';
+import FormularioEnvio from '../formularioEnvio/FormularioEnvio'
+import { IoCartOutline } from 'react-icons/io5';
 
 
 const BotonFlotanteCart = () => {
@@ -95,7 +95,7 @@ const BotonFlotanteCart = () => {
 
     return (
         <div className={style.modalCarrito}>
-            <button className={style.kartButton} style={{ display: modalIsOpen ? 'none' : 'block' }}  onClick={openModal}><FaShoppingCart /><span>{carrito.length}</span></button>
+            <button className={style.kartButton} style={{ display: modalIsOpen ? 'none' : 'block' }}  onClick={openModal}><IoCartOutline className={style.iconC}/><span>{carrito.length}</span></button>
             <div>
             <Modal
                 isOpen={modalIsOpen}

@@ -100,9 +100,9 @@
         height: auto;
         display: flex;
         justify-content: center;
-        padding: 0;
+        padding: 60px 0px;
         margin: 0;
-        background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+        background-image: linear-gradient(to left , #310edf, #1e0e6e  );
     }
 
     .first {

@@ -29,7 +29,7 @@ const HeaderCarrusel = () => {
 
   return (
       <div className={style.containerCarrusel}>
-        <Carousel {...carouselSettings} autoPlay={true} interval={2500} infiniteLoop={true} className={style.carouselStyles} >
+        <Carousel {...carouselSettings} autoPlay={true} interval={2000} infiniteLoop={true} className={style.carouselStyles} >
           {
             image.map((imagen, index) => (
               <div key={index} className={style.caja}>
