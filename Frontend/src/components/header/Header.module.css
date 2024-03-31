@@ -178,19 +178,19 @@
     justify-content: start;
     align-items: start;
     background-color: #fff;
-    background-image: linear-gradient(to left , #310edf, #1e0e6e  );
-    background-position: center;
+    background-image: url('../../../public/bgposta.jpeg');
+    background-position: bottom;
     background-size: cover;
     overflow-x: hidden;
-    animation: backd 0.5s ease-out 1;
+    animation: backd 0.2s ease-out 1;
 }
 
 @keyframes backd {
     0% {
-      background-image: linear-gradient(to left , #310edf, #1e0e6e  );
+      background-image: url('../../../public/bgposta.jpeg');
     }
     100% {
-      background-image: linear-gradient(to left , #310edf, #1e0e6e  );
+      background-image: url('../../../public/bgposta.jpeg');
     }
   }
 
@@ -309,13 +309,6 @@
   color: #080808;
   border-radius: 4px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-}
-
-.headerImg {
-  width: 130%;
-  position: relative;
-  left: 80px;
-  top: -50px;
 }
 
 .kartButton {

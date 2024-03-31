@@ -20,7 +20,6 @@ const Header = () => {
                 <button>Visitá la tienda</button>
               </Link>
             </div>
-            <img className={style.headerImg} src="../../../public/BKM.png" alt="logo" />
         </div>
     </div>
   );
