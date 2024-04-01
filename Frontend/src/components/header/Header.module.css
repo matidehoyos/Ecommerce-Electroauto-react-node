@@ -183,13 +183,13 @@
     background-position-y: 0px;
     overflow-x: hidden;
     animation: backd 0.4s ease-out 1;
-    background-image: url('https://i.pinimg.com/474x/4a/13/b5/4a13b5b2bab312f46d9a4e3bb8fe8e73.jpg');
+    background-image: url('https://i.pinimg.com/474x/0e/e1/e1/0ee1e189120741a731547a35b702b15f.jpg');
 }
 
 @keyframes backd {
-    0% {  background-image: url('https://i.pinimg.com/474x/4a/13/b5/4a13b5b2bab312f46d9a4e3bb8fe8e73.jpg');
+    0% {  background-image: url('https://i.pinimg.com/474x/0e/e1/e1/0ee1e189120741a731547a35b702b15f.jpg');
     }
-    100% {  background-image: url('https://i.pinimg.com/474x/4a/13/b5/4a13b5b2bab312f46d9a4e3bb8fe8e73.jpg');
+    100% {  background-image: url('https://i.pinimg.com/474x/0e/e1/e1/0ee1e189120741a731547a35b702b15f.jpg');
   }}
 
 .texto {
@@ -206,7 +206,7 @@
     white-space: nowrap;
     animation: desplazamiento .4s ease-in-out 1;
     border-radius: 60px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, .15);
 
 }
 
@@ -283,18 +283,9 @@
     50% {transform: scaleY(1.2);}
   }
 
-.texto h5 span {
-  color: #fff;
-  display: inline;
-  opacity: 0;
-  animation: aparecer 7s forwards;
-  animation-delay: calc(0s * var(--i));
-  padding: 0;
-}
-
-@keyframes aparecer {
-  to {opacity: 1;}
-}
+  .texto h5 span {
+    display: inline;
+  }
 
 .envios {
     width: auto;
