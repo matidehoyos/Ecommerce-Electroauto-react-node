@@ -116,7 +116,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(to left , #000, #0000007d  );
+    background-image: linear-gradient(to right , rgba(0,0,0,.7), rgba(0,0,0,.4)  );
     position: fixed;
     top: 0px;
     z-index: 4000;
@@ -188,7 +188,7 @@
     justify-content: start;
     background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
     position: absolute;
-    top: 78px;
+    top: 76px;
     left: -800;
     transition: .4s all;
     z-index: 2000;
@@ -292,7 +292,7 @@
   }
 
   .menuButton {
-    margin-right: 20px;
+    margin-right: 5px;
     font-size: 30px;
   }
 }
