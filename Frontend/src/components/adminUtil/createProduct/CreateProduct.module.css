@@ -247,12 +247,13 @@
         font-size: 14px;
         font-weight: 600;
         line-height: 14px;
-        background: #202020;
+        background-image: linear-gradient(to left , #310edf, #1e0e6e  );
         color: #fff;
         width: auto;
         height: auto;
         padding: 6px 14px;
         border-radius: 4px;
+        opacity: .9;
     }
     
 

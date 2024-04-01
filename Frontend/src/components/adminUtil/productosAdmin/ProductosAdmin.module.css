@@ -234,24 +234,28 @@
     }
     
     .tablaProductos td img {
-        width: 40px;
-        height: auto;
-        border-radius: 50%;
+        width: 80px;
+        height: 60px;
+        border-radius: 10px;
         padding: 0;
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
         border: none;
+        object-fit: cover;
+        object-position: center;
     }
     
     
     .vermas {
+        font-weight: 600;
         background-color: transparent;
-        color: rgb(54, 54, 255);
+        color: rgb(0, 0, 197);
         text-align: center;
         padding: 0;
         margin: 0;
+        font-style: italic;
     }
     
     .noProductos {
@@ -293,12 +297,12 @@
     .botonEditar {
         width: auto;
         height: auto;
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 500;
         margin: 0;
         margin-top: 30px;
         padding: 0;
-        color: blue;
+        color: rgb(65, 65, 255);
         background-color: transparent;
         display: block;
         font-style: italic;
@@ -308,11 +312,11 @@
     .botonEliminar {
         width: auto;
         height: auto;
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 500;
         padding: 0;
         margin: 0;
-        color: red;
+        color: rgb(255, 88, 88);
         background-color: transparent;
         display: block;
         font-style: italic;

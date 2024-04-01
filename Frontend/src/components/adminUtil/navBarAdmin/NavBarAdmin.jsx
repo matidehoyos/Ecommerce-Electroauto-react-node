@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 const NavBarAdmin = () => {
   const currentUser = JSON.parse(localStorage.getItem('user'));
   const [isMobile, setIsMobile] = useState(window.innerWidth < 680);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -19,7 +20,6 @@ const NavBarAdmin = () => {
     };
   }, []);
 
-  const [isVisible, setIsVisible] = useState(false);
 
   const handleShowMenu = () => {
     setIsVisible(!isVisible);

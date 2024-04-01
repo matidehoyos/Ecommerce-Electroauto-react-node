@@ -8,6 +8,10 @@ import  UserAccountMobile from '../userAccountMobile/UserAccountMobile';
 import { useSelector } from 'react-redux';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import PreNav from '../preNav/PreNav';
+import { VscThreeBars } from 'react-icons/vsc';
+import { FaCaretDown } from 'react-icons/fa';
+import { MdExpandMore } from 'react-icons/md';
+import { IoIosArrowBack, IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
 
 
 const NavBar = () => {
@@ -102,7 +106,7 @@ const NavBar = () => {
              {user?.name ? <UserAccountMobile /> : null}
             </div>   
             <div className={style.hamburgContainer}>
-              <button className={style.menuButton} onClick={handleShowMenu}> <GiHamburgerMenu /></button>
+              <button className={style.menuButton} onClick={handleShowMenu}> {isVisible ? <IoIosArrowBack /> : <IoIosArrowForward />}</button>
             </div>
       </div>
 
