@@ -39,7 +39,7 @@ export const UserAccount = ({ menuIsActive }) => {
   }
 
   return (
-    <div className={style.infoContainer} style={menuIsActive ? { left: '-40%' } : { left: '0%' }}>
+    <div className={style.infoContainer} style={menuIsActive ? { left: '-800px'}:{ left: '0' }  }>
       <div className={style.imgAndNameContainer}>
         <img src={currentUser?.image}></img>
         <h2>{currentUser?.name}</h2>

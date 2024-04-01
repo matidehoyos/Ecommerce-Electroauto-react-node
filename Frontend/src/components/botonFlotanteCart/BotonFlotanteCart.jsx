@@ -95,7 +95,11 @@ const BotonFlotanteCart = () => {
 
     return (
         <div className={style.modalCarrito}>
-            <button className={style.kartButton} style={{ display: modalIsOpen ? 'none' : 'block' }}  onClick={openModal}><IoCartOutline className={style.iconC}/><span>{carrito.length}</span></button>
+            {
+                carrito.length > 0 ?
+                <button className={style.kartButton} style={{ display: modalIsOpen ? 'none' : 'block' }}  onClick={openModal}><IoCartOutline className={style.iconC}/><span>{carrito.length > 0 ? carrito.length : null}</span></button>
+                : null
+            }
             <div>
             <Modal
                 isOpen={modalIsOpen}

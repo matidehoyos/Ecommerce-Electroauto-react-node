@@ -12,6 +12,7 @@ import { VscThreeBars } from 'react-icons/vsc';
 import { FaCaretDown } from 'react-icons/fa';
 import { MdExpandMore } from 'react-icons/md';
 import { IoIosArrowBack, IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
+import { UserAccount } from '../userAccount/UserAccount';
 
 
 const NavBar = () => {
@@ -95,14 +96,12 @@ const NavBar = () => {
                   </li>
                 </ul>
               </nav>
-              {
-                !user?.name ?
+              
                 <div className={style.login} >
                 <LoginButton />
                 </div>
-                : null
-              }
-              
+            
+
              {user?.name ? <UserAccountMobile /> : null}
             </div>   
             <div className={style.hamburgContainer}>

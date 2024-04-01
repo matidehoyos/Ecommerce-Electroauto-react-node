@@ -186,31 +186,29 @@
     .kartButton {
         width: auto;
         height: auto;
-        font-size: 26px;
-        font-weight: 100;
-        color: yellow;
-        border-radius: 50%;
         border: none;
+        border-radius: 0;
         background-color: transparent;
         padding: 0px;
+        margin: 0;
         position: fixed;
-        top: 34px;
+        top: 30px;
         bottom: inherit;
-        right: 90px;
+        right: 76px;
         z-index: 14000;
         box-shadow: 0px 0px 30px rgba(256, 256, 256, 0);
       }
 
       .iconC {
-        font-size: 26px;
+        font-size: 28px;
         color: #fff;
       }
     
       .kartButton span {
-        color: red;
+        color: rgb(255, 72, 72);
         text-shadow: 0px 0px 3px #000;
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 16px;
+        font-weight: 400;
       }
 
 
