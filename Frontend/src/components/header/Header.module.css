@@ -207,7 +207,7 @@
     white-space: nowrap;
     animation: desplazamiento .4s ease-in-out 1;
     border-radius: 60px;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, 0);
 
 }
 
@@ -308,7 +308,7 @@
     margin: 0px auto;
     margin-bottom: 2px;
     padding: 0px;
-    color: #000;
+    color: rgba(256,256,256,.8);
     text-shadow: 0px 0px 20px rgba(256,256,256,.3);
     border-radius: 2px;
     background: none;
@@ -324,7 +324,7 @@
   height: auto;
   display: flex;
   justify-content: left;
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
 .visita button {
