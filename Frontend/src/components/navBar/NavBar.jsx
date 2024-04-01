@@ -15,20 +15,25 @@ const NavBar = () => {
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 680);
   let user = JSON.parse(localStorage.getItem('user'));
-  const [isScrolled, setIsScrolled] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
 
+
+  const handleScroll = () => {
+    if (location.pathname === "/") {
+      setIsScrolled(window.scrollY > 600);
+    } else {
+      setIsScrolled(true);
+    }
+  };
+
+ 
   useEffect(() => {
-    const handleScroll = () => {
-      if (location.pathname === "/") {
-        setIsScrolled(window.scrollY > 600);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    handleScroll();
+     window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+
   }, []);
   
   
