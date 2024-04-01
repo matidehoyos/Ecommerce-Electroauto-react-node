@@ -197,7 +197,7 @@
     height: 100%;
     padding: 0px 15px;
     margin: 0;
-    padding-top: 110px;
+    padding-top: 140px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -235,7 +235,7 @@
     width: auto;
     height: auto;
     font-size: 39px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -1.5px;
     text-align: left;
     margin: 0;
@@ -247,7 +247,7 @@
 
 .texto h1 span {
   font-size: 39px;
-  font-weight: 700;
+  font-weight: 600;
   background-image: linear-gradient(to right , #e7ef00, #fdffca  );
   background-clip: text;
   color: transparent;
@@ -266,8 +266,8 @@
 .texto h5 {
     width: auto;
     height: auto;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
     letter-spacing: .3px;
     text-align: left;
     margin: 0;
@@ -278,7 +278,7 @@
   
   @keyframes ola {
     0%, 100% {transform: scaleY(1);}
-    50% {transform: scaleY(1.2);}
+    50% {transform: scaleY(1.4);}
   }
 
   .texto h5 span {
@@ -302,7 +302,7 @@
     margin: 0px auto;
     margin-bottom: 0px;
     padding: 0px;
-    color: #fff703;
+    color: #fffa5d;
     text-shadow: 0px 0px 20px rgba(256,256,256,.3);
     border-radius: 2px;
     background: none;
@@ -334,6 +334,7 @@
   border-radius: 4px;
   box-shadow: 0px 0px 50px rgba(256, 256, 256, .2);
   opacity: .9;
+  font-style: italic;
 }
 
 .kartButton {
