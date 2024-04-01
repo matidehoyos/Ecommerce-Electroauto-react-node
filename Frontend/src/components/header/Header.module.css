@@ -178,23 +178,24 @@
     justify-content: start;
     align-items: start;
     background-color: #000;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: 240px;
+    background-position: top;
     overflow-x: hidden;
     animation: backd 0.4s ease-out 1;
+    background-image: url('https://i.pinimg.com/474x/fa/5f/91/fa5f91da700e1080d1d307abd33cb59d.jpg');
 }
 
 @keyframes backd {
-    0% { background-image: none;
+    0% { background-image: 'https://i.pinimg.com/474x/fa/5f/91/fa5f91da700e1080d1d307abd33cb59d.jpg';
     }
-    100% {
-    }
-  }
+    100% { 
+     background-image: 'https://i.pinimg.com/474x/fa/5f/91/fa5f91da700e1080d1d307abd33cb59d.jpg';
+  }}
 
 .texto {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     padding: 0px 15px;
     margin: 0;
     padding-top: 110px;
@@ -206,7 +207,7 @@
     white-space: nowrap;
     animation: desplazamiento .4s ease-in-out 1;
     border-radius: 60px;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .6);
 
 }
 
@@ -234,9 +235,9 @@
 .texto h1 {
     width: auto;
     height: auto;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 620;
-    letter-spacing: -2.5px;
+    letter-spacing: -1.5px;
     text-align: left;
     margin: 0;
     margin-bottom: 6px;
@@ -245,23 +246,42 @@
     color: transparent;
 }
 
+.texto h1 span {
+  font-size: 40px;
+  font-weight: 620;
+  background-image: linear-gradient(to right , #e7ef00, #fdffca  );
+  background-clip: text;
+  color: transparent;
+  display: inline;
+  opacity: 0;
+  animation: aparecer .01s forwards;
+  animation-delay: calc(0.11s * var(--i));
+  font-style: italic;
+}
+
+@keyframes aparecer {
+  to {opacity: 1;}
+}
+
+
 .texto h5 {
     width: auto;
     height: auto;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: .3px;
     text-align: left;
     margin: 0;
     color: #fff;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .texto h5 span {
   color: #fff;
   display: inline;
   opacity: 0;
-  animation: aparecer 0.2s forwards;
-  animation-delay: calc(0.05s * var(--i));
+  animation: aparecer 7s forwards;
+  animation-delay: calc(0s * var(--i));
 }
 
 @keyframes aparecer {
@@ -279,14 +299,14 @@
 .envios h6 {
     width: auto;
     height: auto;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
     text-align: left;
     margin: 0px auto;
     margin-bottom: 2px;
     padding: 0px;
     color: #fbff79;
-    text-shadow: 0px 0px 3px #000;
+    text-shadow: 0px 0px 20px rgba(256,256,256,.3);
     border-radius: 2px;
     background: none;
     font-style: italic;
@@ -315,7 +335,7 @@
   border: 1px solid rgba(256,256,256,1);
   color: #000000;
   border-radius: 4px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 50px rgba(256, 256, 256, .2);
   opacity: .8;
 }
 

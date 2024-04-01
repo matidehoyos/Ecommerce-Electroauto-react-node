@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import style from "./NavBar.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import LoginButton from "../loginButton/LoginButton";
 import SearchBar from "../searchBar/SearchBar";
 import { FiMenu } from 'react-icons/fi';
@@ -11,20 +11,26 @@ import PreNav from '../preNav/PreNav';
 
 
 const NavBar = () => {
+  const location = useLocation();
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 680);
   let user = JSON.parse(localStorage.getItem('user'));
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30);
+      if (location.pathname === "/") {
+        setIsScrolled(window.scrollY > 600);
+      } else {
+        setIsScrolled(false);
+      }
     };
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
   
 
   useEffect(() => {
