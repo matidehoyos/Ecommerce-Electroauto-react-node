@@ -186,7 +186,7 @@
     .kartButton {
         width: auto;
         height: auto;
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 100;
         color: yellow;
         border-radius: 50%;
@@ -202,15 +202,15 @@
       }
 
       .iconC {
-        font-size: 22px;
+        font-size: 26px;
         color: #fff;
       }
     
       .kartButton span {
-        color: yellow;
+        color: red;
         text-shadow: 0px 0px 3px #000;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
       }
 
 

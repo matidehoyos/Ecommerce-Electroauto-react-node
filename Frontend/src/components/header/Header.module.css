@@ -197,7 +197,7 @@
     height: 100%;
     padding: 0px 15px;
     margin: 0;
-    padding-top: 140px;
+    padding-top: 130px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -278,7 +278,7 @@
   
   @keyframes ola {
     0%, 100% {transform: scaleY(1);}
-    50% {transform: scaleY(1.4);}
+    50% {transform: scaleY(1.8);}
   }
 
   .texto h5 span {
@@ -332,7 +332,7 @@
   border: none;
   color: #000000;
   border-radius: 4px;
-  box-shadow: 0px 0px 50px rgba(256, 256, 256, .2);
+  box-shadow: 0px 0px 50px rgba(256, 256, 256, .4);
   opacity: .9;
   font-style: italic;
 }
