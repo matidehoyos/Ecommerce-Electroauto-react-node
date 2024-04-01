@@ -99,7 +99,7 @@
         height: auto;
         margin-left: 0;
         padding: 0px;
-        padding-top: 10px;
+        padding-top: 80px;
         padding-left: 0px;
         display: flex;
         flex-direction: column;
@@ -171,15 +171,6 @@
         align-items: center;
         padding: 0;
         margin: 0;
-    }
-  
-
-    .image {
-        width: 100%;
-        height: auto;
-        background-image: linear-gradient(to left , #310edf, #1e0e6e  );
-        display: flex;
-        justify-content: center;
     }
 
 }

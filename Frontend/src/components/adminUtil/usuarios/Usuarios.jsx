@@ -74,7 +74,7 @@ const Usuarios = () => {
                   },
                   content: {
                       width: '90%',
-                      height: '70%',
+                      height: '90%',
                       margin: '0 auto',
                       border: 'none',
                       background: 'rgba(256,256,256,1',
@@ -87,7 +87,7 @@ const Usuarios = () => {
                       overflowY: 'scroll',
                       position: 'relative',
                       left: '0vw',
-                      top: '100px',
+                      top: '50px',
                       }
                   }}
             >

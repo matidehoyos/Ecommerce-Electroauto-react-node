@@ -171,12 +171,12 @@
     padding-top: 40px;
     padding-left: 0px;
     position: absolute;
-    top: 51px;
+    top: 70px;
     left: -800;
     background-image: linear-gradient(to left , #310edf, #1e0e6e  );
     transition: .3s all;
     border-top: 1px solid yellow;
-
+    z-index: 12000;
   }
 
   .menu nav {

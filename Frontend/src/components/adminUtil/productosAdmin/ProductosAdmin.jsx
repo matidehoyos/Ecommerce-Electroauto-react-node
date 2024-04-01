@@ -106,7 +106,7 @@ const ProductosAdmin = () => {
                     },
                     content: {
                         width: '90vw',
-                        height: '70%',
+                        height: '90%',
                         margin: '0 auto',
                         marginTop: '0',
                         border: 'none',
@@ -120,7 +120,7 @@ const ProductosAdmin = () => {
                         overflowY: 'scroll',
                         position: 'relative',
                         left: '0vw',
-                        top: '100px',
+                        top: '50px',
                         }
                     }}
             >

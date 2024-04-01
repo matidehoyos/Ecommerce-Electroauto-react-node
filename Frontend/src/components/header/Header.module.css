@@ -170,27 +170,25 @@
 
   .container {
     width: 100%;
-    height: calc(100vh - 20px);
+    height: calc(100vh);
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    background-color: #fff;
-    background-image: url('../../../public/bgposta.jpeg');
-    background-position: bottom;
+    background-color: #000;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 240px;
     overflow-x: hidden;
-    animation: backd 0.2s ease-out 1;
+    animation: backd 0.4s ease-out 1;
 }
 
 @keyframes backd {
-    0% {
-      background-image: url('../../../public/bgposta.jpeg');
+    0% { background-image: none;
     }
     100% {
-      background-image: url('../../../public/bgposta.jpeg');
     }
   }
 
@@ -199,7 +197,7 @@
     height: auto;
     padding: 0px 15px;
     margin: 0;
-    padding-top: 160px;
+    padding-top: 110px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -237,29 +235,37 @@
     width: auto;
     height: auto;
     font-size: 36px;
-    font-weight: 700;
-    letter-spacing: .2px;
+    font-weight: 620;
+    letter-spacing: -2.5px;
     text-align: left;
     margin: 0;
     margin-bottom: 6px;
-    background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+    background-image: linear-gradient(to right , #e7ef00, #fdffca  );
     background-clip: text;
     color: transparent;
-
 }
-
-
 
 .texto h5 {
     width: auto;
     height: auto;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     letter-spacing: .3px;
     text-align: left;
     margin: 0;
-    color: rgba(255, 255, 248, 1);
-    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+}
+
+.texto h5 span {
+  color: #fff;
+  display: inline;
+  opacity: 0;
+  animation: aparecer 0.2s forwards;
+  animation-delay: calc(0.05s * var(--i));
+}
+
+@keyframes aparecer {
+  to {opacity: 1;}
 }
 
 .envios {
@@ -273,16 +279,17 @@
 .envios h6 {
     width: auto;
     height: auto;
-    font-size: 15px;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 400;
     text-align: left;
     margin: 0px auto;
     margin-bottom: 2px;
     padding: 0px;
-    color: rgba(256,256,256,1);
+    color: #fbff79;
     text-shadow: 0px 0px 3px #000;
     border-radius: 2px;
     background: none;
+    font-style: italic;
 }
 
 .mayor {
@@ -301,14 +308,15 @@
   width: auto;
   height: auto;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 14px;
-  padding: 8px 16px;
-  background-image: linear-gradient(to left , #ffffa4, #fff703  );
-  border: 0.4px solid rgba(256, 256, 256, 1);
-  color: #080808;
+  padding: 10px 16px;
+  background-image: linear-gradient(to left, #ffffc4, #fff703  );
+  border: 1px solid rgba(256,256,256,1);
+  color: #000000;
   border-radius: 4px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  opacity: .8;
 }
 
 .kartButton {

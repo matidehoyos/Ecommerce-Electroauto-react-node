@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLoaderData, useLocation } from 'react-router-dom'
 import Home from './pages/home/Home'
 import AdminWindow from './pages/adminWindow/AdminWindow'
 import Usuarios from './components/adminUtil/usuarios/Usuarios'
@@ -17,12 +17,13 @@ axios.defaults.baseURL = 'https://electrocar-production.up.railway.app'
 // axios.defaults.baseURL = 'http://localhost:3000'
 
 function App() {
+  const location = useLocation()
   const [carrito, setCarrito] = useState(JSON.parse(localStorage.getItem('carrito')) || []);
 
   return (
     <div>
         <CarritoContext.Provider value={{ carrito, setCarrito }} >
-           <BotonFlotanteCart /> 
+        {!location.pathname.startsWith('/admin') && <BotonFlotanteCart />}
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/tienda" element={<Tienda />}></Route>

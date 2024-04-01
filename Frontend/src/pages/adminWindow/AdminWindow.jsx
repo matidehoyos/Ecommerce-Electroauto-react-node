@@ -111,9 +111,6 @@ const AdminWindow = () => {
                                     <Route path="ventas" element={<Ventas />} />
                             </Routes>
                         </div>
-                        <div className={style.image}>
-                            <img src="../../../public/logoPc.png" alt="logo" />
-                        </div>
                      </div>
                     </div>                
                    : 

@@ -6,15 +6,16 @@ import { loadProductos } from '../../redux/actions';
 import { useEffect, useState } from 'react';
 import Header from '../../components/header/Header';
 import AboutUs from '../../components/aboutUs/AboutUs';
-import PreNav from '../../components/preNav/PreNav';
 import SubHeader from '../../components/subHeader/SubHeader';
 import Footer from '../../components/footer/Footer';
 import Review from '../../components/review/Review';
 import InfoEnvios from '../../components/infoEnvios/InfoEnvios';
 import BotonFlotanteCart from '../../components/botonFlotanteCart/BotonFlotanteCart';
+import { useLocation } from 'react-router';
 
 
 const Home = () => {
+    const location = useLocation();
     const dispatch = useDispatch();
     const [messages, setMessages] = useState([]);
     const [reviews, setReviews] = useState([]);
@@ -30,7 +31,7 @@ const Home = () => {
 
     return(
         <div className={style.container}>
-           <BotonFlotanteCart />
+            {location.pathname !== '/admin' && <BotonFlotanteCart />}
            <NavBar />
            <Header />
            <SubHeader />
