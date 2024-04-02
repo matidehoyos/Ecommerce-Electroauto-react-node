@@ -76,7 +76,8 @@
     }
 
     .search {
-        padding-top: 50px;
+        display: block;
+        padding-top: 75px;
     }
     
     .filters {

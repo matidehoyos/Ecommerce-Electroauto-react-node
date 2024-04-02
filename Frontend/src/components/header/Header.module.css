@@ -221,7 +221,7 @@
     height: 100%;
     padding: 0px 15px;
     margin: 0;
-    padding-top: 130px;
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -349,7 +349,7 @@
 .visita button {
   width: auto;
   height: auto;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 14px;
   padding: 7px 12px;
@@ -358,9 +358,25 @@
   color: #000000;
   border-radius: 4px;
   box-shadow: 0px 0px 40px rgba(256, 256, 256, .5);
-  opacity: .9;
+  opacity: .7;
   font-style: italic;
+  position: relative;
+  animation: desplaza 2.4s ease-in-out 1;
+  border-radius: 60px;
+  background-color: rgba(0, 0, 0, .3);
+  overflow-x: hidden;
 }
+
+@keyframes desplaza {
+  0% {
+    transform: translateX(600%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 
 .kartButton {
   background-color: transparent;

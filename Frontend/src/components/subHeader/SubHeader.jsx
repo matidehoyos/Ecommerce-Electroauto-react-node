@@ -6,26 +6,17 @@ import Populares from '../populares/Populares';
 
 const SubHeader = () => {
   const [showCarrusel, setShowCarrusel] = useState(false);
-  const [showMercadoLibre, setShowMercadoLibre] = useState(false);
   const [animatedCarrusel, setAnimatedCarrusel] = useState(false);
-  const [animatedMercadoLibre, setAnimatedMercadoLibre] = useState(false); 
   const carruselRef = useRef(null);
-  const mercadoLibreRef = useRef(null);
 
   useEffect(() => {
     const checkScroll = () => {
       const topPos = (element) => element.getBoundingClientRect().top;
       const posCarrusel = topPos(carruselRef.current);
-      const posMercadoLibre = topPos(mercadoLibreRef.current);
 
       if (!showCarrusel && window.scrollY > (posCarrusel - 800) && !animatedCarrusel) {
         setShowCarrusel(true);
         setAnimatedCarrusel(true);
-      }
-
-      if (!showMercadoLibre && window.scrollY > (posMercadoLibre - 100) && !animatedMercadoLibre) {
-        setShowMercadoLibre(true);
-        setAnimatedMercadoLibre(true); 
       }
     };
 
@@ -34,11 +25,11 @@ const SubHeader = () => {
     return () => {
       window.removeEventListener('scroll', checkScroll);
     };
-  }, [showCarrusel, showMercadoLibre, animatedCarrusel, animatedMercadoLibre]); 
+  }, [showCarrusel, animatedCarrusel]); 
 
   return (
     <div className={style.container} ref={carruselRef} >
-        <div className={`${style.populares} ${showCarrusel ? style.animate : ''}`}>
+        <div className={style.populares}>
             <h4>Más vendidos</h4>
             <div className={style.cateContainer}>
             <Populares />
@@ -79,18 +70,6 @@ const SubHeader = () => {
                   </div>
               </Link> 
               </div>
-            </div>
-        </div>
-        <div ref={mercadoLibreRef} className={`${style.mercadoLibre} ${showMercadoLibre ? style.animateRight : ''}`}>
-            <div className={style.imgML}>
-                <img src="ml.png" alt="mercadolibre" />
-            </div>
-            <div className={style.mercadoTexto}>
-                <span>SOMOS</span>
-                <h3>MERCADO LIBRE <br/> LIDER PLATINIUM</h3>
-                <h6>COMPRA CON CONFIANZA</h6>
-                <p><FaCheck className={style.ico}/>MAS DE 10 MIL VENTAS</p>
-                <p><FaCheck className={style.ico}/>MAS DE 10 AÑOS DE EXPERIENCIA</p>
             </div>
         </div>
     </div>
