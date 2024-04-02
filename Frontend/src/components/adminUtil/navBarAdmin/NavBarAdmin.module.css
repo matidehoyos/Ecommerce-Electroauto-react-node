@@ -15,25 +15,19 @@
     height: auto;
     display: flex;
     justify-content: start;
-    background: #0c1c6b;;
+    background-image: linear-gradient(to left , #310edf, #1e0e6e  );
     padding: 10px 100px;
     padding-left: 30px;
-  }
-
-  .logo:hover {
-    background-color: #cacaca;
-  }
-
-  .logo:hover h3 {
-    color: #0c1c6b;
   }
   
   .logo h3 {
     width: auto;
     height: auto;
-    font-size: 22px;
-    font-weight: 500;
-    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+    background-clip: text;
+    color: transparent;
   }
   
   .menu {

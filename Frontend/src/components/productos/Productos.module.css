@@ -4,14 +4,19 @@
     background-color: rgb(240,240,240);
 }
 
+
+.search {
+  display: none;
+}
+
 .cardsContainer {
         width: 86%;
         min-height: 520px;
-        padding: 60px 0px;
+        padding: 40px 20px;
         margin: 0px auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
         align-items: start;
     }
 

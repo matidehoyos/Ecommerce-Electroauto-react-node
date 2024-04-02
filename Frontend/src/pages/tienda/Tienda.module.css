@@ -8,14 +8,14 @@
 .cardsContainer {
         width: auto;
         height: auto;
-        padding: 60px 0px;
+        padding: 40px 20px;
         margin: 0px auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
         align-items: stretch;
-        background-image: linear-gradient(to right , #e7ef00, #fcffa9);
-        gap: 60px 0px;
+       background: #fff;
+        gap: 40px 0px;
     }
 
     .search {

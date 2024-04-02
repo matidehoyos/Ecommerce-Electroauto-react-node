@@ -102,12 +102,13 @@ const BotonFlotanteCart = () => {
             }
             <div>
             <Modal
+                className={style.modal}
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel="Carrito Modal"
                 style={{
                 overlay: {
-                    backgroundImage: 'linear-gradient(to right , #e7ef00, #fcffa9)',
+                    background: 'rgba(256,256,256,.6)',
                     backdropFilter: 'blur(5px)'
                 },
                 content: {
@@ -131,10 +132,10 @@ const BotonFlotanteCart = () => {
                     }
                 }}
              >
-                 <div className={style.buttonContainer}> 
+                <div className={style.buttonContainer}> 
                   <button  className={style.botonCierre} onClick={closeModal}>x</button>
                 </div>
-                <h4 className={style.tituCart}>Tus productos seleccionados: </h4>
+                <h4 className={style.tituCart}>Tus productos seleccionados</h4>
                 <table className={style.table}>
                     <thead>
                         <tr className={style.cabezal}>

@@ -88,7 +88,7 @@ const ProductosAdmin = () => {
                                     <tr key={index}>
                                         <td><h5>{producto.name}</h5></td>
                                         <td><p><img className={style.imgProd} src={producto.imagen} alt={producto.name}/></p></td>
-                                        <td><h6><button className={style.vermas} onClick={() => openModal(producto)}>Ver</button></h6></td>
+                                        <td><button className={style.vermas} onClick={() => openModal(producto)}>Ver</button></td>
                                     </tr>
                                 )) }
                             </tbody>
@@ -96,6 +96,7 @@ const ProductosAdmin = () => {
                 </div>
         </div>}
         <Modal
+                className={style.modal}
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel="Info Modal"

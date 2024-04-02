@@ -42,11 +42,10 @@ export default function Productos() {
 
     return(
         <div className={style.container}>
-            <PreNav />
             <NavBar />
-            <div className={style.search}>
-                <SearchBar />
-            </div>
+        <div className={style.search}>
+            <SearchBar />
+        </div>
         <div className={style.filters}>
           <button onClick={handleFilter} value={"tienda"}>Todos</button>
           <button onClick={handleFilter} value={"accesorios"}>Accesorios</button>

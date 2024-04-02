@@ -85,6 +85,7 @@ const Ventas = () => {
                     </div>   
                 </div>}
                 <Modal
+                className={style.modal}
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel="Info Modal"

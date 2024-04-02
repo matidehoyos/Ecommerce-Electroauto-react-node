@@ -1,19 +1,4 @@
-.cerrarContainer {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-}
 
-.cerrarModal {
-    width: auto;
-    font-size: 20px;
-    font-weight: 700;
-    font-style: italic;
-    color: red;
-    background-color: #292929;
-    padding: 4px 12px;
-    margin-right: 0;
-}
 
 .kartButton {
     width: auto;
@@ -38,7 +23,184 @@
     font-weight: 700;
   }
 
+  .botonCierre {
+    font-size: 24px;
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 2px;
+    padding: 0;
+    margin-top: 5px;
+    margin-right: 8px;
+    color: #3a3a3a;
+    position: fixed;
+  }
 
+    .tituCart {
+      font-size: 22px;
+      font-weight: 600;
+       text-align: center;
+       color: rgb(28, 28, 28);
+       margin: 0;
+       margin-bottom: 40px;
+    }
+
+    
+    .table {
+      width: 80%;
+      margin: 0px auto;
+      border-collapse: collapse;
+      border: 1px solid #c0c0c0;
+  }
+  
+  .header {
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 8px 6px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #000;
+  }
+
+  .tarro {
+    background-color: transparent;
+    color: rgba(255, 0, 0, 0.655);
+    font-size: 14px;
+  }
+  
+  .row:nth-child(even) {
+      background-color: #f2f2f2;
+  }
+  
+  .cell {
+      border: 1px solid #ddd;
+      padding: 6px 5px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+  }
+  
+  .cellName {
+      border: 1px solid #ddd;
+      padding: 6px 5px;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: left;
+  }
+
+  .totalLabel {
+      background-color: #222;
+      color: white;
+      text-align: right;
+      padding-right: 15px;
+  }
+  
+  .totalValue {
+    font-size: 20px;
+    text-align: center;
+      background-color: #5b95ff;
+      color: white;
+  }
+
+    .cerrarContainer {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
+.proceso {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  margin-top: 40px;
+  padding-right: 10%;
+}
+
+    .botonProcesar {
+    width: auto;
+    height: auto;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(106, 106, 255);
+    color: #fff;
+    margin: 10px;
+    }
+
+  .formDataEnvio {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .wallet {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+  .buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+    
+    .botonCierre {
+        width: auto;
+        font-size: 22px;
+        font-weight: 600;
+        font-style: italic;
+        color: red;
+        background-color: transparent;
+        padding: 3px 10px;
+        margin-right: 0;
+        margin: 0;
+    }
+
+
+      .noLoggedContainer {
+        width: 94%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 0px 10px;
+      }
+
+      .noLogged {
+        color: rgb(192, 0, 0);
+        width: auto;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        padding-left: 0;
+        margin: 0;
+        padding: 0;
+        font-style: italic;
+      }
+
+      .noLoggedContainer button {
+        color: #222;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: italic;
+        padding-left: 0;
+        margin-top: 6px;
+      }
+
+      .modal {
+        padding: 0px 20px;
+      }
+      .modal::-webkit-scrollbar {
+        display: none;
+      }
 
 
   /* Estilos para mobile ----------------------------------------------------------*/
@@ -58,7 +220,7 @@
     border-radius: 2px;
     padding: 0;
     margin-top: 5px;
-    margin-right: 8px;
+    margin-right: 10px;
     color: #3a3a3a;
   }
 
@@ -66,10 +228,9 @@
       font-size: 17px;
       font-weight: 600;
        text-align: left;
-       padding-left: 8px;
+       padding-left: 10px;
        color: rgb(18, 18, 18);
-       margin: 0;
-       margin-bottom: 25px;
+       margin: 25px 0px;
     }
 
     
@@ -205,9 +366,9 @@
       }
     
       .kartButton span {
-        color: rgb(255, 72, 72);
+        color: yellow;
         text-shadow: 0px 0px 3px #000;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
       }
 
@@ -223,7 +384,7 @@
       }
 
       .noLogged {
-        color: rgb(192, 0, 0);
+        color: rgb(46, 46, 46);
         width: auto;
         font-size: 14px;
         font-weight: 500;

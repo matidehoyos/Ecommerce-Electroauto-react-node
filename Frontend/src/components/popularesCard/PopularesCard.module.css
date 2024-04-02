@@ -2,7 +2,7 @@
     background-color: #fff;
     width: 220px;
     min-height: 400px;
-    margin: 0px 20px;
+    margin: 0px 8px;
     padding: 0px;
     border-radius: 6px;
     display: flex;
@@ -12,7 +12,7 @@
     box-shadow: 0px 0px 20px rgba(0,0,0,.4);
     cursor: pointer;
     position: relative;
-    outline: 2px solid #fff;
+    outline: 2px solid #ffffff;
 }
 
 .container:hover {
@@ -355,4 +355,98 @@
         font-size: 14px;
     }
     
+
+    .cerrarModal { display: none;}
+
+    .cerrarModalMobile {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding: 0;
+    }
+
+    .cerrarModalMobile button {
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        color: #111;
+        background-color: transparent;
+    }
+
+    .imag {
+        width: 100%;
+    }
+
+    .imgModal {
+        margin: 0;
+        padding: 0;
+        width: 54%;
+        border-radius: 6px;
+    }
+
+    .txtDetalle {
+        width: 100%;
+        padding: 0;
+    }
+
+    .nameM {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
+
+    .detalleM {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        font-style: italic;
+    }
+
+    .infoM {
+        width: 84%;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+        margin-top: 15px;
+        padding: 0;
+        font-style: italic;
+    }
+    
+    .precioM {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 8px;
+        padding: 0;
+        color: rgb(0, 200, 0);
+    }
+
+    .unidadesM {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .unidadesM select {
+        margin-left: 8px;
+        background-color: transparent;
+        color: #111;
+        border-radius: 4px;
+        font-size: 17px;
+    }
+    
+
+    .addCartM {
+        background-color: rgb(255, 88, 88);
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        padding: 8px 12px;
+        margin-top: 20px;
+        color: #fff;
+        border: 1px solid #cbcbcb;
+    }
 }

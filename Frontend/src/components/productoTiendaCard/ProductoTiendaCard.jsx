@@ -62,11 +62,12 @@ const ProductoTiendaCard = ({producto}) => {
         </div>  
 
         <Modal 
+        className={style.modal}
         isOpen={modalIsOpen} 
         onRequestClose={() => setModalIsOpen(false)}
         style={{
           overlay: {
-            backgroundImage: 'linear-gradient(to right , #e7ef00, #fcffa9)',
+            background: 'rgba(256,256,256,.6',
               backdropFilter: 'blur(5px)'
           },
           content: {
@@ -87,13 +88,21 @@ const ProductoTiendaCard = ({producto}) => {
               position: 'relative',
               left: '0vw',
               top: '100px',
+              display: 'flex',
+              flexWrap: 'wrap'
             }
           }}
         >
-          <div className={style.cerrarModal}>
+          <div className={style.cerrarModalMobile}>
+              <button  onClick={() => setModalIsOpen(false)}>X</button>
+          </div>
+          <div className={style.imag}>
+            <img className={style.imgModal} src={producto.imagen} alt={producto.name}/>
+          </div>
+          <div className={style.txtDetalle}>
+            <div className={style.cerrarModal}>
           <button  onClick={() => setModalIsOpen(false)}>X</button>
           </div>
-          <img className={style.imgModal} src={producto.imagen} alt={producto.name}/>
           <h2  className={style.nameM}>{producto.name}</h2>
           <p  className={style.detalleM}>{producto.detalle}</p>
           <p  className={style.infoM}>{producto.informacion}</p>
@@ -109,6 +118,8 @@ const ProductoTiendaCard = ({producto}) => {
           </select> 
           </div>
           <button  className={style.addCartM}  onClick={agregarAlCarrito}>Agregar al carrito</button>
+          </div>
+          
         </Modal>
       </div>
   );

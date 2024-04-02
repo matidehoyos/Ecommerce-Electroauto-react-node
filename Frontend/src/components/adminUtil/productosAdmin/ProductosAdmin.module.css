@@ -98,6 +98,7 @@
 }
 
 .botonEliminar {
+    display: block;
     width: auto;
     height: auto;
     font-size: 14px;
@@ -115,6 +116,7 @@
     padding: 0;
     color: blue;
     background-color: transparent;
+    margin-bottom: 10px;
 }
 
 .noProductos {
@@ -125,6 +127,43 @@
     margin-top: 150px;
     text-align: center;
     color: #222;
+}
+
+.vermas {
+    width: 100%;
+    background-color: transparent;
+    color: #0034c5;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+.cierre {
+    width: 100%;
+    padding: 0;
+    text-align: right;
+    background: transparent; 
+    font-weight: 600; 
+    font-size: 24px;
+    color: rgb(0, 50, 131);
+     ;
+}
+
+.pModal {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+
+.pModal span {
+    font-weight: 500;
+    font-size: 18px;
+    color: #111;
+    padding-left: 6px;
 }
 
 

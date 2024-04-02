@@ -88,6 +88,7 @@ const Mensajes = ({setMensaje}) => {
                         </table>            
                 </div>
                 <Modal
+                    className={style.modal}
                     isOpen={modalIsOpen}
                     onRequestClose={closeModal}
                     contentLabel="Mensaje Modal" 

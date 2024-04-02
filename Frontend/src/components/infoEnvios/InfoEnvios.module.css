@@ -2,7 +2,7 @@
     width: auto;
     height: auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px;
@@ -16,7 +16,7 @@
     height: auto;
     display: flex;
     justify-content: center;
-    padding: 40px 0px;
+    padding: 120px 0px;
     margin: 0;
     background: #111;
 
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 280px 0px;
+    padding: 140px 0px;
     margin: 0;
     background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
     border-radius: 0px;

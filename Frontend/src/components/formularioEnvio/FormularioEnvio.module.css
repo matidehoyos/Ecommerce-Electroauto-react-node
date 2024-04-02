@@ -1,3 +1,107 @@
+
+.container {
+    width: 70%;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container h4 {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.container form {
+    width: 100%;
+    background-color: #fff;
+    padding: 0px;
+    margin: 0;
+    margin-top: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.entero { 
+    width: 95%;
+}
+
+.medio {
+    width: 43%;
+}
+
+.container form input {
+    background-color: #fff;
+    padding: 10px 8px;
+    padding-top: 14px;
+    border: 1px solid rgba(0,0,0,.8);
+    margin: 7px 5px;
+    color: #111;
+}
+
+.container form input::placeholder {
+    color: #111;
+    font-size: 18px;
+}
+
+.container form textarea {
+    background-color: #fff;
+    padding: 10px 8px;
+    border: 1px solid rgba(0,0,0,.6);
+    margin: 5px;
+    color: #111;
+}
+
+.container form textarea::placeholder {
+    color: #111;
+    font-size: 18px;
+}
+
+.container form button {
+    width: auto;
+    height: auto;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #333;
+    margin: 10px;
+    border-radius: 0;
+}
+
+.respForm {
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 680px) {
+
 .container {
     width: 100%;
     padding: 0;
@@ -8,11 +112,12 @@
 }
 
 .container h4 {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
     margin-top: 20px;
     padding: 0;
     padding-left: 10px;
+    font-weight: 600;
 }
 
 .container form {
@@ -24,6 +129,7 @@
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+    border: none;
 }
 
 .entero { 
@@ -66,7 +172,6 @@
     padding: 6px 12px;
     font-size: 14px;
     font-weight: 500;
-    background-color: rgb(106, 106, 255);
     margin: 10px;
 }
 
@@ -75,4 +180,5 @@
     padding: 0px 10px;
     margin: 0;
     text-align: left;
+}
 }

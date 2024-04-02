@@ -64,6 +64,7 @@ const Usuarios = () => {
             </div>
            }
           <Modal
+          className={style.modal}
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel="Info Modal"

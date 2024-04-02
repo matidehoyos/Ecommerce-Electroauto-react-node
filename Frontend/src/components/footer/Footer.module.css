@@ -358,6 +358,7 @@ footer {
     padding-top: 0px;
     box-sizing: border-box;
     margin-top: 50px;
+    border: none;
   }
   
   .footerNewLetter form {
@@ -370,6 +371,7 @@ footer {
     padding: 0;
     margin: 0;
     background-color: transparent;
+    border: none;
   }
   
   .footerNewLetter form label{

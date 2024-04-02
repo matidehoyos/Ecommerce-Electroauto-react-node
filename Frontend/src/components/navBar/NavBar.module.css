@@ -5,7 +5,6 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(to right , #0033ff,  #1900ff);
   position: relative;
 }
 
@@ -17,13 +16,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
-  background-color: rgba(0,0,0,.6);
+  background-image: linear-gradient(to right , rgb(0, 0, 231),  #000640);
 }
 
 .logo {
   width: auto;
   height: auto;
   margin-right: 200px;
+  margin-left: 40px;
 }
 
 .logo img {
@@ -85,17 +85,23 @@
   display: flex;
   justify-content: center;
   padding: 0px;
-  background-color: #222;
+  background-image: linear-gradient(to right , #f7ff15, #fbff93  );
+  opacity: .8;
+  border-bottom: 1px solid rgba(256,256,256,.5);
 }
 
 .secondRow button {
-  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .7px;
+  color: #111;
   background-color: transparent;
   margin: 0px 30px;
 }
 
 .secondRow button:hover {
-  color: yellow;
+  color: #fff;
+  text-shadow: 0px 0px 3px #000;
 }
 
 .cantidad {
@@ -138,7 +144,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(to right , #3610f3e0,  #1a067ce0);
+    background-image: linear-gradient(to right , #3f19ff,  rgb(13, 0, 79));
     position: fixed;
     top: 0;
     z-index: 4000;
