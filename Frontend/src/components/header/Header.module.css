@@ -230,7 +230,7 @@
     white-space: nowrap;
     animation: desplazamiento .4s ease-in-out 1;
     border-radius: 60px;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .1);
 
 }
 
@@ -260,18 +260,19 @@
     height: auto;
     font-size: 39px;
     font-weight: 600;
-    letter-spacing: -1.5px;
     text-align: left;
     margin: 0;
     margin-bottom: 0;
     background-image: linear-gradient(to right , #e7ef00, #fdffca  );
     background-clip: text;
     color: transparent;
-}
-
-.texto h1 span {
-  font-size: 37px;
-  font-weight: 600;
+  }
+  
+  .texto h1 span {
+    font-size: 37px;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+  font-style: normal;
   background-image: linear-gradient(to right , #e7ef00, #fdffca  );
   background-clip: text;
   color: transparent;
@@ -303,11 +304,12 @@
     letter-spacing: .3px;
     text-align: left;
     animation: ola 1.7s linear infinite;
+    font-style: normal;
     }
   
   @keyframes ola {
     0%, 100% {transform: scaleY(1);}
-    50% {transform: scaleY(1.3);}
+    50% {transform: scaleY(1.2);}
   }
 
 .envios {
@@ -343,7 +345,7 @@
   height: auto;
   display: flex;
   justify-content: left;
-  margin-top: 25px;
+  margin-top: 16px;
 }
 
 .visita button {
@@ -362,7 +364,6 @@
   font-style: italic;
   position: relative;
   animation: desplaza 2.4s ease-in-out 1;
-  border-radius: 60px;
   background-color: rgba(0, 0, 0, .3);
   overflow-x: hidden;
 }
