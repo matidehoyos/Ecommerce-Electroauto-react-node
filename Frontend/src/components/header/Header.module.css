@@ -217,13 +217,13 @@
     background-repeat: no-repeat;
     overflow-x: hidden;
     animation: backd 0.4s ease-out 1;
-    background-image: url('../../../public/bgPosta7.jpeg');
+    background-image: url('https://i.pinimg.com/474x/db/ae/72/dbae721221ad884cd62372debc245b26.jpg');
 }
 
 @keyframes backd {
-    0% {  background-image: url('../../../public/bgPosta7.jpeg');
+    0% {  background-image: url('https://i.pinimg.com/474x/db/ae/72/dbae721221ad884cd62372debc245b26.jpg');
     }
-    100% {  background-image: url('../../../public/bgPosta7.jpeg');
+    100% {  background-image: url('https://i.pinimg.com/474x/db/ae/72/dbae721221ad884cd62372debc245b26.jpg');
   }}
 
 .texto {
