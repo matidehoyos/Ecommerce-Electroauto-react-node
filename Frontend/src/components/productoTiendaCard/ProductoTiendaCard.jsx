@@ -80,8 +80,6 @@ const ProductoTiendaCard = ({producto}) => {
               outline: 'none',
               position: 'relative',
               left: '0vw',
-              display: 'flex',
-              flexWrap: 'wrap',
               zIndex: '20000'
             }
           }}
