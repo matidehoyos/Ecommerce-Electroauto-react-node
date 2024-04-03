@@ -21,8 +21,8 @@ export default function PostPago() {
     useEffect(() => {
         const searchPay = async () => {
             try {
-                const response = await axios('/successpayment', {params: obj});
-                const search = await axios(`/getpreference/id?id=${response.data.id}`);
+                const response = await axios('https://electrocar-production.up.railway.app/successpayment', {params: obj});
+                const search = await axios(`https://electrocar-production.up.railway.app/getpreference/id?id=${response.data.id}`);
                 if (search.status !== 200) {
                     throw new Error(`Error: Received status code ${search.status}`);
                 }
@@ -42,7 +42,7 @@ export default function PostPago() {
             {
                 !paymentInfo
                     ? 
-                    null
+                    hola
                     :
                     (<div className={style.container}>
                         <div className={style.confirmation}>
