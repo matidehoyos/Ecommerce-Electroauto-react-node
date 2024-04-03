@@ -217,13 +217,13 @@
     background-position-y: 0px;
     overflow-x: hidden;
     animation: backd 0.4s ease-out 1;
-    background-image: url('../../../public/bgposta6.jpeg');
+    background-image: url('bgposta6.jpeg');
 }
 
 @keyframes backd {
-    0% {  background-image: url('../../../public/bgposta6.jpeg');
+    0% {  background-image: url('bgposta6.jpeg');
     }
-    100% {  background-image: url('../../../public/bgposta6.jpeg');
+    100% {  background-image: url('bgposta6.jpeg');
   }}
 
 .texto {
