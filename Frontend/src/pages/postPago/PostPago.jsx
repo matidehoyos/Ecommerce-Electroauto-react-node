@@ -42,7 +42,7 @@ export default function PostPago() {
             {
                 !paymentInfo
                     ? 
-                    hola
+                    "Hola"
                     :
                     (<div className={style.container}>
                         <div className={style.confirmation}>
