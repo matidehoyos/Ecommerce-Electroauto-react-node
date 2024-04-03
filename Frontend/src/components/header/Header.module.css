@@ -214,16 +214,16 @@
     background-color: #000;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position-y: 0px;
     overflow-x: hidden;
     animation: backd 0.4s ease-out 1;
-    background-image: url('https://i.pinimg.com/236x/42/7d/79/427d790e2561de4df4066b394955d950.jpg');
+    background-image: url('../../../public/bgposta6.jpeg');
 }
 
 @keyframes backd {
-    0% {  background-image: url('https://i.pinimg.com/236x/42/7d/79/427d790e2561de4df4066b394955d950.jpg');
+    0% {  background-image: url('../../../public/bgposta6.jpeg');
     }
-    100% {  background-image: url('https://i.pinimg.com/236x/42/7d/79/427d790e2561de4df4066b394955d950.jpg');
+    100% {  background-image: url('../../../public/bgposta6.jpeg');
   }}
 
 .texto {
