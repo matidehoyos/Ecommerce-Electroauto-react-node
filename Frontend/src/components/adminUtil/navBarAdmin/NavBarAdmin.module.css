@@ -15,7 +15,6 @@
     height: auto;
     display: flex;
     justify-content: start;
-    background-image: linear-gradient(to left , #310edf, #1e0e6e  );
     padding: 10px 100px;
     padding-left: 30px;
   }
