@@ -70,18 +70,6 @@ const ProductoTiendaCard = ({producto}) => {
             background: 'rgba(256,256,256,.5',
               backdropFilter: 'blur(5px)'
           },
-          content: {
-              border: 'none',
-              background: 'rgba(256,256,256,1',
-              boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
-              overflow: 'scroll',
-              WebkitOverflowScrolling: 'touch',
-              borderRadius: '6px',
-              outline: 'none',
-              position: 'relative',
-              left: '0vw',
-              zIndex: '20000'
-            }
           }}
         >
           <div className={style.cerrarModalMobile}>

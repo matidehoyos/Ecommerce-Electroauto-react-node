@@ -184,6 +184,7 @@
     left: 0;
     top: 120px;
     background-color: #fff;
+    outline: none;
 }
 
 .modal::-webkit-scrollbar {
@@ -490,17 +491,19 @@
         padding: 0;
         color: #111;
         background-color: transparent;
+        position: fixed;
     }
 
     .imag {
-        width: 100%;
+        width: 50%;
     }
 
     .imgModal {
         margin: 0;
         padding: 0;
-        width: 54%;
-        border-radius: 6px;
+        width: 100%;
+        border-radius: 0px;
+        border-top-left-radius:  6px;
     }
 
     .txtDetalle {
@@ -563,14 +566,14 @@
         font-weight: 500;
         line-height: 14px;
         padding: 8px 12px;
-        margin-top: 20px;
+        margin: 20px 0px;
         color: #fff;
         border: 1px solid #cbcbcb;
     }
 
     .modal {
         width: 76%;
-        height: 70%;
+        height: 80%;
         padding: 10px 20px;
         margin: 0 auto;
         box-shadow: 0px 0px 20px rgba(0,0,0,.7);
@@ -580,8 +583,9 @@
         border-radius: 6px;
         position: relative;
         left: 0;
-        top: 100px;
+        top: 92px;
         background-color: #fff;
+        outline: none;
     }
 
     .modal::-webkit-scrollbar {

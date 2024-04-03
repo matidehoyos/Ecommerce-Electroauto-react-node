@@ -73,9 +73,13 @@ const ReviewForm = ({addReview}) => {
             </span>
           ))}
         </div>
+        {
+          user.name ?      
         <div className={style.containerButton}>
           <button type="submit" disabled={info.message === ''}>Enviar reseña</button>
         </div>
+        : 'Debes hacer una compra para poder dejar tu reseña'
+        }
       </form>
     </div>
   );
