@@ -42,8 +42,9 @@ export default function Productos() {
 
     return(
         <div className={style.container}>
-        <div className={style.navPc}></div>
+        <div className={style.navPc}>
             <NavBar />
+        </div>
             <div className={style.header}>
                     <NavBar />
                     <div className={style.search}>

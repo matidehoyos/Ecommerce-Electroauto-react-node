@@ -111,25 +111,6 @@ const BotonFlotanteCart = () => {
                     background: 'rgba(256,256,256,.6)',
                     backdropFilter: 'blur(5px)'
                 },
-                content: {
-                    width: '94vw',
-                    height: '70%',
-                    margin: '0 auto',
-                    marginTop: '0',
-                    border: 'none',
-                    background: 'rgba(256,256,256,1',
-                    boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
-                    WebkitOverflowScrolling: 'touch',
-                    borderRadius: '6px',
-                    outline: 'none',
-                    padding: '0px',
-                    overflowX: 'hidden',
-                    overflowY: 'scroll',
-                    paddingBottom: '30px',
-                    position: 'relative',
-                    left: '0vw',
-                    top: '100px',
-                    }
                 }}
              >
                 <div className={style.buttonContainer}> 

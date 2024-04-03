@@ -41,6 +41,7 @@
        text-align: center;
        color: rgb(28, 28, 28);
        margin: 0;
+       margin-top: 15px;
        margin-bottom: 40px;
     }
 
@@ -196,8 +197,23 @@
       }
 
       .modal {
-        padding: 0px 20px;
+        width: 84%;
+        height: 80%;
+        margin: 0 auto;
+        border: none;
+        background: rgba(256,256,256,1);
+        box-shadow: 0px 0px 20px rgba(0,0,0,.7);
+        border-radius: 6px;
+        outline: none;
+        padding: 0px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-bottom: 20px;
+        position: relative;
+        left: 0;
+        top: 92px;
       }
+
       .modal::-webkit-scrollbar {
         display: none;
       }
@@ -206,6 +222,28 @@
   /* Estilos para mobile ----------------------------------------------------------*/
 
 @media only screen and (max-width: 680px) {
+
+  .modal {
+    width: 94%;
+    height: 80%;
+    margin: 0 auto;
+    border: none;
+    background: rgba(256,256,256,1);
+    box-shadow: 0px 0px 20px rgba(0,0,0,.7);
+    border-radius: 6px;
+    outline: none;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+    position: relative;
+    left: 0;
+    top: 92px;
+  }
+
+  .modal::-webkit-scrollbar {
+    display: none;
+  }
 
   .buttonContainer {
     width: 100%;
@@ -403,5 +441,7 @@
         padding-left: 0;
         margin-top: 6px;
       }
+
+      
 
 }

@@ -8,11 +8,14 @@ const Populares = () => {
     const [productos, setProductos] = useState([]);
     const data = useSelector(state => state.productos)
     const [loading, setLoading] = useState(true);
+    const [populares, setPopulares ] = useState([])
 
     const bringData = () => {
         if (data) {
             setProductos(data);
             setLoading(false);
+            const populares = data.slice(0, 5);
+            setPopulares(populares)
         }
     }
 
@@ -24,10 +27,10 @@ const Populares = () => {
     <div className={style.container}>
         {loading ? (
             <div>Más vendidos</div>
-        ) : productos && productos.length ? (
+        ) : populares && populares.length ? (
             <div className={style.caja}>
                 <div className={style.cajaCards}>
-                    {productos.map((producto,i) => (
+                    {populares.map((producto,i) => (
                         <PopularesCard producto={producto} key={i} />
                     ))}
                 </div>

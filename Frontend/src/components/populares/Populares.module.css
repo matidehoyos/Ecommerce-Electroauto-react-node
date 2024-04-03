@@ -10,9 +10,7 @@
    height: auto;
    display: flex;
    justify-content: start;
-   flex-wrap: nowrap;
-   overflow-x: scroll;
-   padding: 20px 30px;
+   padding: 20px 60px;
    margin: 0px 0px;
 }
 
@@ -24,9 +22,6 @@
     width: 100%;
     height: auto; 
     display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
 }
 
 

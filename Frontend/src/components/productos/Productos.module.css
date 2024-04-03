@@ -1,23 +1,31 @@
 .container {
-    width: auto;
-    height: auto;
+    width: 100%;
+    min-height: 100vh;
     background-color: rgb(240,240,240);
 }
 
+.navPc {
+    width: 100%;
+    z-index: 3000;
+    position: fixed;
+  }
 
 .search {
   display: none;
 }
 
 .cardsContainer {
-        width: 86%;
-        min-height: 520px;
-        padding: 40px 20px;
-        margin: 0px auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: start;
-        align-items: start;
+    width: auto;
+    height: auto;
+    padding: 40px 20px;
+    padding-top: 200px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: stretch;
+   background: #fff;
+    gap: 40px 0px;
     }
 
 .notFoundBox {

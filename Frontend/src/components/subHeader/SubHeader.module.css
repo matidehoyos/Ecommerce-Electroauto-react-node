@@ -26,7 +26,7 @@
         justify-content: start;
         align-items: start;
         border-radius: 0px;
-        background-color: #ffffff;  
+        background-color: #fff;       
         transform: translateY(150%);
         transition: transform 1.8s ease-out;
         overflow-y: hidden;
@@ -52,7 +52,6 @@
         width: 100%;
         height: auto; 
         padding: 20px 25px;
-        padding-bottom: 50px;
         margin: 0;
         display: flex;
         justify-content: center;
@@ -60,9 +59,9 @@
     }
 
     .box {
-        width: 20%;
+        width: 16%;
         height: auto;
-        background-color: #111;
+        background: #000640;
         border-radius: 6px;
         border: 1px solid gold;
         margin: 0px 20px;
@@ -70,13 +69,13 @@
     }
 
     .box:hover {
-        background-color: gold;
-        box-shadow: 0px 0px 30px rgba(0,0,0,1);
+        box-shadow: 0px 0px 40px rgba(0,0,0,1);
         cursor: pointer;
+        background-color: #000321;
     }
 
     .box:hover h4 {
-        color: #222;
+        color: #fff;
     }
 
     .box h4 {
@@ -86,7 +85,7 @@
         padding-top: 10px;
         margin: 0;
         text-align: center;
-        color: gold;
+        color: #fff;
     }
 
     .boxImg {
