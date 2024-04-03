@@ -217,13 +217,13 @@
     background-repeat: no-repeat;
     overflow-x: hidden;
     animation: backd 0.4s ease-out 1;
-    background-image: url('https://i.pinimg.com/474x/72/cd/60/72cd6099860c08f1a4c0ee1dfe681a9e.jpg');
+    background-image: url('https://i.pinimg.com/474x/1e/ce/4b/1ece4bd3a6f109b60fa8150addf99772.jpg');
 }
 
 @keyframes backd {
-    0% {  background-image: url('https://i.pinimg.com/474x/72/cd/60/72cd6099860c08f1a4c0ee1dfe681a9e.jpg');
+    0% {  background-image: url('https://i.pinimg.com/474x/1e/ce/4b/1ece4bd3a6f109b60fa8150addf99772.jpg');
     }
-    100% {  background-image: url('https://i.pinimg.com/474x/72/cd/60/72cd6099860c08f1a4c0ee1dfe681a9e.jpg');
+    100% {  background-image: url('https://i.pinimg.com/474x/1e/ce/4b/1ece4bd3a6f109b60fa8150addf99772.jpg');
   }}
 
 .texto {
