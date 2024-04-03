@@ -171,9 +171,9 @@
 }
 
 .modal {
-    width: 50%;
-    height: 60%;
-    padding: 20px;
+    width: 58%;
+    height: 54%;
+    padding: 0px;
     margin: 0 auto;
     box-shadow: 0px 0px 20px rgba(0,0,0,.7);
     display: flex;
@@ -182,7 +182,7 @@
     border-radius: 6px;
     position: relative;
     left: 0;
-    top: 140px;
+    top: 120px;
     background-color: #fff;
 }
 
@@ -199,12 +199,14 @@
 }
 
 .imgModal {
-    margin: 0;
-    margin-top: 30px;
-    padding: 0;
     width: 100%;
-    border-top-left-radius: 10px;
+    height: 100%;
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
     border-radius: none;
+    object-fit: cover;
+    object-position: center;
 }
 
 .cerrarModal {
@@ -223,6 +225,7 @@
 .txtDetalle {
     width: 100%;
     padding: 0;
+    padding-left: 20px;
 }
 
 .nameM {
@@ -241,6 +244,7 @@
 
 .infoM {
     width: 84%;
+    min-height: 40px;
     font-size: 16px;
     font-weight: 600;
     margin: 0;

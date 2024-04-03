@@ -279,9 +279,9 @@
 
 .modal {
     width: 70%;
-    height: 60%;
+    height: 55%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0px;
     padding-right: 10px;
     top: 160px;
     border: none;
