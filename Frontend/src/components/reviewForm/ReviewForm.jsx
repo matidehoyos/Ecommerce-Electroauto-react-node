@@ -74,7 +74,7 @@ const ReviewForm = ({addReview}) => {
           ))}
         </div>
         {
-          user.name ?      
+          user?.name ?      
         <div className={style.containerButton}>
           <button type="submit" disabled={info.message === ''}>Enviar reseña</button>
         </div>
