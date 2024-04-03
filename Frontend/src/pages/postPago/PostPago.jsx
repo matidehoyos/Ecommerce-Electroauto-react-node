@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 import style from './PostPago.module.css'
 import { FcApproval } from "react-icons/fc";
 import { FcHighPriority } from "react-icons/fc";
+import NavBar from '../../components/navBar/NavBar';
 
 export default function PostPago() {
     const [paymentInfo, setPaymentInfo] = useState(null)
@@ -21,8 +22,8 @@ export default function PostPago() {
     useEffect(() => {
         const searchPay = async () => {
             try {
-                const response = await axios('https://electrocar-production.up.railway.app/successpayment', {params: obj});
-                const search = await axios(`https://electrocar-production.up.railway.app/getpreference/id?id=${response.data.id}`);
+                const response = await axios('/successpayment', {params: obj});
+                const search = await axios(`/getpreference/id?id=${response.data.id}`);
                 if (search.status !== 200) {
                     throw new Error(`Error: Received status code ${search.status}`);
                 }
@@ -46,9 +47,7 @@ export default function PostPago() {
                     :
                     (<div className={style.container}>
                         <div className={style.confirmation}>
-                            <div className={style.logo}>
-                                <img src="./logo.png" alt="electroauto logo" />
-                            </div>
+                            <NavBar />
                             <div className={style.status}>
                                 <h3>{paymentInfo?.infoMp.status === 'approved' ? <FcApproval className={style.iconStatus} /> : <FcHighPriority className={style.iconStatus} />}{paymentInfo?.infoMp.status}</h3>
                             </div>
@@ -63,7 +62,7 @@ export default function PostPago() {
                                     <span> {paymentInfo?.infoMp.payId}</span>
                                     <p>Productos:</p>
                                     {
-                                        paymentInfo?.carrito.map((elem,index) => (
+                                        paymentInfo?.productos?.map((elem,index) => (
                                             <h6 key={index}>{elem.quantity} {elem.title}</h6>
                                         ))
                                     }

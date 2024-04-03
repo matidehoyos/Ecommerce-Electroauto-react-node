@@ -138,17 +138,19 @@
 
     .container {
         width: 100%;
-        height: auto;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: start;
+        background-color: #fff;
     }
     
     .confirmation {
         width: 100%;
         height: auto;
         padding: 0px;
+        padding-top: 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;

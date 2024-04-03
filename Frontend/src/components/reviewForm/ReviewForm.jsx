@@ -5,7 +5,7 @@ import reviewsProvider from '../../utils/provider/reviewsProvider';
 import { useSelector } from 'react-redux';
 
 const ReviewForm = ({addReview}) => {
- const user = useSelector(state => state.userData);
+  const user = JSON.parse(localStorage.getItem('user'));
  const [info, setInfo] = useState({});
 
 

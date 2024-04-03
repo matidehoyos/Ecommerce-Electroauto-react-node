@@ -13,8 +13,8 @@ const createPreferenceId = async(req, res) => {
       items: items,
       back_urls: {
         success: "https://electroauto.vercel.app/successpayment",
-        failure: "https://electroauto.vercel.app/successpaymen",
-        pending: "https://electroauto.vercel.app/successpaymen",
+        failure: "https://electroauto.vercel.app/successpayment",
+        pending: "https://electroauto.vercel.app/successpayment",
       },
       auto_return: "approved",
     };
