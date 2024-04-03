@@ -500,15 +500,16 @@
     }
 
     .imag {
-        margin-top: 8px;
-        width: 100%;
+        margin-top: 0px;
+        width: 70%;
     }
 
     .imgModal {
         margin: 0;
         padding: 0;
         width: 100%;
-        border-radius: 6px;
+        border-radius: 0;
+        border-top-left-radius: 6px;
     }
 
     .txtDetalle {
@@ -581,7 +582,7 @@
         height: 80%;
         margin: 0 auto;
         padding: 5px 10px;
-        top: 100px;
+        top: 88px;
         border: none;
         background: rgba(256,256,256,1);
         box-shadow: 0px 0px 20px rgba(0,0,0,.7);
@@ -591,7 +592,7 @@
         position: 'relative';
         left: 0;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         z-index: '20000';
         overlay: red;
     }
