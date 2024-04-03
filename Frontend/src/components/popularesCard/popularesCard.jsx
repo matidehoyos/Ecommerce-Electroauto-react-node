@@ -41,7 +41,6 @@ const PopularesCard = ({producto}) => {
           <div className={style.imgContainer}>
             <img src={producto.imagen} alt={producto.name}/>
           </div>   
-             
           <h3>{nombreProducto}</h3>
           <p className={style.detalle}>{producto.detalle}</p>    
           <p className={style.stock}>Stock disponible: <span>{producto.cantidad}</span></p>
@@ -69,28 +68,7 @@ const PopularesCard = ({producto}) => {
           overlay: {
             background: 'rgba(256,256,256,.6',
               backdropFilter: 'blur(5px)'
-          },
-          content: {
-              width: '76vw',
-              height: '70%',
-              minHeight: 'auto', 
-              margin: '0 auto',
-              marginTop: '0',
-              border: 'none',
-              background: 'rgba(256,256,256,1',
-              boxShadow: '0px 0px 20px rgba(0,0,0,.7)',
-              overflow: 'scroll',
-              WebkitOverflowScrolling: 'touch',
-              borderRadius: '6px',
-              outline: 'none',
-              padding: ' 10px 20px',
-              paddingBottom: '26px',
-              position: 'relative',
-              left: '0vw',
-              top: '100px',
-              display: 'flex',
-              flexWrap: 'wrap'
-            }
+          }
           }}
         >
           <div className={style.cerrarModalMobile}>

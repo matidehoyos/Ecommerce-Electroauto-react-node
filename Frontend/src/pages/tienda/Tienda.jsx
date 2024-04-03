@@ -5,7 +5,6 @@ import ProductoTiendaCard from '../../components/productoTiendaCard/ProductoTien
 import productosProvider from '../../utils/provider/productosProvider';
 import { loadProductos } from '../../redux/actions';
 import { useEffect, useState } from 'react';
-import PreNav from '../../components/preNav/PreNav';
 import SearchBar from '../../components/searchBar/SearchBar';
 import { useNavigate } from 'react-router';
 
@@ -13,6 +12,7 @@ import { useNavigate } from 'react-router';
 const Tienda = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch();
+    const [loader, setLoader] = useState(true);
     const [productos, setProductos] = useState([]);
 
     const bringData = async () => {
@@ -23,6 +23,7 @@ const Tienda = () => {
 
     useEffect(() => {
         bringData();
+        setLoader(false)
     }, []); 
 
     const handleFilter = (e) => {
@@ -52,14 +53,13 @@ const Tienda = () => {
             <div className={style.cardsContainer}>
             
                 {
-                productos ?
-                productos.map((producto, index) => (
+                loader ?
+                <img src="../../../public/bgPosta2.jpeg" alt="loader" />
+                : productos.map((producto, index) => (
                     <div key={index}>
                         <ProductoTiendaCard producto={producto}/>
                     </div>
-                )) :
-                "No se encontraron productos"
-                }
+                ))  }
             </div>
         </div>
     )

@@ -110,15 +110,28 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        overflow-x: scroll;
         justify-content: start;
         align-items: start;
         margin: 0;
-        padding: 80px 0px;
+        padding: 40px 0px;
+        padding-bottom: 0px;
         background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
     }
-    
-    .populares::-webkit-scrollbar {
+
+.cateContainer {
+    width: 200%;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: start;
+        align-items: center;
+        margin: 10px 0px;
+        padding: 0px;
+        padding-bottom: 20px;
+}
+
+    .cateContainer::-webkit-scrollbar {
         display: none;
     }
     

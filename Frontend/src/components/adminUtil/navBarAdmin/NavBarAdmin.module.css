@@ -17,6 +17,7 @@
     justify-content: start;
     padding: 10px 100px;
     padding-left: 30px;
+    background-image: linear-gradient(to left , #310edf, #1e0e6e  );
   }
   
   .logo h3 {

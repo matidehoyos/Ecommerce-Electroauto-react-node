@@ -23,7 +23,7 @@ width: 400px;
   color: rgba(256,256,256,.7);
   position: relative;
   white-space: nowrap;
-  color: #1b1b1b;
+  color: #111;
   animation: desplazamiento 30s ease-out infinite;
 }
 
