@@ -42,17 +42,21 @@ export default function Productos() {
 
     return(
         <div className={style.container}>
+        <div className={style.navPc}></div>
             <NavBar />
-        <div className={style.search}>
-            <SearchBar />
-        </div>
-        <div className={style.filters}>
-          <button onClick={handleFilter} value={"tienda"}>Todos</button>
-          <button onClick={handleFilter} value={"accesorios"}>Accesorios</button>
-          <button onClick={handleFilter} value={"iluminacion"}>Iluminacion</button>
-          <button onClick={handleFilter} value={"audio"}>Audio</button>
-          <button onClick={handleFilter} value={"seguridad"}>Seguridad</button>
-      </div>
+            <div className={style.header}>
+                    <NavBar />
+                    <div className={style.search}>
+                        <SearchBar />
+                    </div>
+                    <div className={style.filters}>
+                            <button onClick={handleFilter} value={"tienda"}>Todos</button>
+                            <button onClick={handleFilter} value={"accesorios"}>Accesorios</button>
+                            <button onClick={handleFilter} value={"iluminacion"}>Iluminacion</button>
+                            <button onClick={handleFilter} value={"audio"}>Audio</button>
+                            <button onClick={handleFilter} value={"seguridad"}>Seguridad</button>
+                    </div>
+            </div>
             <div className={style.cardsContainer}>
                 { 
                 productos.length ?

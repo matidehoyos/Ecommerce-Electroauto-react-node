@@ -570,19 +570,18 @@
         font-size: 14px;
         font-weight: 500;
         line-height: 14px;
-        padding: 8px 12px;
+        padding: 6px 12px;
         margin-top: 20px;
         color: #fff;
         border: 1px solid #cbcbcb;
     }
 
     .modal {
-        width: 70%;
-        height: 60%;
+        width: 84%;
+        height: 80%;
         margin: 0 auto;
-        padding: 0 10px;
-        padding-right: 0;
-        top: 240px;
+        padding: 5px 10px;
+        top: 100px;
         border: none;
         background: rgba(256,256,256,1);
         box-shadow: 0px 0px 20px rgba(0,0,0,.7);
@@ -593,7 +592,8 @@
         left: 0;
         display: flex;
         flex-wrap: wrap;
-        z-index: '20000'
+        z-index: '20000';
+        overlay: red;
     }
 
     .modal::-webkit-scrollbar {

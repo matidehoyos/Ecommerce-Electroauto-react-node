@@ -58,12 +58,12 @@
     
     
     .header {
+          padding: 0;
+          margin: 0;
           display: flex;
           flex-direction: column;
-          position: fixed;
-          z-index: 3000;
-          background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
-
+          gap: 0px;
+          background-image: linear-gradient(to right , #e7ef00, #fcffa9);
         }
 
         .search {
@@ -71,25 +71,42 @@
             height: auto;
             padding: 0;
             margin: 0;
-            padding-top: 75px;
+            padding-top: 65px;
             display: flex;
-            align-content: start;
+            align-content: end;
             justify-content: start;
-        }
+  }
+
+    .search input {
+      width: 170px;
+      padding: 6px;
+    }
+
+    .search button {
+      font-size: 12px;
+      font-weight: 500;
+      font-style: normal;
+      padding: 6px 12px;
+    }
+
+    .search input::placeholder {
+      font-size: 12px;
+      font-weight: 500;
+    }
 
         .filters {
-          width: auto;
+          width: 100%;
           height: auto;
-          padding: 8px 0px;
-          margin: 10px 0px;
-            margin-top: 20px;
+          padding: 6px 0px;
+          margin: 0px;
+            margin-top: 8px;
             display: flex;
             flex-wrap: nowrap;
             overflow-x: scroll;
             justify-content: start;
             align-items: center;
-            background: rgba(256,256,256,.2);
-            
+            background: rgba(256,256,256,.6);
+            border-bottom: 1px solid yellow;
           }
           
         .filters::-webkit-scrollbar {
@@ -112,7 +129,7 @@
                 width: auto;
                 min-height: auto;
                 padding: 5px;
-                padding-top: 230px;
+                padding-top: 30px;
                 margin: 0px;
                 display: flex;
                 flex-wrap: wrap;
