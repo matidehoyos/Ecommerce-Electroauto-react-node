@@ -531,13 +531,13 @@
         margin-right: 10px;
         margin-top: 5px;
         padding: 0;
-        color: hsl(0, 100%, 33%);
+        color: hsl(0, 100%, 58%);
         background-color: transparent;
         position: fixed;
     }
 
     .imag {
-        margin-top: 5px;
+        margin-top: 17px;
         margin-left: 10px;
         width: 100%;
         height: 180px;
@@ -623,6 +623,8 @@
         margin-bottom: 12px;
         color: #fff;
         border: 1px solid #cbcbcb;
+        position: absolute;
+        bottom: 10px;
     }
 
 
