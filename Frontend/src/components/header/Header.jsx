@@ -7,6 +7,9 @@ const Header = () => {
     
     return (
       <div className={style.container}>
+        <div className={style.landing}>
+          <img src="../../../public/logoPc.png" alt="" />
+        </div>
         <div className={style.texto}>
           <span>Somos</span>
             <h1 className={style.textoEfecto}>

@@ -197,7 +197,9 @@
 
 .mayor { display: none;}
 .visita {display: none;}
-
+.landing {
+  display: none;
+}
 /* Estilos para mobile ----------------------------------------------------------*/
 
 @media only screen and (max-width: 680px) {
@@ -238,7 +240,7 @@
     align-items: start; 
     position: relative;
     white-space: nowrap;
-    animation: desplazamiento .4s ease-in-out 1;
+    animation: desplazamiento 2.7s ease-in-out 1;
     border-radius: 60px;
     background-color: rgba(0, 0, 0, .5);
     border-radius: 0;
@@ -416,5 +418,33 @@
   padding-right: 10px;
   color: #000;
   background-color: transparent;
+}
+
+.landing {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../public/bgPosta6.jpeg");
+  background-size: cover;
+  background-position: center;
+  z-index: 300000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation: tope 1s ease-in-out 1.3s forwards;
+}
+
+@keyframes tope {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100vh;
+  }
+}
+
+.landing img {
+  width: 70%;
 }
 }
