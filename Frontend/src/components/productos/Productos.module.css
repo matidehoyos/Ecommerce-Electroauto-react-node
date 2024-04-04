@@ -125,11 +125,12 @@
 }
 
 .search button {
+    height: 32px;
   font-size: 12px;
   font-style: normal;
   line-height: 10px;
   padding: 0px 8px;
-  background-color: #111; 
+  background-color: #343434; 
    color: #fff;
   text-shadow: none;
   border-radius: 4px;
@@ -137,6 +138,8 @@
   border: none;
   outline: none;
   box-shadow: 0px 0px 20px rgba(0,0,0,.4);
+  position: relative;
+  top: 1.7px;
 }
 
 .search input::placeholder {

@@ -80,7 +80,6 @@
         border-radius: 4px;
         background: rgba(256,256,256,.4);
         color: #111;
-        align-items: inherit;
     }
     
     .input::placeholder {
