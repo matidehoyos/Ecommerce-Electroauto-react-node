@@ -498,8 +498,8 @@
         overflow: scroll;
         border-radius: 6px;
         outline: none;
-        position: 'relative';
-        z-index: '20000';
+        position: relative;
+        z-index: 20000;
     }
 
     .modal::-webkit-scrollbar {
@@ -535,7 +535,7 @@
         margin: 0;
         padding: 0;
         width: 80%;
-        height: 100%;
+        height: 80%;
         border-radius: 0;
         border-top-left-radius: 6px;
         object-fit: cover;
@@ -564,7 +564,7 @@
     }
 
     .infoM {
-        width: 84%;
+        width: 96%;
         font-size: 16px;
         font-weight: 600;
         margin: 0;
@@ -603,7 +603,7 @@
         font-size: 14px;
         font-weight: 500;
         line-height: 14px;
-        padding: 6px 12px;
+        padding: 7px 12px;
         margin-top: 20px;
         color: #fff;
         border: 1px solid #cbcbcb;

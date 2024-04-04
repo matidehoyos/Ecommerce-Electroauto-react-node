@@ -432,7 +432,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  animation: tope .7s ease-in-out 1.3s forwards;
+  animation: tope .5s ease-in-out .6s forwards;
 }
 
 @keyframes tope {
@@ -448,8 +448,4 @@
   }
 }
 
-.landing img {
-  animation: tope .7s ease-in-out 1.3s forwards;
-
-}
 }
