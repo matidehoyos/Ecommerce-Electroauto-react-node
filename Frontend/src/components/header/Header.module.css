@@ -242,7 +242,7 @@
     white-space: nowrap;
     animation: desplazamiento 2.7s ease-in-out 1;
     border-radius: 60px;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .6);
     border-radius: 0;
 
 }
@@ -279,7 +279,7 @@
     background-image: linear-gradient(to right , #e7ef00, #fdffca  );
     background-clip: text;
     color: transparent;
-  }
+    }
   
   .texto h1 span {
     font-size: 37px;

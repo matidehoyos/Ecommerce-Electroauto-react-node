@@ -177,7 +177,7 @@
         margin: 0;
         padding: 40px 0px;
         padding-bottom: 0px;
-        background-image: linear-gradient(to right bottom, rgb(22, 22, 255),rgb(239, 239, 255));
+        background-image: linear-gradient(to right, rgb(22, 22, 255),rgb(239, 239, 255));
     }
 
 .populares h4 {

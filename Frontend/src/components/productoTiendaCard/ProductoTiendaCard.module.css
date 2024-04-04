@@ -503,7 +503,7 @@
         border: none;
         background: rgb(235, 235, 235);
         box-shadow: 0px 0px 20px rgba(0,0,0,.7);
-        overflow: scroll;
+        overflow-y: scroll;
         border-radius: 16px;
         outline: none;
         position: relative;
@@ -596,7 +596,7 @@
 
     .unidadesM {
         margin: 0;
-        margin-top: 10px;
+        margin-top: 12px;
     }
 
     .unidadesM select {
@@ -622,8 +622,6 @@
         margin-bottom: 12px;
         color: #fff;
         border: 1px solid #cbcbcb;
-        position: absolute;
-        bottom: 10px;
     }
 
 
