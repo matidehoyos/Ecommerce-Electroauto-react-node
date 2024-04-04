@@ -593,7 +593,7 @@
     .modal {
         width: 88%;
         height: calc(100vh - 165px);
-        max-height: 500px;
+        max-height: 600px;
         display: flex;
         flex-direction: column !important;
         margin: 0 auto;
