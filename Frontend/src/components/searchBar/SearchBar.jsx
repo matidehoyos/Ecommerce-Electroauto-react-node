@@ -30,7 +30,7 @@ export default function SearchBar() {
                    placeholder="Busque aqui su producto..." 
                    className={style.input}
                    />    
-        <button className={style.button} onClick={handleSearch}>Buscar</button>
+        <button className={style.button} onClick={handleSearch}>BUSCAR</button>
       </div>
     )
 }

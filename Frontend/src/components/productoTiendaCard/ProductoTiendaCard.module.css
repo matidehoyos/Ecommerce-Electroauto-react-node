@@ -308,7 +308,7 @@
 @media only screen and (max-width: 680px) {
 
     .container {
-        background-color: rgb(119, 119, 119);
+        background: #3f19ffb9;
         width: 44vw;
         min-height: inherit;
         height: auto;
