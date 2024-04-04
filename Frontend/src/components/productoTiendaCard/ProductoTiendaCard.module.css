@@ -484,12 +484,14 @@
     
     .modal {
         width: 76%;
-        height: 80%;
+        height: calc(100vh - 200px);
         display: flex;
         flex-direction: column !important;
         margin: 0 auto;
         padding: 5px 10px;
-        top: 92px;
+        padding-bottom: 40px;
+        top: 88px;
+        left: 0;
         border: none;
         background: rgba(256,256,256,1);
         box-shadow: 0px 0px 20px rgba(0,0,0,.7);
@@ -497,7 +499,6 @@
         border-radius: 6px;
         outline: none;
         position: 'relative';
-        left: 0;
         z-index: '20000';
     }
 
@@ -521,6 +522,7 @@
         padding: 0;
         color: #111;
         background-color: transparent;
+        position: fixed;
     }
 
     .imag {
