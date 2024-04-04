@@ -33,6 +33,7 @@
         width: 100%;
         height: auto;
         padding: 0;
+        padding-bottom: 20px;
     }
     
     .cajaCards {
@@ -43,7 +44,8 @@
        flex-wrap: nowrap;
        overflow-x: scroll;
        padding: 20px 30px;
-       margin: 0px 0px;
+       margin: 0;
+       background-color: rgba(256,256,256,.03);
     }
     
     .cajaCards::-webkit-scrollbar {

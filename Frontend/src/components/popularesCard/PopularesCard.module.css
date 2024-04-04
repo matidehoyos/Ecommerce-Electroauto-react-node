@@ -295,11 +295,11 @@
 @media only screen and (max-width: 680px) {
 
     .container {
-        background-color: rgba(256, 256, 256, .2);
+        background-color: #e3e3e3;
         width: 220px;
         min-height: auto;
         margin: 10px;
-        padding: 20px;
+        padding: 10px 10px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -317,7 +317,7 @@
     }
     
     .imgContainer  {
-        width: 200px;
+        width: 210x;
         height: 180px;
         margin: 0;
         margin-right: 0px;
@@ -327,9 +327,9 @@
     }
     
     .imgContainer img {
-        width: 200px;
+        width: 210px;
         height: 180px;
-        object-fit: cover;
+        object-fit: fit;
         object-position: center;
         border-radius: 10px;  }
     
@@ -344,7 +344,7 @@
         height: auto;
         font-size: 14px;
         font-weight: 700;
-        text-align: left;
+        text-align: center;
         color: #111;
         padding: 0px;
         margin: 5px 0;
@@ -353,13 +353,13 @@
     
     
     .detalle {
-        width: 174px;
+        width: 100%;
         height: auto;
         font-size: 14px;
         font-weight: 500;
         line-height: 16px;
         font-style: italic;
-        text-align: left;
+        text-align: center;
         color: rgba(0, 0, 0, 1);
         margin: 0px;
         margin-top: 5px;
