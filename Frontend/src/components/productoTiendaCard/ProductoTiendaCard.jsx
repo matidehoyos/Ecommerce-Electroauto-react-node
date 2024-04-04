@@ -65,8 +65,8 @@ const ProductoTiendaCard = ({producto}) => {
         onRequestClose={() => setModalIsOpen(false)}
         style={{
           overlay: {
-            background: 'rgba(256,256,256,.5',
-              backdropFilter: 'blur(5px)'
+            background: 'rgba(0,0,0,.5)',
+              backdropFilter: 'blur(8px)'
           },
           }}
         >
