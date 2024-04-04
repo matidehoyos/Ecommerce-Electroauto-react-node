@@ -1,6 +1,7 @@
 import { useState } from "react";
 import style from "./SearchBar.module.css";
 import { useNavigate } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 
 
 export default function SearchBar() {
@@ -30,7 +31,7 @@ export default function SearchBar() {
                    placeholder="Busque aqui su producto..." 
                    className={style.input}
                    />    
-        <button className={style.button} onClick={handleSearch}>BUSCAR</button>
+        <button className={style.button} onClick={handleSearch}><FaSearch /></button>
       </div>
     )
 }

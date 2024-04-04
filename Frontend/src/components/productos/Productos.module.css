@@ -126,11 +126,11 @@
 
 .search button {
   font-size: 12px;
-  font-weight: 700;
   font-style: normal;
-  padding: 6px 8px;
-  background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
-  color: #111;
+  line-height: 10px;
+  padding: 0px 8px;
+  background-color: #111; 
+   color: #fff;
   text-shadow: none;
   border-radius: 4px;
   letter-spacing: 0px;
