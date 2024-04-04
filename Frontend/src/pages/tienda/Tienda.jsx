@@ -14,6 +14,8 @@ const Tienda = () => {
     const dispatch = useDispatch();
     const [loader, setLoader] = useState(true);
     const [productos, setProductos] = useState([]);
+    const [paginaActual, setPaginaActual] = useState(1);
+    const productosPorPagina = 8;
 
     const bringData = async () => {
         const response = await productosProvider.getProductos();
@@ -29,9 +31,9 @@ const Tienda = () => {
     const handleFilter = (e) => {
         e.preventDefault();
         navigate(`/${e.target.value}`);
-      }
-    
-      
+    }
+
+    const productosActuales = productos.slice((paginaActual - 1) * productosPorPagina, paginaActual * productosPorPagina);
 
     return(
         <div className={style.container}>
@@ -60,16 +62,25 @@ const Tienda = () => {
                 <div className={style.loader}>
                     <img src="ELECT.png" alt="logo" />
                 </div>
-                : productos.length ?
-                productos.map((producto, index) => (
+                : productosActuales.length ?
+                productosActuales.map((producto, index) => (
                     <div key={index}>
                         <ProductoTiendaCard producto={producto}/>
                     </div>
                 )) 
                 : <div className={style.loader}>
                     <img src="ELECT.png" alt="logo" />
-                 </div> }
+                 </div> } 
             </div>
+
+                 <div className={style.pagination}>
+                {[...Array(Math.ceil(productos.length / productosPorPagina)).keys()].map(num => (
+                    <button key={num} onClick={() => setPaginaActual(num + 1)}>
+                        {num + 1}
+                    </button>
+                ))}
+                 </div>
+          
         </div>
     )
 }
