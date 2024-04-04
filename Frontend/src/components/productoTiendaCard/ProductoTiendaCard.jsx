@@ -41,12 +41,10 @@ const ProductoTiendaCard = ({producto}) => {
           <div className={style.imgContainer}>
             <img src={producto.imagen} alt={producto.name}/>
           </div>   
-             
-          <h3>{nombreProducto}</h3>
-          <p className={style.detalle}>{producto.detalle}</p>    
-          <p className={style.stock}>Stock disponible: <span>{producto.cantidad}</span></p>
-          <p className={style.precio}><span className={style.precioNumero}>${producto.precio}</span></p> 
+          <h3>{nombreProducto}</h3>   
+          <h4 className={style.precio}><span className={style.precioNumero}>${producto.precio}</span></h4> 
         </div>    
+       {/*}
         <div className={style.botonAgregar}>
           <div className={style.unidades}>
             <label>Cantidad:</label>
@@ -60,7 +58,7 @@ const ProductoTiendaCard = ({producto}) => {
           </div>
             <button className={style.botonKart} onClick={agregarAlCarrito}><FaShoppingCart className={style.icon}/>AGREGAR AL CARRITO</button>  
         </div>  
-
+          */ }
         <Modal 
         className={style.modal}
         isOpen={modalIsOpen} 

@@ -296,7 +296,7 @@
 
     .container {
         background-color: rgba(256,256,256,1);
-        width: 180px;
+        width: auto;
         min-height: 320px;
         margin: 10px;
         padding: 0px;
@@ -318,16 +318,17 @@
     }
     
     .imgContainer  {
-        width: 100%;
-        height: 160px;
+        width: auto;
+        height: 180px;
         margin: 0;
+        margin-right: 40px;
         border-bottom: none;
-        background-color: rgba(256,256,256,0);
+        background-color: #fff;
     }
     
     .imgContainer img {
         width: 180px;
-        height: 160px;
+        height: 180px;
         object-fit: cover;
         object-position: center;
         border-top-left-radius: 4px;
