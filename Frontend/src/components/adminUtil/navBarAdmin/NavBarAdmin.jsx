@@ -53,7 +53,7 @@ const NavBarAdmin = () => {
               <Link to="/admin/productosAdmin">Todos los productos</Link>
             </li>
             <li>
-              <Link to="/admin/createProduct">Crear nuevo producto</Link>
+              <Link to="/admin">Crear nuevo producto</Link>
             </li>
             <li>
               <Link to="/admin/ventas">ventas</Link>

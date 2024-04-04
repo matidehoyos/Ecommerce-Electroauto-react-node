@@ -1,9 +1,12 @@
 .container {
     width: 100%;
-    min-height: calc(100vh - 100px);
+    min-height: auto;
+    height: auto;
     display: flex;
     align-items: start;
     justify-content: start;
+    padding-top: 70px;
+    padding-bottom: 100px;
 }
 
 .boxContainer {

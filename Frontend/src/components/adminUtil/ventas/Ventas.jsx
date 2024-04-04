@@ -96,7 +96,7 @@ const Ventas = () => {
                     },
                     content: {
                         width: '90%',
-                        height: '90%',
+                        height: '75%',
                         margin: '0 auto',
                         border: 'none',
                         background: 'rgba(256,256,256,1',
@@ -109,7 +109,7 @@ const Ventas = () => {
                         overflowY: 'scroll',
                         position: 'relative',
                         left: '0vw',
-                        top: '50px',
+                        top: '85px',
                         }
                     }}
             >
@@ -138,7 +138,7 @@ const Ventas = () => {
           },
           content: {
               width: '90%',
-              height: '90%',
+              height: '75%',
               margin: '0 auto',
               border: 'none',
               background: 'rgba(256,256,256,1',
@@ -151,7 +151,7 @@ const Ventas = () => {
               overflowY: 'scroll',
               position: 'relative',
               left: '0vw',
-              top: '50px',
+              top: '85px',
               }
           }}
       >
