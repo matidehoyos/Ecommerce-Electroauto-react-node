@@ -424,7 +424,7 @@
   display: block;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, .6);
+  background: rgb(21, 21, 21);
   background-size: cover;
   background-position: center;
   z-index: 300000;
@@ -432,14 +432,18 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  animation: tope 1s ease-in-out 1.3s forwards;
+  animation: tope .7s ease-in-out 1.3s forwards;
 }
 
 @keyframes tope {
   0% {
     top: 0;
   }
+  90% {
+    opacity: 0;
+  }
   100% {
+    opacity: 0;
     top: -100vh;
   }
 }
