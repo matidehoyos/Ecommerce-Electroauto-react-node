@@ -42,9 +42,9 @@ const PopularesCard = ({producto}) => {
             <img src={producto.imagen} alt={producto.name}/>
           </div>   
           <h3>{nombreProducto}</h3>
-          <p className={style.detalle}>{producto.detalle}</p>    
-          {/*<p className={style.stock}>Stock disponible: <span>{producto.cantidad}</span></p>
-          <p className={style.precio}><span className={style.precioNumero}>${producto.precio}</span></p>  */ }
+          {/*<p className={style.detalle}>{producto.detalle}</p>    
+          <p className={style.stock}>Stock disponible: <span>{producto.cantidad}</span></p>*/ }
+          <p className={style.precio}><span className={style.precioNumero}>${producto.precio}</span></p>  
         </div>  
           {/*
         <div className={style.botonAgregar}>
