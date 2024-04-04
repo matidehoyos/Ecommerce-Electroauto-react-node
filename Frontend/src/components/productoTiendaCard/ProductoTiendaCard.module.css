@@ -484,7 +484,7 @@
     
     .modal {
         width: 76%;
-        height: calc(100vh - 200px);
+        height: calc(100vh - 220px);
         display: flex;
         flex-direction: column !important;
         margin: 0 auto;
