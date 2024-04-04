@@ -43,9 +43,10 @@ const PopularesCard = ({producto}) => {
           </div>   
           <h3>{nombreProducto}</h3>
           <p className={style.detalle}>{producto.detalle}</p>    
-          <p className={style.stock}>Stock disponible: <span>{producto.cantidad}</span></p>
-          <p className={style.precio}><span className={style.precioNumero}>${producto.precio}</span></p> 
-        </div>    
+          {/*<p className={style.stock}>Stock disponible: <span>{producto.cantidad}</span></p>
+          <p className={style.precio}><span className={style.precioNumero}>${producto.precio}</span></p>  */ }
+        </div>  
+          {/*
         <div className={style.botonAgregar}>
           <div className={style.unidades}>
             <label>Cantidad:</label>
@@ -57,8 +58,9 @@ const PopularesCard = ({producto}) => {
       )}
           </select> 
           </div>
-            <button className={style.botonKart} onClick={agregarAlCarrito}><FaShoppingCart className={style.icon}/>AGREGAR AL CARRITO</button>  
-        </div>  
+          <button className={style.botonKart} onClick={agregarAlCarrito}><FaShoppingCart className={style.icon}/>AGREGAR AL CARRITO</button>  
+        
+          </div>  */}
 
         <Modal 
         className={style.modal}
