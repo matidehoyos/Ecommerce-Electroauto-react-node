@@ -15,7 +15,7 @@ const Tienda = () => {
     const [loader, setLoader] = useState(true);
     const [productos, setProductos] = useState([]);
     const [paginaActual, setPaginaActual] = useState(1);
-    const productosPorPagina = 8;
+    const productosPorPagina = 10;
 
     const bringData = async () => {
         const response = await productosProvider.getProductos();

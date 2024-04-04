@@ -198,7 +198,7 @@
 
       .modal {
         width: 84%;
-        height: 80%;
+        height: 70%;
         margin: 0 auto;
         border: none;
         background: rgba(256,256,256,1);
@@ -211,7 +211,7 @@
         padding-bottom: 20px;
         position: relative;
         left: 0;
-        top: 92px;
+        top: 180px;
       }
 
       .modal::-webkit-scrollbar {

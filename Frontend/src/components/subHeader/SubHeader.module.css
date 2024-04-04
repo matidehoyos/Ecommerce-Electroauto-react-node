@@ -114,7 +114,7 @@
         margin: 0;
         padding: 40px 0px;
         padding-bottom: 0px;
-        background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+        background-image: linear-gradient(to right, rgb(22, 22, 255),rgb(239, 239, 255));
     }
 
 .cateContainer {
@@ -142,6 +142,7 @@
     font-size: 24px;
     font-weight: 700;
     font-style: italic;
+    color: #fff;
     }
 
     /* Estilos para mobile ----------------------------------------------------------*/
