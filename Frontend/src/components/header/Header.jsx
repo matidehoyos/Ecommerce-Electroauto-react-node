@@ -8,7 +8,7 @@ const Header = () => {
     return (
       <div className={style.container}>
         <div className={style.landing}>
-          <img src={'../../../public/logoPc.png'} alt="" />
+          <img src='../../../public/logoPc.png' alt="logo" />
         </div>
         <div className={style.texto}>
           <span>Somos</span>

@@ -52,7 +52,7 @@ const Footer = () => {
             <a href="#" onClick={() => window.scrollTo(0, 0)}>Subir al header</a>
             <Link to={"/"}>¿Quienes somos?</Link>
             <Link to={"/"}>Preguntas frecuentes</Link>
-            <Link to={"/contact"}>Contactanos</Link>
+            <Link to={"/contacto"}>Contactanos</Link>
           </div>
         </div>
 
