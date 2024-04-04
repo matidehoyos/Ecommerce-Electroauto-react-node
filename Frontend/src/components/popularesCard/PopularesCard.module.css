@@ -563,8 +563,7 @@
 
     .unidadesM {
         margin: 0;
-        position: absolute;
-        bottom: 75px;
+        margin-top: 8px;
     }
 
     .unidadesM select {
@@ -576,7 +575,6 @@
         font-size: 14px;
     }
     
-
     .addCartM {
         background-color: rgb(255, 88, 88);
         width: 160px;
