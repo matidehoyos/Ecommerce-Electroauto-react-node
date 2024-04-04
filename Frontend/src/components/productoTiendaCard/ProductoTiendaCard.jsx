@@ -79,8 +79,8 @@ const ProductoTiendaCard = ({producto}) => {
             <img className={style.imgModal} src={producto.imagen} alt={producto.name}/>
           </div>
           <div className={style.txtDetalle}>
-            <div className={style.cerrarModal}>
-          <button  onClick={() => setModalIsOpen(false)}>X</button>
+          <div className={style.cerrarModal}>
+             <button  onClick={() => setModalIsOpen(false)}>X</button>
           </div>
           <h2  className={style.nameM}>{producto.name}</h2>
           <p  className={style.detalleM}>{producto.detalle}</p>
