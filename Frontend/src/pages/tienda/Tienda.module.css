@@ -68,7 +68,8 @@
           display: flex;
           flex-direction: column;
           gap: 0px;
-          background-color: #fff;          position: inherit;
+          background-color: #fff;          
+          position: inherit;
         }
 
         .search {

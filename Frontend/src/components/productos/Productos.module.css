@@ -103,48 +103,55 @@
         background-color: #fff;
       }
 
+  
       .search {
-          width: auto;
-          height: auto;
-          padding: 0;
-          margin: 0;
-          padding-top: 72px;
-          display: flex;
-          align-content: end;
-          justify-content: start;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        padding-top: 75px;
+        display: flex;
+        align-content: end;
+        justify-content: start;
 }
 
-  .search input {
-    width: 200px;
-    padding: 8px 5px;
-  }
+.search input {
+  width: 220px;
+  padding: 8px 5px;
+}
 
-  .search button {
-    font-size: 12px;
-    font-weight: 500;
-    font-style: normal;
-    padding: 7px 16px;
-  }
+.search button {
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  padding: 6px 8px;
+  background-color: #f7ff12;
+  color: #111;
+  text-shadow: none;
+  letter-spacing: 0px;
+}
 
-  .search input::placeholder {
-    font-size: 14px;
-    font-weight: 600;
-  }
+.search input::placeholder {
+  font-size: 14px;
+  font-weight: 600;
+  color: #373737;
+}
     
     .filters {
-          width: 100%;
-          height: auto;
-          padding: 9px 0px;
+        width: auto;
+        height: auto;
+        padding: 9px 0px;
           margin: 0px;
-            margin-top: 15px;
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: scroll;
-            justify-content: start;
-            align-items: center;
-            background: rgba(0,0,0,.8);
-            border-top: 1px solid yellow;
-            border-bottom: 1px solid yellow;
+          margin-top: 25px;
+          display: flex;  
+          flex-direction: row;
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+          justify-content: start;
+          align-items: center;
+          background-image: linear-gradient(to right, rgba(22, 22, 255, 0.842),rgba(0, 0, 41, 0.842));
+          border: none;
+          box-shadow: 0px 0px 20px rgba(0,0,0,.4);
           }
           
         .filters::-webkit-scrollbar {
