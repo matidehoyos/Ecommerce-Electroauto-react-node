@@ -587,7 +587,7 @@
     }
 
     .modal {
-        width: 76%;
+        width: auto;
         height: calc(100vh - 220px);
         padding: 10px 20px;
         padding-right: 10px;
@@ -597,10 +597,10 @@
         display: flex;
         flex-direction: column;
         overflow: scroll;
-        border-radius: 6px;
+        border-radius: 28px 28px 0 0;
         position: relative;
         left: 0;
-        top: 88px;
+        bottom: 0;
         background-color: #fff;
         outline: none;
     }
