@@ -149,7 +149,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background: #3f19ffde;
+    background-image: linear-gradient(to right, rgba(22, 22, 255, 0.842),rgba(0, 0, 41, 0.842));
     position: fixed;
     top: 0;
     z-index: 4000;
