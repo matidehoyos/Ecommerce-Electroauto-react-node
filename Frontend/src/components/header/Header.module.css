@@ -424,7 +424,7 @@
   display: block;
   width: 100vw;
   height: 100vh;
-  background: rgb(21, 21, 21);
+  background: rgb(11, 11, 11);
   background-size: cover;
   background-position: center;
   z-index: 300000;
@@ -449,6 +449,7 @@
 }
 
 .landing img {
-  width: 70%;
+  animation: tope .7s ease-in-out 1.3s forwards;
+
 }
 }

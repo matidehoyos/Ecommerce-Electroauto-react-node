@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router';
 const Tienda = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch();
-    const [loader, setLoader] = useState(true);
+    const [loader, setLoader] = useState(false);
     const [productos, setProductos] = useState([]);
 
     const bringData = async () => {
@@ -23,7 +23,6 @@ const Tienda = () => {
 
     useEffect(() => {
         bringData();
-        setLoader(false)
     }, []); 
 
     const handleFilter = (e) => {
@@ -31,6 +30,7 @@ const Tienda = () => {
         navigate(`/${e.target.value}`);
       }
     
+      
 
     return(
         <div className={style.container}>
@@ -56,7 +56,9 @@ const Tienda = () => {
             
                 {
                 loader ?
-                <img src="../../../public/bgPosta2.jpeg" alt="loader" />
+                <div className={style.loader}>
+                    <img src="../../../public/logoPc.png" alt="loader" />
+                </div>
                 : productos.map((producto, index) => (
                     <div key={index}>
                         <ProductoTiendaCard producto={producto}/>
