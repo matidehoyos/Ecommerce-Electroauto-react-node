@@ -104,17 +104,16 @@
           width: auto;
           height: auto;
           padding: 9px 0px;
-          margin: 0px;
+            margin: 0px;
             margin-top: 15px;
-            display: flex;
+            display: flex;  
             flex-direction: row;
             flex-wrap: nowrap;
             overflow-x: scroll;
             justify-content: start;
             align-items: center;
-            background: rgba(0,0,0,.8);
-            border-top: 1px solid #3f19ffb9;
-            border-bottom: 1px solid #3f19ffb9;
+            background-image: linear-gradient(to right, rgba(22, 22, 255, 0.842),rgba(0, 0, 41, 0.842));
+            border: none;
           }
 
           .filters::-webkit-scrollbar {
