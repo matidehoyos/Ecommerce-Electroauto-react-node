@@ -308,14 +308,14 @@
 @media only screen and (max-width: 680px) {
 
     .container {
-        background: #3f19ffb9;
+        background: #3f19ff72;
         width: 44vw;
         min-height: inherit;
         height: auto;
         margin: 0px;
         padding: 0px 0px;
         padding-bottom: 8px;
-        border-radius: 20px 20px 20px 0;
+        border-radius: 12px 12px 12px 12px;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -339,7 +339,7 @@
         margin: 0;
         padding: 10px 8px;
         padding-bottom: 0;
-        border-radius: 20px 20px 20px 0;
+        border-radius: 10px 10px 10px 0;
         border-bottom: none;
         background-color: transparent;
         transition: box-shadow .3s;
@@ -350,7 +350,7 @@
         height: 150px;
         object-fit: cover;
         object-position: center;
-        border-radius: 20px 20px 20px 0;
+        border-radius: 10px 10px 10px 10px;
     }
     
     .container h3 {
@@ -359,10 +359,10 @@
         font-size: 14px;
         line-height: 15px;
         font-weight: 600;
-        text-align: left;
-        color: #ffffff;
+        text-align: center;
+        color: #2d2d2d;
         padding: 0px;
-        padding-left: 5px;
+        padding-left: 0px;
         margin: 0;
         margin-top: 5px;
     }
@@ -408,12 +408,13 @@
         color: #333;
         text-align: left;
         padding: 0;
-        padding-left: 5px;
+        padding-left: 0px;
         margin: 0;
+        text-align: center;
     }
     
     .precioNumero {
-        color: rgb(11, 11, 11);
+        color: rgb(42, 42, 42);
         font-size: 16px;
         font-weight: 800;
         letter-spacing: -.5px;
