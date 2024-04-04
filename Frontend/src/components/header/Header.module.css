@@ -310,6 +310,8 @@
   }
   
   .texto h5 span {
+    padding: 0;
+    line-height: 14px;
     color: #fff;
     display: inline;
     font-size: 16px;
@@ -318,6 +320,7 @@
     text-align: left;
     animation: ola 1.7s linear infinite;
     font-style: normal;
+    background-color: rgba(0, 0, 0, .5);
     }
   
   @keyframes ola {

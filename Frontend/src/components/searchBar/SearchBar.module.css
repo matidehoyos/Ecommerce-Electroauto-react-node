@@ -92,5 +92,12 @@
         border: 1px solid #111;
         outline: none;
     }
+
+    .button {
+        height: 32px;
+        background-color: #111;
+        color: #fff;
+        font-size: 14px;
+    }
     
 }
