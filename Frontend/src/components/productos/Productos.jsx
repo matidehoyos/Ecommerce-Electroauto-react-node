@@ -13,6 +13,7 @@ export default function Productos() {
     const navigate = useNavigate();
     const { nombre } = useParams();
     const [productos, setProductos] = useState([]);
+    const [loader, setLoader] = useState(true);
     
     const bringData = async () => {
             try {
@@ -29,6 +30,7 @@ export default function Productos() {
 
     useEffect(() => {
         bringData();
+        setLoader(false)
     }, [nombre]);
 
     const handleClick = () => {
@@ -60,16 +62,18 @@ export default function Productos() {
             </div>
             <div className={style.cardsContainer}>
                 { 
-                productos.length ?
+                loader ?
+                <div className={style.loader}>
+                    <img src="ELECT.png" alt="logo" />
+                </div>
+                : productos.length ?
                 productos.map((producto, index) => (
                     <div key={index} className={style.card}>
                         <ProductoTiendaCard producto={producto}/>
                     </div> ))       
-                    :
-                    (<div className={style.notFoundBox}>
-                        <h3 className={style.productoNotFound}>AÚN NO HAY PRODUCTOS DE ESA CATEGORIA</h3>   
-                        <button className={style.verTienda} onClick={handleClick}><FaShoppingBasket className={style.icon} />VER PRODUCTOS DISPONIBLES</button>
-                    </div>)
+                :  (<div className={style.loader}>
+                    <img src="ELECT.png" alt="logo" />
+                 </div> )
                 }
             </div>
         </div>

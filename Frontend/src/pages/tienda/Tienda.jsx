@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router';
 const Tienda = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch();
-    const [loader, setLoader] = useState(false);
+    const [loader, setLoader] = useState(true);
     const [productos, setProductos] = useState([]);
 
     const bringData = async () => {
@@ -23,6 +23,7 @@ const Tienda = () => {
 
     useEffect(() => {
         bringData();
+        setLoader(false)
     }, []); 
 
     const handleFilter = (e) => {
@@ -57,13 +58,17 @@ const Tienda = () => {
                 {
                 loader ?
                 <div className={style.loader}>
-                    <img src="../../../public/logoPc.png" alt="loader" />
+                    <img src="ELECT.png" alt="logo" />
                 </div>
-                : productos.map((producto, index) => (
+                : productos.length ?
+                productos.map((producto, index) => (
                     <div key={index}>
                         <ProductoTiendaCard producto={producto}/>
                     </div>
-                ))  }
+                )) 
+                : <div className={style.loader}>
+                    <img src="ELECT.png" alt="logo" />
+                 </div> }
             </div>
         </div>
     )
