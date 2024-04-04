@@ -563,7 +563,7 @@
 
     .unidadesM {
         margin: 0;
-        margin-top: 8px;
+        margin-top: 12px;
     }
 
     .unidadesM select {
@@ -585,11 +585,9 @@
         padding: 6px 12px;
         padding-bottom: 10px;
         margin-top: 15px;
-        margin-bottom: 12px;
+        margin-bottom: 20px;
         color: #fff;
         border: 1px solid #cbcbcb;
-        position: absolute;
-        bottom: 10px;
     }
 
     .modal {
@@ -605,7 +603,7 @@
         border: none;
         background: rgb(235, 235, 235);
         box-shadow: 0px 0px 20px rgba(0,0,0,.7);
-        overflow: scroll;
+        overflow-y: scroll;
         border-radius: 16px;
         outline: none;
         position: relative;
