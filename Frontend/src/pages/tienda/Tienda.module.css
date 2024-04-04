@@ -136,7 +136,7 @@
         .cardsContainer {
                 width: 100%;
                 min-height: calc(100vh - 180px);
-                padding: 5px;
+                padding: 0px;
                 padding-top: 30px;
                 margin: 0px;
                 display: flex;

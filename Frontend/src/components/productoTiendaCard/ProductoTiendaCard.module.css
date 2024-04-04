@@ -308,22 +308,22 @@
 @media only screen and (max-width: 680px) {
 
     .container {
-        background-color: #fff;
+        background-color: transparent;
         width: 44vw;
         min-height: inherit;
         height: auto;
         margin: 0px;
         padding: 0px;
-        border-radius: 4px;
+        border-radius: 0px;
         display: flex;
         flex-direction: column;
         justify-content: start;
         gap: 0px;
         box-shadow: none;
+        position: relative; 
         /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
         transition: box-shadow .3s; 
-        outline: 1px solid #fff; 
-        position: relative; */
+        outline: 1px solid #fff; */
     }
     
     .container:hover {
@@ -335,9 +335,9 @@
         height: auto;
         margin: 0;
         padding: 20px;
-        border-radius: 0 20% 3px 20%;
+        border-radius: 20px 20px 20px 0;
         border-bottom: none;
-        background-color: rgb(255, 255, 157);
+        background-color: rgb(98, 98, 98);
     }
     
     .imgContainer img {
@@ -345,8 +345,7 @@
         height: 150px;
         object-fit: cover;
         object-position: center;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
+        border-radius: 20px 20px 20px 0;
     }
     
     .container h3 {
