@@ -295,8 +295,8 @@
 @media only screen and (max-width: 680px) {
 
     .container {
-        background-color: rgba(256,256,256,.3);
-        width: 300px;
+        background-color: rgba(256,256,256,1);
+        width: 180px;
         min-height: 320px;
         margin: 10px;
         padding: 0px;
@@ -322,13 +322,13 @@
         height: 160px;
         margin: 0;
         border-bottom: none;
-        background-color: rgba(256,256,256,1);
+        background-color: rgba(256,256,256,0);
     }
     
     .imgContainer img {
-        width: 300px;
+        width: 180px;
         height: 160px;
-        object-fit: scale-down;
+        object-fit: cover;
         object-position: center;
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;  }
@@ -353,7 +353,7 @@
     
     
     .detalle {
-        width: 280px;
+        width: 174px;
         height: auto;
         font-size: 15px;
         font-weight: 500;
