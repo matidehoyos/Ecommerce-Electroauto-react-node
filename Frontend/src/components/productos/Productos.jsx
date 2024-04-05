@@ -14,6 +14,8 @@ export default function Productos() {
     const { nombre } = useParams();
     const [productos, setProductos] = useState([]);
     const [loader, setLoader] = useState(true);
+    const [paginaActual, setPaginaActual] = useState(1);
+    const productosPorPagina = 10;
     
     const bringData = async () => {
             try {
@@ -42,6 +44,9 @@ export default function Productos() {
         navigate(`/${e.target.value}`);
       }
 
+      const productosActuales = productos.slice((paginaActual - 1) * productosPorPagina, paginaActual * productosPorPagina);
+
+
     return(
         <div className={style.container}>
         <div className={style.navPc}>
@@ -66,8 +71,8 @@ export default function Productos() {
                 <div className={style.loader}>
                     <img src="ELECT.png" alt="logo" />
                 </div>
-                : productos.length ?
-                productos.map((producto, index) => (
+                : productosActuales.length ?
+                productosActuales.map((producto, index) => (
                     <div key={index} className={style.card}>
                         <ProductoTiendaCard producto={producto}/>
                     </div> ))       
@@ -76,6 +81,13 @@ export default function Productos() {
                  </div> )
                 }
             </div>
+            <div className={style.pagination}>
+                {[...Array(Math.ceil(productos.length / productosPorPagina)).keys()].map(num => (
+                    <button key={num} onClick={() => setPaginaActual(num + 1)}>
+                        {num + 1}
+                    </button>
+                ))}
+                 </div>
         </div>
     )
 }
