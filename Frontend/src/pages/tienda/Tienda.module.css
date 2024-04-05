@@ -58,8 +58,8 @@
     .pagination {
       width: 100%;
       height: auto;
-      background-color: rgb(0, 0, 0);
-      padding: 12px 0px;
+      background-color: rgb(72, 55, 255);
+      padding: 15px 0px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -67,13 +67,12 @@
 
     .pagination button {
       margin-right: 10px;
-      background-color: #222;
-      color: rgba(256,256,256,.8);
-      font-size: 20px;
-      padding: 6px 12px;
+      background-color: rgba(256,256,256,.6);
+      color: #333;
+      font-size: 16px;
+      padding: 4px 10px;
       text-align: center;
     }
-
 
 /* Estilos para mobile ----------------------------------------------------------*/
 

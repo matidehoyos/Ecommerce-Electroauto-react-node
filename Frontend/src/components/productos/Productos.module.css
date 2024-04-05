@@ -88,6 +88,25 @@
     object-fit: scale-down;
   }
 
+
+  .pagination {
+    width: 100%;
+    height: auto;
+    background-color: rgb(72, 55, 255);
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pagination button {
+    margin-right: 10px;
+    background-color: rgba(256,256,256,.6);
+    color: #333;
+    font-size: 16px;
+    padding: 4px 10px;
+    text-align: center;
+  }
     
 /* Estilos para mobile ----------------------------------------------------------*/
 
