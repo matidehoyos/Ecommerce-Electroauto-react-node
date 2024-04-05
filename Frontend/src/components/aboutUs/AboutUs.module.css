@@ -8,7 +8,7 @@
     align-items: center;
     background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
     transform: translateX(-150%);
-    transition: transform 1.8s ease-out;
+    transition: transform .3s ease-out;
       }
       
 .container.animate {
