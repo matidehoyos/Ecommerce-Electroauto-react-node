@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
 
       </div>
-      <footer>Todos los derechos reservados. Sitio desarrollado por </footer>
+      <footer>Todos los derechos reservados. Sitio desarrollado por <a target="_blank" href='https://www.mododigital.tech'></a>Modo Digital</footer>
     </div>
   )
 }

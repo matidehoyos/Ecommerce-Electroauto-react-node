@@ -193,6 +193,7 @@
   cursor: pointer;
 }
 
+
 /* Footer */
 
 footer {
@@ -200,6 +201,10 @@ footer {
   font-size: 12px;
   color: rgba(240, 240, 240, .6);
   padding: 5px 0px;
+}
+
+footer a {
+  color: aqua;
 }
 
 
