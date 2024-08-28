@@ -1,29 +1,22 @@
 .container {
     width: 100%;
     height: auto;
-    padding: 40px 0px;
-    padding-left: 120px;
+    margin: 0;
+    padding: 0;
 }
 
-
-.cajaCards {
+.cardsContainer {
    width: auto;
    height: auto;
-   display: flex;
-   justify-content: center;
-   padding: 20px 60px;
+   padding: 80px;
    margin: 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
 }
 
-.cajaCards::-webkit-scrollbar {
-    display: none;
-}
 
-.caja  {
-    width: 100%;
-    height: auto; 
-    display: flex;
-}
 
 
 
@@ -37,7 +30,7 @@
         padding-bottom: 20px;
     }
     
-    .cajaCards {
+    .cardsContainer {
        width: 100%;
        height: auto;
        display: flex;
@@ -48,7 +41,7 @@
        margin: 0;
     }
     
-    .cajaCards::-webkit-scrollbar {
+    .cardsContainer::-webkit-scrollbar {
         display: none;
     }
     

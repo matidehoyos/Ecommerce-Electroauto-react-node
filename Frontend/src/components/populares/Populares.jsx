@@ -14,7 +14,7 @@ const Populares = () => {
         if (data) {
             setProductos(data);
             setLoading(false);
-            const populares = data.slice(0, 5);
+            const populares = data.slice(0, 10);
             setPopulares(populares)
         }
     }
@@ -28,13 +28,11 @@ const Populares = () => {
         {loading ? (
             <div>Más vendidos</div>
         ) : populares && populares.length ? (
-            <div className={style.caja}>
-                <div className={style.cajaCards}>
+                <div className={style.cardsContainer}>
                     {populares.map((producto,i) => (
                         <PopularesCard producto={producto} key={i} />
                     ))}
                 </div>
-            </div>
         ) : null}
     </div>
   );

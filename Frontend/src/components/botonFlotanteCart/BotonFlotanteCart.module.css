@@ -3,52 +3,93 @@
 .kartButton {
     width: auto;
     height: auto;
-    font-size: 32px;
-    font-weight: 100;
-    color: yellow;
-    border-radius: 50%;
-    border: 1px solid yellow;
-    background-color: rgba(0, 0, 0, .5);
-    padding: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 8px 10px;
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 4000;
-    box-shadow: 0px 0px 20px rgba(255, 217, 0, 0.284);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    line-height: 20px;
+    transition: all .5s ease;
+  }
+
+  .kartButton:hover {
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+
+  .iconC {
+    font-size: 18px;
   }
 
   .kartButton span {
-    color: rgb(255, 95, 95);
-    font-size: 24px;
+    color: rgb(255, 0, 0);
+    font-size: 16px;
     font-weight: 700;
+  }
+
+  .modal {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    outline: 2px solid #333;
+    background: #fff;
+    box-shadow: 0px 0px 50px #000;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+    position: relative;
+    left: 0;
+    top: 60px;
+  }
+
+  .modal::-webkit-scrollbar {
+    display: none;
   }
 
   .botonCierre {
-    font-size: 24px;
-    font-weight: 700;
+    width: auto;
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
     background-color: transparent;
-    border-radius: 2px;
-    padding: 0;
-    margin-top: 5px;
-    margin-right: 8px;
-    color: #3a3a3a;
-    position: fixed;
-  }
+    padding: 3px 10px;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    transition: all .3s ease;
+    position: absolute;
+}
+
+.botonCierre:hover {
+  border: 1px solid red;
+  color: red;
+}
 
     .tituCart {
-      font-size: 22px;
-      font-weight: 600;
+      font-size: 20px;
+      font-weight: 700;
        text-align: center;
        color: rgb(28, 28, 28);
        margin: 0;
-       margin-top: 15px;
+       margin-top: 40px;
        margin-bottom: 40px;
     }
 
     
     .table {
-      width: 80%;
-      margin: 0px auto;
+      width: 90%;
+      margin: 0 auto;
       border-collapse: collapse;
       border: 1px solid #c0c0c0;
   }
@@ -102,12 +143,7 @@
       color: white;
   }
 
-    .cerrarContainer {
-        width: 100%;
-        display: flex;
-        justify-content: end;
-    }
-
+ 
 .proceso {
   width: auto;
   display: flex;
@@ -151,19 +187,6 @@
     display: flex;
     justify-content: end;
   }
-    
-    .botonCierre {
-        width: auto;
-        font-size: 22px;
-        font-weight: 600;
-        font-style: italic;
-        color: red;
-        background-color: transparent;
-        padding: 3px 10px;
-        margin-right: 0;
-        margin: 0;
-    }
-
 
       .noLoggedContainer {
         width: 94%;
@@ -176,47 +199,43 @@
       }
 
       .noLogged {
-        color: rgb(192, 0, 0);
+        color: rgb(255, 0, 0);
         width: auto;
-        font-size: 14px;
-        font-weight: 500;
+        font-size: 20px;
+        font-weight: 400;
         text-align: left;
-        padding-left: 0;
         margin: 0;
         padding: 0;
         font-style: italic;
       }
 
       .noLoggedContainer button {
-        color: #222;
+        color: #fff;
+        background-color: #5b95ff;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 600;
         font-style: italic;
-        padding-left: 0;
-        margin-top: 6px;
+        margin-top: 15px;
+        padding: 6px 12px;
       }
 
-      .modal {
-        width: 84%;
-        height: 70%;
-        margin: 0 auto;
-        border: none;
-        background: rgba(256,256,256,1);
-        box-shadow: 0px 0px 20px rgba(0,0,0,.7);
-        border-radius: 6px;
-        outline: none;
-        padding: 0px;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        padding-bottom: 20px;
-        position: relative;
-        left: 0;
-        top: 180px;
-      }
+  
 
-      .modal::-webkit-scrollbar {
-        display: none;
-      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   /* Estilos para mobile ----------------------------------------------------------*/

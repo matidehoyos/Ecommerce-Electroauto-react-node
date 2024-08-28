@@ -97,7 +97,7 @@ const BotonFlotanteCart = () => {
         <div className={style.modalCarrito}>
             {
                 carrito.length > 0 ?
-                <button className={style.kartButton} style={{ display: modalIsOpen ? 'none' : 'block' }}  onClick={openModal}><IoCartOutline className={style.iconC}/><span>{carrito.length > 0 ? carrito.length : null}</span></button>
+                <button className={style.kartButton} style={{ display: modalIsOpen ? 'none' : 'block' }}  onClick={openModal}>Productos seleccionados <IoCartOutline className={style.iconC}/><span>{carrito.length > 0 ? carrito.length : null}</span></button>
                 : null
             }
             <div>
@@ -114,7 +114,7 @@ const BotonFlotanteCart = () => {
                 }}
              >
                 <div className={style.buttonContainer}> 
-                  <button  className={style.botonCierre} onClick={closeModal}>x</button>
+                  <button className={style.botonCierre} onClick={closeModal}>X</button>
                 </div>
                 <h4 className={style.tituCart}>Tus productos seleccionados</h4>
                 <table className={style.table}>

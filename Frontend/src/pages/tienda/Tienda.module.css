@@ -11,22 +11,19 @@
 
 .navPc {
   width: 100%;
-  z-index: 3000;
-  position: fixed;
 }
 
 .cardsContainer {
-        width: 80%;
-        min-height: calc(100vh - 220px);
-        padding: 40px 0px;
-        padding-top: 200px;
-        margin: 0px auto;
+        width: auto;
+        height: auto;
+        padding: 80px 100px;
+        margin: 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: stretch;
-       background: #fff;
-        gap: 40px 0px;
+        background: #fff;
+        gap: 40px 20px;
     }
 
     .header {
@@ -58,11 +55,13 @@
     .pagination {
       width: 100%;
       height: auto;
-      background-color: rgb(72, 55, 255);
+      background-color: #111;
       padding: 15px 0px;
       display: flex;
       justify-content: center;
       align-items: center;
+      position: fixed;
+      bottom: 0;
     }
 
     .pagination button {

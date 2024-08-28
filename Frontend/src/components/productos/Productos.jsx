@@ -2,11 +2,9 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import productosProvider from "../../utils/provider/productosProvider";
 import style from './Productos.module.css'
-import PreNav from "../preNav/PreNav";
-import ProductoTiendaCard from "../productoTiendaCard/ProductoTiendaCard";
 import NavBar from "../navBar/NavBar";
-import { FaShoppingBasket, FaStore } from 'react-icons/fa';
 import SearchBar from "../searchBar/SearchBar";
+import PopularesCard from "../popularesCard/popularesCard";
 
 
 export default function Productos() {
@@ -14,8 +12,6 @@ export default function Productos() {
     const { nombre } = useParams();
     const [productos, setProductos] = useState([]);
     const [loader, setLoader] = useState(true);
-    const [paginaActual, setPaginaActual] = useState(1);
-    const productosPorPagina = 10;
     
     const bringData = async () => {
             try {
@@ -44,7 +40,6 @@ export default function Productos() {
         navigate(`/${e.target.value}`);
       }
 
-      const productosActuales = productos.slice((paginaActual - 1) * productosPorPagina, paginaActual * productosPorPagina);
 
 
     return(
@@ -71,23 +66,16 @@ export default function Productos() {
                 <div className={style.loader}>
                     <img src="ELECT.png" alt="logo" />
                 </div>
-                : productosActuales.length ?
-                productosActuales.map((producto, index) => (
+                : productos.length ?
+                productos.map((producto, index) => (
                     <div key={index} className={style.card}>
-                        <ProductoTiendaCard producto={producto}/>
+                        <PopularesCard producto={producto}/>
                     </div> ))       
                 :  (<div className={style.loader}>
                     <img src="ELECT.png" alt="logo" />
                  </div> )
                 }
             </div>
-            <div className={style.pagination}>
-                {[...Array(Math.ceil(productos.length / productosPorPagina)).keys()].map(num => (
-                    <button key={num} onClick={() => setPaginaActual(num + 1)}>
-                        {num + 1}
-                    </button>
-                ))}
-                 </div>
         </div>
     )
 }

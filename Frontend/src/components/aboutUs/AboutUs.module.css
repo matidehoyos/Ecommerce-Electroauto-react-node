@@ -1,18 +1,12 @@
 .container {
     width: auto;
     height: auto;
-    padding: 40px 0px;
+    padding: 80px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
-    transform: translateX(-150%);
-    transition: transform .3s ease-out;
-      }
-      
-.container.animate {
-        transform: translateX(0);
+    background-image: linear-gradient(to right, rgb(47, 47, 255),rgb(0, 0, 153));
       }
 
       .mercadoLibre { 
@@ -26,7 +20,7 @@
         padding-bottom: 40px;
         margin: 0px auto;
         margin-bottom: 40px;
-        background-color: rgba(256,256,256,.1);
+        background-color: #fcffa9;
         overflow-x: hidden;
         border: none;
         box-shadow: none;
@@ -147,7 +141,7 @@
 .texto h5 {
     font-size: 32px;
     font-weight: 600;
-    color: rgba(0,0,0,1);
+    color: #e7ef00;
     padding: 0;
     margin: 0;
     margin-bottom: 30px;
@@ -157,7 +151,7 @@
 .texto p {
     font-size: 20px;
     font-weight: 600;
-    color: rgba(0,0,0,.9);
+    color: #e7ef00;
     padding: 0;
     margin: 0;
     margin-bottom: 15px;

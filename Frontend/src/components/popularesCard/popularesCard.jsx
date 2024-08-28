@@ -42,26 +42,9 @@ const PopularesCard = ({producto}) => {
             <img src={producto.imagen} alt={producto.name}/>
           </div>   
           <h3>{nombreProducto}</h3>
-          {/*<p className={style.detalle}>{producto.detalle}</p>    
-          <p className={style.stock}>Stock disponible: <span>{producto.cantidad}</span></p>*/ }
+          <p className={style.detalle}>{producto.detalle}</p> 
           <p className={style.precio}><span className={style.precioNumero}>${producto.precio}</span></p>  
-        </div>  
-          {/*
-        <div className={style.botonAgregar}>
-          <div className={style.unidades}>
-            <label>Cantidad:</label>
-            <select onChange={handleChange}>
-          {[...Array(20).keys()].map((value, index) => 
-        <option key={index} value={value + 1}>
-          {value + 1} {value === 0 ? 'unidad' : 'unidades'}
-        </option>
-      )}
-          </select> 
-          </div>
-          <button className={style.botonKart} onClick={agregarAlCarrito}><FaShoppingCart className={style.icon}/>AGREGAR AL CARRITO</button>  
-        
-          </div>  */}
-
+        </div> 
         <Modal 
         className={style.modal}
         isOpen={modalIsOpen} 
@@ -80,24 +63,24 @@ const PopularesCard = ({producto}) => {
             <img className={style.imgModal} src={producto.imagen} alt={producto.name}/>
           </div>
           <div className={style.txtDetalle}>
-            <div className={style.cerrarModal}>
-          <button  onClick={() => setModalIsOpen(false)}>X</button>
-          </div>
-          <h2  className={style.nameM}>{producto.name}</h2>
-          <p  className={style.detalleM}>{producto.detalle}</p>
-          <p  className={style.infoM}>{producto.informacion}</p>
-          <p  className={style.precioM}>${producto.precio}</p>
-          <div className={style.unidadesM}>
-            <label>Cantidad:</label>
-            <select onChange={handleChange}>
-          {[...Array(20).keys()].map((value, index) => 
-        <option key={index} value={value + 1}>
-          {value + 1} {value === 0 ? 'unidad' : 'unidades'}
-        </option>
-      )}
-          </select> 
-          </div>
-          <button  className={style.addCartM}  onClick={agregarAlCarrito}>Agregar al carrito</button>
+              <div className={style.cerrarModal}>
+                 <button  onClick={() => setModalIsOpen(false)}>X</button>
+              </div>
+              <h2 className={style.nameM}>{producto.name}</h2>
+              <p className={style.detalleM}>{producto.detalle}</p>
+              <p className={style.infoM}>{producto.informacion}</p>
+              <p className={style.precioM}>${producto.precio}</p>
+              <p className={style.stock}>Stock disponible: <span>{producto.cantidad}</span></p>
+              <div className={style.unidadesM}>
+                    <select onChange={handleChange}>
+                  {[...Array(20).keys()].map((value, index) => 
+                <option key={index} value={value + 1}>
+                  {value + 1} {value === 0 ? 'unidad' : 'unidades'}
+                </option>
+              )}
+                  </select> 
+                  <button  className={style.addCartM}  onClick={agregarAlCarrito}>Agregar al carrito</button>
+              </div>
           </div>
           
         </Modal>

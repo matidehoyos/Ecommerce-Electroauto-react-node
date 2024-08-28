@@ -29,7 +29,7 @@ useEffect(() => {
   return (
     <div className={style.container}>
       <div className={style.titulo}>
-        <h2>Reseñas de nuestros clientes</h2>
+        <h4>Reseñas de nuestros clientes</h4>
       </div>
         <div className={style.cardContainer}>
                 { mensajes?.length ?

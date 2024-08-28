@@ -6,8 +6,6 @@
 
 .navPc {
     width: 100%;
-    z-index: 3000;
-    position: fixed;
   }
 
 .search {
@@ -15,16 +13,16 @@
 }
 
 .cardsContainer {
-    width: 80%;
-    min-height: calc(100vh - 220px);
-    padding-top: 200px;
-    margin: 0px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: stretch;
-   background: #fff;
-    gap: 40px 0px;
+  width: auto;
+  height: auto;
+  padding: 80px 100px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: #fff;
+  gap: 40px 20px;
     }
 
 .notFoundBox {

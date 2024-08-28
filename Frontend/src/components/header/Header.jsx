@@ -7,6 +7,7 @@ const Header = () => {
     
     return (
       <div className={style.container}>
+        <div className={style.div}></div>
         <div className={style.landing}>
           <img src='logoPc.png' alt="logo" />
         </div>

@@ -6,20 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 0px;
-    background-image: linear-gradient(to right , #e7ef00, #fcffa9  ); 
-    border-top: 1px solid yellow;
-    border-bottom: 1px solid yellow;
-}
-
-.carrusa {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    padding: 120px 0px;
-    margin: 0;
-    background: #111;
-
+    background-image: linear-gradient(to right, rgb(47, 47, 255),rgb(0, 0, 153));
 }
 
 .text {
@@ -30,20 +17,17 @@
     align-items: center;
     padding: 140px 0px;
     margin: 0;
-    background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
-    border-radius: 0px;
-    border: 0px solid gold;
 }
 
 .text p {
     font-size: 160px;
     text-align: center;
-    color: rgba(0,0,0,1);
+    color: #fff;
     margin: 0;
     padding: 0;
     padding-right: 10px;
     margin-right: 20px;
-    border-right: 2px solid #111;
+    border-right: 2px solid #fff;
 }
 
 .first {
@@ -55,7 +39,7 @@
     width: 100%;
     font-size: 64px;
     font-weight: 800;
-    color: #111;
+    color: #fff;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -67,7 +51,7 @@
     width: 100%;
     font-size: 36px;
     font-weight: 600;
-    color: #222;
+    color: #fff;
     text-align: left;
     margin: 0;
     padding: 0px;

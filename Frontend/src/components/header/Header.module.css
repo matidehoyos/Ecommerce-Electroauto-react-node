@@ -1,38 +1,35 @@
 .container {
-    width: 100%;
-    height: 600px;
+    width: 100vw;
+    height: 460px;
     margin: 0;
     padding: 0;
-    padding-left: 240px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     background-image: url('https://jspolarizados.com.ar/wp-content/uploads/2023/06/cree-led-para-auto.jpg');
-    background-color: #000;
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
-    animation: backd 1.5s ease-in-out 1;
 }
 
 .container::-webkit-scrollbar {
   display: none;
 }
 
-@keyframes backd {
-    0% {
-      background-image: none;
-    }
-    100% {
-      background-image: url("https://jspolarizados.com.ar/wp-content/uploads/2023/06/cree-led-para-auto.jpg");
-    }
+  .div {
+    margin: 0;
+    height: 460px;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.238);
+    position: absolute;
   }
 
 .texto {
     width: 100%;
     height: 100%;
     padding: 0px;
-    margin: auto 0px;
+    margin: auto 0;
+    margin-left: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +37,6 @@
     position: relative;
     white-space: nowrap;
     animation: desplazamiento 2.2s ease-in-out 1;
-    background-color: rgba(0, 0, 0, .5);
 }
 
 @keyframes desplazamiento {
@@ -79,7 +75,7 @@
   color: transparent;
   display: inline;
   opacity: 0;
-  animation: aparecer .1s forwards;
+  animation: aparecer .3s forwards;
   animation-delay: calc(0.2s * var(--i));
   margin: 0;
   padding: 0;
@@ -97,7 +93,7 @@
     margin: 0;
     padding: 0;
     padding-left: 30px;
-    animation: ola 1.5s linear infinite;
+    animation: ola 3.5s linear infinite;
   }
   
     .texto h5 span {
@@ -113,7 +109,7 @@
   
   @keyframes ola {
     0%, 100% {transform: scaleY(1);}
-    50% {transform: scaleY(1.3);}
+    50% {transform: scaleY(1.1);}
   }
 
 .envios {
@@ -125,6 +121,7 @@
     justify-content: start;
     align-items: start;
     padding-left: 80px;
+    
 }
 
 .envios h6 {
@@ -137,6 +134,7 @@
     padding: 0;
     background-image: linear-gradient(to right , #e7ef00cf, #fcffa9b9);
     color: rgb(0, 0, 0);
+    border-radius: 6px;
 }
 
 .carritoModal { 
