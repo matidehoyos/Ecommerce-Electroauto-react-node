@@ -74,7 +74,7 @@ width: 100%;
 
   .container {
       width: auto;
-      min-height: auto;
+      min-height: 100vh;
       background-color: #fff;
       display: flex;
       flex-direction: column;
@@ -179,7 +179,7 @@ width: 100%;
 
       .cardsContainer {
         width: auto;
-        min-height: 100vh;
+        height: auto;
         padding: 40px 10px;
         padding-top: 200px;
         margin: 0;
