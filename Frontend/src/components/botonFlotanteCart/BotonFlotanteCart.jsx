@@ -108,8 +108,8 @@ const BotonFlotanteCart = () => {
                 contentLabel="Carrito Modal"
                 style={{
                 overlay: {
-                    background: 'rgba(0,0,0,.6)',
-                    backdropFilter: 'blur(5px)'
+                    background: 'rgba(0,0,0,.8)',
+                    backdropFilter: 'blur(8px)'
                 },
                 }}
              >

@@ -4,7 +4,7 @@ import productosProvider from "../../utils/provider/productosProvider";
 import style from './Productos.module.css'
 import NavBar from "../navBar/NavBar";
 import SearchBar from "../searchBar/SearchBar";
-import PopularesCard from "../popularesCard/popularesCard";
+import ProductoTiendaCard from "../productoTiendaCard/ProductoTiendaCard";
 
 
 export default function Productos() {
@@ -68,9 +68,8 @@ export default function Productos() {
                 </div>
                 : productos.length ?
                 productos.map((producto, index) => (
-                    <div key={index} className={style.card}>
-                        <PopularesCard producto={producto}/>
-                    </div> ))       
+                        <ProductoTiendaCard key={index} producto={producto}/>
+                     ))       
                 :  (<div className={style.loader}>
                     <img src="ELECT.png" alt="logo" />
                  </div> )

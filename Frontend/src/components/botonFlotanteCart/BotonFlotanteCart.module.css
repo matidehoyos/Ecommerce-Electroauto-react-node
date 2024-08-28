@@ -279,10 +279,11 @@
     font-weight: 600;
     background-color: transparent;
     border-radius: 2px;
-    padding: 0;
-    margin-top: 5px;
+    padding: 5px 10px;
+    margin-top: 8px;
     margin-right: 10px;
     color: #3a3a3a;
+    border-radius: 50%;
   }
 
     .tituCart {

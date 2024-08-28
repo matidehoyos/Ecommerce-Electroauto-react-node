@@ -1,79 +1,45 @@
 .container {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #fff;
+  width: auto;
+  min-height: 100vh;
+  background-color: #fff;    
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
 }
 
 .navPc {
-    width: 100%;
-  }
-
-.search {
-  display: none;
+width: 100%;
 }
 
 .cardsContainer {
-  width: auto;
-  height: auto;
-  padding: 80px 100px;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  background: #fff;
-  gap: 40px 20px;
-    }
+      width: auto;
+      height: auto;
+      padding: 80px 100px;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      background: #fff;
+      gap: 40px 20px;
+  }
 
-.notFoundBox {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.productoNotFound {
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    font-size: 24px;
-    font-weight: 700;
-    color: #222;
-    text-align: center;
-}
-
-.verTienda {
-    width: auto;
-    height: auto;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 6px 14px;
-    background-color: #222;
-    color: #fff;
-    margin: 0px auto;
-}
-
-.icon {
-    font-size: 16px;
-    margin-right: 6px;
-    position: relative;
-    top: 2px;
-}
-
-.verTienda:hover {
-    background-color: #000;
-}
-
-.filters {
+  .header {
     display: none;
-}
+  }
 
-.header {
+  .search {
     display: none;
-}
+  }
 
-.loader {
+  .filters {
+    display: none;
+  }
+
+  
+  .loader {
     width: 100%;
     height: 400px;
     display: flex;
@@ -87,48 +53,49 @@
   }
 
 
-  .pagination {
-    width: 100%;
-    height: auto;
-    background-color: rgb(72, 55, 255);
-    padding: 15px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .pagination button {
-    margin-right: 10px;
-    background-color: rgba(256,256,256,.6);
-    color: #333;
-    font-size: 16px;
-    padding: 4px 10px;
-    text-align: center;
-  }
-    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
 /* Estilos para mobile ----------------------------------------------------------*/
 
 @media only screen and (max-width: 680px) {
 
-    .container {
-        width: auto;
-        min-height: 100vh;
-        padding-bottom: 10px;
-        background-image: linear-gradient(to right , #ffffff, #ffffff);
-    }
+  .container {
+      width: auto;
+      min-height: auto;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+  }
 
-    .navPc {
-        display: none;
-    }
-    
-    .header {
+  .navPc {
+    display: none;
+  }
+  
+  
+  .header {
+    width: 100%;
         padding: 0;
         margin: 0;
         display: flex;
         flex-direction: column;
         gap: 0px;
-        z-index: 3000;
-        background-color: #e9e9e9;
+        position: fixed;
+        background-color: rgb(255, 255, 158);
       }
 
   
@@ -137,7 +104,7 @@
         height: auto;
         padding: 0;
         margin: 0;
-        padding-top: 75px;
+        padding-top: 68px;
         display: flex;
         align-content: end;
         justify-content: start;
@@ -153,21 +120,21 @@
 }
 
 .search button {
-    height: 32px;
+  height: 32px;
   font-size: 12px;
-  font-style: normal;
   line-height: 10px;
+  font-weight: 700;
+  font-style: normal;
   padding: 0px 8px;
-  background-color: #343434; 
-   color: #fff;
+  background-color: #343434;
+  color: #fff;
   text-shadow: none;
   border-radius: 4px;
-  letter-spacing: 0px;
   border: none;
   outline: none;
   box-shadow: 0px 0px 20px rgba(0,0,0,.4);
   position: relative;
-  top: 1.7px;
+  top: 1.6px;
 }
 
 .search input::placeholder {
@@ -175,13 +142,13 @@
   font-weight: 600;
   color: #101010;
 }
-    
-    .filters {
+
+      .filters {
         width: auto;
         height: auto;
-        padding: 9px 0px;
+        padding: 6px 0px;
           margin: 0px;
-          margin-top: 25px;
+          margin-top: 14px;
           display: flex;  
           flex-direction: row;
           flex-wrap: nowrap;
@@ -191,113 +158,47 @@
           background-image: linear-gradient(to right, rgba(22, 22, 255, 0.842),rgba(0, 0, 41, 0.842));
           border: none;
           box-shadow: 0px 0px 20px rgba(0,0,0,.4);
-          }
-          
+        }
+
         .filters::-webkit-scrollbar {
           display: none;
         }
         
-        .filters button {
-            width: auto;
-            height: auto;
-            font-size: 15px;
-            font-weight: 600;
-            color: #fff;
-            background-color: transparent;
-            margin: 0px 15px;
-            padding: 2px 0px;
-            letter-spacing: .8px;
-          }
-
-    .cardsContainer {
-      width: 100%;
-      min-height: calc(100vh - 150px);
-      padding: 30px 15px;
-      margin: 0px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: start;
-      align-content: flex-start;
-      background-image: none;
-      background-color: #fff;
-      gap: 20px 20px;
+      
+      .filters button {
+          width: auto;
+          height: auto;
+          font-size: 15px;
+          font-weight: 600;
+          color: #fff;
+          background-color: transparent;
+          margin: 0px 15px;
+          padding: 2px 0px;
+          letter-spacing: .8px;
         }
 
-       
-    .notFoundBox {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .productoNotFound {
-        width: 100%;
-        margin-top: 150px;
-        margin-bottom: 20px;
-        font-size: 14px;
-        font-weight: 600;
-        color: #404040;
-        text-align: center;
-    }
-    
-    .verTienda {
+      .cardsContainer {
         width: auto;
-        height: auto;
-        font-size: 14px;
-        font-weight: 600;
-        padding: 0;
-        background-color: transparent;
-        color: rgb(0, 0, 0);
-        margin: 0px auto;
-    }
-    
-    .icon {
-        font-size: 14px;
-        margin-right: 6px;
-        position: relative;
-        top: 2px;
-    }
-    
-    .verTienda:hover {
-        background-color: #000;
-    }
-
-    .cerrarModal {
-        background-color: transparent;
-    }
-
-
-    .loader {
-        width: 100%;
-        height: 400px;
+        min-height: 100vh;
+        padding: 40px 10px;
+        padding-top: 200px;
+        margin: 0;
         display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+          }
 
-      .loader img {
-        width: 100%;
-        object-fit: scale-down;
-      }
+          .loader {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
 
-      .pagination {
-        width: 100%;
-        height: auto;
-        background-color: rgb(72, 55, 255);
-        padding: 8px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-  
-      .pagination button {
-        margin-right: 10px;
-        background-color: rgba(256,256,256,.6);
-        color: #333;
-        font-size: 16px;
-        padding: 4px 10px;
-        text-align: center;
-      }
+          .loader img {
+            width: 100%;
+            object-fit: scale-down;
+          }
 }
