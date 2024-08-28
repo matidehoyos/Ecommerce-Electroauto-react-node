@@ -26,33 +26,20 @@
     .container {
         width: 100%;
         height: auto;
+        margin: 0;
         padding: 0;
-        padding-bottom: 20px;
     }
     
     .cardsContainer {
-       width: 100%;
+       width: auto;
        height: auto;
-       display: flex;
-       justify-content: start;
-       flex-wrap: nowrap;
-       overflow-x: scroll;
-       padding: 20px 25px;
+       padding: 40px 10px;
        margin: 0;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 10px;
     }
     
-    .cardsContainer::-webkit-scrollbar {
-        display: none;
-    }
-    
-    .caja  {
-        width: 100%;
-        height: auto; 
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    }
-
 
 }

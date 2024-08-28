@@ -1,47 +1,51 @@
 .container {
     background-color: #fff;
-    width: 212px;
-    min-height: auto;
-    margin: 0px 10px;
-    padding: 0px;
-    border-radius: 6px;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,.8);
+    align-items: center;
     cursor: pointer;
-    position: relative;
     outline: none;
 }
 
 .container:hover {
-    box-shadow: 0px 0px 50px rgba(0,0,0,1);
+    box-shadow: 0px 0px 12px rgba(0,0,0,.2);
+    border: 1px solid #b2b2b2;
 }
 
 .imgContainer  {
-    width: auto;
-    height: 200px;
+    width: 220px;
+    height: 260px;
     margin: 0;
+    padding: 0;
+    background-color: rgb(194, 194, 194);
 }
 
 .imgContainer img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 260px;
+    object-fit: contain;
     object-position: center;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 4x;
+    border-top-right-radius: 4px;
 }
 
 .container h3 {
     width: auto;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    text-align: center;
-    color: #282828;
-    padding: 0px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #333;
+    padding: 0;
+    padding-top: 5px;
     margin: 0;
 }
 
@@ -51,252 +55,224 @@
     height: auto;
     font-size: 12px;
     font-weight: 500;
-    line-height: 16px;
     font-style: italic;
     text-align: left;
-    color: rgba(0, 0, 0, .9);
-    margin: 0px;
-    padding: 0px 5px;
-    letter-spacing: .8px;
+    color: rgba(0, 0, 0, .6);
+    margin: 0;
+    padding: 0;
+    letter-spacing: .5px;
     word-break: normal;
     hyphens: auto;
-}
-
-.stock {
-    width: auto;
-    height: auto;
-    font-size: 12px;
-    font-weight: 500;
-    color: green;
-    margin: 0px;
-    text-align: left;
-    padding: 10px 5px;
-}
-
-.stock span {
-    font-weight: 700;
 }
 
 .precio {
     width: auto;
     height: auto;
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-    text-align: center;
+    line-height: 14px;
+    text-align: left;
     padding: 0;
+    padding-top: 4px;
     margin: 0;
 }
 
 .precioNumero {
-    color: #1b1b1b;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: -1px;
-}
-
-.botonAgregar {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px 7px;
-    margin: 0px;
-    position: absolute;
-    bottom: 8px;
-}
-
-.botonKart {
-    width: auto;
-    height: auto;   
-    font-size: 12px;   
-    font-weight: 600;
-    line-height: 14px;
-    padding: 6px 12px;
-    text-align: center;
-    color: rgba(255, 0, 0, 0.867);
-    border: 1px solid rgba(255, 0, 0, 0.867);
-    background-color: transparent;
-    box-shadow: 0px 0px 20px rgba(0,0,0,.0);
-    border-radius: 4px;
-}
-
-.icon {
-    font-size: 12px;
-    margin-right: 3px;
-    position: relative;
-    top: 1px;
-}
-
-.botonKart:hover {
-    color: #fff;
-    background-color: rgba(255, 0, 0, 0.714);
-    box-shadow: 0px 0px 20px rgba(0,0,0,.4);
-    border: none;
-
-}
-
-.unidades {
-    width: auto;
-    height: auto;
-    margin: 0px;
-    margin-bottom: 10px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-.unidades label {
+    color: #000;
     font-size: 14px;
-    font-weight: 600;
-    color: #222;
+    font-weight: 500;
+    letter-spacing: 0px;
+    padding: 0;
+    margin: 0;
 }
 
-.unidades select {
-    width: auto;
+.modal {
+    width: 64%;
     height: auto;
-    color: #222;
-    text-align: center;
-    margin: 0px;
-    margin-left: 5px;
-    padding: 0px 6px;
+    padding: 0;
+    margin: 0 auto;
+    box-shadow: 0px 0px 40px rgba(0,0,0,1);
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
     border-radius: 2px;
-    border: 1px solid #333;
-    background-color: transparent;
+    position: relative;
+    left: 0;
+    top: 130px;
+    background-color: #fff;
+    outline: 3px solid #fff;
 }
 
-.modal::-webkit-scrollbar {
+.cerrarModalMobile {
     display: none;
-    display: flex;
-    flex-direction: row;
 }
 
 .imag {
-    width: 40%;
-    display: inline;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(194, 194, 194);
 }
 
 .imgModal {
-    margin: auto 0;
-    padding: 0;
     width: 100%;
-    border-radius: 6px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
 }
 
 .txtDetalle {
-    width: 58%;
+    width: 70%;
+    padding: 0;
     padding-left: 20px;
-    display: inline;
+    padding-bottom: 40px;
 }
 
 .cerrarModal {
     width: 100%;
+    padding: 0;
+    padding-top: 5px;
+    margin: 0;
     display: flex;
     justify-content: end;
-    padding: 0;
 }
 
 .cerrarModal button {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 0;
     padding: 0;
-    color: #111;
+    margin: 0;
+    margin-right: 15px;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(255, 0, 0);
     background-color: transparent;
 }
 
 
 .nameM {
     font-size: 26px;
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 26px;
     margin: 0;
-    margin-bottom: 20px;
     padding: 0;
+    color: #000;
 }
 
 .detalleM {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
+    color: #333;
     margin: 0;
     padding: 0;
     font-style: italic;
 }
 
 .infoM {
-    width: 84%;
+    width: 68%;
+    min-height: 40px;
     font-size: 18px;
     font-weight: 600;
+    line-height: 22px;
+    color: #333;
     margin: 0;
-    margin-top: 15px;
+    margin-top: 30px;
     padding: 0;
     font-style: italic;
 }
 
 .precioM {
-    font-size: 32px;
-    font-weight: 400;
-    margin: 0;
-    margin-top: 8px;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 18px 0;
     padding: 0;
-    color: rgb(0, 200, 0);
+    color: rgb(0, 158, 0);
 }
 
-.unidadesM {
-    margin: 0;
-    margin-top: 40px;
-}
-
-.unidadesM select {
-    margin-left: 8px;
-    background-color: transparent;
-    color: #111;
-    border-radius: 4px;
-    font-size: 17px;
-}
-
-
-.addCartM {
-    background-color: rgb(255, 88, 88);
+.stock {
     width: auto;
     height: auto;
     font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .8);
+    margin: 0px;
+    padding: 0;
+}
+
+.stock span {
     font-weight: 500;
-    line-height: 14px;
-    padding: 8px 12px;
+    color: #000;
+}
+
+.unidadesM {
+    width: auto;
+    height: auto;
+    margin: 0;
     margin-top: 20px;
-    color: #fff;
-    border: 1px solid #cbcbcb;
-}
-
-.cerrarModalMobile {
-     display: none;
-}
-
-.modal {
-    width: 70%;
-    height: 55%;
-    margin: 0 auto;
-    padding: 0px;
-    padding-right: 10px;
-    border: none;
-    background: rgba(256,256,256,1);
-    box-shadow: 0px 0px 20px rgba(0,0,0,.7);
-    overflow: scroll;
-    border-radius: 6px;
-    outline: none;
-    position: relative;
-    top: 210px;
-    left: 0;
+    padding: 0;
     display: flex;
-    flex-wrap: nowrap;
-    z-index: '20000';
+    align-items: stretch;
+    justify-content: start;
 }
 
-.modal::-webkit-scrollbar {
-    display: none;
+.unidadesM select {
+    background-color: transparent;
+    color: #111;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 4px;
+    border-radius: 8px;
 }
+
+.addCartM {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-left: 10px;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: rgb(255, 37, 37);
+    border: 1px solid #fff;
+    transition: all .4s ease;
+}
+
+.addCartM:hover {
+    border: 1px solid #fff;
+    background-color: rgb(155, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -305,321 +281,244 @@
 @media only screen and (max-width: 680px) {
 
     .container {
-        background: #eeeeee;
-        width: 44vw;
-        min-height: inherit;
+        background-color: #fff;
+        width: calc(48% - 10px);
         height: auto;
-        margin: 0px;
-        padding: 0px 0px;
-        padding-bottom: 8px;
-        border-radius: 12px 12px 12px 12px;
+        margin: 0;
+        padding: 5px;
+        border-radius: 2px;
+        border: 1px solid #e5e5e5;
         display: flex;
         flex-direction: column;
         justify-content: start;
-        gap: 0px;
-        box-shadow: none;
-        position: relative; 
+        align-items: start;
+        cursor: pointer;
         outline: none;
-        /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
-        transition: box-shadow .3s; 
-        outline: 1px solid #fff; */
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
     }
     
     .container:hover {
-        box-shadow: 0px 0px 50px rgba(0,0,0,.6);
+        box-shadow: 0px 0px 12px rgba(0,0,0,.2);
+        border: 1px solid #b2b2b2;
     }
     
     .imgContainer  {
-        width: auto;
+        width: 100%;
         height: auto;
         margin: 0;
-        padding: 10px 8px;
-        padding-bottom: 0;
-        border-radius: 10px 10px 10px 0;
-        border-bottom: none;
-        background-color: transparent;
-        transition: box-shadow .3s;
+        padding: 0;
+        background-color: rgb(194, 194, 194);
     }
-
+    
     .imgContainer img {
         width: 100%;
-        height: 150px;
-        object-fit: cover;
+        height: auto;
+        object-fit: scale-down;
         object-position: center;
-        border-radius: 10px 10px 10px 10px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
     }
     
     .container h3 {
         width: auto;
         height: auto;
         font-size: 14px;
-        line-height: 15px;
         font-weight: 600;
-        text-align: center;
-        color: #2d2d2d;
-        padding: 0px;
-        padding-left: 0px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #333;
+        padding: 0;
+        padding-top: 0px;
         margin: 0;
-        margin-top: 5px;
     }
     
     
     .detalle {
         width: auto;
         height: auto;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 500;
-        line-height: 14px;
+        line-height: 12px;
         font-style: italic;
         text-align: left;
-        color: rgba(0, 0, 0, .9);
-        margin: 0px;
-        margin-top: 5px;
-        padding: 0px 5px;
-        letter-spacing: .8px;
+        color: rgba(0, 0, 0, .6);
+        margin: 0;
+        padding: 0;
+        letter-spacing: .5px;
         word-break: normal;
         hyphens: auto;
-    }
-    
-    .stock {
-        width: auto;
-        height: auto;
-        font-size: 12px;
-        font-weight: 300;
-        color: #000;
-        margin: 0px;
-        text-align: left;
-        padding: 0px 5px;
-    }
-    
-    .stock span {
-        font-weight: 400;
     }
     
     .precio {
         width: auto;
         height: auto;
-        font-size: 16px;
-        font-weight: 500;
-        color: #333;
+        line-height: 14px;
         text-align: left;
         padding: 0;
-        padding-left: 0px;
+        padding-top: 4px;
         margin: 0;
-        text-align: center;
     }
     
     .precioNumero {
-        color: rgb(42, 42, 42);
-        font-size: 16px;
-        font-weight: 800;
-        letter-spacing: -.5px;
-    }
-    
-    .botonAgregar {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0px 5px;
-        margin: 0px;
-        margin-top: 12px;
-        position: inherit;
-    }
-    
-    .botonKart {
-        width: auto;
-        height: auto;   
-        font-size: 10px;   
-        font-weight: 600;
-        line-height: 14px;
-        padding: 0px 0px;
-        margin-top: 0px;
-        text-align: left;
-        color: rgba(255, 0, 0, 0.867);
-        border: none;
-        background-color: transparent;
-        box-shadow: none;
-    }
-    
-    .icon {
-        font-size: 10px;
-        margin-right: 2px;
-        position: relative;
-        top: 1px;
-    }
-    
-    .botonKart:hover {
-        color: red;
-        background-color: transparent;
-        box-shadow: none;
-        border: none;
-    }
-    
-    .unidades {
-        width: auto;
-        height: auto;
-        margin: 0px;
-        margin-bottom: 10px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0px;
         padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-    }
-    
-    .unidades label {
-        font-size: 12px;
-        font-weight: 600;
-        color: #222;
-    }
-    
-    .unidades select {
-        width: auto;
-        height: auto;
-        color: #222;
-        text-align: center;
-        margin: 0px;
-        margin-left: 5px;
-        padding: 0px 3px;
-        border-radius: 2px;
-        border: 1px solid #333;
-        background-color: transparent;
+        margin: 0;
     }
     
     .modal {
-        width: 88%;
-        height: calc(100vh - 165px);
-        display: flex;
-        flex-direction: column !important;
-        margin: 0 auto;
-        padding: 0px;
-        top: 84px;
-        left: 0;
-        border: none;
-        background: rgb(235, 235, 235);
-        box-shadow: 0px 0px 20px rgba(0,0,0,.7);
-        overflow-y: scroll;
-        border-radius: 16px;
-        outline: none;
-        position: relative;
-        z-index: 20000;
-        overflow-x: hidden;
-    }
-
-    .modal::-webkit-scrollbar {
-        display: none;
-    }
-    .cerrarModal { display: none;}
-
-    .cerrarModalMobile {
-        width: 100%;
-        display: flex;
-        justify-content: end;
+        width: 80%;
+        height: auto;
         padding: 0;
+        margin: 0 auto;
+        box-shadow: 0px 0px 40px rgba(0,0,0,1);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        border-radius: 2px;
+        position: relative;
+        left: 0;
+        top: 150px;
+        background-color: #fff;
+        outline: 1px solid #eeeeee;
+    }
+    
+    .cerrarModalMobile {
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 8px;
     }
 
     .cerrarModalMobile button {
-        font-size: 17px;
+        background-color: red;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 16px;
         font-weight: 700;
-        margin: 0;
-        margin-right: 10px;
-        margin-top: 5px;
-        padding: 0;
-        color: hsl(0, 100%, 58%);
-        background-color: transparent;
-        position: fixed;
-    }
-
-    .imag {
-        margin-top: 17px;
-        margin-left: 10px;
-        width: 100%;
-        height: 180px;
-    }
-
-    .imgModal {
-        margin: 0;
-        padding: 0;
-        width: 75%;
-        height: 100%;
-        border-radius: 0;
-        border-radius: 6px 15px 15px 0px;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .txtDetalle {
-        width: 100%;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
+        padding: 5px 10px;
     }
     
-    .nameM {
-        font-size: 20px;
-        font-weight: 600;
+    .cerrarModal {
+        display: none;
+    } 
+
+    .imag {
+        width: 100%;
+        height: auto;
+        background-color: rgb(194, 194, 194);
+    }
+    
+    .imgModal {
+        width: 40%;
+        height: auto;
         margin: 0;
         padding: 0;
+        object-fit: scale-down;
+        object-position: center;
     }
-
-    .detalleM {
-        font-size: 14px;
+    
+    .txtDetalle {
+        width: auto;
+        padding: 0;
+        padding-left: 12px;
+        padding-bottom: 30px;
+    }
+    
+    
+    .nameM {
+        font-size: 22px;
+        font-weight: 700;
         margin: 0;
-        margin-top: 6px;
+        margin-top: 5px;
+        padding: 0;
+        color: #000;
+    }
+    
+    .detalleM {
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+        margin: 0;
         padding: 0;
         font-style: italic;
     }
-
+    
     .infoM {
-        width: 90%;
-        font-size: 15px;
-        font-weight: 700;
+        width: 92%;
+        height: auto;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #333;
         margin: 0;
-        margin-top: 8px;
+        margin-top: 20px;
         padding: 0;
         font-style: italic;
     }
     
     .precioM {
         font-size: 20px;
-        font-weight: 700;
-        margin: 0;
-        margin-top: 8px;
+        font-weight: 600;
+        margin: 8px 0;
         padding: 0;
-        color: rgb(6, 6, 6);
+        color: rgb(0, 158, 0);
     }
-
+    
+    .stock {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, .8);
+        margin: 0px;
+        padding: 0;
+    }
+    
+    .stock span {
+        font-weight: 500;
+        color: #000;
+    }
+    
     .unidadesM {
+        width: auto;
+        height: auto;
         margin: 0;
-        margin-top: 12px;
+        margin-top: 20px;
+        padding: 0;
+        display: flex;
+        align-items: stretch;
+        justify-content: start;
     }
-
+    
     .unidadesM select {
-        margin-left: 8px;
+        width: 80px;
         background-color: transparent;
         color: #111;
         border-radius: 4px;
-        border: 1px solid #222;
-        font-size: 14px;
+        font-size: 12px;
+        padding: 4px;
+        border-radius: 8px;
     }
     
-
     .addCartM {
-        background-color: rgb(255, 88, 88);
-        width: 160px;
+        width: auto;
         height: auto;
         font-size: 14px;
-        font-weight: 500;
-        line-height: 16px;
-        padding: 6px 12px;
-        padding-bottom: 10px;
-        margin-top: 15px;
-        margin-bottom: 12px;
+        font-weight: 600;
+        line-height: 14px;
+        margin-left: 10px;
+        padding: 8px 16px;
         color: #fff;
-        border: 1px solid #cbcbcb;
+        background-color: rgb(255, 37, 37);
+        border: 1px solid #fff;
+        transition: all .4s ease;
     }
-
-
+    
+    .addCartM:hover {
+        border: 1px solid #fff;
+        background-color: rgb(155, 0, 0);
+    }
 }

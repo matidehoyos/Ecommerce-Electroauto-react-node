@@ -244,7 +244,7 @@
 
   .modal {
     width: 94%;
-    height: calc(100vh - 165px);
+    height: calc(100vh - 200px);
     margin: 0 auto;
     border: none;
     background: rgba(256,256,256,1);
@@ -257,10 +257,14 @@
     padding-bottom: 20px;
     position: relative;
     left: 0;
-    top: 84px;
+    top: 60px;
   }
 
   .modal::-webkit-scrollbar {
+    display: none;
+  }
+
+  .prod {
     display: none;
   }
 

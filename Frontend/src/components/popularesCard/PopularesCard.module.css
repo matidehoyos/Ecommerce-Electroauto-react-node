@@ -242,328 +242,283 @@
     background-color: rgb(155, 0, 0);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos para mobile ----------------------------------------------------------*/
 
 @media only screen and (max-width: 680px) {
 
     .container {
-        background-color: #e3e3e3;
-        width: 190px;
-        min-height: auto;
-        margin: 10px;
-        padding: 10px 10px;
-        border-radius: 6px;
+        background-color: #fff;
+        width: calc(48% - 10px);
+        height: auto;
+        margin: 0;
+        padding: 5px;
+        border-radius: 2px;
+        border: 1px solid #e5e5e5;
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        gap: 0px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
-        transition: box-shadow .3s;       
-        position: relative;
+        cursor: pointer;
         outline: none;
     }
     
     .container:hover {
-        box-shadow: 0px 0px 20px rgba(0,0,0,1);
+        box-shadow: 0px 0px 12px rgba(0,0,0,.2);
+        border: 1px solid #b2b2b2;
     }
     
     .imgContainer  {
-        width: 190px;
-        height: 180px;
+        width: 100%;
+        height: auto;
         margin: 0;
-        margin-right: 0px;
-        border-radius: 10px;
-        border-bottom: none;
-        background-color: #fff;
+        padding: 0;
+        background-color: rgb(194, 194, 194);
     }
     
     .imgContainer img {
-        width: 190px;
-        height: 180px;
-        object-fit: fit;
+        width: 100%;
+        height: auto;
+        object-fit: scale-down;
         object-position: center;
-        border-radius: 4px;  }
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
     
-
-.txt { 
-    padding: 10px;
-    padding-left: 6px;
-}
-
     .container h3 {
         width: auto;
         height: auto;
         font-size: 14px;
-        font-weight: 700;
-        text-align: center;
-        color: #060606;
-        padding: 0px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #333;
+        padding: 0;
+        padding-top: 0px;
         margin: 0;
-        margin-top: 5px;
-        padding-left: 0px;
     }
     
     
     .detalle {
-        width: 100%;
-        height: auto;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 16px;
-        font-style: italic;
-        text-align: center;
-        color: rgba(0, 0, 0, 1);
-        margin: 0px;
-        margin-top: 5px;
-        padding: 0px;
-        letter-spacing: .8px;
-        word-break: normal;
-        hyphens: auto;
-    }
-    
-    .stock {
         width: auto;
         height: auto;
         font-size: 12px;
-        font-weight: 600;
-        color: rgba(0, 0, 0, .4);
-        margin: 0px;
+        font-weight: 500;
+        line-height: 12px;
+        font-style: italic;
         text-align: left;
-        padding: 0px 5px;
-    }
-    
-    .stock span {
-        font-weight: 700;
+        color: rgba(0, 0, 0, .6);
+        margin: 0;
+        padding: 0;
+        letter-spacing: .5px;
+        word-break: normal;
+        hyphens: auto;
     }
     
     .precio {
         width: auto;
         height: auto;
-        font-size: 14px;
-        font-weight: 600;
-        color: #333;
-        text-align: center;
+        line-height: 14px;
+        text-align: left;
         padding: 0;
-        padding-left: 0px;
+        padding-top: 4px;
         margin: 0;
     }
     
     .precioNumero {
-        color: rgb(35, 35, 35);
-        font-size: 15px;
-        font-weight: 700;
-        letter-spacing: -.6px;
-        margin: 0;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0px;
         padding: 0;
+        margin: 0;
     }
     
-    .botonAgregar {
-        width: auto;
+    .modal {
+        width: 80%;
         height: auto;
+        padding: 0;
+        margin: 0 auto;
+        box-shadow: 0px 0px 40px rgba(0,0,0,1);
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        padding: 0px 5px;
-        margin: 0px;
-        position: absolute;
-        bottom: 0;
-    }
-    
-    .botonKart {
-        width: auto;
-        height: auto;   
-        font-size: 14px;   
-        font-weight: 600;
-        line-height: 14px;
-        padding: 0px;
-        padding-bottom: 10px;
-        margin-top: 4px;
-        text-align: left;
-        color: rgba(255, 0, 0, 0.867);
-        border: none;
-        background-color: transparent;
-        box-shadow: 0px 0px 20px rgba(0,0,0,.0);
-        border-radius: 4px;
-    }
-    
-    .icon {
-        font-size: 14px;
-        margin-right: 2px;
-        position: relative;
-        top: 0px;
-    }
-    
-    .botonKart:hover {
-        background-color: transparent;
-        color:rgba(255, 0, 0, 0.714);
-        box-shadow: none;
-        border: none;
-    }
-    
-    .unidades {
-        width: auto;
-        height: auto;
-        margin: 0;
-        margin-bottom: 5px;
-        padding: 0;
-        display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: start;
-    }
-    
-    .unidades label {
-        font-size: 14px;
-        font-weight: 600;
-        color: #222;
-    }
-    
-    .unidades select {
-        width: auto;
-        height: auto;
-        color: #222;
-        text-align: center;
-        margin: 0px;
-        margin-left: 5px;
-        padding: 0px;
         border-radius: 2px;
-        border: none;
-        background-color: transparent;
-        font-size: 14px;
+        position: relative;
+        left: 0;
+        top: 150px;
+        background-color: #fff;
+        outline: 1px solid #eeeeee;
     }
     
-
-    .cerrarModal { display: none;}
-
     .cerrarModalMobile {
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        padding: 0;
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 8px;
     }
 
     .cerrarModalMobile button {
-        font-size: 17px;
+        background-color: red;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 16px;
         font-weight: 700;
-        margin: 0;
-        margin-right: 10px;
-        margin-top: 5px;
-        padding: 0;
-        color: hsl(0, 100%, 58%);
-        background-color: transparent;
-        position: fixed;
+        padding: 5px 10px;
     }
+    
+    .cerrarModal {
+        display: none;
+    } 
 
     .imag {
-        margin-top: 17px;
-        margin-left: 10px;
         width: 100%;
-        height: 180px;
+        height: auto;
+        background-color: rgb(194, 194, 194);
     }
-
+    
     .imgModal {
+        width: 40%;
+        height: auto;
         margin: 0;
         padding: 0;
-        width: 75%;
-        height: 100%;
-        border-radius: 0;
-        border-radius: 6px 15px 15px 0px;
-        object-fit: cover;
+        object-fit: scale-down;
         object-position: center;
     }
-
+    
     .txtDetalle {
-        width: 100%;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nameM {
-        font-size: 20px;
-        font-weight: 600;
-        margin: 0;
+        width: auto;
         padding: 0;
+        padding-left: 12px;
+        padding-bottom: 30px;
     }
-
-    .detalleM {
-        font-size: 14px;
+    
+    
+    .nameM {
+        font-size: 22px;
+        font-weight: 700;
         margin: 0;
-        margin-top: 6px;
+        margin-top: 5px;
+        padding: 0;
+        color: #000;
+    }
+    
+    .detalleM {
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+        margin: 0;
         padding: 0;
         font-style: italic;
     }
-
+    
     .infoM {
-        width: 90%;
-        font-size: 15px;
-        font-weight: 700;
+        width: 92%;
+        height: auto;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #333;
         margin: 0;
-        margin-top: 8px;
+        margin-top: 20px;
         padding: 0;
         font-style: italic;
     }
     
     .precioM {
         font-size: 20px;
-        font-weight: 700;
-        margin: 0;
-        margin-top: 8px;
+        font-weight: 600;
+        margin: 8px 0;
         padding: 0;
-        color: rgb(6, 6, 6);
+        color: rgb(0, 158, 0);
     }
-
+    
+    .stock {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, .8);
+        margin: 0px;
+        padding: 0;
+    }
+    
+    .stock span {
+        font-weight: 500;
+        color: #000;
+    }
+    
     .unidadesM {
+        width: auto;
+        height: auto;
         margin: 0;
-        margin-top: 12px;
+        margin-top: 20px;
+        padding: 0;
+        display: flex;
+        align-items: stretch;
+        justify-content: start;
     }
-
+    
     .unidadesM select {
-        margin-left: 8px;
+        width: 80px;
         background-color: transparent;
         color: #111;
         border-radius: 4px;
-        border: 1px solid #222;
-        font-size: 14px;
+        font-size: 12px;
+        padding: 4px;
+        border-radius: 8px;
     }
     
     .addCartM {
-        background-color: rgb(255, 88, 88);
-        width: 160px;
+        width: auto;
         height: auto;
         font-size: 14px;
-        font-weight: 500;
-        line-height: 16px;
-        padding: 6px 12px;
-        padding-bottom: 10px;
-        margin-top: 15px;
-        margin-bottom: 20px;
+        font-weight: 600;
+        line-height: 14px;
+        margin-left: 10px;
+        padding: 8px 16px;
         color: #fff;
-        border: 1px solid #cbcbcb;
+        background-color: rgb(255, 37, 37);
+        border: 1px solid #fff;
+        transition: all .4s ease;
     }
-
-    .modal {
-        width: 88%;
-        height: calc(100vh - 165px);
-        max-height: 600px;
-        display: flex;
-        flex-direction: column !important;
-        margin: 0 auto;
-        padding: 0px;
-        top: 84px;
-        left: 0;
-        border: none;
-        background: rgb(235, 235, 235);
-        box-shadow: 0px 0px 20px rgba(0,0,0,.7);
-        overflow-y: scroll;
-        border-radius: 16px;
-        outline: none;
-        position: relative;
-        z-index: 20000;
-        overflow-x: hidden;
-    }
-
-    .modal::-webkit-scrollbar {
-        display: none;
+    
+    .addCartM:hover {
+        border: 1px solid #fff;
+        background-color: rgb(155, 0, 0);
     }
 }

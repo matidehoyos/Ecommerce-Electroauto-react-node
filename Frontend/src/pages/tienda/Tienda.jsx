@@ -7,7 +7,7 @@ import { loadProductos } from '../../redux/actions';
 import { useEffect, useState } from 'react';
 import SearchBar from '../../components/searchBar/SearchBar';
 import { useNavigate } from 'react-router-dom';
-import PopularesCard from '../../components/popularesCard/popularesCard';
+import ProductoTiendaCard from '../../components/productoTiendaCard/ProductoTiendaCard';
 
 const Tienda = () => {
   const navigate = useNavigate();
@@ -61,10 +61,8 @@ const Tienda = () => {
             <img src="ELECT.png" alt="logo" />
           </div>
         ) : productos.length ? (
-          productosActuales.map((producto, index) => (
-            <div key={index} className={style.cards}>
-              <PopularesCard producto={producto} />
-            </div>
+          productos.map((producto, index) => (
+              <ProductoTiendaCard key={index} producto={producto} />
           ))
         ) : (
           <div className={style.loader}>

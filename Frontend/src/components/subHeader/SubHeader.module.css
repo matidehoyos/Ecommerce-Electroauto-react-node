@@ -74,172 +74,66 @@
 @media only screen and (max-width: 680px) {
 
     .container {
-        width: auto;
-        height: auto;
-        padding: 0px;
-        margin: 0;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        background-image: none;
-        background-size: contain;
-        background-position: 0px 100px;
-        background-repeat: no-repeat;
-        background-color: #fff;
-        gap: 0px;
-        overflow-x: hidden;
-    }
-    
-        
-    .populares {
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        overflow-x: hidden;
-        justify-content: start;
-        align-items: start;
+        padding: 50px 0;
         margin: 0;
-        padding: 40px 0px;
-        padding-bottom: 0px;
-        background-image: linear-gradient(to right, rgb(22, 22, 255),rgb(239, 239, 255));
+        background-color: #fff;
     }
-
-.populares h4 {
-    padding: 0;
-    margin: 0;
-    padding-left: 20px;
-    padding-top: 20px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    font-style: italic;
-}
-
-.cardsContainer {
-    width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        justify-content: start;
-        align-items: center;
-        margin: 10px 0px;
-        padding: 0px;
-        padding-bottom: 20px;
-}
-
-    .cardsContainer::-webkit-scrollbar {
-        display: none;
-    }
-
-
-        .carrusel {
-            width: 100%;
+    
+        .populares {
+            width: auto;
             height: auto;
-            padding: 40px 10px;
-            margin: 0px;
-            border-radius: 0px;
-            background-color: rgb(338, 338, 338);  
-            transform: translateX(150%);
-            transition: transform .4s ease-out;
-            overflow-y: inherit;
-            overflow-x: hidden;
-            display: flex;  
+            display: flex;
             flex-direction: column;
             justify-content: start;
             align-items: start;
-        }
-
-        .carrusel h4 {
-            padding-left: 20px;
-            font-size: 20px;
-            font-weight: 500;
-            color: rgba(0,0,0,1);
-            padding-bottom: 0px;
-            padding-top: 0px;
-            margin-bottom: 0;
-        }
-
-        .carrusaCajasContainer {
-            width: 80%;
-            height: auto; 
-            padding: 20px 25px;
-            padding-top: 50px;
-            padding-right: 50px !important;
-            padding-bottom: 30px;
             margin: 0;
-            padding-right: 50px;
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: scroll;
-            justify-content: start;
-            align-items: center;
+            padding: 0;
         }
-
-      
-          
-        .carrusaCajasContainer::-webkit-scrollbar {
-            display: none;
-          }
-
-        .carrusel.animate {
-            transform: translateX(0);
-          }
     
-    .box {
+    .populares h4 {
+        margin: 0;
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .5px;
+        font-style: italic;
+        color: #111;
+        }
+        
+        .cardsContainer {
             width: auto;
             height: auto;
-            background-color: #fff;
-            border-radius: 2px;
-            border: none;
-            margin: 0px 15px;
-            padding: 0px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            transition: box-shadow .3s;
-            box-shadow: 5px 10px 20px 5px rgba(0,0,0,0.2); 
-        }
-
-     .box:hover {
-                background-color: #fff;
-                box-shadow: 0px 0px 30px rgba(0,0,0,.6);
-
-              }
-
-    .box:hover h4 {
-                color: rgba(0,0,0,.9);
-              }
-    
-        .box h4 {
-            width: auto;
-            font-size: 20px;
-            font-weight: 700;
-            padding: 8px 0px;
-            letter-spacing: .6px;
             margin: 0;
-            text-align: center;
-            color: rgba(0,0,0,.9);
-            border-bottom: 1px solid #333;
-            background-color: #fff;
-              }
+            padding: 0;
+    }
     
-        .boxImg {
-            width: 180px;
-            height: 180px;
-            padding: 0px 20px;
-            display: flex;
-            justify-content: center;
-            border-radius: 0px;
-            background-color: #fff;
-        }
+    .linkTienda {
+        width: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
     
-        .boxImg img {
-            width: 180px;
-            height: 180px;
-            border-radius: 0px;
-            object-fit: cover;
-        }
+    .linkTienda button {
+        background-color: transparent;
+        border: 1px solid #111;
+        color: #333;
+        padding: 10px;
+    }
+    
+    .linkTienda button:hover {
+        border: 1px solid #111;
+        background-color: transparent;
+    }
+    
+    .linkTienda button:hover a {
+        color: #111;
+    }
+    
+    .linkTienda a {
+        color: #111;
+        font-size: 16px;
+    }
     
 }

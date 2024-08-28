@@ -198,65 +198,78 @@
 .landing {
   display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos para mobile ----------------------------------------------------------*/
 
 @media only screen and (max-width: 680px) {
 
   .container {
     width: 100%;
-    height: calc(100vh);
+    height: auto;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    background-color: #000;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    animation: backd 0.4s ease-out 1;
-    background-image: url('https://i.pinimg.com/474x/72/cd/60/72cd6099860c08f1a4c0ee1dfe681a9e.jpg');
+    background-image: url('../../../public/bg.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-@keyframes backd {
-    0% {  background-image: url('https://i.pinimg.com/474x/72/cd/60/72cd6099860c08f1a4c0ee1dfe681a9e.jpg');
-    }
-    100% {  background-image: url('https://i.pinimg.com/474x/72/cd/60/72cd6099860c08f1a4c0ee1dfe681a9e.jpg');
-  }}
+.div {
+  display: none;
+}
 
 .texto {
     width: 100%;
     height: 100%;
-    padding: 0px 15px;
+    padding: 80px 15px;
+    padding-top: 260px;
     margin: 0;
-    padding-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start; 
     position: relative;
     white-space: nowrap;
-    animation: desplazamiento 2.7s ease-in-out 1;
     border-radius: 60px;
     background-color: rgba(0, 0, 0, .6);
-    border-radius: 0;
-
+    border-radius: inherit;
+    animation: none;
 }
 
 .carritoModal {
   background-color: red;
 }
-
-@keyframes desplazamiento {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
 
 .texto span {
   display: block;
@@ -283,21 +296,14 @@
     font-size: 37px;
     font-weight: 600;
     letter-spacing: -1.5px;
-  font-style: normal;
-  background-image: linear-gradient(to right , #e7ef00, #fdffca  );
-  background-clip: text;
-  color: transparent;
-  display: inline;
-  opacity: 0;
-  animation: aparecer .01s forwards;
-  animation-delay: calc(0.11s * var(--i));
-  margin: 0;
+    font-style: normal;
+    background-image: linear-gradient(to right , #e7ef00, #fdffca  );
+    background-clip: text;
+    color: transparent;
+    display: inline;
+    opacity: 0;
+    margin: 0;
 }
-
-@keyframes aparecer {
-  to {opacity: 1;}
-}
-
 
 .texto h5 {
     width: auto;
@@ -316,15 +322,9 @@
     font-weight: 400;
     letter-spacing: .3px;
     text-align: left;
-    animation: ola 1.7s linear infinite;
     font-style: normal;
     background-color: rgba(0, 0, 0, .5);
     }
-  
-  @keyframes ola {
-    0%, 100% {transform: scaleY(1);}
-    50% {transform: scaleY(1.2);}
-  }
 
 .envios {
     width: auto;
@@ -377,48 +377,8 @@
   box-shadow: 0px 0px 40px rgba(256, 256, 256, .5);
   opacity: .7;
   font-style: italic;
-  position: relative;
-  animation: desplaza 2s ease-in-out 1;
   background-color: rgba(0, 0, 0, .3);
   overflow-x: hidden;
-}
-
-@keyframes desplaza {
-  0% {
-    transform: translateX(600%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-
-.kartButton {
-  background-color: transparent;
-}
-
-.kartIcon {
-  font-size: 28px;
-  font-weight: 800;
-  color: yellow;
-  border-radius: 50%;
-  border: 1px solid yellow;
-  background-color: transparent;
-  padding: 14px;
-  position: fixed;
-  bottom: 30px;
-  right: 15px;
-  z-index: 4000;
-}
-
-.cerrarModal {
-  font-size: 24px;
-  font-weight: 800;
-  text-align: right;
-  padding-right: 10px;
-  color: #000;
-  background-color: transparent;
 }
 
 .landing {

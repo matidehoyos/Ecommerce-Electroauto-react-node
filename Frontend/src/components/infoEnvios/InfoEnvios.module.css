@@ -1,11 +1,8 @@
 .container {
     width: auto;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
     background-image: linear-gradient(to right, rgb(47, 47, 255),rgb(0, 0, 153));
 }
 
@@ -65,98 +62,63 @@
 /* Estilos para mobile ----------------------------------------------------------*/
 
 @media only screen and (max-width: 680px) {
-
     .container {
         width: auto;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 0px;
-        background-color: #fff;
-        border-top: none;
-        border-bottom: none;
+        padding: 0;
+        margin: 0;
+        background-image: linear-gradient(to right, rgb(47, 47, 255),rgb(0, 0, 153));
     }
     
-    .carrusa {
+    .text {
         width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
-        padding: 60px 0px;
+        align-items: stretch;
+        padding: 120px 0px;
         margin: 0;
-        background-image: #222;
     }
-
+    
+    .text p {
+        font-size: 60px;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #fff;
+    }
+    
     .first {
         display: flex;
         flex-direction: column-reverse;
     }
     
-    .text {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 130px 0px;
-        padding-left: 12px;
-        margin: 0;
-        margin-bottom: 0px;
-        background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
-        border-radius: 0px;
-        border: none;
-    }
-    
-    .text:hover {
-        background-color: rgb(254, 254, 218);
-    }
-    .text:hover h4 {
-        color: inherit;
-    }
-    .text:hover h5 {
-        color: inherit;
-    }
-    .text:hover p {
-        color: inherit;
-    }
-    
     .text h4 {
-        width: 100%;
-        font-size: 26px;
-        font-weight: 900;
-        line-height: 24px;
-        font-style: italic;
-        color: #333;
+        width: auto;
+        font-size: 24px;
+        font-weight: 800;
+        color: #fff;
         text-align: left;
         margin: 0;
         padding: 0;
+        font-style: italic;
+        line-height: 22px;
     }
     
     .text h5 {
         width: 100%;
-        font-size: 24px;
-        line-height: 22px;
+        font-size: 18px;
         font-weight: 400;
-        color: #333;
+        color: #fff;
         text-align: left;
         margin: 0;
-        padding: 0px 0px;
-        font-style: italic;
-        text-shadow: none;
-    }
-    
-    .text p {
-        font-size: 76px;
-        text-align: center;
-        color: #333;
-        margin: 0px;
-        margin-right: 8px;
+        margin-bottom: 6px;
         padding: 0;
-        padding-right: 10px;
+        line-height: 18px;
+        font-style: italic;
     }
-    
     
 }

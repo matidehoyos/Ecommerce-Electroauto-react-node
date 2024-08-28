@@ -69,13 +69,12 @@
 @media only screen and (max-width: 680px) {
    
     .container {
-        background-image: linear-gradient(to right, #f3f3f3,#fff);
         width: auto;
         height: auto;
-        padding: 80px 0px;
-        padding-bottom: 60px;
+        padding: 60px 0px;
         display: flex;
         flex-direction: column;
+        background-color: #fff;
     }
     
     .titulo {
@@ -83,29 +82,31 @@
         height: auto;
     }
     
-    .titulo h2 {
-        width: auto;
-        height: auto;
-        font-size: 21px;
-        font-weight: 500;
+    .titulo h4 {
+        margin: 0;
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .5px;
         font-style: italic;
-        color: rgba(0, 0, 0,.8);
-        margin-left: 0px;
-        padding: 0px;
-        padding-left: 15px;
-        text-align: left;
+        color: #111;
     }
     
     .cardContainer {
         width: auto;
         height: auto;
         padding: 0px;
-        padding-left: 15px;
-        margin: 15px 0px;
+        padding-left: 10px;
+        margin: 30px 0px;
+        margin-bottom: 15px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: start;
         overflow-x: scroll;
+    }
+
+    .cardContainer::-webkit-scrollbar {
+        display: none;
     }
     
     
@@ -117,16 +118,15 @@
         justify-content: center;
         align-items: center;
         padding: 0;
-        margin: 0px;
-        background-color: transparent;
-        background-image: none;
+        margin: 0;
+        background-color: #fff;
     }
     
     .ratingContainer {
         width: 100%;
         height: auto;
-        padding: 0px;
-        margin: 20px 0px;
+        padding: 0;
+        margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -135,7 +135,7 @@
     .formContainer {
         width: 100%;
         height: auto;
-        margin-left: 0px;
+        margin-left: 0;
         display: flex;
         align-items: center;
         justify-content: center;

@@ -108,7 +108,7 @@
         margin: 0px 7px;
         border-radius: 6px;
         border: 1px solid rgba(0,0,0,.1);
-        background: rgba(256,256,256,1);
+        background: #f7f7f7;
         display: flex;
         flex-direction: column;
         gap: 0;
