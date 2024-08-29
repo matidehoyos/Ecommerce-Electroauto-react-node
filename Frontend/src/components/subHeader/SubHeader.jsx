@@ -34,7 +34,7 @@ const SubHeader = () => {
               <Populares />
             </div>
             <div className={style.linkTienda}>
-                <button><Link to="/tienda">Encontrá más productos en nuestra tienda</Link></button>
+                <button><Link to="/tienda">Encontrá más productos aqui</Link></button>
             </div>
         </div>
     </div>

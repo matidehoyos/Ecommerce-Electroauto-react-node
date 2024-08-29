@@ -87,8 +87,8 @@ const Footer = () => {
         </div>
 
       </div>
-      <footer>Todos los derechos reservados. Sitio desarrollado por <a target="_blank" href='https://www.mododigital.tech'></a>Modo Digital</footer>
-    </div>
+       <p className={style.dev}>Desarrollado por <a href="https://mododigital.vercel.app" target="_blank" rel="noopener noreferrer"><span className={style.modo}>MODO</span><span className={style.digi}>DIGITAL</span></a></p>
+      </div>
   )
 }
 

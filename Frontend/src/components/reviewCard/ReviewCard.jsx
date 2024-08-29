@@ -10,10 +10,10 @@ const ReviewCard = ({ review }) => {
     const fullStars = Math.floor(review.rating);
     const hasHalfStar = review.rating % 1 !== 0;
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<GoStarFill key={i} color="gold" />);
+      stars.push(<GoStarFill key={i} color="" />);
     }
     if (hasHalfStar) {
-      stars.push(<FaStarHalfAlt key="half" color="gold" />);
+      stars.push(<FaStarHalfAlt key="half" color="#8700b0" />);
     }
     const emptyStars = 5 - stars.length;
     for (let i = 0; i < emptyStars; i++) {
@@ -25,24 +25,17 @@ const ReviewCard = ({ review }) => {
 
   return (
     <div className={style.container}>
-      <div className={style.firstRow}>
-        <div className={style.datos}>
           <div className={style.image}>
              <img src={review.image} alt='imagen usuario'/>
           </div>
-          <div className={style.containerNameAndDate}>
-            <h4 className={style.name}>{review.name}</h4>
-            <p className={style.fecha}>{review.date.slice(0,10)}</p>
+          <div className={style.text}>
+              <h4 className={style.name}>{review.name}</h4>
+              <p className={style.fecha}>{review.date.slice(0,10)}</p>
+              <p className={style.message}>{review.message}</p>
+              <div className={style.containerStarts}>
+                  <p>{renderStars()}</p>
+              </div>
           </div>
-        </div>
-          <div className={style.containerStarts}>
-            <p>{renderStars()}</p>
-          </div>
-      </div>
-
-      <div className={style.containerComment}>
-        <p className={style.message}>{review.message}</p>
-      </div>
     </div>
   );
 };

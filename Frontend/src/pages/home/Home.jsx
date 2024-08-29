@@ -12,6 +12,7 @@ import Review from '../../components/review/Review';
 import InfoEnvios from '../../components/infoEnvios/InfoEnvios';
 import BotonFlotanteCart from '../../components/botonFlotanteCart/BotonFlotanteCart';
 import { useLocation } from 'react-router';
+import HeaderCarrusel from '../../components/headerCarrusel/HeaderCarrusel';
 
 
 const Home = () => {
@@ -37,6 +38,7 @@ const Home = () => {
            <SubHeader />
            <InfoEnvios />
            <Review reviews={reviews} mensajes={messages} />
+           <HeaderCarrusel />
            <AboutUs />
            <Footer />
         </div>

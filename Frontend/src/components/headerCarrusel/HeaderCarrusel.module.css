@@ -1,88 +1,90 @@
 .containerCarrusel {
-    width: 80%;
+    width: 100%;
     height: auto;
-    padding: 0;
+    padding: 120px 0;
     margin: 0;
-    background-color: transparent;
+    background-color: #222222;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .carouselStyles {
-    width: 100%;
-    height: auto;
-    padding: 0 30px;
+    width: 800px;
+    height: 400px;
+    padding: 0;
     margin: 0;
     border-radius: 20px;
-    background-color: transparent; }
+    background-color: #222;
+    overflow: hidden;
+    border: 2px solid #565656;
+ }
 
 .caja {
-    width: auto;
-    padding: 0px;
+    width: 100%;
+    padding: 0;
     margin: 0;
     border-radius: 20px;
 }
 
 .caja img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
-.carruImg { 
-    width: 100%;
-   object-fit: contain;
-   border-radius: 20px;
-   filter: saturate(100%);
-}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Estilos para mobile ----------------------------------------------------------*/
 
 @media only screen and (max-width: 680px) {
 
-    .carouselcontainer {
-        padding: 0px;
-    }
-    
-    .containerTitle {
-        padding: 0;
-    }
-    
-    .containerTitle h2 {
-        font-size: 26px; 
-        font-weight: 600;
-        letter-spacing: -.5px;
-        color: #494949;
-    }
-    
     .containerCarrusel {
         width: 100%;
+        height: auto;
+        padding: 80px 0;
         margin: 0;
-        padding: 0px;
-        border-radius: 4px;
+        background-color: #222222;
+        display: flex;
+        justify-content: center;   
     }
     
     .carouselStyles {
-        width: 100%;
-        margin: 0px;
-        border-radius: 6px;
-    }
-
-    .buttonContainer {
-        margin-top: 70px;
-    }
-
-    .caja {
-        height: auto;
-     padding: 0;
-     margin: 0;
-    }
-
-    .carruImg {
+        width: 80%;
+        height: 220px;
         padding: 0;
         margin: 0;
+        border-radius: 4px;
+        background-color: #222;
+        overflow: hidden;
+        border: 2px solid #565656;
+     }
+    
+    .caja {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 4px;
     }
+    
+    .caja img {
+        width: 100%;
+        height: 220px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+    
+    
+    
 }
 

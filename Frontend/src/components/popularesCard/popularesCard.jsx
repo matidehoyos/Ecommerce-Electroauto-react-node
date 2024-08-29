@@ -51,7 +51,7 @@ const PopularesCard = ({producto}) => {
         onRequestClose={() => setModalIsOpen(false)}
         style={{
           overlay: {
-            background: 'rgba(0,0,0,.6)',
+            background: 'rgba(0,0,0,.8)',
               backdropFilter: 'blur(5px)'
           }
           }}

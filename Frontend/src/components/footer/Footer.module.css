@@ -193,19 +193,34 @@
   cursor: pointer;
 }
 
-
-/* Footer */
-
-footer {
+.dev {
   text-align: center;
-  font-size: 12px;
-  color: rgba(240, 240, 240, .6);
-  padding: 5px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+  padding-bottom: 30px;
+  margin: 0;
+  color: rgba(256,256,256,.7);
 }
 
-footer a {
-  color: aqua;
+.dev a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .3px;
+  opacity: .9;
+  padding: 0;
+  margin: 0;
 }
+
+.modo {
+  color: #02BCDE;
+}
+
+.digi {
+  color: #64e015;
+}
+
 
 
 
@@ -417,16 +432,37 @@ footer a {
     border-radius: 4px;
   }
   
-  /* Footer */
   
-  footer {
-    width: 100%;
+  .dev {
     text-align: center;
-    font-size: 12px;
-    color: rgba(240, 240, 240, .9);
-    padding: 8px 0px;
-    background-color: #000;
-    border-top: 1px solid rgba(240, 240, 240, .1);
-  }
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    margin-bottom: 8px;
+    color: rgba(256,256,256,.7);
+    border-top: .5px solid #ffffff31;
+    padding-bottom: 30px;
+}
+
+.dev a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    opacity: .9;
+}
+
+.modo {
+    color: #02BCDE;
+    font-weight: 800;
+}
+
+.digi {
+    color: #64e015;
+    font-weight: 800;
+}
+
  
 }
