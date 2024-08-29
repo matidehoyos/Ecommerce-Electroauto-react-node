@@ -32,6 +32,10 @@
     flex-direction: column-reverse;
 }
 
+.firstMovil {
+    display: none;
+}
+
 .text h4 {
     width: 100%;
     font-size: 42px;
@@ -76,7 +80,7 @@
         display: flex;
         justify-content: center;
         align-items: stretch;
-        padding: 60px 0px;
+        padding: 80px 0px;
         margin: 0;
     }
     
@@ -91,11 +95,21 @@
     }
     
     .first {
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
+        display: none;
+    }
+
+    .firstMovil {
+        display: block;
     }
     
+    .firstMovil h4 {
+        text-align: left;
+    }
+
+    .firstMovil h5 {
+        text-align: left;
+    }
+
     .text h4 {
         width: 100%;
         font-size: 22px;
