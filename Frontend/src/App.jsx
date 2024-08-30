@@ -13,6 +13,7 @@ import axios from "axios";
 import CarritoContext from './components/carritoContext/CarritoContext';
 import { useState } from 'react';
 import ScrollToTop from './components/ScrollToTop'
+import Kart from './components/kart/Kart'
 
 axios.defaults.baseURL = 'https://electrocar-production.up.railway.app'
  // axios.defaults.baseURL = 'http://localhost:3000'
@@ -24,13 +25,15 @@ function App() {
   return (
     <div>
         <CarritoContext.Provider value={{ carrito, setCarrito }} >
-        {!location.pathname.startsWith('/admin') && <BotonFlotanteCart />}
+        {!location.pathname.startsWith('/admin') && !location.pathname.startsWith('/kart') && <BotonFlotanteCart />}
+
             <ScrollToTop>
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/tienda" element={<Tienda />}></Route>
                     <Route path="/admin/*" element={<AdminWindow />}></Route>
                     <Route path="/users" element={<Usuarios />}></Route>
+                    <Route path="/kart" element={<Kart />}></Route>
                     <Route path="/contacto" element={<ContactUs/>}></Route>
                     <Route path="/:nombre" element={<Productos />}></Route> 
                     <Route path="/producto/:id" element={<ProductoDetail />}></Route>

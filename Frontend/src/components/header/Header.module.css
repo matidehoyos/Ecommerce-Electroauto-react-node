@@ -243,7 +243,7 @@
     width: 100%;
     height: 100%;
     padding: 80px 15px;
-    padding-top: 280px;
+    padding-top: 320px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -258,11 +258,13 @@
 }
 
 .somos {
-  display: none;
+  display: block;
   font-style: italic;
   font-weight: 400;
   font-size: 14px;
   color: rgba(256,256,256,.5);
+  position: relative;
+  top: 20px;
 }
 
 .texto h1 {
@@ -277,7 +279,7 @@
     font-weight: 700;
     letter-spacing: -1px;
     font-style: normal;
-    background-image: linear-gradient(to top, #f6ff00, #fdffca  );
+    background-image: linear-gradient(to right, #f6ff00, #fdffca  );
     background-clip: text;
     color: transparent;
     display: inline;
@@ -293,7 +295,7 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: .3px;
     line-height: 18px;
     color: #fff;
@@ -316,12 +318,13 @@
     height: auto;
     font-size: 12px;
     line-height: 16px;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: .6px;
     text-align: left;
     margin: 0px;
     margin-bottom: 0px;
     padding: 0px;
-    color: rgba(256,256,256,.7);
+    color: rgba(256,256,256,1);
     border-radius: 2px;
     background: none;
     font-style: italic;
