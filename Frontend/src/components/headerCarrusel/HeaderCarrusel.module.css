@@ -5,14 +5,19 @@
     margin: 0;
     background-color: #222222;
     display: flex;
-    justify-content: center;   
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center; 
 }
 
 .containerCarrusel h3 {
+    font-size: 28px;
+    font-weight: 800;
     color: #fff;
     position: absolute;
-    z-index: 300;
+    z-index: 3000;
     filter: drop-shadow(0px 0px 3px #000);
+    text-align: center;
 }
 
 .carouselStyles {
@@ -24,6 +29,11 @@
     overflow: hidden;
     border: 2px solid #565656;
  }
+
+.carouselStyles:hover {
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 50px #fff;
+}
 
 .caja {
     width: 100%;
@@ -68,10 +78,13 @@
     }
 
     .containerCarrusel h3 {
+        font-size: 20px;
+        font-weight: 600;
         color: #fff;
         position: absolute;
         z-index: 300;
         filter: drop-shadow(0px 0px 3px #000);
+        text-align: center;
     }
     
     .carouselStyles {
