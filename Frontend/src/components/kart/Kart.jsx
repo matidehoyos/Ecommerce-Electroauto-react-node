@@ -101,9 +101,6 @@ const Kart = () => {
 
     return (
         <div className={style.kart}>
-            <div className={style.navPc}>
-                 <NavBar />
-            </div>
             <h4 className={style.tituCart}>Tus productos seleccionados</h4>
             <table className={style.table}>
                 <thead>

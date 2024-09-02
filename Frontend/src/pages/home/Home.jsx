@@ -33,7 +33,6 @@ const Home = () => {
     return(
         <div className={style.container}>
             {location.pathname !== '/admin' && <BotonFlotanteCart />}
-           <NavBar />
            <Header />
            <SubHeader />
            <InfoEnvios />

@@ -1,47 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import style from "./NavBar.module.css";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import LoginButton from "../loginButton/LoginButton";
 import SearchBar from "../searchBar/SearchBar";
-import { FiMenu } from 'react-icons/fi';
 import  UserAccountMobile from '../userAccountMobile/UserAccountMobile';
-import { useSelector } from 'react-redux';
-import { GiHamburgerMenu } from 'react-icons/gi'
 import PreNav from '../preNav/PreNav';
-import { VscThreeBars } from 'react-icons/vsc';
-import { FaCaretDown } from 'react-icons/fa';
-import { MdExpandMore } from 'react-icons/md';
-import { IoIosArrowBack, IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
-import { UserAccount } from '../userAccount/UserAccount';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 
 const NavBar = () => {
-  const location = useLocation();
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 680);
   let user = JSON.parse(localStorage.getItem('user'));
-  const [isScrolled, setIsScrolled] = useState(false);
-
-
-  const handleScroll = () => {
-    if (location.pathname === "/") {
-      setIsScrolled(window.scrollY > 600);
-    } else {
-      setIsScrolled(true);
-    }
-  };
-
- 
-  useEffect(() => {
-    handleScroll();
-     window.addEventListener('scroll', handleScroll);
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-
-  }, []);
-  
-  
 
   useEffect(() => {
     const handleResize = () => {
@@ -70,12 +40,12 @@ const NavBar = () => {
   }
 
   return (
-    <div className={isScrolled ? style.scrolled : style.container}>
+    <div className={style.container}>
           <PreNav />
       <div className={style.firstRow}>
            <div className={style.logo}>
               <Link to="/">
-                  <img src="./logoPc.png" alt="Logo" />
+                  <img src="logoPc.png" alt="Logo" />
               </Link>
             </div>
           
@@ -116,7 +86,6 @@ const NavBar = () => {
           <button onClick={handleFilter} value={"audio"}>Audio</button>
           <button onClick={handleFilter} value={"seguridad"}>Seguridad</button>
       </div>
-        
     </div>
   );
 };

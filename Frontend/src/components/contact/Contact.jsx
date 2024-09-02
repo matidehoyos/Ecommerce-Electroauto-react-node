@@ -35,7 +35,6 @@ const Contact = () => {
 
   return (
     <div className={style.container}>
-      <NavBar />
       <div className={style.subcontainer}>
         <div className={style.titulo}>
           <h3>Contactanos</h3>

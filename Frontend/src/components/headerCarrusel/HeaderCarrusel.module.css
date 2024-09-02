@@ -6,7 +6,6 @@
     background-color: #222222;
     display: flex;
     justify-content: center;   
-    background-image: linear-gradient(to left,rgb(57, 57, 255), rgb(0, 0, 150));
 }
 
 .carouselStyles {

@@ -1,104 +1,79 @@
 .container {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 160px);
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 60px 0;
+  padding-bottom: 0;
   background-color: #fff;
 }
 
-.cajaContainer {
-  width: 60vw;
-  height: auto;
-  padding-top: 90px;
-  margin: 0px auto;
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img {
+  width: auto;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .4px;
+  padding: 0;
+  margin: 0;
 }
 
 .caja {
   width: auto;
   height: auto;
   padding: 0;
-  margin: auto auto;
+  margin: 0;
+  margin-top: 40px;
   display: flex;
-  justify-content: start;
-  align-items: start;
-  border-radius: 15px;
-  box-sizing: border-box;
-  outline: 3px solid rgba(256,256,256,1);
-  box-shadow: 0px 0px 40px rgba(0,0,0,.6);
-}
-
-.caja:hover { 
-  box-shadow: 0px 0px 60px rgba(0,0,0,1);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
 }
 
 .imagen {
-  width: auto;
-  width: 360px;
+  width: 100%;
   height: 100%;
-  padding: 0px;
-  margin: auto 0;
-  display: flex;  
-  align-items: center;
+  flex: 1;
+  background-color: rgb(215, 215, 215);
 }
 
 .imagen img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
 }
 
 .texto {
-  width: 540px;
-  height: 340px;
+  width: auto;
+  height: 100%;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  padding: 10px;
-  position: relative;
-}
-
-.texto h6 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  margin: 0;
-  margin-bottom: 10px;
-  padding: 0; 
-}
-
-.texto h2 {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: .4px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 40px;
-}
-
-.texto p {
-  width: 100%;
-  font-size: 18px;
-  font-weight: 500;
-  font-style: italic;
-  margin: 0px;
+  padding: 20px;
 }
 
 .botonAgregar {
   width: auto;
   height: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  bottom: 10px;
+  justify-content: start;
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
 }
 
 .botonKart {
@@ -107,6 +82,8 @@
   font-size: 12px;   
   font-weight: 600;
   line-height: 14px;
+  margin: 0;
+  margin-left: 10px;
   padding: 6px 12px;
   text-align: center;
   border: none;
@@ -114,7 +91,7 @@
   border-radius: 4px; 
   color: #fff;
   background-color: rgba(255, 0, 0, 0.714);
-  margin: 0;
+  box-shadow: 0px 0px 20px rgba(0,0,0,.4);
 }
 
 .icon {
@@ -125,40 +102,99 @@
 }
 
 .botonKart:hover {
-  color: rgba(255, 0, 0, 0.867);
-  background-color: transparent;
-  box-shadow: 0px 0px 20px rgba(0,0,0,.8);
+  background-color: rgba(189, 0, 0, 1);
 }
 
 .unidades {
   width: auto;
   height: auto;
-  margin: 0px;
-  margin-bottom: 15px;
+  margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: start;
 }
 
-.unidades label {
-  font-size: 14px;
-  font-weight: 600;
-  color: #222;
-}
 
 .unidades select {
   width: auto;
   height: auto;
   color: #222;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
   text-align: center;
-  margin: 0px;
-  margin-left: 5px;
-  padding: 0px 6px;
-  border-radius: 2px;
+  margin: 0;
+  padding: 6px;
+  border-radius: 4px;
   border: 1px solid #333;
   background-color: transparent;
 }
+
+.data {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+}
+
+.detalle {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0; 
+  color: #111;
+  font-style: italic;
+}
+
+.info {
+  width: 400px;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0;
+}
+
+
+.stock {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.stock span {
+  color: #111;
+}
+
+.precio {
+  color: green;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.backTienda {
+  font-size: 20px;
+  background-color: transparent;
+  color: #000;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -171,180 +207,201 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: start;
     justify-content: start;
+    align-items: start;
     margin: 0;
-    padding: 0;
-    padding-bottom: 50px;
+    padding: 0 12px;
+    padding-top: 120px;
     background-color: #fff;
   }
-
-  .cajaContainer {
-    width: 100vw;
-    height: auto;
-    padding-top: 20px;
+  
+  .loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  
+  .loader img {
+    width: 100%;
+    object-fit: scale-down;
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: .4px;
+    padding: 0;
+    margin: 0;
+    color: #333;
+  }
+  
   .caja {
     width: auto;
-    min-height: auto;
-    padding: 0 20px;
+    height: auto;
+    padding: 0;
     margin: 0;
-    margin-top: 60px;
+    margin-top: 12px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    border-radius: 0px;
-    box-sizing: border-box;
-    outline: none;
-    box-shadow: 0px 0px 0px transparent;
-    gap: 0px;
-  }
-  
-  .caja:hover { 
-    box-shadow: 0px 0px 60px transparent;
+    border: none;
   }
   
   .imagen {
-    width: 66%;
-    height: 30%;
-    padding: 0px;
-    margin: 0;
-    display: flex;  
-    align-items: none;
-    border-radius: none;
-    border: 0;
+    width: 88%;
+    height: 240px;
+    flex: 1;
+    background-color: rgb(190, 190, 190);
   }
   
   .imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+    width: auto;
+    height: 240px;
+    object-position: center;
+    filter: drop-shadow(0px 0px 20px #000);
   }
   
   .texto {
     width: auto;
-    height: auto;
+    height: 100%;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    padding: 10px;
-    margin: 0;
-    position: relative;
-  }
-  
-  .texto h6 {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 0; 
-  }
-  
-  .texto h2 {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: .4px;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 15px;
-  }
-
-  .corto {
-    width: 100%;
-    font-size: 14px;
-    font-weight: 600;
-    font-style: italic;
-    margin: 0px;
-    padding: 0;
-    padding-bottom: 5px;
-  }
-  
-  .texto p {
-    width: 100%;
-    font-size: 16px;
-    font-weight: 500;
-    font-style: italic;
-    margin: 0px;
+    padding:  16px 0;
   }
   
   .botonAgregar {
     width: auto;
     height: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px;
-    margin: 0px;
-    position: absolute;
-    bottom: -80px;
+    justify-content: start;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
   }
   
   .botonKart {
     width: auto;
     height: auto;   
-    font-size: 12px;   
+    font-size: 14px;   
     font-weight: 600;
-    line-height: 14px;
-    padding: 6px 12px;
+    line-height: 16px;
+    margin: 0;
+    margin-left: 10px;
+    padding: 8px 12px;
     text-align: center;
-    border: none;
-    box-shadow: 0px 0px 20px rgba(0,0,0,.1);
+    border: 1px solid #fff;
     border-radius: 4px; 
     color: #fff;
-    background-color: rgba(235, 8, 8, 0.867);
-    margin: 0;
-    margin-top: 10px;
-    text-shadow: 0px 0px 0px transparent;
+    background-color: rgba(255, 0, 0, 0.714);
+    box-shadow: 0px 0px 20px rgba(0,0,0,.4);
   }
   
   .icon {
-    font-size: 12px;
-    margin-right: 3px;
+    font-size: 14px;
+    margin-right: 5px;
     position: relative;
     top: 1px;
   }
   
   .botonKart:hover {
     background-color: rgba(255, 0, 0, 0.714);
-    color: white;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.4);
     
+
   }
   
   .unidades {
     width: auto;
     height: auto;
-    margin: 0px;
-    margin-bottom: 15px;
+    margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: start;
   }
   
-  .unidades label {
-    font-size: 14px;
-    font-weight: 600;
-    color: #222;
-  }
   
   .unidades select {
     width: auto;
     height: auto;
     color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
     text-align: center;
-    margin: 0px;
-    margin-left: 5px;
-    padding: 0px 6px;
-    border-radius: 2px;
+    margin: 0;
+    padding: 7px 6px;
+    border-radius: 4px;
     border: 1px solid #333;
     background-color: transparent;
+  }
+  
+  .data {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .detalle {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0; 
+    color: #222;
+    font-style: italic;
+  }
+  
+  .info {
+    width: auto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    font-style: italic;
+    margin: 0;
+  }
+  
+  
+  .stock {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    color: #444;
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+  }
+  
+  .stock span {
+    color: #000;
+  }
+  
+  .precio {
+    color: green;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 6px 0;
+    margin-bottom: 22px;
+  }
+  
+  .backTienda {
+    font-size: 18px;
+    background-color: transparent;
+    color: #000;
+    text-decoration: underline;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 18px;
   }
 
 }

@@ -51,6 +51,10 @@
       width: 100%;
       object-fit: scale-down;
     }
+
+    .header {
+      display: none;
+    }
   
 
 
@@ -74,19 +78,13 @@
 
     .container {
         width: auto;
-        min-height: auto;
-        background-color: #fff;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: start;
     }
 
-    .navPc {
-      display: none;
-    }
-    
-    
     .header {
       width: 100%;
           padding: 0;
@@ -176,6 +174,7 @@
             padding: 2px 0px;
             letter-spacing: .8px;
           }
+
 
         .cardsContainer {
           width: auto;

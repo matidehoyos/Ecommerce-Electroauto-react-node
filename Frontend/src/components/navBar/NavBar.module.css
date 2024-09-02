@@ -123,6 +123,13 @@
 }
 
 
+
+
+
+
+
+
+
 /* Estilos para dispositivos móviles ------------------------------- */
 
 @media only screen and (max-width: 680px) {
@@ -134,28 +141,12 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(to right , rgba(0,0,0,.2), rgba(0,0,0,0));
-    backdrop-filter: blur(5px);
+    background-image: linear-gradient(to right, rgba(22, 22, 255, 0.842),rgba(0, 0, 41, 0.842));
     position: fixed;
     top: 0px;
     z-index: 4000;
     box-shadow: none;
   }
-
-  .scrolled {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    background-image: linear-gradient(to right, rgba(22, 22, 255, 0.842),rgba(0, 0, 41, 0.842));
-    position: fixed;
-    top: 0;
-    z-index: 4000;
-    box-shadow: none;
-  }
-  
   
   .firstRow {
     width: auto;
@@ -164,14 +155,14 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 10px;
+    padding: 0px 10px;
     margin: 0;
     background: transparent;
   }
   
   .logo {
-    width: 20%;
-    height: auto;
+    width: 35%;
+    height: 50px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -181,9 +172,8 @@
   }
   
   .logo img {
-    width: 90%;
+    width: 100%;
     height: auto;
-    content: url("../../../public/logoMobile.png");
     animation: desplazamiento .4s ease-in-out 1;
     padding: 0;
     margin: 0;
@@ -312,5 +302,6 @@
     color: #e7ef00;
     background-color: transparent;
   }
+
 }
 
