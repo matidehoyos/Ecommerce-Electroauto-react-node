@@ -1,9 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import productosProvider from '../../../utils/provider/productosProvider';
 import style from './CreateProduct.module.css'
+import categoriasProvider from '../../../utils/provider/categoriasProvider';
 
 const CreateProducto = () => {
-  const category = [ 'Seleccione una categoria' , 'Iluminacion', 'Audio', 'seguridad', 'Accesorios'];
+  const [categorias, setCategorias] = useState(null);
+
+  const getCategorias = async () => {
+    try {
+      const categorias = await categoriasProvider.getCategorias();
+      if(categorias.length) {
+        setCategorias(categorias.data)
+      }} catch {
+        console.error('Error al obtener categorias: ' , message.rror)
+      }}
+
+  useEffect(() => {
+    getCategorias();
+  }, [])
 
   const [formData, setFormData] = useState({
     name: '',
@@ -76,7 +90,7 @@ const CreateProducto = () => {
           <label htmlFor="categoria">Categoría:</label>
           <select type="text" id="categoria" name="categoria" value={formData.categoria} onChange={handleChange} required >
             {
-               category.map((categoria, index) => (
+               categorias?.map((categoria, index) => (
                 <option key={index}>{categoria}</option>
                ))
             } 

@@ -298,7 +298,6 @@
     
     .container:hover {
         box-shadow: none;
-        border: inherit;
     }
     
     .imgContainer  {

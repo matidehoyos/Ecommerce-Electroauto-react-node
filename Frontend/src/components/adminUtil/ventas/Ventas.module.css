@@ -152,11 +152,14 @@
 
     .container {
         width: 100%;
-        min-height: calc(100vh - 300px);
+        min-height: auto;
+        height: auto;
         display: flex;
         align-items: start;
-        justify-content: center;
-        background-color: #fff;
+        justify-content: start;
+        padding: 0;
+        padding-bottom: 40px;
+        margin: 0;
     }
     
     .boxContainer {

@@ -24,12 +24,16 @@ const getReviews = require('../controllers/getReviews');
 const postReviews = require('../controllers/postReviews')
 const getPreferenceId = require('../controllers/getPreferenceId');
 const editarEnvio = require('../controllers/editarEnvio');
+const postCategoria = require('../controllers/postCategoria');
+const getCategorias = require('../controllers/getCategorias');
 
 
 const router = Router();
 
 router.post('/productos', postProducto);
 router.get('/productos', getProductos);
+router.post('/categorias', postCategoria);
+router.get('/categorias', getCategorias);
 router.post('/user', postUser);
 router.get('/productos/:id', getProductoById);
 router.delete('/productos/:productoId', deleteProducto);

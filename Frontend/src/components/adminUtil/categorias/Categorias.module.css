@@ -28,7 +28,7 @@
     text-align: center;
 }
 
-.tablaUsers {
+.tablaCategorias {
     width: 90%;
     height: auto;
     margin: 0px auto;
@@ -36,7 +36,7 @@
     background-color: #333;
 }
 
-.tablaUsers table {
+.tablaCategorias table {
     width: 100%;
     height: auto;
     margin: 0;
@@ -44,7 +44,7 @@
     background-color: #000;
 }
 
-.tablaUsers th h6 {
+.tablaCategorias th h6 {
     background-color: #000;
     color: #fff;
     font-size: 18px;
@@ -53,17 +53,17 @@
     margin: 0;
 }
 
-.tablaUsers tbody {
+.tablaCategorias tbody {
     background-color: #fff;
 }
 
-.tablaUsers tbody tr td {
+.tablaCategorias tbody tr td {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.tablaUsers td p {
+.tablaCategorias td p {
     width: auto;
     height: 100%;
     font-size: 16px;
@@ -75,7 +75,7 @@
     margin: 0;
 }
 
-.tablaUsers td h5 {
+.tablaCategorias td h5 {
     width: auto;
     height: auto;
     font-size: 16px;
@@ -87,35 +87,7 @@
     margin: 0;
 }
 
-.tablaUsers td img {
-    width: 30px;
-    height: auto;
-    border-radius: 10%;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #333;
-}
-
-.botonEditar {
-    width: auto;
-    height: auto;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 0;
-    color: blue;
-    background-color: transparent;
-}
-
-.vermas {
-    background-color: transparent;
-    color: #0034c5;
-    font-weight: 700;
-}
-
-.noUsers {
+.noCategorias {
     width: 100%;
     height: auto;
     font-size: 20px;
@@ -125,34 +97,11 @@
     color: #222;
 }
 
-.modal::-webkit-scrollbar {
-    display: none;
-}
 
-.cierre {
-    width: 100%;
-    padding: 0;
-    text-align: right;
-    background: transparent; 
-    font-weight: 600; 
-    font-size: 24px;
-    color: rgb(0, 50, 131);
-     ;
-}
 
-.pModal {
-    font-size: 20px;
-    font-weight: 700;
-    font-style: italic;
-    color: rgb(0, 0, 0);
-}
 
-.pModal span {
-    font-weight: 500;
-    font-size: 18px;
-    color: #111;
-    padding-left: 6px;
-}
+
+
 
 
 
@@ -193,7 +142,7 @@
     }
     
     
-    .tablaUsers {
+    .tablaCategorias {
         width: 90%;
         height: auto;
         margin: 0px auto;
@@ -201,7 +150,7 @@
         background-color: #333;
     }
     
-    .tablaUsers table {
+    .tablaCategorias table {
         width: 100%;
         height: auto;
         margin: 0;
@@ -209,7 +158,7 @@
         background-color: #000;
     }
     
-    .tablaUsers th h6 {
+    .tablaCategorias th h6 {
         background-color: #000;
         color: #fff;
         font-size: 16px;
@@ -218,17 +167,17 @@
         margin: 0;
     }
     
-    .tablaUsers tbody {
+    .tablaCategorias tbody {
         background-color: #fff;
     }
     
-    .tablaUsers tbody tr td {
+    .tablaCategorias tbody tr td {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
     }
     
-    .tablaUsers td p {
+    .tablaCategorias td p {
         width: auto;
         height: 100%;
         font-size: 16px;
@@ -240,7 +189,7 @@
         margin: 0;
     }
     
-    .tablaUsers td h5 {
+    .tablaCategorias td h5 {
         width: auto;
         height: auto;
         font-size: 16px;
@@ -251,38 +200,8 @@
         padding: 5px 0px;
         margin: 0;
     }
-    
-    .tablaUsers td img {
-        width: 20px;
-        height: auto;
-        border-radius: 50%;
-        padding: 0;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-    }
-    
-    .vermas {
-        font-size: 16px;
-        font-weight: 700;
-        background-color: transparent;
-        color: rgb(0, 54, 190);
-        text-align: center;
-        font-style: italic;
-    }
 
-    .botonEditar {
-        font-size: 16px;
-        font-weight: 7000;
-        background-color: transparent;
-        color: rgb(0, 54, 190);
-        text-align: center;
-        font-style: italic;
-    }
-    
-    .noUsers {
+    .noCategorias {
         width: 100%;
         height: auto;
         font-size: 20px;
@@ -293,30 +212,4 @@
         font-style: italic;
     }
 
-    .cierre {
-        width: 100%;
-        padding: 0;
-        text-align: right;
-        background: transparent; 
-        font-weight: 600; 
-        font-size: 24px;
-        color: rgb(0, 50, 131);
-         ;
-    }
-    
-    .pModal {
-        font-size: 20px;
-        font-weight: 700;
-        font-style: italic;
-        color: rgb(0, 0, 0);
-    }
-    
-    .pModal span {
-        font-weight: 500;
-        font-size: 18px;
-        color: #111;
-        padding-left: 6px;
-    }
-
 }
-

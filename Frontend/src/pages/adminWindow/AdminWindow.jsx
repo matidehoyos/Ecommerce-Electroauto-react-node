@@ -1,5 +1,5 @@
 import style from './AdminWindow.module.css'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import userProvider from '../../utils/provider/userProvider'
 import NotFound from '../notFound/NotFound'
 import NavBarAdmin from '../../components/adminUtil/navBarAdmin/NavBarAdmin'
@@ -14,7 +14,9 @@ import productosProvider from '../../utils/provider/productosProvider'
 import mensajesProvider from '../../utils/provider/mensajesProvider'
 import preferenceProvider from '../../utils/provider/preferenceProvider'
 import Ventas from '../../components/adminUtil/ventas/Ventas'
-import ProductoDetail from '../../components/productoDetail/ProductoDetail'
+import CreateCategory from '../../components/adminUtil/createCategory/CreateCategory'
+import categoriasProvider from '../../utils/provider/categoriasProvider'
+import Categorias from '../../components/adminUtil/categorias/Categorias'
 
 const AdminWindow = () => {
     const dispatch = useDispatch();
@@ -23,6 +25,7 @@ const AdminWindow = () => {
     const [users, setUsers] = useState([]);
     const [mensajes, setMensajes] = useState([]);
     const [ventas, setVentas] = useState([]); 
+    const [categorias, setCategorias] = useState([]); 
 
     const bringData = async () => {
         const productos = await productosProvider.getProductos();
@@ -32,6 +35,8 @@ const AdminWindow = () => {
         setUsers(users);
         const mensajes = await mensajesProvider.getMensajes();
         setMensajes(mensajes.data);
+        const categorias = await categoriasProvider.getCategorias();
+        setCategorias(categorias.data);
         const preferences = await preferenceProvider.getPreferences();
         const ventas = preferences.data.filter((preference) => {
             return preference.infoMp.date_approved;
@@ -100,6 +105,16 @@ const AdminWindow = () => {
                                     </Link>
                                     : <p>"No hay ventas aun."</p>
                                 }
+                                { 
+                                    categorias ?
+                                    <Link to="/admin/categorias">
+                                        <div className={style.cardContainer}>
+                                            <h3>Categorias</h3>
+                                            <p>{categorias.length}</p>
+                                        </div> 
+                                    </Link>
+                                    : <p>"No hay categorias aun."</p>
+                                }
                         </div>
 
                         <div className={style.caja}>
@@ -109,6 +124,7 @@ const AdminWindow = () => {
                                     <Route path="users" element={<Usuarios />} />
                                     <Route path="mensajes" element={<Mensajes setMensaje={setMensajes}/>} />
                                     <Route path="ventas" element={<Ventas />} />
+                                    <Route path="createCategoria" element={<CreateCategory />} />
                             </Routes>
                         </div>
                      </div>

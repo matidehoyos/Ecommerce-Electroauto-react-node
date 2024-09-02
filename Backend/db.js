@@ -45,7 +45,7 @@ let capsEntries = entries.map((entry) => [
 sequelize.models = Object.fromEntries(capsEntries);
 
 
-const { Productos, User, Carrito, Mensajes, Preference, Reviews } = sequelize.models;
+const { Productos, Categorias, User, Carrito, Mensajes, Preference, Reviews } = sequelize.models;
 
 
 (async () => {

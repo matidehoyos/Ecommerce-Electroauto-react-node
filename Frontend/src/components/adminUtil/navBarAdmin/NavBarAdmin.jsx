@@ -36,7 +36,7 @@ const NavBarAdmin = () => {
       
         <div className={style.logo}>
           <Link to="/admin">
-            <h3>ELECTROAUTO</h3> 
+            <h3>ADMINISTRADOR</h3> 
            </Link>
         </div>
       
@@ -47,13 +47,16 @@ const NavBarAdmin = () => {
               <Link to="/admin/mensajes">Mensajes</Link>
             </li>
             <li>
-              <Link to="/admin/users">Todos los usuarios</Link>
+              <Link to="/admin/users">Usuarios</Link>
             </li>
             <li>
-              <Link to="/admin/productosAdmin">Todos los productos</Link>
+              <Link to="/admin/productosAdmin">Productos</Link>
             </li>
             <li>
-              <Link to="/admin">Crear nuevo producto</Link>
+              <Link to="/admin">Crear producto</Link>
+            </li>
+            <li>
+              <Link to="/admin/createCategoria">Crear categoria</Link>
             </li>
             <li>
               <Link to="/admin/ventas">ventas</Link>
