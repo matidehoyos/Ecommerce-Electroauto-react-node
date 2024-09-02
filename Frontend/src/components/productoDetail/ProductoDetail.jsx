@@ -54,7 +54,7 @@ export default function ProductoDetail() {
     <div className={style.container}>
       { loader ? (
         <div className={style.loader}>
-          <img src="ELECT.png" alt="logo" />
+          <img src="../../public/ELECT.png" alt="logo" />
         </div>
       ) : (
         <div>
