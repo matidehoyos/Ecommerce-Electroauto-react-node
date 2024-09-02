@@ -29,6 +29,7 @@ const HeaderCarrusel = () => {
 
   return (
       <div className={style.containerCarrusel}>
+        <h3>CREE LED</h3>
         <Carousel {...carouselSettings} autoPlay={true} interval={500} infiniteLoop={true} className={style.carouselStyles} >
           {
             image.map((imagen, index) => (
