@@ -5,12 +5,13 @@ import LoginButton from "../loginButton/LoginButton";
 import SearchBar from "../searchBar/SearchBar";
 import  UserAccountMobile from '../userAccountMobile/UserAccountMobile';
 import PreNav from '../preNav/PreNav';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { HiMenu, HiX } from 'react-icons/hi';
 
 
 const NavBar = () => {
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 680);
+  const [isVisible, setIsVisible] = useState(false);
   let user = JSON.parse(localStorage.getItem('user'));
 
   useEffect(() => {
@@ -23,7 +24,6 @@ const NavBar = () => {
     };
   }, []);
 
-  const [isVisible, setIsVisible] = useState(false);
 
   const handleShowMenu = () => {
     setIsVisible(!isVisible);
@@ -75,7 +75,7 @@ const NavBar = () => {
              {user?.name ? <UserAccountMobile /> : null}
             </div>   
             <div className={style.hamburgContainer}>
-              <button className={style.menuButton} onClick={handleShowMenu}> {isVisible ? <IoIosArrowBack /> : <IoIosArrowForward />}</button>
+              <button className={style.menuButton} onClick={handleShowMenu}> {isVisible ? <HiX /> : <HiMenu />}</button>
             </div>
       </div>
 
