@@ -4,50 +4,47 @@ import { Link, useLocation } from 'react-router-dom'
 import style from './PostPago.module.css'
 import { FcApproval } from "react-icons/fc";
 import { FcHighPriority } from "react-icons/fc";
-import NavBar from '../../components/navBar/NavBar';
 
 export default function PostPago() {
-    const [paymentInfo, setPaymentInfo] = useState(null)
-    const location = useLocation()
-    const params = new URLSearchParams(location.search)
-    const payment_id = params.get('payment_id')
-    const preference_id = params.get('preference_id')
+    const [paymentInfo, setPaymentInfo] = useState(null);
+    const location = useLocation();
+    const params = new URLSearchParams(location.search);
+    const payment_id = params.get('payment_id');
+    const preference_id = params.get('preference_id');
     
     const obj = {
         payment_id,
         preference_id
-    }
-
+    };
 
     useEffect(() => {
         const searchPay = async () => {
             try {
-                const response = await axios('/successpayment', {params: obj});
-                const search = await axios(`/getpreference/id?id=${response.data.id}`);
+                const response = await axios.get('/successpayment', { params: obj });
+                const search = await axios.get(`/getpreference/id?id=${response.data.id}`);
                 if (search.status !== 200) {
                     throw new Error(`Error: Received status code ${search.status}`);
                 }
                 setPaymentInfo(search.data);
             } catch (error) {
-                console.error(error);
+                console.error('el error es:', error);
             }
-        }
+        };
 
         localStorage.removeItem('carrito');
         searchPay();
-    }, [])
+    }, [obj]);
 
 
     return (
-        <div>
+        <>
             {
                 !paymentInfo
                     ? 
-                    "Hola"
+                    <p>Errores al recibir los datos</p>
                     :
-                    (<div className={style.container}>
+                    <div className={style.container}>
                         <div className={style.confirmation}>
-                            <NavBar />
                             <div className={style.status}>
                                 <h3>{paymentInfo?.infoMp.status === 'approved' ? <FcApproval className={style.iconStatus} /> : <FcHighPriority className={style.iconStatus} />}{paymentInfo?.infoMp.status}</h3>
                             </div>
@@ -81,8 +78,8 @@ export default function PostPago() {
                                     </Link>
                                 </div>
                         </div>
-                    </div>)
+                    </div>
     }
-        </div>
+        </>
     )
 }

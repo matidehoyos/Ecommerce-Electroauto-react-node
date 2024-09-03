@@ -16,7 +16,8 @@ import ScrollToTop from './components/ScrollToTop'
 import Kart from './components/kart/Kart'
 import NavBar from './components/navBar/NavBar'
 
- axios.defaults.baseURL = 'https://electrocar-production.up.railway.app'
+ //axios.defaults.baseURL = 'https://electrocar-production.up.railway.app'
+ axios.defaults.baseURL = 'http://localhost:3000'
 
 
 function App() {
