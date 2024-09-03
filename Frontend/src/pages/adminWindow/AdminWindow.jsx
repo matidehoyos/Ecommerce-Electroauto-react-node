@@ -125,6 +125,7 @@ const AdminWindow = () => {
                                     <Route path="mensajes" element={<Mensajes setMensaje={setMensajes}/>} />
                                     <Route path="ventas" element={<Ventas />} />
                                     <Route path="createCategoria" element={<CreateCategory />} />
+                                    <Route path="categorias" element={<Categorias />} />
                             </Routes>
                         </div>
                      </div>
