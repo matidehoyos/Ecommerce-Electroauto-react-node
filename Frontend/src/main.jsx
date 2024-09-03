@@ -13,11 +13,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
      <Provider store={store}>
         <BrowserRouter>
          <Auth0Provider
-        //domain="dev-z6lo4ul5mu4ko04y.us.auth0.com"
-        //clientId='MDtdDFHP3K72BP3pfQ9J80VLfcI53PJN'
-
         domain="dev-z6lo4ul5mu4ko04y.us.auth0.com"
-        clientId="Y1UxEwGkfcGfgvVbqV3HqmOctsemV3Nc"
+        clientId='MDtdDFHP3K72BP3pfQ9J80VLfcI53PJN'
+
+        //domain="dev-z6lo4ul5mu4ko04y.us.auth0.com"
+        //clientId="Y1UxEwGkfcGfgvVbqV3HqmOctsemV3Nc"
             authorizationParams={{
               redirect_uri: window.location.origin
             }}>
