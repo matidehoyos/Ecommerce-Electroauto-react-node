@@ -1,36 +1,33 @@
-
-
 .kartButton {
     width: auto;
     height: auto;
     font-size: 18px;
-    font-weight: 700;
-    color: #000;
+    font-weight: 600;
+    color: #111;
     border-radius: 4px;
-    border: 1px solid #000;
+    border: 1px solid #333;
     background-color: #fff;
     padding: 8px 10px;
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 4000;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
     line-height: 20px;
     transition: all .5s ease;
   }
-
+  
   .kartButton:hover {
-    background-color: #000;
-    border: 1px solid #fff;
-    color: #fff;
+    transform: scale(1.1);
+    border: 1px solid #333;
+
   }
 
   .prod {
-    color: #000;
+    color: #222;
   }
 
   .kartButton:hover .prod {
-    color: #fff;
+    color: #333;
   }
 
   .iconC {

@@ -1,12 +1,11 @@
+import style from "./ProductCard.module.css";
 import { Link } from "react-router-dom";
-import style from "./PopularesCard.module.css";
 
-const PopularesCard = ({ producto }) => {
+const ProductCard = ({ producto }) => {
   const nombreProducto = producto?.name.toUpperCase();
 
   return (
-    <div className={style.container}>
-      <Link to={{ pathname: `/producto/${producto.id}`}}>
+      <Link to={{ pathname: `/producto/${producto.id}`}} className={style.container}>
         <div className={style.imgContainer}>
           <img src={producto.imagen} alt={producto.name} />
         </div>
@@ -14,9 +13,8 @@ const PopularesCard = ({ producto }) => {
         <p className={style.detalle}>{producto.detalle}</p>
         <p className={style.precio}><span className={style.precioNumero}>${producto.precio}</span></p>
       </Link>
-    </div>
   );
 };
 
-export default PopularesCard;
+export default ProductCard;
 

@@ -1,9 +1,6 @@
 import style from "./PreNav.module.css";
 
-
-
 const PreNav = () => {
-
 
   return (
     <div className={style.container}>

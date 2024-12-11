@@ -5,43 +5,9 @@ import { FaInstagram } from 'react-icons/fa';
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaArrowUp } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
-import React, { useState } from 'react';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState(null);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          to: email,
-          subject: 'Subject of email',
-          html: 'HTML content of email',
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-
-      const responseData = await response.json();
-    } catch (error) {
-      setError(error.message);
-    }
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
 
   return (
     <div className={style.containerFooter}>
@@ -74,13 +40,11 @@ const Footer = () => {
         </div>
 
         <div className={style.footerNewLetter}>
-            <form onSubmit={handleSubmit}>
+            <form>
               <label htmlFor="">Recibi nuestras novedades</label>
               <input
                 type="email"
                 placeholder="Ingresa aqui tu email..."
-                value={email}
-                onChange={handleEmailChange}
               />
               <button type="submit">Suscribite!</button>
             </form>

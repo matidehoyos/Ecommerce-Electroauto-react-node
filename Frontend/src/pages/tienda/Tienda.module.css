@@ -1,11 +1,11 @@
 .container {
     width: auto;
     min-height: 100vh;
-    background-color: #fff;    
-    padding-bottom: 0px;
+    background-color: #eee;    
     display: flex;
     flex-direction: column;
     padding: 0;
+    padding-top: 180px;
     margin: 0;
 }
 
@@ -16,14 +16,13 @@
 .cardsContainer {
         width: auto;
         height: auto;
-        padding: 80px 100px;
+        padding: 0 30px;
         margin: 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: stretch;
-        background: #fff;
-        gap: 40px 20px;
+        gap: 25px 15px;
     }
 
     .header {

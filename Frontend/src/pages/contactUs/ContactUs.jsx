@@ -1,5 +1,5 @@
-import Contact from "../../components/contact/Contact";
 import style from './ContactUs.module.css'
+import Contact from "../../components/contact/Contact";
 
 
 const ContactUs = () => {

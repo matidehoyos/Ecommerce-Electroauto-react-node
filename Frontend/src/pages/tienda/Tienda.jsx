@@ -1,16 +1,15 @@
-import { useDispatch } from 'react-redux';
 import style from './Tienda.module.css';
+import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router';
 import productosProvider from '../../utils/provider/productosProvider';
 import { loadProductos } from '../../redux/actions';
-import { useEffect, useState } from 'react';
-import ProductoTiendaCard from '../../components/productoTiendaCard/ProductoTiendaCard';
 import SearchBar from '../../components/searchBar/SearchBar';
-import { Navigate, useNavigate } from 'react-router';
+import ProductCard from '../../components/productCard/ProductCard';
 
 const Tienda = () => {
   const Navigate = useNavigate();
   const dispatch = useDispatch();
-  const [loader, setLoader] = useState(true);
   const [productos, setProductos] = useState([]);
 
   const bringData = async () => {
@@ -21,7 +20,6 @@ const Tienda = () => {
 
   useEffect(() => {
     bringData();
-    setLoader(false);
   }, []);
 
   const handleFilter = (e) => {
@@ -46,7 +44,7 @@ const Tienda = () => {
       <div className={style.cardsContainer}>
         {productos.length ? (
           productos.map((producto, index) => (
-              <ProductoTiendaCard key={index} producto={producto} />
+              <ProductCard key={index} producto={producto} />
           ))
         ) : (
           <div className={style.loader}>

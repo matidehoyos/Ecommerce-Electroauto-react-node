@@ -1,25 +1,28 @@
 .kart {
     width: auto;
-    min-height: calc(100vh - 160px);
-    background-color: #ffffff;
+    min-height: calc(100vh - 170px);
+    background-color: #fff;
     margin: 0;
     padding: 0;
+    padding-top: 170px;
 }
 
     .tituCart {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 700;
        text-align: center;
-       color: rgb(28, 28, 28);
+       color: #333;
        margin: 0;
-       padding: 40px 0;
+       margin-bottom: 30px;
+       padding: 0;
     }
 
     .table {
       width: 70%;
       margin: 0 auto;
       border-collapse: collapse;
-      border: 1px solid #c0c0c0;
+      border-radius: 6px;
+      overflow: hidden;
   }
 
   .hprod {
@@ -97,9 +100,13 @@
     padding: 6px 12px;
     font-size: 16px;
     font-weight: 500;
-    background-color: rgb(106, 106, 255);
+    background-color: rgb(32, 32, 255);
     color: #fff;
     margin: 10px;
+    }
+
+    .botonProcesar:hover {
+      background-color: rgb(63, 63, 255);
     }
 
   .formDataEnvio {

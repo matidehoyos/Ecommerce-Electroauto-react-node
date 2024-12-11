@@ -1,12 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
 import style from "./ProductoDetail.module.css";
+import { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import productosProvider from "../../utils/provider/productosProvider";
 import { FaShoppingCart } from "react-icons/fa";
 import CarritoContext from "../carritoContext/CarritoContext";
 
 export default function ProductoDetail() { 
-  const { carrito, setCarrito } = useContext(CarritoContext);
+  const { setCarrito } = useContext(CarritoContext);
   const { id } = useParams();
   const [loader, setLoader] = useState(true);
   const [product, setProduct] = useState();
@@ -50,20 +50,23 @@ export default function ProductoDetail() {
     setCarrito(carrito);
   }
 
+
+  console.log(product)
+
   return (
     <div className={style.container}>
       { loader ? (
         <div className={style.loader}>
         </div>
       ) : (
-        <div>
-          <h2 className={style.name}>{product?.name.toUpperCase()}</h2>
+        <div className={style.productBox}>
+          <div className={style.imagen}>
+            <img src={product?.imagen} alt={product?.name} />
+          </div>
           <div className={style.caja}>
-            <div className={style.imagen}>
-              <img src={product?.imagen} alt={product?.name} />
-            </div>
             <div className={style.texto}>
               <div className={style.data}>
+              <h2 className={style.name}>{product?.name.toUpperCase()}</h2>
                 <p className={style.detalle}>{product?.detalle}</p>
                 <p className={style.info}>{product?.informacion}</p>
                 <p className={style.stock}>Stock disponible: <span>{product?.cantidad}</span> unidades.</p>
@@ -85,11 +88,6 @@ export default function ProductoDetail() {
               </div>  
             </div>
           </div>
-          <Link to='/tienda'>
-            <button className={style.backTienda}>
-              Volver a la tienda
-            </button>
-          </Link>
         </div>
       )}
     </div>

@@ -1,7 +1,6 @@
-import React from 'react';
+import style from "./ReviewCard.module.css";
 import { FaStarHalfAlt } from 'react-icons/fa';
 import { GoStarFill } from "react-icons/go";
-import style from "./ReviewCard.module.css";
 
 const ReviewCard = ({ review }) => {
 

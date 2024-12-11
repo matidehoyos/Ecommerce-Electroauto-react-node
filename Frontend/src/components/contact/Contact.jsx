@@ -1,9 +1,7 @@
-import { FaWhatsapp } from "react-icons/fa";
-import mensajesProvider from "../../utils/provider/mensajesProvider";
-import NavBar from "../navBar/NavBar";
-import PreNav from "../preNav/PreNav";
 import style from "./Contact.module.css";
 import { useState } from "react";
+import mensajesProvider from "../../utils/provider/mensajesProvider";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

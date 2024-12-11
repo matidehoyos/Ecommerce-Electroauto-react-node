@@ -1,43 +1,40 @@
 import style from './Home.module.css'
-import { useDispatch } from 'react-redux';
-import productosProvider from '../../utils/provider/productosProvider';
-import NavBar from '../../components/navBar/NavBar';
-import { loadProductos } from '../../redux/actions';
-import { useEffect, useState } from 'react';
-import Header from '../../components/header/Header';
-import AboutUs from '../../components/aboutUs/AboutUs';
-import SubHeader from '../../components/subHeader/SubHeader';
-import Footer from '../../components/footer/Footer';
-import Review from '../../components/review/Review';
-import InfoEnvios from '../../components/infoEnvios/InfoEnvios';
-import BotonFlotanteCart from '../../components/botonFlotanteCart/BotonFlotanteCart';
+import { useEffect } from 'react';
 import { useLocation } from 'react-router';
-import HeaderCarrusel from '../../components/headerCarrusel/HeaderCarrusel';
+import { useDispatch } from 'react-redux';
+import { loadProductos } from '../../redux/actions';
+import productosProvider from '../../utils/provider/productosProvider';
+import Header from '../../components/header/Header';
+import ProductsHome from '../../components/productsHome/ProductsHome';
+import Review from '../../components/review/Review';
+import LedCarrusel from '../../components/ledCarrusel/LedCarrusel';
+import InfoEnvios from '../../components/infoEnvios/InfoEnvios';
+import AboutUs from '../../components/aboutUs/AboutUs';
+import Footer from '../../components/footer/Footer';
+import BotonFlotanteCart from '../../components/botonFlotanteCart/BotonFlotanteCart';
 
 
 const Home = () => {
     const location = useLocation();
     const dispatch = useDispatch();
-    const [messages, setMessages] = useState([]);
-    const [reviews, setReviews] = useState([]);
 
-    const bringData = async () => {
+    const getData = async () => {
         const response = await productosProvider.getProductos();
         dispatch(loadProductos(response.data));
     }
 
     useEffect(() => {
-        bringData();
+        getData();
     }, []); 
 
     return(
         <div className={style.container}>
             {location.pathname !== '/admin' && <BotonFlotanteCart />}
            <Header />
-           <SubHeader />
+           <ProductsHome />
            <InfoEnvios />
-           <Review reviews={reviews} mensajes={messages} />
-           <HeaderCarrusel />
+           <Review />
+           <LedCarrusel />
            <AboutUs />
            <Footer />
         </div>

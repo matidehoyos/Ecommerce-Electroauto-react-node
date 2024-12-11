@@ -1,13 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { FaTrashAlt } from 'react-icons/fa';
-import CarritoContext from '../../components/carritoContext/CarritoContext';
 import style from './Kart.module.css';
+import { useContext, useEffect, useState } from 'react';
+import CarritoContext from '../../components/carritoContext/CarritoContext';
 import { Wallet, initMercadoPago } from '@mercadopago/sdk-react';
 import preferenceProvider from '../../utils/provider/preferenceProvider';
 import LoginButton from '../loginButton/LoginButton';
 import FormularioEnvio from '../formularioEnvio/FormularioEnvio';
-import NavBar from '../navBar/NavBar';
-import SearchBar from '../searchBar/SearchBar';
+import { FaTrashAlt } from 'react-icons/fa';
 
 const Kart = () => {
     const { carrito, setCarrito } = useContext(CarritoContext);
@@ -26,7 +24,7 @@ const Kart = () => {
         observaciones: ''
     });
 
-    initMercadoPago('TEST-f3c67e82-99f3-485b-9002-d216c9a4f7db', { locale: 'es-AR' });
+    initMercadoPago(import.meta.env.VITE_MP_USER, { locale: 'es-AR' });
 
     useEffect(() => {
         const userLocalStorage = JSON.parse(localStorage.getItem('user')) || [];
@@ -77,12 +75,7 @@ const Kart = () => {
             console.error(error);
         }
     };
-
-    const handleFilter = (e) => {
-        e.preventDefault();
-        navigate(`/${e.target.value}`);
-      };
-
+    
       const agruparProductos = (carrito) => {
         const productosAgrupados = carrito.reduce((acc, producto) => {
             const existingProduct = acc.find(item => item.id === producto.id);

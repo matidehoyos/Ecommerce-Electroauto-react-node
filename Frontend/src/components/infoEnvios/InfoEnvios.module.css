@@ -3,7 +3,7 @@
     height: auto;
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+    background-image: linear-gradient(to right , rgb(0, 0, 231),  #000640);
 }
 
 .text {
@@ -12,13 +12,13 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding: 80px 0px;
+    padding: 40px 0px;
     margin: 0;
 }
 
 .text p {
     font-size: 90px;
-    color: #333;
+    color: #aaa;
     margin: 0;
     padding: 0;
     display: flex;
@@ -40,7 +40,7 @@
     width: 100%;
     font-size: 42px;
     font-weight: 800;
-    color: #333;
+    color: #aaa;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -52,7 +52,7 @@
     width: 100%;
     font-size: 34px;
     font-weight: 500;
-    color: #333;
+    color: #aaa;
     text-align: left;
     margin: 0;
     padding: 0px;

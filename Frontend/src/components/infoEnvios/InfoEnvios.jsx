@@ -1,6 +1,5 @@
-import HeaderCarrusel from '../headerCarrusel/HeaderCarrusel';
-import { FaTruck } from 'react-icons/fa';
 import style from './InfoEnvios.module.css'
+import { FaTruck } from 'react-icons/fa';
 
 const InfoEnvios = () => {
 

@@ -1,26 +1,21 @@
 .container {
-    background-color: #efefef;
-    width: auto;
-    height: auto;
-    padding: 80px 0px;
+    padding: 60px 0px;
     display: flex;
     flex-direction: column;
+    background-color: #eee;
 }
 
 .titulo {
     width: 100%;
-    height: auto;
 }
 
 .titulo h4 {
-    width: 100%;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     padding: 0;
-    font-size: 24px;
-    font-weight: 600;
-    font-style: italic;
-    color: #111;
+    font-size: 20px;
+    font-weight:7600;
+    color: #333;
     text-align: center;
 }
 
@@ -28,12 +23,12 @@
     width: auto;
     height: auto;
     padding: 0;
-    margin: 50px 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    gap: 20px;
+    gap: 24px;
 }
 
 

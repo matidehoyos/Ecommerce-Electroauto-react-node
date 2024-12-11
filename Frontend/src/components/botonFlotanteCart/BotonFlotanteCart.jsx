@@ -1,12 +1,11 @@
+import style from './BotonFlotanteCart.module.css';
 import React, { useContext } from 'react';
+import CarritoContext from '../../components/carritoContext/CarritoContext';
 import { Link } from 'react-router-dom';
 import { IoCartOutline } from 'react-icons/io5';
-import CarritoContext from '../../components/carritoContext/CarritoContext';
-import style from './BotonFlotanteCart.module.css';
 
 const BotonFlotanteCart = () => {
     const { carrito } = useContext(CarritoContext);
-    const total = carrito.reduce((total, producto) => total + producto.unidades * producto.precio, 0);
 
     return (
         <div className={style.modalCarrito}>

@@ -1,42 +1,29 @@
 .container {
-    width: 100vw;
-    height: 460px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    background-image: url('https://jspolarizados.com.ar/wp-content/uploads/2023/06/cree-led-para-auto.jpg');
-    background-size: cover;
-    background-position: center;
-    overflow-x: hidden;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  overflow-x: hidden;
+  background-image: linear-gradient(to right , rgb(0, 0, 231),  #000640);
 }
-
-.container::-webkit-scrollbar {
-  display: none;
-}
-
-  .div {
-    margin: 0;
-    height: 460px;
-    width: 100%;
-    background-color: rgba(0, 0, 255, 0.238);
-    position: absolute;
-  }
 
 .texto {
     width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: auto 0;
-    margin-left: 160px;
+    height: auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start; 
+    align-items: end; 
     position: relative;
     white-space: nowrap;
-    animation: desplazamiento 2.2s ease-in-out 1;
+    animation: desplazamiento 1s ease-in-out 1;
 }
 
 @keyframes desplazamiento {
@@ -44,155 +31,62 @@
       transform: translateX(-100vw);
     }
     100% {
-      transform: translateX(0vw);
+      transform: translateX(0);
     }
   }
 
   .somos {
-    width: 100%;
+    width: 530px;
     font-size: 20px;
     font-style: italic;
     text-align: left;
-    padding: 0;
-    margin: 0;
-    color: rgba(256,256,256,1);
+    color: #fff;
   }
-
-.texto h1 {
-    width: 100%;
-    height: auto;
+  
+  .texto h1 {
+    font-size: 68px;
+    font-weight: 700;
     text-align: left;
-    padding: 0;
+    background-image: linear-gradient(to right , #e7ef00, #fdffca);
+    background-clip: text;
+    color: transparent;
+    display: inline;
     margin: 0;
+    padding: 0;
 }
-
-.texto h1 span {
-  font-size: 84px;
-  font-weight: 600;
-  letter-spacing: -1px;
-  background-image: linear-gradient(to right , #e7ef00, #fdffca  );
-  background-clip: text;
-  color: transparent;
-  display: inline;
-  opacity: 0;
-  animation: aparecer .3s forwards;
-  animation-delay: calc(0.2s * var(--i));
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-}
-
-@keyframes aparecer {
-  to {opacity: 1;}
-}
-
 
 .texto h5 {
-    width: 100%;
+    width: auto;
     height: auto;
     margin: 0;
     padding: 0;
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
     font-style: normal;
     letter-spacing: .3px;
     margin: 0;
     padding: 0;
-    padding-left: 30px;
     text-align: left;
     color: #fff;
   }
 
-.envios {
-    width: 400px;
-    height: auto;
-    margin: 16px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
-    padding-left: 80px;
-    
-}
-
-.envios h6 {
-    width: 400px;
-    height: auto;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to right , #e7ef00cf, #fcffa9b9);
-    color: rgb(0, 0, 0);
-    border-radius: 6px;
-}
-
-.carritoModal { 
-  width: 80%;
-  height: calc(100vh - 120px);
-  margin: 40px auto;
-  padding: 20px;
-  background-color: rgba(256,256,256,.9);
-  border-radius: 15px;
-  outline: 2px solid #333;
-  z-index: 3000;
-}
-
-.cerrarContainer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: end;
-}
-
-.cerrarModal {
-  font-size: 24px;
-  font-weight: 500;
-  padding: 2px 8px;
-  background-color: #222;
-  color: red;
-}
-
-.cerrarModal {
-  font-size: 24px;
-  font-weight: 500;
-  padding: 2px 8px;
-  background-color: #000;
-  color: red;
-}
-
-.kartButton {
-  background-color: transparent;
-  width: 0;
-  height: 0;
-}
-
-.kartIcon {
-  width: auto;
-  height: auto;
-  font-size: 32px;
-  font-weight: 100;
-  color: yellow;
-  border-radius: 50%;
-  border: 1px solid yellow;
-  background-color: rgba(0, 0, 0, .8);
-  padding: 14px;
-  position: fixed;
-  bottom: 40px;
-  right: 20px;
-  z-index: 4000;
-}
-
-.mayor { display: none;}
+.landing { display: none;}
 .visita {display: none;}
-.landing {
-  display: none;
+
+
+.carrusel {
+  width: 100%;
 }
 
-
-
-
+.carrusel img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  background-color: #ffffff30;
+  border-radius: 8px;
+  padding: 10px 30px;
+  border: 1px solid #aaaaaa50;
+}
 
 
 
@@ -267,15 +161,8 @@
   position: relative;
   top: 20px;
 }
-
-.texto h1 {
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    }
   
-  .texto h1 span {
+  .texto h1 {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: -1px;

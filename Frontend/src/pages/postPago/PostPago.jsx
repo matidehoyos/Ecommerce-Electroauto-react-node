@@ -1,7 +1,7 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
 import style from './PostPago.module.css'
+import { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import axios from 'axios'
 import { FcApproval } from "react-icons/fc";
 import { FcHighPriority } from "react-icons/fc";
 

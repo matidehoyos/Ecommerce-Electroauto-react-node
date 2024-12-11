@@ -1,7 +1,7 @@
+import style from './Productos.module.css'
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import productosProvider from "../../utils/provider/productosProvider";
-import style from './Productos.module.css'
 import NavBar from "../navBar/NavBar";
 import SearchBar from "../searchBar/SearchBar";
 import ProductoTiendaCard from "../productoTiendaCard/ProductoTiendaCard";
@@ -30,10 +30,6 @@ export default function Productos() {
         bringData();
         setLoader(false)
     }, [nombre]);
-
-    const handleClick = () => {
-        navigate("/tienda");
-    }
 
     const handleFilter = (e) => {
         e.preventDefault();

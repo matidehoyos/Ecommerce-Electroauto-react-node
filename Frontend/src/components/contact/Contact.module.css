@@ -1,11 +1,13 @@
 .container {
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh);
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+    align-items: center;
+    justify-content: center;
+    background: #eee;
 }
 
 .subcontainer {
@@ -20,25 +22,24 @@
     height: auto;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .titulo h3 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
-    color: #111;
+    color: #333;
 }
 
 .mediosContacto {
     width: 100%;
     height: auto;
-    padding: 0px;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    margin-top: 20px;
+    gap: 60px;
+    margin-top: 30px;
 }
 
 .form {
@@ -51,59 +52,66 @@
 .form form {
     width: auto;
     height: auto;
-    padding: 30px 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 6px;
-    background-color: rgba(256,256,256,.4);
-    border: 1px solid #333;
+    border-radius: 4px;
+    border: 1px solid #33333350;
 }
 
 .row { 
     width: auto;
     height: auto;
     display: flex;
-    margin-bottom: 10px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .row label {
-    width: 60px;
+    width: 80px;
     text-align: right;
-    padding-right: 10px;
-    color: #111;
+    padding-right: 16px;
+    color: #333;
     font-weight: 600;
 }
 
 .row input {
-   width: 300px;
-   height: 30px;
+   width: 340px;
+   height: 40px;
    background-color: rgba(256, 256,256, .4);
    border: none;
-   border-radius: 6px;
+   border-radius: 4px;
    padding: 0px 5px;
-   color: #222;
-   border: 1px solid #626262;
+   font-size: 16px;
+   font-weight: 600;
+   color: #111;
+   border: 1px solid #626262b8;
+   background-color: #fff;
 }
 
 .row input::placeholder {
-    font-size: 12px;
-    color: #111;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #444;
 }
 
-.row textarea {
-    width: 300px;
+textarea {
+    width: 340px;
     height: 70px;
-    background-color: rgba(256, 256,256, .4);
-    border: 1px solid #626262;
-    border-radius: 6px;
-    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #626262c4;
+    border-radius: 4px;
+    padding: 8px 4px;
     color: #222;
 }
 
 .row textarea::placeholder {
-    font-size: 12px;
-    color: #111;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #444;
 }
 
 .botonContainer {

@@ -1,37 +1,36 @@
 import { useState } from "react";
-import style from "./SearchBar.module.css";
 import { useNavigate } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
-
+import style from "./SearchBar.module.css";
 
 export default function SearchBar() {
-   const [input, setInput] = useState("");
+    const [input, setInput] = useState("");
     const navigate = useNavigate();
 
-    const handleInputChange = (e) => {
-        setInput(e.target.value);
-    }
+    const handleInputChange = (e) => setInput(e.target.value);
 
-    const handleSearch = async(e) => {
-        try {
-            e.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (input.trim()) {
             navigate(`/${input}`);
             setInput("");
-        } catch (error) {
-            console.error(error)
         }
-    }
-    
-    return(
-        <div className={style.container}>
-           <input name="search" 
-                   type="text"
-                   value={input}
-                   onChange={handleInputChange} 
-                   placeholder="Busque aqui su producto..." 
-                   className={style.input}
-                   />    
-        <button className={style.button} onClick={handleSearch}><FaSearch /></button>
-      </div>
-    )
+    };
+
+    return (
+        <form onSubmit={handleSubmit} className={style.container}>
+            <input
+                name="search"
+                type="text"
+                value={input}
+                onChange={handleInputChange}
+                placeholder="Busque aquí su producto..."
+                className={style.input}
+                autoComplete="off"
+            />
+            <button type="submit" className={style.button} aria-label="Buscar">
+                <FaSearch />
+            </button>
+        </form>
+    );
 }

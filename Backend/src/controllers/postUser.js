@@ -3,7 +3,7 @@ const { findUserByEmail, createUser } = require("../services/userService");
 const postUser = async (req, res) => {
 
   try {
-    const { email, name, image, role } = req.body; 
+    const { email, name, image } = req.body; 
 
     const existingUser = await findUserByEmail(email);
     if (existingUser) {
@@ -13,8 +13,7 @@ const postUser = async (req, res) => {
     const newUser = await createUser({
         email,
         name,
-        image, 
-        role
+        image
     });
       return res.status(201).json({ message: 'Usuario creado correctamente', user: newUser });
 } catch (error) {

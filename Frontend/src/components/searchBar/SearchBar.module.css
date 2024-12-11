@@ -5,30 +5,30 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
+    background-color: transparent;
 }
 
 .input {
     width: 200px;
     height: auto;
-    font-size: 14px;
-    line-height: 0px;
-    margin-right: 5px;
-    padding: 6px 0px;
-    padding-left: 10px;
-    border: .5px solid rgba(246, 255, 0, 1);
-    border-radius: 4px;
-    background: rgba(256,256,256,.8);
+    font-size: 15px;
+    line-height: 0;
+    padding: 5px 0px;
+    padding-left: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px 0 0 4px;
+    background: rgba(256,256,256,1);
     color: #333;
 }
 
 .input::placeholder {
-    font-size: 12px;
-    font-weight: 400;
-    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
 }
 
 .input:focus {
-    border: none;
+    background-color: rgba(256,256,256,.8);
     outline: none;
 }
 
@@ -37,19 +37,19 @@
     height: auto;
     font-size: 14px;
     font-weight: 600;
-    line-height: 14px;
     font-style: italic;
-    padding: 0px 6px;
-    color: #111;
-    background-color: #f9ff55;
-    border-radius: 4px;
+    padding: 0px 8px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 0 4px 4px 0;
     border: none;
-    box-shadow: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .button:hover {
-    background-color: #f7ff0f;
+    background-color: #aaa;
 }
 
 

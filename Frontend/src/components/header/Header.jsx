@@ -1,30 +1,50 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import style from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
- 
 
-    
+  const images = [
+    "imagen1.png",
+    "imagen2.png",
+    "imagen3.png",
+    "imagen4.png",
+  ];
+ 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
     return (
       <div className={style.container}>
-        <div className={style.div}></div>
         <div className={style.landing}>
           <img src='logoPc.png' alt="logo" />
         </div>
         <div className={style.texto}>
-          <span className={style.somos}>Somos</span>
-            <h1 className={style.textoEfecto}><span style={{'--i': 1}}>E</span><span style={{'--i': 2}}>L</span><span style={{'--i': 3}}>E</span><span style={{'--i': 4}}>C</span><span style={{'--i': 5}}>T</span><span style={{'--i': 6}}>R</span><span style={{'--i': 7}}>O</span><span style={{'--i': 7}}>A</span><span style={{'--i': 8}}>U</span><span style={{'--i': 9}}>T</span><span style={{'--i': 10}}>O</span></h1>
-            <h5>ACCESORIOS PARA TU VEHICULO</h5>
-            <div className={style.envios}>
-              <h6>ENVIOS A TODO EL PAÍS</h6>
-              <h6 className={style.mayor}>MAYORISTA Y MINORISTA</h6>
-            </div>
+            <span className={style.somos}>Somos</span>
+            <h1 className={style.textoEfecto}>ELECTROAUTO</h1>
+            <h5>ACCESORIOS PARA SU VEHICULO</h5>
             <div className={style.visita}>
               <Link to="/tienda">
                 <button>Visitá la tienda</button>
               </Link>
             </div>
         </div>
+        <div className={style.carrusel}>
+          <img
+            key={currentImageIndex}
+            src={images[currentImageIndex]}
+            alt={`Slide ${currentImageIndex + 1}`}
+            className={style.carruselImage}
+          />
+      </div>
     </div>
   );
 };

@@ -11,8 +11,6 @@ import preferenceProvider from "../../utils/provider/preferenceProvider";
 export const UserAccount = ({ menuIsActive }) => {
   const currentUser = JSON.parse(localStorage.getItem('user'));
   const { logout } = useAuth0();
-  let fecha = currentUser.createdAt?.split("");
-  let res = fecha?.slice(0, 10);
   const dispatch = useDispatch();
   const [usuario, setUsuario] = useState({});
   const [preference, setPreference] = useState(null);

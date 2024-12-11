@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
+import style from './LoginButton.module.css'
+import { useEffect, useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useDispatch } from 'react-redux'
 import { loadUserData } from "../../redux/actions";
 import { UserAccount } from '../userAccount/UserAccount'
-import style from './LoginButton.module.css'
-import axios from 'axios'
-import UserAccountMobile from "../userAccountMobile/UserAccountMobile";
-
+import userProvider from '../../utils/provider/userProvider';
 
 
 const LoginButton = () => {
@@ -18,31 +16,18 @@ const LoginButton = () => {
 const postUserData = async () => {
     if(!user) return;
     try {
-      if(user.email !== 'mati.dehoyosmdp@gmail.com') {
         const newUser = {
         name: user?.name,
         email: user?.email,
         image: user?.picture,
-        role: 'user'
         }
-       const response = await axios.post(`/user`, newUser);
+       const response = await userProvider.createUser(newUser);
        dispatch(loadUserData(response.data.user))
        localStorage.setItem('user', JSON.stringify(response.data.user));
-      } else {
-        const newUser = {
-          name: user?.name,
-          email: user?.email,
-          image: user?.picture,
-          role: 'admin'
-        }
-        const response = await axios.post(`/user`, newUser);
-        dispatch(loadUserData(response.data.user))
-        localStorage.setItem('user', JSON.stringify(response.data.user));
-      }
-    } catch (error) {
-    console.error('Error al enviar los datos del usuario al servidor:', error.message);
-  } 
-}
+      } catch (error) {
+        console.error('Error al enviar los datos del usuario al servidor:', error.message);
+     } 
+    } 
 
 
   useEffect(() => {

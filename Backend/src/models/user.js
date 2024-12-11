@@ -22,7 +22,7 @@ sequelize.define('User', {
   },
   role: {
     type: DataTypes.STRING,
-    allowNull: false
+    defaultValue: 'User',
   },
   compra: {
     type: DataTypes.JSON,
