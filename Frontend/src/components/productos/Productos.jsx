@@ -5,6 +5,7 @@ import productosProvider from "../../utils/provider/productosProvider";
 import NavBar from "../navBar/NavBar";
 import SearchBar from "../searchBar/SearchBar";
 import ProductoTiendaCard from "../productoTiendaCard/ProductoTiendaCard";
+import ProductCard from '../productCard/ProductCard';
 
 
 export default function Productos() {
@@ -61,7 +62,7 @@ export default function Productos() {
                 </div>
                 : productos.length ?
                 productos.map((producto, index) => (
-                        <ProductoTiendaCard key={index} producto={producto}/>
+                        <ProductCard key={index} producto={producto}/>
                      ))       
                 :  (<div className={style.loader}>
                     <img src="ELECT.png" alt="logo" />
