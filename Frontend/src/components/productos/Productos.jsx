@@ -4,7 +4,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import productosProvider from "../../utils/provider/productosProvider";
 import NavBar from "../navBar/NavBar";
 import SearchBar from "../searchBar/SearchBar";
-import ProductoTiendaCard from "../productoTiendaCard/ProductoTiendaCard";
 import ProductCard from '../productCard/ProductCard';
 
 
