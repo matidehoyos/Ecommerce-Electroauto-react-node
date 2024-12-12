@@ -78,9 +78,69 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 860px) and (max-width: 1060px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 80px 0;
+          }
+          
+        .ubi {
+            width: 72%;
+            gap: 10px;
+    }
+    
+    .texto h5 {
+        font-size: 20px;
+    }
+    
+    .texto p {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .mapa {
+        width: 360px;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos para mobile ----------------------------------------------------------*/
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 860px) {
     
     .container {
         width: auto;

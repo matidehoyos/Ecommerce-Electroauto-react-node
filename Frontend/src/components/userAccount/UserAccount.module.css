@@ -1,5 +1,5 @@
 .infoContainer {
-    width: 20%;
+    width: auto;
     height: 100vh;
     background-color: #111;
     display: flex;
@@ -11,7 +11,7 @@
     transition: 0.5s;
     overflow-x: hidden;
     z-index: 10000;
-    padding: 30px 0px;
+    padding: 30px;
 }
 
 

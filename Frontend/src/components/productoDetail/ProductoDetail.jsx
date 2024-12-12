@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import productosProvider from "../../utils/provider/productosProvider";
 import { FaShoppingCart } from "react-icons/fa";
 import CarritoContext from "../carritoContext/CarritoContext";
+import Footer from "../footer/Footer";
 
 export default function ProductoDetail() { 
   const { setCarrito } = useContext(CarritoContext);
@@ -90,6 +91,7 @@ export default function ProductoDetail() {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 }

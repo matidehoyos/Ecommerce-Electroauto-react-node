@@ -182,9 +182,13 @@ textarea {
 
 
 
+
+
+
+
 /* Estilos para mobile ----------------------------------------------------------*/
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 960px) {
 
     .container {
         width: 100%;
@@ -193,7 +197,8 @@ textarea {
         margin: 0;
         display: flex;
         flex-direction: column;
-        background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
+        background-image: none;
+        background: #eee;
     }
     
     .subcontainer {
@@ -202,14 +207,13 @@ textarea {
         display: flex;
         flex-direction: column;
         padding-top: 90px;
-        background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
     }
     
     .titulo {
         width: 100%;
         height: auto;
         display: flex;
-        justify-content: start;
+        justify-content: center;
         margin-top: 0px;
     }
     
@@ -231,7 +235,6 @@ textarea {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
     }
     
     .form {
@@ -241,7 +244,6 @@ textarea {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
     }
     
     .form form {

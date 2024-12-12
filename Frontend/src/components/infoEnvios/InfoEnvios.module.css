@@ -63,6 +63,78 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 680px) and (max-width: 960px) {
+    
+    .text p {
+        font-size: 84px;
+        color: #aaa;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+    
+    .text h4 {
+        width: 100%;
+        font-size: 28px;
+        font-weight: 700;
+        color: #aaa;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        font-style: italic;
+        line-height: 40px;
+    }
+    
+    .text h5 {
+        width: 100%;
+        font-size: 26px;
+        font-weight: 500;
+        color: #aaa;
+        text-align: left;
+        margin: 0;
+        padding: 0px;
+        line-height: 42px;
+        font-style: italic;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos para mobile ----------------------------------------------------------*/
 
 @media only screen and (max-width: 680px) {

@@ -1,4 +1,3 @@
-const { Sequelize } = require("sequelize");
 const { Categorias } = require("../../db.js");
 
 const findCategorias = async () => {

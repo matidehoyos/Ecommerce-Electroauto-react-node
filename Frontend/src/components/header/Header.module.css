@@ -3,7 +3,7 @@
   height: auto;
   margin: 0;
   padding: 0;
-  padding-top: 150px;
+  padding-top: 200px;
   padding-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -75,12 +75,12 @@
 
 
 .carrusel {
-  width: 100%;
+  width: 68%;
 }
 
 .carrusel img {
-  width: 200px;
-  height: auto;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   background-color: #ffffff30;
   border-radius: 8px;
@@ -108,9 +108,80 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 800px) and (max-width: 1024px) {
+
+  .container {
+    padding-top: 180px;
+    padding-bottom: 50px;
+    gap: 20px;
+  }
+  
+    .somos {
+      width: 440px;
+      font-size: 18px;
+    }
+    
+    .texto h1 {
+      font-size: 56px;
+  }
+  
+  .texto h5 {
+      font-size: 24.5px;
+    }
+  
+  .carrusel {
+    width: 55%;
+  }
+  
+  .carrusel img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos para mobile ----------------------------------------------------------*/
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 800px) {
 
   .container {
     width: 100%;

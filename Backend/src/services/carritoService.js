@@ -39,4 +39,4 @@ const updateProductoCarrito = async (id, info) => {
 }
 
 
-module.exports = { crearProductoCarrito, eliminarProductoCarrito, findProductosCarrito }
+module.exports = { crearProductoCarrito, eliminarProductoCarrito, findProductosCarrito, updateProductoCarrito }

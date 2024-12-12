@@ -20,7 +20,7 @@ build/
 .env
 .env.*.local
 *.local
-
+.gitignore
 # Editor directories and files
 .vscode/
 !.vscode/extensions.json

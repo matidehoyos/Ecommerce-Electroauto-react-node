@@ -1,9 +1,8 @@
-const { findPreferenceByIdPreference, PutPreference, } = require("../services/preferenceService");
 require('dotenv').config();
-const { ACCESTOKEN } = process.env;
-const axios = require("axios");
+const { ACCESSTOKEN } = process.env;
+const { findPreferenceByIdPreference, PutPreference, } = require("../services/preferenceService");
 const { updateUser, findUserByEmailMP } = require("../services/userService");
-
+const axios = require("axios");
 
 
 
@@ -22,7 +21,7 @@ const getPaymentMP = async (req, res) => {
       `https://api.mercadopago.com/v1/payments/${payment_id}`,
       {
         headers: {
-          Authorization: `Bearer ${ACCESTOKEN}`,
+          Authorization: `Bearer ${ACCESSTOKEN}`,
         },
       }
     );
@@ -56,27 +55,6 @@ const getPaymentMP = async (req, res) => {
 
     const user = await findUserByEmailMP(searchPayment.email)
     const userUpdate = await updateUser(user.id, preferenceUser)
-
-
-    {/*const mailer = {
-      title: searchPayment.title,
-      email: searchPayment.email,
-      payId: payment_id,
-      date: payAidi.data.date_approved,
-      status: payAidi.data.status,
-      paymentType: payAidi.data.payment_type_id,
-      paymentMethod: payAidi.data.payment_method_id,
-      compra: searchPayment.carrito,
-      amount: searchPayment.amount
-    }
-
-    if (payAidi.data.status === "approved") {
-      mailApprovedMP(mailer);
-    }
-
-    else if (payAidi.data.status === "in_process") {
-      mailRejectedMP(mailer);
-    } */}
 
     res.status(200).json(newOrder);
   } catch (error) {

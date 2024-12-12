@@ -127,167 +127,115 @@
 
 
 
-/* Estilos para mobile ----------------------------------------------------------*/
 
-@media only screen and (max-width: 680px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 960px) and (max-width: 1200px) {
 
     .containerCarrusel {
-        width: 100%;
-        height: auto;
-        padding: 80px 0;
-        margin: 0;
-        background-color: #222222;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;   
-    }
-
-    .containerCarrusel h3 {
-        font-size: 20px;
-        font-weight: 600;
-        color: #fff;
-        position: absolute;
-        z-index: 300;
-        filter: drop-shadow(0px 0px 3px #000);
-        text-align: center;
+        padding: 60px 0;
+        gap: 20px;
     }
     
     .carouselStyles {
-        width: 80%;
-        height: 220px;
-        padding: 0;
-        margin: 0;
-        border-radius: 4px;
-        background-color: #222;
-        overflow: hidden;
-        border: 2px solid #565656;
+        width: 480px;
+        height: 300px;
+        border-radius: 8px;
+     }
+    
+    .caja {
+        border-radius: 8px;
+    }
+    
+    .caja img {
+        height: 300px;
+        border-radius: 8px;
+        object-position: center;
+    }
+    
+    .mercadoLibre { 
+        padding: 20px;
+        border-radius: 8px;
+      }
+      
+      .imgML img {
+        width: 160px;
+        height: 80px;
+      }
+      
+  }
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+/* Estilos para mobile ----------------------------------------------------------*/
+
+@media only screen and (max-width: 960px) {
+
+    .containerCarrusel {
+        width: 100%;
+        padding: 80px 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
+        gap: 20px; 
+    }
+    
+    .carouselStyles {
+        width: 74%;
+        height: 300px;
+        border-radius: 6px;
      }
     
     .caja {
         width: 100%;
-        padding: 0;
-        margin: 0;
-        border-radius: 4px;
+        height: 100%;
+        border-radius: 6px;
     }
     
     .caja img {
-        width: 100%;
-        height: 220px;
-        border-radius: 4px;
-        object-fit: cover;
+        height: 300px;
+        border-radius: 6px;
+        object-position: center;
     }
     
     .mercadoLibre { 
-        width: 76%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 0px;
-        padding-bottom: 40px;
-        margin: 60px 0px;
-        background-color: #fcffa9;
-        overflow-x: hidden;
-        border: none;
-        box-shadow: none;
-        border-radius: 4px;
-        border: 1px solid y=transparent;
-        box-shadow: 0px 0px 40px rgba(0,0,0,.07);
-        backdrop-filter: blur(1px);
+        width: 74%;
+        padding: 20px 0;
     }
 
-    .mercadoLibre::-webkit-scrollbar {
-        display: none;
-    }
     
-    .imgML {
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin-right: 0;
-        margin-top: 0;
-        justify-content: center;
-    }
     
     .imgML img {
-        width: 240px;
-        height: 120px;
-        margin: 0;
-        padding: 0;
-        content: url("../../../public/lm.png");
-        object-fit: scale-down;
+        width: 280px;
+        height: 130px;
       }
-    
-    .mercadoTexto {
-        width: auto;
-        height: auto;
-        margin-left: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        padding: 0px 20px;
-        background-color: transparent;
-    }
-
-    .mercadoTexto span {
-        display: block;
-        font-size: 14px;
-        font-weight: 500;
-        font-style: italic;
-        color: #0c1c6b;
-    }
-    
-    .mercadoTexto h3 {
-        width: 100%;
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 30px;
-        letter-spacing: .5px;
-        font-style: italic;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        margin-bottom: 20px;
-        color: #0c1c6b;
-    }
-    
-    .mercadoTexto h6 {
-        width: 100%;
-        font-size: 16px;
-        font-weight: 700;
-        letter-spacing: .5px;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        margin-bottom: 20px;
-        color: rgba(0,0,0,.9);
-        font-style: italic;
-    }
-    
-    .mercadoTexto p {
-        width: 100%;
-        font-size: 14px;
-        font-weight: 600;
-        letter-spacing: .7px;
-        text-align: center;
-        padding: 0px;
-        margin: 0;
-        margin-bottom: 4px;
-        color: #0c1c6b;
-        font-style: italic;
-        background-color: rgba(256,256,256,0);
-    }
-    
-    .ico {
-        font-size: 12px;
-        margin-right: 5px;
-        position: relative;
-        top: 0px;
-        color: #0c1c6b;
-    }
-    
 }
 

@@ -1,4 +1,5 @@
 const { Preference } = require("../../db.js");
+
 const findAllPreferences = async () => {
     try {
         const preferences = await Preference.findAll();

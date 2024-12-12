@@ -1,7 +1,10 @@
 const { MercadoPagoConfig, Preference } = require('mercadopago');
 const { createPreference } = require('../services/preferenceService');
+require("dotenv").config();
 
-const client = new MercadoPagoConfig({ accessToken: 'TEST-1187084560697921-031218-7d2dd2f5a242226389b04d63bbc09fb8-762669494' });
+const { ACCESSTOKEN } = process.env;
+
+const client = new MercadoPagoConfig(ACCESSTOKEN);
 
 
 const createPreferenceId = async(req, res) => {

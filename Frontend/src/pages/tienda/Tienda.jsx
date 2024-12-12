@@ -6,6 +6,7 @@ import productosProvider from '../../utils/provider/productosProvider';
 import { loadProductos } from '../../redux/actions';
 import SearchBar from '../../components/searchBar/SearchBar';
 import ProductCard from '../../components/productCard/ProductCard';
+import Footer from '../../components/footer/Footer';
 
 const Tienda = () => {
   const Navigate = useNavigate();
@@ -52,6 +53,7 @@ const Tienda = () => {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 };
