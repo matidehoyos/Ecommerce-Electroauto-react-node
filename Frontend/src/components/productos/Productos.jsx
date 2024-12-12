@@ -5,6 +5,7 @@ import productosProvider from "../../utils/provider/productosProvider";
 import NavBar from "../navBar/NavBar";
 import SearchBar from "../searchBar/SearchBar";
 import ProductCard from '../productCard/ProductCard';
+import Footer from '../footer/Footer';
 
 
 export default function Productos() {
@@ -68,6 +69,7 @@ export default function Productos() {
                  </div> )
                 }
             </div>
+            <Footer />
         </div>
     )
 }

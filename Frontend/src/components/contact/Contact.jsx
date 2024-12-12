@@ -2,6 +2,7 @@ import style from "./Contact.module.css";
 import { useState } from "react";
 import mensajesProvider from "../../utils/provider/mensajesProvider";
 import { FaWhatsapp } from "react-icons/fa";
+import Footer from "../footer/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -67,6 +68,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
