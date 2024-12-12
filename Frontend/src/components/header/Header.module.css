@@ -70,7 +70,6 @@
     color: #fff;
   }
 
-.landing { display: none;}
 .visita {display: none;}
 
 
@@ -185,82 +184,65 @@
 
   .container {
     width: 100%;
-    height: auto;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    padding-top: 200px;
     display: flex;
-    flex-direction: column;
     justify-content: start;
     align-items: start;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-    background-image: url('../../../public/bg.jpg');
+    background-image: url('../../../public/bgMov.jpg');
     background-size: cover;
     background-position: bottom;
-}
-
-.div {
-  display: none;
 }
 
 .texto {
     width: 100%;
     height: 100%;
-    padding: 80px 15px;
-    padding-top: 320px;
+    padding: 0 15px;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start; 
-    position: relative;
-    white-space: nowrap;
-    border-radius: 60px;
-    background-color: rgba(0, 0, 0, .5);
-    border-radius: inherit;
-    animation: none;
+    border-radius: 0;
 }
 
 .somos {
-  display: block;
-  font-style: italic;
   font-weight: 400;
-  font-size: 14px;
-  color: rgba(256,256,256,.7);
-  position: relative;
-  top: 20px;
+  font-size: 16px;
+  color: #fff;
+  filter: drop-shadow(0px 0px 3px #333);  
 }
-  
-  .texto h1 {
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    font-style: normal;
-    background-image: linear-gradient(to right, #f6ff00, #fdffca  );
-    background-clip: text;
-    color: transparent;
-    display: inline;
-    opacity: 0;
-    margin: 0;
-    padding: 0;
-    filter: drop-shadow(0px 0px 8px #000);
-}
+
+.texto h1 {
+      font-size: 38px;
+      font-weight: 700;
+      text-align: left;
+      background-image: linear-gradient(to right , #e7ef00, #fdffca);
+      background-clip: text;
+      color: transparent;
+      display: inline;
+      margin: 0;
+      padding: 0;
+      filter: drop-shadow(0px 0px 3px #333);
+  }
+
 
 .texto h5 {
     width: auto;
     height: auto;
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    font-weight: 600;
+    padding-top: 3px;
+    font-size: 18px;
+    font-weight: 500;
     letter-spacing: .3px;
     line-height: 16px;
     color: #fff;
     text-align: left;
     font-style: normal;
-    filter: drop-shadow(0px 0px 3px #000);
+    filter: drop-shadow(0px 0px 3px #333);
   }
 
 .envios {
@@ -300,7 +282,7 @@
   height: auto;
   display: flex;
   justify-content: left;
-  margin-top: 16px;
+  margin-top: 30px;
 }
 
 .visita button {
@@ -320,32 +302,8 @@
   font-style: italic;
 }
 
-.landing {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background: rgb(11, 11, 11);
-  background-size: cover;
-  background-position: center;
-  z-index: 300000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  animation: tope .5s ease-in-out .6s forwards;
-}
-
-@keyframes tope {
-  0% {
-    top: 0;
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    top: -100vh;
-  }
+.carrusel {
+  display: none;
 }
 
 }

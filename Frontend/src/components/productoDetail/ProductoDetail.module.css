@@ -197,7 +197,7 @@
     justify-content: start;
     align-items: start;
     margin: 0;
-    padding: 30px 12px;
+    padding: 0;
     padding-top: 100px;
     background-color: #fff;
   }
@@ -207,15 +207,31 @@
     height: 60vh;
     background-image: url('../../../public/ELECT.png');
   }
+
+
+  .productBox {
+    width: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0;
+  }
   
-  .name {
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 18px;
-    letter-spacing: .4px;
-    padding: 0;
-    margin: 0;
-    color: #333;
+  .imagen {
+    width: auto;
+    height: 180px;
+    background-color: rgb(241, 241, 241);
+  }
+  
+  .imagen img {
+    width: auto;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    filter: drop-shadow(0px 0px 20px #0000002d);
   }
   
   .caja {
@@ -231,21 +247,17 @@
     border: none;
   }
   
-  .imagen {
-    width: 88%;
-    height: 180px;
-    flex: 1;
-    background-color: rgb(190, 190, 190);
+  .name {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: .4px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #333;
   }
-  
-  .imagen img {
-    width: auto;
-    height: 180px;
-    object-fit: cover;
-    object-position: center;
-    filter: drop-shadow(0px 0px 20px #000);
-  }
-  
+
   .texto {
     width: auto;
     height: 100%;

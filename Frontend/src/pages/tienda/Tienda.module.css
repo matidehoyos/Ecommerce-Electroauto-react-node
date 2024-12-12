@@ -83,6 +83,7 @@
         flex-direction: column;
         justify-content: start;
         align-items: start;
+        padding: 0;
     }
 
     .header {

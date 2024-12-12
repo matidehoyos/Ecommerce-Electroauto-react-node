@@ -53,6 +53,13 @@
 }
 
 
+
+
+
+
+
+
+
 /* Estilos para dispositivos móviles ------------------------------- */
 
 @media only screen and (max-width: 680px) {
@@ -66,19 +73,19 @@
         margin: 23px 15px;
         margin-bottom: 0;
         padding: 0;
+        border: none;
     }
     
     .input {
         width: 200px;
         height: auto;
         font-size: 14px;
-        line-height: 0px;
-        margin-right: 4px;
+        line-height: 0;
         padding: 7px 0px;
         padding-left: 8px;
-        border: .5px solid #333;
-        border-radius: 4px;
-        background: rgba(256,256,256,.4);
+        border: 1px solid #444;
+        border-radius: 4px 0 0 4px;
+        background: rgba(256,256,256,.8);
         color: #111;
     }
     
@@ -89,7 +96,7 @@
     }
     
     .input:focus {
-        border: 1px solid #111;
+        border: none;
         outline: none;
     }
 
@@ -98,6 +105,8 @@
         background-color: #111;
         color: #fff;
         font-size: 14px;
+        border-radius: 0 4px 4px 0;
+        border: 1px solid #444;
     }
     
 }

@@ -82,6 +82,7 @@ width: 100%;
       flex-direction: column;
       justify-content: start;
       align-items: start;
+      padding-top: 0;
   }
 
   .navPc {

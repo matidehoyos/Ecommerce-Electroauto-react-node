@@ -68,23 +68,25 @@
         height: auto;
         padding: 50px 0;
         margin: 0;
-        background-color: #fff;
+        background-color: #eee;
     }
     
-        .populares {
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: start;
-            margin: 0;
-            padding: 0;
-        }
+    .populares {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin: 0;
+        padding: 0;
+    }
     
     .populares h4 {
         margin: 0;
+        margin-bottom: 30px;
         padding: 0;
+        padding-left: 15px;
         font-size: 16px;
         font-weight: 600;
         letter-spacing: .5px;
@@ -95,23 +97,24 @@
     .linkTienda {
         width: auto;
         margin: 0 auto;
+        margin-top: 50px;
     }
     
     .linkTienda button {
-        background-color: rgb(220,220,220);    
+        background-color: rgb(83, 83, 255);    
         border: 1px solid #fff;
         transition: all .5s ease;
     }
     
     .linkTienda button:hover {
-        background-color: rgb(166,166,166);
-        border: 1px solid transparent;
+        background-color: rgb(83, 83, 255);
+        border: 1px solid #fff;
     }
     
     .linkTienda a {
-        color: #222;
-        font-weight: 700;
-        font-size: 14px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
         padding: 10px 16px;
     }
     

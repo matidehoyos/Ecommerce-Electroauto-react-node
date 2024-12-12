@@ -153,12 +153,14 @@
         align-items: center;
         transform: none;
         overflow-x: hidden;
+        background-color: #fff;
           }
     
 
         .ubi {
             width: 100%;
             flex-direction: column;
+            border: none;
         }
 
     .texto {

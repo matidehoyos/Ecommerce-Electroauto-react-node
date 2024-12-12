@@ -24,9 +24,6 @@ const Header = () => {
 
     return (
       <div className={style.container}>
-        <div className={style.landing}>
-          <img src='logoPc.png' alt="logo" />
-        </div>
         <div className={style.texto}>
             <span className={style.somos}>Somos</span>
             <h1 className={style.textoEfecto}>ELECTROAUTO</h1>

@@ -119,41 +119,39 @@
 
 
 
+
+
+
+
+
+
+
 /* Estilos para dispositivos móviles ------------------------------- */
 
 @media only screen and (max-width: 920px) {
 
   .container {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    background-image: linear-gradient(to right, rgba(22, 22, 255, 0.842),rgba(0, 0, 41, 0.842));
-    position: fixed;
-    top: 0;
+    width: 100%;
+    background: transparent;
     box-shadow: none;
+  }
+
+  .scrolled {
+    background-color: #000640;
+    transition: all 1s ease-out;
   }
   
   .firstRow {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-    margin: 0;
+    padding: 0px 10px;
     background: transparent;
   }
   
   .logo {
-    width: 150px;
+    width: 140px;
     height: 50px;
     padding: 0;
     margin: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     padding-top: 5px;
@@ -162,14 +160,18 @@
   .logo img {
     width: 100%;
     height: auto;
-    animation: desplazamiento .4s ease-in-out 1;
+    animation: desplazamiento 1s ease-out 1;
     padding: 0;
     margin: 0;
+  }
+
+  .scrolled .logo {
+      display: flex;
   }
   
   @keyframes desplazamiento {
       0% {
-        transform: translateX(-300px);
+        transform: translateX(-500px);
       }
       100% {
         transform: translateX(0);
@@ -187,7 +189,7 @@
     position: absolute;
     top: 76px;
     left: -1200;
-    transition: .4s all;
+    transition: .8s all;
     z-index: 2000;
     overflow-x: hidden;
     border-top: 1px solid yellow;
@@ -283,12 +285,17 @@
   .menuButton {
     margin: 0;
     padding: 0;
-    font-size: 28px;
-    transition: .3s all;
+    padding-top: 10px;
+    font-size: 32px;
+    transition: 1s all;
     position: relative;
     top: 2.8px;
     color: #e7ef00;
     background-color: transparent;
+  }
+
+  .scrolled .menuButton {
+    padding-top: 0;
   }
 
 }

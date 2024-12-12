@@ -143,7 +143,6 @@
         height: auto;
         padding: 0;
         margin: 0;
-        background-image: linear-gradient(to right , #e7ef00, #fcffa9  );
     }
     
     .text {
@@ -151,19 +150,19 @@
         height: auto;
         display: flex;
         justify-content: center;
-        align-items: stretch;
+        align-items: center;
         padding: 80px 0px;
         margin: 0;
     }
     
     .text p {
-        font-size: 50px;
-        color: #333;
+        font-size: 90px;
+        color: #ccc;
         margin: 0;
         padding: 0;
         display: flex;
         align-items: center;
-        margin-right: 10px;
+        margin-right: 8px;
     }
     
     .first {
@@ -184,14 +183,14 @@
 
     .text h4 {
         width: 100%;
-        font-size: 22px;
-        font-weight: 800;
-        color: #333;
+        font-size: 20px;
+        font-weight: 700;
+        color: #aaa;
         text-align: left;
         margin: 0;
         padding: 0;
         font-style: italic;
-        line-height: 22px;
+        line-height: 20px;
         word-spacing: -1px;
         letter-spacing: -.4px;
     }
@@ -199,8 +198,8 @@
     .text h5 {
         width: 100%;
         font-size: 18px;
-        font-weight: 700;
-        color: #333;
+        font-weight: 500;
+        color: #aaa;
         text-align: left;
         margin: 0;
         padding: 0px;
