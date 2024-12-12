@@ -39,7 +39,6 @@ const createPreferenceId = async(req, res) => {
       console.log(error.message)
       console.error(error)
     } 
- 
   } catch (error) {
     console.error(error);
     res.status(500).send(error);
