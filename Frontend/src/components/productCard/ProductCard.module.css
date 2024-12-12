@@ -155,8 +155,8 @@
     }
     
     .imgContainer  {
-        width: 140px;
-        height: 140px;
+        width: 155px;
+        height: 155px;
         margin: 0;
         padding: 0;
         background-color: #ccc;
@@ -168,14 +168,14 @@
     }
     
     .imgContainer img {
-        width: 140px;
-        height: 140px;
+        width: 145px;
+        height: 145px;
         object-fit: cover;
         object-position: center;
     }
     
     .container h3 {
-        width: 140px;
+        width: 155px;
         height: auto;
         font-size: 15px;
         font-weight: 800;
@@ -191,7 +191,7 @@
     
     
     .detalle {
-        width: 140px;
+        width: 155px;
         font-size: 12px;
         font-weight: 600;
         font-style: italic;

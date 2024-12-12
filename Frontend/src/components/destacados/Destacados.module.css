@@ -19,12 +19,10 @@
 
 @media only screen and (max-width: 680px) {
     .container {
-        overflow: hidden;
         width: auto;
-        gap: 8px;
-        padding: 0 15px;
+        gap: 6px;
+        padding: 0;
         justify-content: center;
+        overflow: hidden;
     }
-    
-
 }
