@@ -24,12 +24,17 @@
 .logo {
   width: auto;
   height: auto;
+  display: block;
 }
 
 .logo img {
   width: 150px;
   height: 40px;
   object-fit: cover;
+}
+
+.scrolled .logo {
+  display: block;
 }
 
 .menu {

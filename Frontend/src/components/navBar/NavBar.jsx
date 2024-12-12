@@ -19,7 +19,7 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (isHome) {
-        if (window.scrollY > 400) {
+        if ( window.scrollY > 400) {
           setIsScrolled(true);
           setShowLogo(true);
         } else {
@@ -58,13 +58,11 @@ const NavBar = () => {
     >
       <PreNav />
       <div className={style.firstRow}>
-        {showLogo && (
           <div className={style.logo}>
             <Link to="/">
               <img src="logoPc.png" alt="Logo" />
             </Link>
           </div>
-        )}
 
         <div className={style.menu} onClick={handleShowMenu} style={isVisible ? { left: '0px' } : { left: '-1200px' }}>
           <div className={style.searchBar}>
