@@ -3,6 +3,8 @@ import style from "./Header.module.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  
+   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
     "imagen1.png",
@@ -10,15 +12,13 @@ const Header = () => {
     "imagen3.png",
     "imagen4.png",
   ];
- 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 2400);
     return () => clearInterval(interval);
   }, [images.length]);
 
